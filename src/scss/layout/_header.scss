@@ -1,0 +1,25 @@
+@use '../abstracts/abstracts' as abs;
+
+.main-header {
+    background-color: abs.$dark-color;
+    color: abs.$base-color;
+    width: 100%;
+    height: 50px;
+    @include abs.desktop {
+        height: 100px;
+    }
+}
+.logo {
+    display: block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    img {
+       width: 115px;
+        height: auto;
+        @include abs.desktop {
+            width: 230px;
+        }
+    }
+}
+

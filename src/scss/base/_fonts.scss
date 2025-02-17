@@ -1,0 +1,56 @@
+$AlumniSans-Black         : "AlumniSans-Black",sans-serif;
+$AlumniSans-ExtraBold     : "AlumniSans-ExtraBold",sans-serif;
+$AlumniSans-SemiBold      : "AlumniSans-SemiBold",sans-serif;
+$AlumniSans-Medium        : "AlumniSans-Medium",sans-serif;
+$OpenSans-Regular         : "OpenSans-Regular",sans-serif;
+$OpenSans-Light           : "OpenSans-Light",sans-serif;
+
+@font-face {
+    font-family: "AlumniSans-Black";
+    src: url('../assets/fonts/AlumniSans-Black.eot') format('embedded-opentype'),
+    url('../assets/fonts/AlumniSans-Black.woff') format('woff2'),
+    url('../assets/fonts/AlumniSans-Black.woff2') format('woff'),
+    url('../assets/fonts/AlumniSans-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+@font-face {
+    font-family: "AlumniSans-ExtraBold";
+    src: url('../assets/fonts/AlumniSans-ExtraBold.eot') format('embedded-opentype'),
+    url('../assets/fonts/AlumniSans-ExtraBold.woff') format('woff2'),
+    url('../assets/fonts/AlumniSans-ExtraBold.woff2') format('woff'),
+    url('../assets/fonts/AlumniSans-ExtraBold.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: "AlumniSans-SemiBold";
+    src: url('../assets/fonts/AlumniSans-SemiBold.eot') format('embedded-opentype'),
+    url('../assets/fonts/AlumniSans-SemiBold.woff') format('woff2'),
+    url('../assets/fonts/AlumniSans-SemiBold.woff2') format('woff'),
+    url('../assets/fonts/AlumniSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: "AlumniSans-Medium";
+    src: url('../assets/fonts/AlumniSans-Medium.eot') format('embedded-opentype'),
+    url('../assets/fonts/AlumniSans-Medium.woff') format('woff2'),
+    url('../assets/fonts/AlumniSans-Medium.woff2') format('woff'),
+    url('../assets/fonts/AlumniSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url('../assets/fonts/OpenSans-Regular.eot') format('embedded-opentype'),
+    url('../assets/fonts/OpenSans-Regular.woff') format('woff2'),
+    url('../assets/fonts/OpenSans-Regular.woff2') format('woff'),
+    url('../assets/fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url('../assets/fonts/OpenSans-Light.eot') format('embedded-opentype'),
+    url('../assets/fonts/OpenSans-Light.woff') format('woff2'),
+    url('../assets/fonts/OpenSans-Light.woff2') format('woff'),
+    url('../assets/fonts/OpenSans-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+

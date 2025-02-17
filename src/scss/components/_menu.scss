@@ -1,0 +1,209 @@
+@use '../abstracts/abstracts' as abs;
+@use '../base/base' as base;
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    margin-right: 20px;
+    &-desktop {
+        display: none;
+       @include  abs.desktop-sm {
+            display: block;
+        }
+    }
+    &-item {
+        padding: 0 10px;
+        white-space: nowrap;
+        position: relative;
+       @include  abs.desktop-xl {
+            padding: 0 15px;
+        }
+        &:hover > a,
+        &:focus > a {
+            color: abs.$accent-color;
+            &:after {
+                transform: scale(1);
+            }
+        }
+        &:hover > .submenu,
+        &:focus > .submenu  {
+            display: block;
+        }
+        a {
+            display: block;
+            position: relative;
+            font-family: base.$AlumniSans-Medium;
+            color: abs.$base-color;
+            font-size: abs.$h5-size-mobile;
+            transition: ease-in 0.3s;
+            padding: 5px 0;
+           @include  abs.desktop {
+                font-size: abs.$h5-size-desktop;
+            }
+           @include  abs.desktop-xl {
+                font-size: abs.$h5-size-xxl-desktop;
+            }
+            &:after {
+                content: ' ';
+                position: absolute;
+                bottom: 5px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: abs.$accent-color;
+                transform: scale(0);
+                opacity: 1;
+                transform-origin: left;
+                transition: opacity 0.4s, transform 0.4s;
+            }
+            
+        }
+        
+    }
+
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: auto;
+    border-right: 3px solid abs.$accent-color;
+    z-index: 1;
+    right: 0;
+    background-color: abs.$dark-color;
+    &-item {
+        padding: 0 20px 5px;
+        text-align: right; 
+        &:last-child {
+            a {
+                border: none;
+            }
+            
+        }
+        a { 
+            white-space: wrap;
+            border-bottom: 3px solid abs.$accent-color;
+        }
+        &:hover > a,
+        &:focus > a {
+            color: abs.$accent-color;
+        }
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    width: 250px;
+    background-color: abs.$dark-color;
+    padding: 20px;
+    z-index: 1000;
+    transition: left 0.5s ease-in-out;
+    box-sizing: border-box;
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        &-item {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            a {
+                display: inline-block;
+            }
+        }
+    }
+    &.open {
+        left: 0;
+    }
+    &-container {
+        position: relative;
+       @include  abs.desktop-sm {
+            display: none;
+        }
+    }
+    &-toggle {
+        position: absolute;
+        top: 3px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 26px;
+        height: 21px;
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        z-index: 5;
+        .line {
+            width: 100%;
+            height: 2px;
+            background-color: abs.$accent-color;
+            transition: transform 0.3s ease;
+        }
+        &.open {
+            .line:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            .line:nth-child(2) {
+                opacity: 0;
+            }
+            .line:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+        }
+    }
+}
+
+.sticky-menu {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    &-wrap {
+        position: fixed;
+        width: 70px;
+        height: 100%;
+        right: 0;
+        top: 0;
+        z-index: 9999;
+    }
+    &__item {
+        flex: 1;
+        display: flex;
+        a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon {
+                width: 30px;
+                height: auto;
+            }
+        }
+        &.icon-phone {
+           background-color: abs.$second-accent-color; 
+        }
+        &.icon-mail {
+            background-color: abs.$dark-color;
+        }
+        &.icon-location {
+            background-color: abs.$accent-color;
+        }
+        &.icon-whatsapp {
+            background-color: #1D6026;
+        }
+        &.icon-telegram {
+            background-color: #246182;
+        }
+        &.icon-viber {
+            background-color: #4E2C79;
+        }
+    }
+}

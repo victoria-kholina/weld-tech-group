@@ -1,0 +1,91 @@
+@use '../abstracts/abstracts' as abs;
+
+
+$arrow-head: 24px;
+
+.arrow {
+    display: block;
+    position: relative;
+    background-color: abs.$second-dark-color;
+    margin: 15px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: $arrow-head;
+      height: $arrow-head;
+      background: transparent;
+      transform: rotate(45deg);
+    }
+}
+
+.arrow-down,
+.arrow-up {
+    width: 2px;
+    height: 100px;
+    &:after {
+      transform-origin: top;
+      left: -1px;
+    }
+    @include abs.desktop {
+        width: 3px;
+        height: 140px; 
+        &:after {
+          left: -1.5px;
+        } 
+    }
+}
+.arrow-left,
+.arrow-right {
+    width: 100px;
+    height: 2px;
+    &:after {
+      transform-origin: right;
+      top: -1px;
+    }
+    @include abs.desktop {
+        width: 140px;
+        height: 3px;
+        &:after {
+          top: -1.5px;
+        }
+    }
+}
+
+
+
+@mixin arrow($dir) {
+  @if $dir == right {
+    &::after {
+      right: 5px;
+      border-top: 3px solid abs.$second-dark-color;
+      border-right: 3px solid abs.$second-dark-color;
+    }
+  } @else if $dir == left {
+    &::after {
+      
+      border-bottom: 3px solid abs.$second-dark-color;
+      border-left: 3px solid abs.$second-dark-color;
+    }
+  } @else if $dir == down {
+    &::after {
+      border-right: 3px solid abs.$second-dark-color;
+      border-bottom: 3px solid abs.$second-dark-color;
+      bottom: 0;
+    }
+  } @else if $dir == up {
+    &::after {
+      border-top: 3px solid abs.$second-dark-color;
+      border-left: 3px solid abs.$second-dark-color;
+      top: 5px;
+    }
+  }
+}
+
+.arrow-right { @include arrow(right); }
+.arrow-left { @include arrow(left); }
+.arrow-down { @include arrow(down); }
+.arrow-up { @include arrow(up); }
+
+.arrow-white {
+  border-color: abs.$base-color;
+}

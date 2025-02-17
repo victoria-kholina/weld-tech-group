@@ -1,0 +1,1 @@
+{"version":3,"file":"js/main.js","mappings":";;AAA4C;AACT;AACV","sources":["webpack://Weld Tech Group/./src/index.js"],"sourcesContent":["import './assets/css/bootstrap-grid.min.css'\r\nimport '@splidejs/splide/css/core';\r\nimport './scss/main.scss'\r\n"],"names":[],"sourceRoot":""}

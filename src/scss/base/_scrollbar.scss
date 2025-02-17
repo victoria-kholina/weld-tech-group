@@ -1,0 +1,32 @@
+@use '../abstracts/abstracts' as abs;
+
+body::-webkit-scrollbar-button {
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 0px
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color: abs.$second-accent-color;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: abs.$second-accent-color;
+  }
+  
+  body::-webkit-resizer {
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 0px
+  }
+  
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+  

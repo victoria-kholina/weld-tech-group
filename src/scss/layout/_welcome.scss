@@ -1,0 +1,62 @@
+@use '../abstracts/abstracts' as abs;
+
+.welcome {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    @include abs.desktop {
+        height: calc(100vh - 100px); 
+    }
+    &-banner {
+        position: relative;
+        height: 75%;
+        background: url(../assets/img/baner.jpg) no-repeat;
+        background-size: cover;
+    }
+    &-text {
+        background-color: abs.$light-color;
+        height: 35%;
+        h3 {
+            color: abs.$second-dark-color
+        }
+
+    }
+    &-heading {
+        max-width: 700px;
+        color: abs.$light-color;
+        &__buttons {
+            display: flex;
+            .accent-button {
+                margin-right: 20px;
+                @include abs.desktop {
+                    margin-right: 30px;
+                }
+            }
+            .accent-button:last-child {
+                margin-right: 0;
+            }
+        }
+        h1, h5 {
+            line-height: 0.7;
+        }
+        h5 {
+            margin-left: 5px;
+        }
+        h4 {
+            margin: 25px 0;
+            @include abs.desktop {
+                margin: 35px 0; 
+            }
+        }
+    }
+    &-video {
+        position: absolute;
+        top: 0;
+        right: 21px;
+        height: calc(100vh - 150px);
+        iframe {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

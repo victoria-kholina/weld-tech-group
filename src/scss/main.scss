@@ -1,0 +1,164 @@
+@use 'abstracts/abstracts' as abs;
+@use 'base/base' as base;
+@use 'components/components';
+@use 'layout/layout';
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+font-family: base.$OpenSans-Light;
+font-size: abs.$text-size-mobile;
+color: abs.$dark-color;
+-webkit-text-size-adjust: 100%;
+-webkit-tap-highlight-color: transparent;
+@include abs.desktop {
+    font-size: abs.$text-size-desktop;
+}
+@include abs.desktop-xl {
+    font-size: abs.$text-size-xxl-desktop;
+}
+}
+
+*, ::after, ::before {
+box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: abs.$text-size-mobile;
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+      text-decoration: none;
+    }
+    @include abs.desktop {
+      font-size: abs.$text-size-desktop;
+    }
+    @include abs.desktop-xl {
+      font-size: abs.$text-size-xxl-desktop;
+    }
+  }
+  
+  h1 {
+    font-family: base.$AlumniSans-Black;
+    font-size: abs.$h1-size-mobile;
+    @include abs.desktop {
+      font-size: abs.$h1-size-desktop;
+    }
+    @include abs.desktop-xl {
+      font-size: abs.$h1-size-xxl-desktop;
+    }
+  }
+  
+  h2 {
+    font-family: base.$AlumniSans-ExtraBold;
+    font-size: abs.$h2-size-mobile;
+    @include abs.desktop {
+      font-size: abs.$h2-size-desktop;
+    }
+    @include abs.desktop-xl {
+      font-size: abs.$h2-size-xxl-desktop;
+    }
+  }
+
+  h3 {
+    font-family: base.$AlumniSans-SemiBold;
+    font-size: abs.$h3-size-mobile;
+    @include abs.desktop {
+      font-size: abs.$h3-size-desktop;
+    }
+    @include abs.desktop-xl {
+      font-size: abs.$h3-size-xxl-desktop;
+    }
+  }
+  
+  h4 {
+    font-size: abs.$h4-size-mobile;
+    @include abs.desktop {
+      font-size: abs.$h4-size-desktop;
+    }
+    @include abs.desktop-xl {
+      font-size: abs.$h4-size-xxl-desktop;
+    }
+  }
+
+  h5 {
+    font-size: abs.$h5-size-mobile;
+    @include abs.desktop {
+      font-size: abs.$h5-size-desktop;
+    }
+    @include abs.desktop-xl {
+      font-size: abs.$h5-size-xxl-desktop;
+    }
+  }
+  h6 {
+    font-size: abs.$h6-size-mobile;
+    @include abs.desktop {
+      font-size: abs.$h6-size-desktop;
+    }
+    @include abs.desktop-xl {
+      font-size: abs.$h6-size-xxl-desktop;
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2em;
+  }
+  
+  h4, h5, h6 {
+    font-family: base.$AlumniSans-Medium;
+  }
+
+  b {
+    font-family: base.$OpenSans-Regular;
+  }
+
+  a,p,b {
+    line-height: 1.3em;
+    @include abs.desktop-xl {
+      line-height: 1.5em;
+    }
+  }
+
+  .h-100 {
+    height: 100%;
+  }
+  .no-wrap {
+    white-space: nowrap;
+  }
+
+  .main-container {
+    position: relative;
+    max-width: 100%;
+    box-sizing: border-box;
+    @include abs.desktop {
+      padding: 0 70px;
+    }
+  }
+
+  .accent-border {
+    border-bottom: 3px solid abs.$accent-color;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    @include abs.desktop {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+    &.left {
+      border-left: 3px solid linear-gradient(abs.$second-accent-color 25%, abs.$accent-color 75%);
+      padding-left: 15px;
+      @include abs.desktop {
+        padding-left: 30px;
+      }
+    }
+    &.right {
+      border-right: 3px solid linear-gradient(abs.$second-accent-color 25%, abs.$accent-color 75%);
+      padding-right: 15px;
+      @include abs.desktop {
+        padding-right: 30px;
+      }
+    }
+  }
