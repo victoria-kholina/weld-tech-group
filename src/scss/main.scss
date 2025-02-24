@@ -1,5 +1,4 @@
 @use 'abstracts/abstracts' as abs;
-@use 'base/base' as base;
 @use 'components/components';
 @use 'layout/layout';
 
@@ -8,7 +7,7 @@ html {
   }
 
 body {
-font-family: base.$OpenSans-Light;
+font-family: abs.$OpenSans-Light;
 font-size: abs.$text-size-mobile;
 color: abs.$dark-color;
 -webkit-text-size-adjust: 100%;
@@ -43,7 +42,7 @@ a {
   }
   
   h1 {
-    font-family: base.$AlumniSans-Black;
+    font-family: abs.$AlumniSans-Black;
     font-size: abs.$h1-size-mobile;
     @include abs.desktop {
       font-size: abs.$h1-size-desktop;
@@ -54,7 +53,7 @@ a {
   }
   
   h2 {
-    font-family: base.$AlumniSans-ExtraBold;
+    font-family: abs.$AlumniSans-ExtraBold;
     font-size: abs.$h2-size-mobile;
     @include abs.desktop {
       font-size: abs.$h2-size-desktop;
@@ -65,7 +64,7 @@ a {
   }
 
   h3 {
-    font-family: base.$AlumniSans-SemiBold;
+    font-family: abs.$AlumniSans-SemiBold;
     font-size: abs.$h3-size-mobile;
     @include abs.desktop {
       font-size: abs.$h3-size-desktop;
@@ -109,11 +108,11 @@ a {
   }
   
   h4, h5, h6 {
-    font-family: base.$AlumniSans-Medium;
+    font-family: abs.$AlumniSans-Medium;
   }
 
   b {
-    font-family: base.$OpenSans-Regular;
+    font-family: abs.$OpenSans-Regular;
   }
 
   a,p,b {
@@ -143,22 +142,71 @@ a {
     border-bottom: 3px solid abs.$accent-color;
     padding-bottom: 20px;
     padding-top: 20px;
+    border-image-source: linear-gradient(abs.$second-accent-color 25%, abs.$accent-color 75%);
+    border-image-slice: 1;
+    border-width: 3px;
     @include abs.desktop {
       padding-bottom: 30px;
       padding-top: 30px;
     }
     &.left {
-      border-left: 3px solid linear-gradient(abs.$second-accent-color 25%, abs.$accent-color 75%);
+      border-left: 3px solid;  
       padding-left: 15px;
       @include abs.desktop {
         padding-left: 30px;
       }
     }
     &.right {
-      border-right: 3px solid linear-gradient(abs.$second-accent-color 25%, abs.$accent-color 75%);
+      border-right: 3px solid;
       padding-right: 15px;
       @include abs.desktop {
         padding-right: 30px;
       }
     }
+    &.all {
+      border: 5px solid abs.$accent-color;
+      border-image-source: linear-gradient(45deg, rgba(213,171,2,0.5), rgba(144,48,49,0.5));
+      border-image-slice: 1;
+      padding: 15px;
+    }
   }
+
+
+  .simple-section {
+    padding: 60px 0;
+    @include abs.desktop {
+      padding: 80px 0;
+    }
+    &__heading {
+      text-align: center;
+      h2 {
+        margin-bottom: 30px;
+      }
+      &.light {
+        color: abs.$base-color;
+        text-shadow: abs.$shadow-white-text;
+      }
+      &.dark {
+        h2 {
+          color: abs.$second-dark-color;
+        }
+      }
+      p {
+        max-width: abs.$max-width;
+        margin: 0 auto;
+      }
+    }
+  }
+
+.bottom-btn-group {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    .simple-button {
+        min-width: 200px;
+        margin: 0 20px;
+    }
+}

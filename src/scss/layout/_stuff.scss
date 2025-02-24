@@ -1,0 +1,51 @@
+@use '../abstracts/abstracts' as abs;
+
+.stuff {
+    &-content {
+        padding-right: 50px;
+        &__heading {
+        color: abs.$second-dark-color;
+            
+            &-row {
+                display: flex;
+                margin-top: -50px;
+                h4 {
+                    padding-left: 20px;
+                    padding-top: 90px;
+                }
+            }
+        }
+        &__text {
+            @include abs.tablet {
+                margin-left: 40px;
+                margin-top: -60px;
+            }
+            .accent-border {
+                @include abs.tablet {
+                    padding-top: 130px;
+                }
+            }
+            
+        }
+    }
+    
+}
+
+
+.gradient-number {
+    font-size: 220px;
+    line-height: 1;
+    background: linear-gradient(abs.$accent-color, abs.$second-accent-color 57%, abs.$dark-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0),0 0 0 rgba(81, 8, 3, 0.25);
+    transition: abs.$animation-transition;
+    &.animate-on-scroll {
+        opacity: 0; 
+        transform: scale(0.5);
+        &.animated {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}

@@ -1,0 +1,69 @@
+@use '../abstracts/abstracts' as abs;
+
+.services {
+    background: url(../assets/img/services-bg.jpg) center no-repeat;
+    background-size: cover;
+
+    &-item {
+        background-color: abs.$light-color;
+        position: relative;
+        height: 100%;
+        &-row {
+            margin-top: 170px;
+        }
+        &-wrap {
+            margin-bottom: 200px; 
+            padding-left: 40px;
+            padding-right: 40px;
+            &:nth-child(2n) {
+                .services-item {
+                    margin-top: 80px;
+                }
+            }
+        }
+        &__heading {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            left: -30px;
+            top: -80px;
+            color: abs.$base-color;
+            padding: 15px;
+            background: linear-gradient(140deg, abs.$accent-color 1%, abs.$second-accent-color 40%, abs.$second-dark-color 85%);
+            max-width: 100%;
+            &-img {
+                min-width: 120px;
+                .icon {
+                    width: 120px;
+                    height: 120px; 
+                }
+                .icon-equipment {
+                    width: 110px;
+                }
+            }
+            &-text {
+                padding-left: 20px;
+            }
+        }
+        &__description {
+            padding: 100px 30px 0;
+        }
+        &__btn {
+            position: absolute;
+            bottom: -30px;
+            right: 30px;
+            z-index: 1;
+        }
+    }
+    &-bottom-info {
+        text-align: center;
+        color: abs.$base-color;
+        text-shadow: abs.$shadow-white-text;
+        max-width: 900px;
+        margin: 0 auto;
+        h4 {
+            text-shadow: abs.$shadow-white-text;
+        }
+        
+    }
+}

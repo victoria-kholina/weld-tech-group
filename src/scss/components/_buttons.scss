@@ -1,5 +1,4 @@
 @use '../abstracts/abstracts' as abs;
-@use '../base/base' as base;
 
 
 a.simple-button,
@@ -11,7 +10,7 @@ input[type='submit'] {
     justify-content: center;
     width: auto;
     height: 40px;
-    font-family: base.$AlumniSans-Medium;
+    font-family: abs.$AlumniSans-Medium;
     font-size: abs.$h5-size-mobile;
     user-select: none;
     outline: 0;
@@ -19,7 +18,6 @@ input[type='submit'] {
     color: abs.$base-color;
     padding: 10px 25px;
     cursor: pointer;
-    transition: 0.4s ease-in;
     @include abs.desktop {
         font-size: abs.$h5-size-desktop;
         height: 60px;
@@ -32,7 +30,7 @@ input[type='submit'] {
 
 .simple-button,
 .accent-button {
-    position: relative;   
+    position: relative; 
     &:after {
         content: "";
         position: absolute;
@@ -41,6 +39,7 @@ input[type='submit'] {
         z-index: -1;
         top: 0;
         left: 0;
+        transition: 0.3s ease-in;
     }
     &:hover,
     &:focus {

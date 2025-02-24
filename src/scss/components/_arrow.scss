@@ -6,7 +6,6 @@ $arrow-head: 24px;
 .arrow {
     display: block;
     position: relative;
-    background-color: abs.$second-dark-color;
     margin: 15px;
     &::after {
       content: "";
@@ -15,6 +14,26 @@ $arrow-head: 24px;
       height: $arrow-head;
       background: transparent;
       transform: rotate(45deg);
+      border-width: 3px;
+    }
+    &.animate-on-scroll {
+      transition: abs.$animation-transition;
+      opacity: 0;
+    }
+    &.animated {
+      opacity: 1;
+    }
+    &.arrow-light {
+      background-color: abs.$base-color;
+      &::after {
+        border-color: abs.$base-color;
+      }
+    }
+    &.arrow-dark {
+      background-color: abs.$second-dark-color;
+      &::after {
+        border-color: abs.$second-dark-color;
+      }
     }
 }
 
@@ -26,11 +45,14 @@ $arrow-head: 24px;
       transform-origin: top;
       left: -1px;
     }
+    &.animated {
+      transform: translateY(0);
+    }
     @include abs.desktop {
         width: 3px;
         height: 140px; 
         &:after {
-          left: -1.5px;
+          left: -2.5px
         } 
     }
 }
@@ -42,11 +64,14 @@ $arrow-head: 24px;
       transform-origin: right;
       top: -1px;
     }
+    &.animated {
+      transform: translateX(0);
+    }
     @include abs.desktop {
         width: 140px;
         height: 3px;
         &:after {
-          top: -1.5px;
+          top: -2.5px;
         }
     }
 }
@@ -55,29 +80,36 @@ $arrow-head: 24px;
 
 @mixin arrow($dir) {
   @if $dir == right {
+    transform: translateX(-30px);
+
     &::after {
       right: 5px;
-      border-top: 3px solid abs.$second-dark-color;
-      border-right: 3px solid abs.$second-dark-color;
+      border-top: 3px solid;
+      border-right: 3px solid;
     }
   } @else if $dir == left {
+    transform: translateX(30px);
     &::after {
-      
-      border-bottom: 3px solid abs.$second-dark-color;
-      border-left: 3px solid abs.$second-dark-color;
+      left: 0;
+      border-bottom: 3px solid;
+      border-left: 3px solid;
     }
   } @else if $dir == down {
+    transform: translateY(-30px);
     &::after {
-      border-right: 3px solid abs.$second-dark-color;
-      border-bottom: 3px solid abs.$second-dark-color;
+      border-right: 3px solid;
+      border-bottom: 3px solid;
       bottom: 0;
     }
+    
   } @else if $dir == up {
+    transform: translateY(30px);
     &::after {
-      border-top: 3px solid abs.$second-dark-color;
-      border-left: 3px solid abs.$second-dark-color;
+      border-top: 3px solid;
+      border-left: 3px solid;
       top: 5px;
     }
+    
   }
 }
 

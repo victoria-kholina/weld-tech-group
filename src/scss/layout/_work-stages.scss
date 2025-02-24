@@ -1,0 +1,142 @@
+@use '../abstracts/abstracts' as abs;
+
+
+.work-stages {
+    &-row {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            left: 50%;
+            margin-left: -1px;
+            min-height: 200px;
+            background: linear-gradient(abs.$accent-color, #C86A16, #C24A21, abs.$second-accent-color, #9A2526, abs.$second-dark-color);
+            @include abs.desktop {
+                width: 3px;
+            }
+        }
+    }
+    &-item {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        text-align: right;
+        &__wrap {
+            width: 80%;  
+        }
+        &__title {
+            display: block;
+            width: 100%;
+            border-bottom: 3px solid;
+            line-height: 1.4;
+        }
+        &__title,
+        &__description {
+            padding-right: 50px; 
+        }
+        @include abs.tablet {
+              &:nth-child(2n) {
+                  text-align: left;
+                  justify-content: flex-start;
+                  &:before { 
+                    left: -30px;
+                    right: auto;
+                  }
+                  .work-stages-item__title,
+                  .work-stages-item__description {
+                    padding-left: 50px;
+                  }
+              }  
+          }
+        &:before {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: abs.$base-color;
+            font-size: abs.$h3-size-mobile;
+            font-family: abs.$AlumniSans-Medium;
+            border: 10px solid;
+            border-radius: 50%;
+            right: -30px;
+            top: 30px;
+            @include abs.desktop {
+                font-size: abs.$h3-size-desktop;
+            }
+            @include abs.desktop-xxl {
+                font-size: abs.$h3-size-xxl-desktop;
+            }
+        }
+        &.item-1 {
+            h4 {
+                color: abs.$accent-color;
+                border-color: abs.$accent-color;
+            }
+            &:before {
+                content: "1";
+                background-color: abs.$accent-color;
+                border-color: rgba(213, 171, 2, 0.5);
+            }
+        }
+        &.item-2 {
+            h4 {
+                color: #C86A16;
+                border-color: #C86A16;
+            }
+            &:before {
+                content: "2";
+                background-color: #C86A16;
+                border-color: rgba(200, 106, 22, 0.5);
+            }
+        }
+        &.item-3 {
+            h4 {
+                color: #C24A21;
+                border-color: #C24A21;
+            }
+            &:before {
+                content: "3";
+                background-color: #C24A21;
+                border-color: rgba(194, 74, 33, 0.5);
+            }
+        }
+        &.item-4 {
+            h4 {
+                color: abs.$second-accent-color;
+                border-color: abs.$second-accent-color;
+            }
+            &:before {
+                content: "4";
+                background-color: abs.$second-accent-color;
+                border-color: rgba(187, 42, 43, 0.5);
+            }
+        }
+        &.item-5 {
+            h4 {
+                color: #C24A21;
+                border-color: #C24A21;
+            }
+            &:before {
+                content: "5";
+                background-color: #C24A21;
+                border-color: rgba(194, 74, 33, 0.5);
+            }
+        }
+        &.item-6 {
+            h4 {
+                color: abs.$second-dark-color;
+                border-color: abs.$second-dark-color;
+            }
+            &:before {
+                content: "6";
+                background-color: abs.$second-dark-color;
+                border-color: rgba(122, 31, 33, 0.5);
+            }
+        }
+        
+    }
+}

@@ -1,5 +1,4 @@
 @use '../abstracts/abstracts' as abs;
-@use '../base/base' as base;
 
 .menu {
     display: flex;
@@ -33,7 +32,7 @@
         a {
             display: block;
             position: relative;
-            font-family: base.$AlumniSans-Medium;
+            font-family: abs.$AlumniSans-Medium;
             color: abs.$base-color;
             font-size: abs.$h5-size-mobile;
             transition: ease-in 0.3s;
@@ -50,7 +49,7 @@
                 bottom: 5px;
                 left: 0;
                 width: 100%;
-                height: 2px;
+                height: 3px;
                 background: abs.$accent-color;
                 transform: scale(0);
                 opacity: 1;
@@ -71,7 +70,7 @@
     height: auto;
     border-right: 3px solid abs.$accent-color;
     z-index: 1;
-    right: 0;
+    right: -7px;
     background-color: abs.$dark-color;
     &-item {
         padding: 0 20px 5px;
@@ -165,6 +164,7 @@
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
+    margin-top: 100px;
     &-wrap {
         position: fixed;
         width: 70px;
@@ -174,8 +174,8 @@
         z-index: 9999;
     }
     &__item {
+        height: 40px;
         flex: 1;
-        display: flex;
         a {
             width: 100%;
             height: 100%;
