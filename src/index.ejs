@@ -7,7 +7,15 @@
     
 </head>
 <body class="home">
-<%- include('./templates/header.ejs') %>
+  <%- include('./templates/header.ejs', { isInnerPage: false }) %>
+
+<div id="modal-window" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <iframe id="modal-iframe"></iframe>
+    <div class="modal-body" id="modal-html"></div>
+  </div>
+</div>
 
 <div class="sticky-menu-wrap">
   <ul class="sticky-menu">
@@ -60,7 +68,7 @@
 <section id="welcome" class="welcome">
   <div class="welcome-banner">
     <div class="container-md container-xxl h-100">
-      <div class="row align-items-center h-100">
+      <div class="row align-items-sm-center welcome-heading-wrap">
         <div class="welcome-heading">
           <h1>Weld Tech Group</h1>
           <h5>прочность, проверенная временем!</h5>
@@ -75,7 +83,11 @@
         </div>
       </div>
       <div class="welcome-video">
-        <iframe src="https://player.vimeo.com/video/997318216?muted=1&autoplay=1&loop=1&background=1&app_id=122963" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <video width="100%" height="100%" autoplay muted loading="lazy">
+          <source src="assets/img/Weld-tech-video.webm" type="video/webm">
+          <source src="assets/img/Weld-tech-video.mp4" type="video/mp4">
+           Your brawser not supprort videos.
+        </video>
       </div>
     </div> 
        
@@ -132,7 +144,7 @@
   </div>
 </section>
 
-<section id="features" class="features simple-section">
+<section id="features" class="features simple-section accent-bg">
   <div class="container-md container-xxl h-100">
     <div class="row">
       <div class="col-12 col-sm-4">
@@ -170,7 +182,7 @@
         <div class="stuff-content__heading">
           <h3>Более</h3>
           <div class="stuff-content__heading-row">
-            <h2 class="gradient-number animate-on-scroll">50</h2>
+            <h2 class="gradient-number animate-on-scroll zoom-In">50</h2>
             <h4>высококвалифицированных сотрудников с многолетним опытом сварки композиционных материалов и других материалов, 
             имеющих сложные характеристики свариваемости.</h4>
           </div>
@@ -178,9 +190,11 @@
         </div>
         <div class="stuff-content__text">
           <p class="accent-border left">
-          Все наши специалисты сертифицированы, обладают высоким уровнем подготовки и регулярно повышают квалификацию. 
-          Они умеют работать с широким спектром материалов: от высоко- и низколегированных сталей до титана и алюминия. 
-          Такой профессиональный подход позволяет нам безупречно выполнять как типовые, так и нестандартные проекты.
+            Наша команда — это высококвалифицированные сварщики и конструкторы, которые регулярно проходят обучение и осваивают современные 
+            технологии, документируют и сертифицируют каждый этап работ. Ключевую роль в компании играют сварщики, способные выполнять 
+            сварку «под зеркало» (mirror welding), а также сварку труб из нержавеющей стали, различных сплавов и конструкций. 
+            Они безупречно справляются с работами на материалах от углеродистой и легированной стали (включая карбиды) до трудносвариваемых 
+            металлов, обеспечивая высокое качество стыков и монтажных соединений.
         </p>
         </div>
         
@@ -308,11 +322,43 @@
     <div class="services-bottom-info">
       <h4>Свяжитесь с нами прямо сейчас и наши специалисты оперативно ответят на ваши вопросы, 
         уточнят детали проекта и подготовят индивидуальное коммерческое предложение.  </h4>
-        <div class="bottom-btn-group">
+        <div class="btn-group group-center">
           <span class="arrow arrow-right arrow-light animate-on-scroll"></span>
           <a href="" class="simple-button">Контакты</a>
           <span class="arrow arrow-left arrow-light animate-on-scroll"></span>
         </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-slider">
+  <div class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+         <li class="splide__slide"><img src="assets/img/main slider/metal-constructions-1.jpg" alt=""></li>
+         <li class="splide__slide"><img src="assets/img/main slider/huge-pipelines.jpg" alt=""></li>
+         <li class="splide__slide"><img src="assets/img/main slider/IMG_1414.jpg" alt=""></li>
+         <li class="splide__slide"><img src="assets/img/main slider/IMG_1415.jpg" alt=""></li>
+         <li class="splide__slide"><img src="assets/img/main slider/IMG_1504.jpg" alt=""></li>
+         <li class="splide__slide"><img src="assets/img/main slider/IMG_1696.jpg" alt=""></li>
+         <li class="splide__slide"><img src="assets/img/main slider/IMG_2073.jpg" alt=""></li>
+         <li class="splide__slide"><img src="assets/img/main slider/IMG_2077.jpg" alt=""></li>
+         <li class="splide__slide"><img src="assets/img/main slider/IMG_2078.jpg" alt=""></li>
+         <li class="splide__slide"><img src="assets/img/main slider/IMG_2080.jpg" alt=""></li>
+         <li class="splide__slide"><img src="assets/img/main slider/IMG_2200.jpg" alt=""></li>
+         <li class="splide__slide"><img src="assets/img/main slider/photo_2023-09-19_21-25-44.jpg" alt=""></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-md container-xxl h-100">
+    <div class="home-slider-content">
+    <h4><span>Каждый наш проект</span> — это точность, надежность и внимание к деталям. <br>
+      Ознакомьтесь с нашими выполненными работами в галерее!</h4>
+      <div class="btn-group">
+        <a href="" class="simple-button">Галлерея проектов</a>
+        <span class="arrow arrow-left arrow-dark animate-on-scroll"></span>
+      </div>
     </div>
   </div>
 </section>
@@ -328,12 +374,12 @@
     </div>
 
     <div class="row work-stages-row">
-
       <div class="col-12 col-sm-6 offset-sm-0 work-stages-item item-1">
         <div class="work-stages-item__wrap">
           <h4 class="work-stages-item__title">Консультация</h4>
           <p class="work-stages-item__description">На первой консультации мы уточняем основные требования и специфику проекта, отвечаем на вопросы клиента и обсуждаем дальнейший 
             план работы.</p>
+            <div class="stage-circle zoom-In animate-on-scroll">1</div>
         </div>
       </div>
 
@@ -341,6 +387,7 @@
         <div class="work-stages-item__wrap">
           <h4 class="work-stages-item__title">Анализ и планирование</h4>
           <p class="work-stages-item__description">Определяем технические параметры, сроки и бюджет учитывая нюансы отрасли и местные нормативы.</p>
+          <div class="stage-circle zoom-In animate-on-scroll">2</div>
         </div>
       </div>
 
@@ -348,6 +395,7 @@
         <div class="work-stages-item__wrap">
           <h4 class="work-stages-item__title">Проектирование</h4>
           <p class="work-stages-item__description">Создаём детализированные чертежи и 3D-модели, согласовываем спецификации и график поставок материалов.</p>
+          <div class="stage-circle zoom-In animate-on-scroll">3</div>
         </div>
       </div>
 
@@ -355,6 +403,7 @@
         <div class="work-stages-item__wrap">
           <h4 class="work-stages-item__title">Производство и сварочные работы</h4>
           <p class="work-stages-item__description">Мы используем современные технологии  (WIG–TIG, MIG–MAG, орбитальная сварка и др.) и сертифицированные материалы.</p>
+          <div class="stage-circle zoom-In animate-on-scroll">4</div>
         </div>
       </div>
 
@@ -363,18 +412,20 @@
           <h4 class="work-stages-item__title">Монтаж и проверка</h4>
           <p class="work-stages-item__description">Опытные бригады выезжают на объект выполняют установку и пуско-наладку. Проводим тестирование на герметичность, 
           прочность и соответствие техническим требованиям.</p>
+          <div class="stage-circle zoom-In animate-on-scroll">5</div>
         </div>
       </div>
 
       <div class="col-12 col-sm-6 offset-sm-6 work-stages-item item-6">
         <div class="work-stages-item__wrap">
           <h4 class="work-stages-item__title">Сдача объекта и сопровождение</h4>
-        <p class="work-stages-item__description">Оформляем необходимую документацию (сертификаты, акты приёмки), даём гарантии и при необходимости обеспечиваем сервисное обслуживание.</p>
+          <p class="work-stages-item__description">Оформляем необходимую документацию (сертификаты, акты приёмки), даём гарантии и при необходимости обеспечиваем сервисное обслуживание.</p>
+          <div class="stage-circle zoom-In animate-on-scroll">6</div>
         </div>
       </div>
-
+      <span class="stage-line"></span>
     </div>
-    <div class="bottom-btn-group">
+    <div class="btn-group group-center">
       <a href="" class="simple-button">Подробнее о проектах</a>
       <span class="arrow arrow-left arrow-dark animate-on-scroll"></span>
       <span class="arrow arrow-right arrow-dark animate-on-scroll"></span>
@@ -383,55 +434,26 @@
   </div>
 </section>
 
-
-<a href="" class="accent-button">Наши услуги</a>
-
-<span class="arrow arrow-left"></span>
-<span class="arrow arrow-down"></span>
-<span class="arrow arrow-up"></span>
-<span class="arrow arrow-right"></span>
-
-<svg class="icon">
-    <use xlink:href="#whats-app"></use>
-  </svg>
-  <svg class="icon">
-    <use xlink:href="#location"></use>
-  </svg>
-  <svg class="icon">
-    <use xlink:href="#telegram"></use>
-  </svg>
-  <svg class="icon">
-    <use xlink:href="#phone"></use>
-  </svg>
-  <svg class="icon">
-    <use xlink:href="#mail"></use>
-  </svg>
-  <svg class="icon">
-    <use xlink:href="#viber"></use>
-</svg>
-
-<svg class="icon">
-    <use xlink:href="#diploma-certificate"></use>
-  </svg>
-  <svg class="icon">
-    <use xlink:href="#welder"></use>
-  </svg>
-  <svg class="icon">
-    <use xlink:href="#quality-certificate"></use>
-  </svg>
-
-  <svg class="icon">
-    <use xlink:href="#capacitive-equipment"></use>
-  </svg>
-  <svg class="icon">
-    <use xlink:href="#industry-equipment"></use>
-  </svg>
-  <svg class="icon">
-    <use xlink:href="#pipelines"></use>
-  </svg>
-  <svg class="icon">
-    <use xlink:href="#metal-structures"></use>
-  </svg>
+<section id="sertificates" class="simple-section sertificate">
+  <div class="container-md container-xxl h-100">
+    <div class="simple-section__heading light border-bottom">
+      <h2>Мы обладаем сертификатами,<br>
+        которые имеют значение!</h2>
+    </div>
+    <div class="row sertificate-row">
+      <div class="col-12 col-sm-6 row flex-column align-items-center">
+        <h2 class="sertificate-name zoom-In animate-on-scroll">ISO 3834 – 2</h2>
+        <h5 class="sertificate-text">подтверждает компетентность персонала и качество выполняемых работ.</h5>
+        <img src="../src/assets/img/EN-ISO-3834-2.jpg" class="sertificate-image open-modal" alt="Preview ISO 3834 – 2" data-type="pdf" data-src="../assets/img/pdf/EN-ISO-3834-2-ENG.pdf">
+      </div>
+      <div class="col-12 col-sm-6 row flex-column align-items-center">
+        <h2 class="sertificate-name zoom-In animate-on-scroll">EN 1090-1034</h2>
+        <h5 class="sertificate-text">подтверждает наличие эффективной системы контроля качества на заводе и соответствие продукции европейским требованиям</h5>
+        <img src="../src/assets/img/1090-1034.jpg" class="sertificate-image open-modal" alt="Preview 1090-1034" data-type="pdf" data-src="../assets/img/pdf/EN-1090-ENG.pdf">
+      </div>
+    </div>
+  </div>
+</section>
 
 <%- include('./templates/footer.ejs') %>
 

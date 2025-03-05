@@ -1,0 +1,13 @@
+@use '../abstracts/abstracts' as abs;
+
+.zoom-In {
+    transition: abs.$animation-transition;
+    &.animate-on-scroll {
+        opacity: 0; 
+        transform: scale(0.5);
+        &.animated {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}

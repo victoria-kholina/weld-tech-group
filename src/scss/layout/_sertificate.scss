@@ -1,0 +1,26 @@
+@use '../abstracts/abstracts' as abs;
+
+.sertificate {
+    background: url(../assets/img/services-bg.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    &-row {
+        margin: 50px 0 30px;
+    }
+    &-name {
+        color: abs.$accent-color;
+        box-shadow: abs.$shadow-white-text;
+        @include abs.desktop {
+            font-size: 86px;
+        }
+    }
+    &-text {
+        max-width: 500px;
+        color: abs.$base-color;
+    }
+    &-image {
+        height: 400px;
+        width: auto;
+        margin-top: 50px;
+    }
+}

@@ -49,7 +49,7 @@
                 bottom: 5px;
                 left: 0;
                 width: 100%;
-                height: 3px;
+                height: 2px;
                 background: abs.$accent-color;
                 transform: scale(0);
                 opacity: 1;
@@ -68,7 +68,7 @@
     position: absolute;
     width: 300px;
     height: auto;
-    border-right: 3px solid abs.$accent-color;
+    border-right: 2px solid abs.$accent-color;
     z-index: 1;
     right: -7px;
     background-color: abs.$dark-color;
@@ -83,7 +83,7 @@
         }
         a { 
             white-space: wrap;
-            border-bottom: 3px solid abs.$accent-color;
+            border-bottom: 2px solid abs.$accent-color;
         }
         &:hover > a,
         &:focus > a {
@@ -161,21 +161,34 @@
 .sticky-menu {
     height: inherit;
     display: flex;
-    flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
-    margin-top: 100px;
+    @include abs.tablet {
+        flex-direction: column;
+        margin-top: 100px;
+    }
     &-wrap {
         position: fixed;
-        width: 70px;
-        height: 100%;
-        right: 0;
-        top: 0;
         z-index: 9999;
+        @include abs.only-mobile {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+        }
+        @include abs.tablet {
+            right: 0;
+            top: 0;
+            width: 70px;
+            height: 100%;
+        }
     }
     &__item {
-        height: 40px;
+        height: 50px;
         flex: 1;
+        @include abs.tablet {
+            height: 40px;
+        }
         a {
             width: 100%;
             height: 100%;
@@ -185,6 +198,7 @@
             .icon {
                 width: 30px;
                 height: auto;
+                fill: abs.$base-color;
             }
         }
         &.icon-phone {
@@ -207,3 +221,4 @@
         }
     }
 }
+

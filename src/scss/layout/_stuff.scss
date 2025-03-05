@@ -3,6 +3,7 @@
 .stuff {
     &-content {
         padding-right: 50px;
+        margin-bottom: 50px;
         &__heading {
         color: abs.$second-dark-color;
             
@@ -27,6 +28,10 @@
             }
             
         }
+        
+    }
+    .shadow-image {
+        margin-top: 50px;
     }
     
 }
@@ -39,13 +44,4 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 1px 1px 10px rgba(255, 255, 255, 0),0 0 0 rgba(81, 8, 3, 0.25);
-    transition: abs.$animation-transition;
-    &.animate-on-scroll {
-        opacity: 0; 
-        transform: scale(0.5);
-        &.animated {
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
 }

@@ -14,6 +14,7 @@ input[type='submit'] {
     font-size: abs.$h5-size-mobile;
     user-select: none;
     outline: 0;
+    border: none;
     letter-spacing: 1px;
     color: abs.$base-color;
     padding: 10px 25px;
@@ -44,8 +45,12 @@ input[type='submit'] {
     &:hover,
     &:focus {
         &:after {
-            top: -10px;
-            left: -10px;
+            top: -5px;
+            left: -5px;
+            @include abs.desktop {
+                top: -10px;
+                left: -10px;
+            }
         }
     }
 }

@@ -1,8 +1,6 @@
 @use '../abstracts/abstracts' as abs;
 
 .features {
-    background: linear-gradient(90deg, #D5AB02 0%, #BB2A2B 48.28%, #612122 74.49%);
-    color: abs.$base-color;
     &-item {
         text-align: center;
         @include abs.desktop {

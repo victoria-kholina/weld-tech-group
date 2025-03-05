@@ -5,6 +5,9 @@
     color: abs.$base-color;
     width: 100%;
     height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
     @include abs.desktop {
         height: 100px;
     }

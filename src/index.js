@@ -4,10 +4,36 @@ import './scss/main.scss'
 
 
 import $ from 'jquery';
-
+import Splide from '@splidejs/splide';
 
 
 $(function() {
+  if (document.querySelector('.splide')) {
+    var homeSlider = new Splide('.home-slider .splide', {
+      type: 'loop',
+      speed: 1000,
+      cover: true,
+      autoplay: true,
+      interval: 2000,
+      pagination: false,
+      perPage: 5,
+      perMove: 1,
+      pauseOnFocus: true,
+      focus  : 'center',
+      gap: '20px',
+      rewind : true,
+      breakpoints: {
+        767: {
+          perPage: 2,
+        },
+        1199: {
+          perPage: 4,
+        },
+      },
+    });
+
+    homeSlider.mount();
+  }
 
     // Set SVG sprites code from the file to the html of every page. Needed for crossbrawser support
 
@@ -38,26 +64,39 @@ $(function() {
           'width': videoWidth + 'px'
       });
     }
-    resizeVideo();
-    $(window).resize(function(){
+    if($(window).width() > 767) {
       resizeVideo();
-    });
-
-    // sticky menu
-
-    function setStickyMenuHeight() {
-      let stickyMenu = $(".sticky-menu-wrap");
-      let banner = $(".welcome-banner");
-      let bannerHeight = banner.outerHeight();
-
-      stickyMenu.css("height", banner.outerHeight())
-    
     }
-
-    setStickyMenuHeight()
+    
     $(window).resize(function(){
-      setStickyMenuHeight()
+      if($(window).width() > 767) {
+        resizeVideo();
+      }
     });
+
+    // sticky menu height
+
+    
+      function setStickyMenuHeight() {
+        let stickyMenu = $(".sticky-menu-wrap");
+        let banner = $(".welcome-banner");
+        let bannerHeight = banner.outerHeight();
+
+        stickyMenu.css("height", banner.outerHeight())
+      
+      }
+
+    if($(window).width() > 767) {
+      setStickyMenuHeight();
+    }
+    $(window).resize(function(){
+      if($(window).width() > 767) {
+        setStickyMenuHeight();
+      } else {
+        $(".sticky-menu-wrap").css("height", "50px");
+      }
+    });
+
 
     // run animation on scroll
     function checkVisibility() {
@@ -93,9 +132,115 @@ $(function() {
   }
 
     setEqualHeight('.work-stages-item'); 
+    setEqualHeight('.sertificate-text'); 
+    
 
     $(window).on('resize', function () {
       setEqualHeight('.work-stages-item');
+      setEqualHeight('.sertificate-text'); 
+    });
+
+    // Adapt vertical line height
+
+    function updateLineHeight() {
+      let row = $('.work-stages-row');
+      let firstCircle = $('.work-stages-item.item-1 .stage-circle');
+      let lastCircle = $('.work-stages-item.item-6 .stage-circle');
+      let line = $('.stage-line');
+
+      if (firstCircle.length && lastCircle.length) {
+          let firstOffset = firstCircle.offset().top + firstCircle.outerHeight() / 2;
+          let lastOffset = lastCircle.offset().top + lastCircle.outerHeight() / 2;
+          let rowOffset = row.offset().top;
+
+          let lineHeight = lastOffset - firstOffset;
+
+          line.css({
+              'top': firstOffset - rowOffset + 'px',
+              'height': lineHeight + 'px'
+          });
+      }
+  }
+
+  updateLineHeight();
+  $(window).resize(updateLineHeight);
+
+  // Modal windows
+
+  $(".open-modal").click(function(){
+    let contentType = $(this).data("type"); 
+    let pdfSrc = $(this).data("src");  
+    let htmlContent = $(this).data("content");
+
+    $("#modal-iframe").hide().attr("src", "");
+    $("#modal-html").hide().html("");
+
+    if (contentType === "pdf") {
+      $("#modal-iframe").attr("src", pdfSrc).show();
+    } else if (contentType === "html") {
+      $("#modal-html").html(htmlContent).show();
+    }
+
+    $("#modal-window").fadeIn();
+  });
+
+  $(".close, #modal-window").click(function(event){
+    if (event.target === this) {
+      $("#modal-window").fadeOut();
+      setTimeout(() => { 
+        $("#modal-iframe").attr("src", ""); 
+        $("#modal-html").html(""); 
+      }, 300);
+    }
+  });
+
+
+  // Contact forms
+
+  $('#contact-form').on('submit', function (e) {
+    e.preventDefault(); 
+    
+    if (!this.checkValidity()) {
+        this.reportValidity();
+        return;
+    }
+
+    let formData = $(this).serialize();
+
+    $.ajax({
+        type: 'POST',
+        url: './php/send_email.php', 
+        data: formData,
+        success: function (response) {
+            $('#form-status')
+                .removeClass('error')
+                .addClass('success')
+                .text('Сообщение успешно отправлено!')
+                .css("display", "inline-block");
+            $('#contact-form')[0].reset(); 
+        },
+        error: function () {
+            $('#form-status')
+                .removeClass('success')
+                .addClass('error')
+                .text('Произошла ошибка при отправке сообщения.')
+                .css("display", "inline-block");
+        }
+    });
+  });
+
+    // Cookies
+
+    const notification = $('#cookie-notification');
+    const cookiesAccepted = localStorage.getItem('cookiesAccepted');
+
+    if (!cookiesAccepted) {
+      notification.css("display","flex");
+    }
+
+    $('#accept-cookies').on('click', function () {
+      localStorage.setItem('cookiesAccepted', 'true'); 
+      notification.css("display","none"); 
     });
   
 });

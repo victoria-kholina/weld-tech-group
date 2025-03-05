@@ -4,15 +4,18 @@
 .work-stages {
     &-row {
         position: relative;
-        &::before {
-            content: "";
+        margin: 100px 0;
+        .stage-line {
             position: absolute;
             height: 100%;
             width: 2px;
             left: 50%;
             margin-left: -1px;
             min-height: 200px;
+            padding: 0;
+            z-index: -1;
             background: linear-gradient(abs.$accent-color, #C86A16, #C24A21, abs.$second-accent-color, #9A2526, abs.$second-dark-color);
+            transition: abs.$animation-transition;
             @include abs.desktop {
                 width: 3px;
             }
@@ -32,25 +35,32 @@
             border-bottom: 3px solid;
             line-height: 1.4;
         }
+        &__description {
+            padding-top: 10px;
+        }
         &__title,
         &__description {
             padding-right: 50px; 
         }
         @include abs.tablet {
-              &:nth-child(2n) {
-                  text-align: left;
-                  justify-content: flex-start;
-                  &:before { 
-                    left: -30px;
-                    right: auto;
-                  }
-                  .work-stages-item__title,
-                  .work-stages-item__description {
-                    padding-left: 50px;
-                  }
-              }  
+            &:nth-child(2n) {
+                text-align: left;
+                justify-content: flex-start;
+                .stage-circle { 
+                left: -30px;
+                right: auto;
+                }
+                .work-stages-item__title {
+                    white-space: nowrap;
+                }
+                .work-stages-item__title,
+                .work-stages-item__description {
+                padding-left: 50px;
+                padding-right: 0;
+                }
+            }  
           }
-        &:before {
+        .stage-circle {
             position: absolute;
             width: 60px;
             height: 60px;
@@ -60,10 +70,12 @@
             color: abs.$base-color;
             font-size: abs.$h3-size-mobile;
             font-family: abs.$AlumniSans-Medium;
-            border: 10px solid;
+            outline: 10px solid;
             border-radius: 50%;
             right: -30px;
             top: 30px;
+            margin-top: -10px;
+            box-sizing: content-box;
             @include abs.desktop {
                 font-size: abs.$h3-size-desktop;
             }
@@ -76,10 +88,9 @@
                 color: abs.$accent-color;
                 border-color: abs.$accent-color;
             }
-            &:before {
-                content: "1";
+            .stage-circle {
                 background-color: abs.$accent-color;
-                border-color: rgba(213, 171, 2, 0.5);
+                outline-color: rgba(213, 171, 2, 0.5);
             }
         }
         &.item-2 {
@@ -87,10 +98,9 @@
                 color: #C86A16;
                 border-color: #C86A16;
             }
-            &:before {
-                content: "2";
-                background-color: #C86A16;
-                border-color: rgba(200, 106, 22, 0.5);
+            .stage-circle {
+                background-color: #c86a16;
+                outline-color: rgba(200, 106, 22, 0.5);
             }
         }
         &.item-3 {
@@ -98,10 +108,9 @@
                 color: #C24A21;
                 border-color: #C24A21;
             }
-            &:before {
-                content: "3";
-                background-color: #C24A21;
-                border-color: rgba(194, 74, 33, 0.5);
+            .stage-circle {
+                background-color: #c24a21;
+                outline-color: rgba(194, 74, 33, 0.5);
             }
         }
         &.item-4 {
@@ -109,10 +118,9 @@
                 color: abs.$second-accent-color;
                 border-color: abs.$second-accent-color;
             }
-            &:before {
-                content: "4";
+            .stage-circle {
                 background-color: abs.$second-accent-color;
-                border-color: rgba(187, 42, 43, 0.5);
+                outline-color: rgba(187, 42, 43, 0.5);
             }
         }
         &.item-5 {
@@ -120,10 +128,9 @@
                 color: #C24A21;
                 border-color: #C24A21;
             }
-            &:before {
-                content: "5";
-                background-color: #C24A21;
-                border-color: rgba(194, 74, 33, 0.5);
+            .stage-circle {
+                background-color: #c24a21;
+                outline-color: rgba(194, 74, 33, 0.5);
             }
         }
         &.item-6 {
@@ -131,10 +138,9 @@
                 color: abs.$second-dark-color;
                 border-color: abs.$second-dark-color;
             }
-            &:before {
-                content: "6";
+            .stage-circle {
                 background-color: abs.$second-dark-color;
-                border-color: rgba(122, 31, 33, 0.5);
+                outline-color: rgba(122, 31, 33, 0.5);
             }
         }
         

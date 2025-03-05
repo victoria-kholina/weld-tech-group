@@ -1,23 +1,33 @@
 @use '../abstracts/abstracts' as abs;
 
 .welcome {
-    height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
+    @include abs.tablet {
+        height: calc(100vh - 50px);
+    }
     @include abs.desktop {
         height: calc(100vh - 100px); 
     }
     &-banner {
         position: relative;
-        height: 60%;
+        height: 100vh;
         background: url(../assets/img/baner.jpg) 0 50% no-repeat;
         background-size: cover;
+        @include abs.tablet {
+            height: 60%;
+        }
     }
     &-text {
         position: relative;
         &-wrap {
             background-color: abs.$light-color;
-            flex-grow: 1;
+            @include abs.only-mobile {
+                margin-top: 100px;
+            }
+            @include abs.tablet {
+                flex-grow: 1;
+            }
         }
         h3 {
             color: abs.$second-dark-color;
@@ -32,6 +42,14 @@
     &-heading {
         max-width: 700px;
         color: abs.$light-color;
+        @include abs.only-mobile {
+            margin-top: 50px;
+        }
+        &-wrap {
+            @include abs.tablet {
+                height: 100%;
+            }
+        }
         &__buttons {
             display: flex;
             position: relative;
@@ -67,10 +85,17 @@
     }
     &-video {
         position: absolute;
-        top: 0;
-        right: 21px;
-        height: calc(100vh - 150px);
-        iframe {
+        height: calc(100vh - 320px);
+        @include abs.only-mobile {
+            margin-top: 30px;
+        }
+        @include abs.tablet {
+            left: auto;
+            top: 0;
+            right: 21px;
+            height: calc(100vh - 150px);
+        }
+        video {
             height: 100%;
             width: 100%;
         }
