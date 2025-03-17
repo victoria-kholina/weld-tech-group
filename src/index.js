@@ -19,15 +19,23 @@ $(function() {
       perPage: 5,
       perMove: 1,
       pauseOnFocus: true,
-      focus  : 'center',
       gap: '20px',
       rewind : true,
       breakpoints: {
-        767: {
+        600: {
           perPage: 2,
+          gap: '15px',
+        },
+        767: {
+          perPage: 3,
+          gap: '15px',
+        },
+        1023: {
+          perPage: 4,
+          gap: '15px',
         },
         1199: {
-          perPage: 4,
+          perPage: 5,
         },
       },
     });
@@ -57,32 +65,32 @@ $(function() {
 
     // change video size on screen resize
 
-    function resizeVideo() {
-      var videoHeight = $(window).height();
-      var videoWidth = videoHeight * (9 / 16); 
-      $('.welcome-video').css({
-          'width': videoWidth + 'px'
-      });
-    }
-    if($(window).width() > 767) {
-      resizeVideo();
-    }
+    // function resizeVideo() {
+    //   var videoHeight = $(window).height();
+    //   var videoWidth = videoHeight * (9 / 16); 
+    //   $('.welcome-video').css({
+    //       'width': videoWidth + 'px'
+    //   });
+    // }
+    // if($(window).width() > 1200) {
+    //   resizeVideo();
+    // }
     
-    $(window).resize(function(){
-      if($(window).width() > 767) {
-        resizeVideo();
-      }
-    });
+    // $(window).resize(function(){
+    //   if($(window).width() > 1200) {
+    //     resizeVideo();
+    //   }
+    // });
 
     // sticky menu height
 
     
       function setStickyMenuHeight() {
+        
         let stickyMenu = $(".sticky-menu-wrap");
         let banner = $(".welcome-banner");
-        let bannerHeight = banner.outerHeight();
 
-        stickyMenu.css("height", banner.outerHeight())
+        if(banner) { stickyMenu.css("height", banner.outerHeight()) };     
       
       }
 
@@ -130,14 +138,21 @@ $(function() {
 
     $(elements).css('height', maxHeight + 'px');
   }
-
+  
+  if($(window).width() > 767) {
     setEqualHeight('.work-stages-item'); 
-    setEqualHeight('.sertificate-text'); 
-    
+    setEqualHeight('.certificate-text');
+    setEqualHeight('.services-item');
+    setEqualHeight('.values-item');
+  }
 
     $(window).on('resize', function () {
-      setEqualHeight('.work-stages-item');
-      setEqualHeight('.sertificate-text'); 
+      if($(window).width() > 767) {
+        setEqualHeight('.work-stages-item');
+        setEqualHeight('.certificate-text'); 
+        setEqualHeight('.services-item');
+        setEqualHeight('.values-item');
+      }
     });
 
     // Adapt vertical line height
@@ -162,8 +177,10 @@ $(function() {
       }
   }
 
-  updateLineHeight();
-  $(window).resize(updateLineHeight);
+    updateLineHeight();
+  $(window).on('resize', function () {
+      updateLineHeight();
+  })
 
   // Modal windows
 
@@ -242,5 +259,21 @@ $(function() {
       localStorage.setItem('cookiesAccepted', 'true'); 
       notification.css("display","none"); 
     });
+
+    // Mobile menu
+
+    let menuToggle = $(".mobile-menu-toggle");
+    let mobileMenu = $(".mobile-menu");
+
+    menuToggle.on("click", function () {
+        $(this).toggleClass("open"); 
+        mobileMenu.toggleClass("open"); 
+    });
+
+    $(".menu-item a").on("click", function () {
+        menuToggle.removeClass("open");
+        mobileMenu.removeClass("open");
+    });
+
   
 });

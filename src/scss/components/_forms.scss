@@ -1,0 +1,109 @@
+@use '../abstracts/abstracts' as abs;
+
+.form-section {
+    &-text {
+        margin-bottom: 40px;
+        max-width: 400px;
+        @include abs.desktop-sm {
+            text-align: right;
+            margin-bottom: 0;
+        }
+        @include abs.desktop {
+            margin-right: 30px;
+        }
+        h3 {
+            margin-bottom: 10px;
+            line-height: 1;
+            white-space: nowrap;
+            @include abs.only-mobile {
+                font-size: abs.$h2-size-mobile;
+            }
+            @include abs.desktop {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.contact-form {
+    &-group {
+        width: 100%;
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 1;
+        @include abs.tablet {
+            margin-bottom: 5px;  
+        }
+        label {
+            display: block;
+            color: abs.$base-color;
+            font-family: abs.$AlumniSans-Medium;
+            font-size: abs.$h5-size-mobile;
+            padding-bottom: 5px;
+            transition: 0.2s ease-in;
+            @include abs.desktop {
+                font-size: abs.$h5-size-desktop;
+            }
+            @include abs.desktop-xxl {
+                font-size: abs.$h5-size-xxl-desktop;
+            }
+        }
+        &__item {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            color: abs.$base-color;
+            border: 2px solid abs.$base-color;
+            background-color: transparent;
+            font-size: abs.$text-size-mobile;
+            @include abs.desktop {
+                height: 60px;
+                padding: 20px;
+                font-size: abs.$text-size-xxl-desktop;
+            }
+            &.textarea-item {
+                height: 200px;
+                padding-bottom: 30px;
+                @include abs.tablet {
+                    height: 116px;
+                }
+                @include abs.desktop {
+                    height: 159px;
+                }
+            }
+            &:focus {
+                outline: none;
+            }
+            
+        }
+        &__button {
+            line-height: 1;
+            @include abs.desktop {
+                margin-top: -35px;
+                margin-right: -30px;
+            }
+            @include abs.desktop-xl {
+                margin-top: -40px;
+            }
+        }   
+    }
+    &-status {
+        display: none;
+        height: auto;
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 15px;
+        @include abs.tablet {
+            text-align: right;
+        }
+        @include abs.desktop-xxl {
+            font-size: 18px;
+        }
+        &.error {
+            border: 3px solid abs.$second-accent-color;
+        }
+        &.success {
+            border: 3px solid abs.$accent-color;
+        }
+    } 
+}

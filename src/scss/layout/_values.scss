@@ -1,0 +1,82 @@
+@use '../abstracts/abstracts' as abs;
+
+
+.values {
+    background: url(../assets/img/light-bg-img-1.jpg) center no-repeat;
+    background-size: cover;
+    &-heading {
+        margin-bottom: 60px;
+        @include abs.desktop {
+            margin-bottom: 20px;
+        }
+    }
+    &-item {
+        &.accent-border.all {
+           padding: 5px 15px 15px;
+            @include abs.desktop {
+                padding: 15px 30px 30px;
+            } 
+        }
+        &__title {
+            display: flex;
+            .gradient-number {
+                margin-top: -50px;
+                font-size: 120px;
+                line-height: 0.6;
+                @include abs.desktop {
+                    font-size: 160px;
+                    margin-top: -60px;
+                    
+                }
+            }
+            h3 {
+                color: abs.$second-dark-color;
+                margin-left: 10px;
+                line-height: 1em;
+
+            }
+        }
+        &__text {
+            margin-top: 10px;
+            @include abs.desktop {
+                margin-top: 20px;
+            }
+        }
+        &-wrap {
+            margin-bottom: 60px;
+            @include abs.tablet {
+                margin-bottom: 0;
+            }
+            &:nth-child(2n) {
+                .values-item {
+                    @include abs.tablet {
+                        margin-top: 80px; 
+                     }
+                    @include abs.desktop {
+                       margin-top: 150px; 
+                    }
+                }
+            }
+        }
+    }
+    &-bottom-text {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include abs.tablet {
+            padding-top: 60px;
+          }
+        @include abs.desktop {
+            padding-top: 80px;
+          }
+        h4 {
+            color:abs.$second-dark-color;
+            max-width: abs.$max-width-lg;
+        }
+        .btn-group-nowrap {
+            padding-top: 50px;
+        }
+
+    }
+}

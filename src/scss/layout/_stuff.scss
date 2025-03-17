@@ -3,27 +3,67 @@
 .stuff {
     &-content {
         padding-right: 50px;
-        margin-bottom: 50px;
+        @include abs.only-mobile {
+            margin-bottom: 50px;
+        }
         &__heading {
-        color: abs.$second-dark-color;
-            
+            color: abs.$second-dark-color;
             &-row {
-                display: flex;
                 margin-top: -50px;
+                @include abs.tablet {
+                    display: flex;
+                }
                 h4 {
-                    padding-left: 20px;
-                    padding-top: 90px;
+                    @include abs.only-mobile {
+                        margin-top: -40px;
+                    }
+                    @include abs.tablet {
+                        padding-top: 50px;
+                        padding-left: 10px;
+                    }
+                    @include abs.desktop {
+                        padding-top: 90px;
+                    }
+                    @include abs.desktop-xl {
+                        max-width: 500px;
+                    }
+                    
                 }
             }
         }
         &__text {
+            margin-left: 10px;
             @include abs.tablet {
-                margin-left: 40px;
-                margin-top: -60px;
+                margin-left: 30px;
+                margin-top: -130px;
+                
+            }
+            @include abs.desktop-sm {
+                margin-top: -40px;
+                
+            }
+            @include abs.desktop {
+               margin-left: 40px; 
+            }
+            @include abs.desktop-xxl {
+                margin-top: -120px;  
             }
             .accent-border {
+                padding-top: 30px;
+                @include abs.only-mobile {
+                  margin-top: 10px;  
+                }
                 @include abs.tablet {
-                    padding-top: 130px;
+                    padding-top: 160px;
+                }
+                @include abs.desktop-sm {
+                    padding-top: 50px;
+                }
+                @include abs.desktop {
+                    padding-top: 90px;
+                }
+                @include abs.desktop-xxl {
+                    padding-top: 180px;
                 }
             }
             
@@ -31,17 +71,18 @@
         
     }
     .shadow-image {
-        margin-top: 50px;
+        @include abs.desktop {
+            margin-top: 50px;
+        }
+    }
+    .gradient-number {
+        line-height: 1.2;
+        font-size: 160px;
+        @include abs.desktop {
+            font-size: 220px;
+            line-height: 1;
+        }
     }
     
 }
 
-
-.gradient-number {
-    font-size: 220px;
-    line-height: 1;
-    background: linear-gradient(abs.$accent-color, abs.$second-accent-color 57%, abs.$dark-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0),0 0 0 rgba(81, 8, 3, 0.25);
-}

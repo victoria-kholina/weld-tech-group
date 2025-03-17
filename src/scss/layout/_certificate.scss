@@ -1,0 +1,49 @@
+@use '../abstracts/abstracts' as abs;
+
+.certificate {
+    background: url(../assets/img/services-bg.jpg) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    &.simple-section {
+        @include abs.only-mobile {
+            padding-bottom: 30px;
+        }
+    }
+    &-row {
+        margin-top: 30px;
+        @include abs.desktop {
+            margin: 50px 0 30px;
+        }
+    }
+    &-name {
+        color: abs.$accent-color;
+        box-shadow: abs.$shadow-white-text;
+        font-size: 56px;
+        @include abs.desktop {
+            font-size: 76px;
+        }
+        @include abs.desktop-xxl {
+            font-size: 86px;
+        }
+    }
+    &-text {
+        max-width: 500px;
+        color: abs.$base-color;
+    }
+    &-image {
+        height: auto;
+        width: 100%;
+        max-width: 300px;
+        margin-top: 20px;
+        @include abs.only-mobile {
+            margin-bottom: 40px;
+        }
+        @include abs.tablet {
+            height: 400px;
+            width: auto;
+        }
+        @include abs.desktop {
+            margin-top: 50px;
+        }
+    }
+}

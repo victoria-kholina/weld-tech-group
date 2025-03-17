@@ -7,8 +7,11 @@
     height: 50px;
     position: sticky;
     top: 0;
-    z-index: 9999;
-    @include abs.desktop {
+    z-index: 100;
+    @include abs.desktop-sm {
+        height: 70px;
+    }
+    @include abs.desktop-xxl {
         height: 100px;
     }
 }
@@ -20,7 +23,13 @@
     img {
        width: 115px;
         height: auto;
-        @include abs.desktop {
+        @include abs.tablet {
+            margin-left: 20px;
+        }
+        @include abs.desktop-sm {
+            width: 180px;
+        }
+        @include abs.desktop-xxl {
             width: 230px;
         }
     }

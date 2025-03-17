@@ -3,69 +3,153 @@
 .services {
     background: url(../assets/img/services-bg.jpg) center no-repeat;
     background-size: cover;
-
     &-item {
         background-color: abs.$light-color;
         position: relative;
+        max-width: 350px;
+        margin: 0 auto;
         height: 100%;
+        @include abs.desktop-sm {
+            max-width: 500px;
+        }
+        @include abs.desktop-xl {
+            max-width: 550px;
+        }
+        @include abs.desktop-xxl {
+            max-width: 600px;
+        }
         &-row {
-            margin-top: 170px;
+            margin-top: 120px;
+            @include abs.desktop {
+                margin-top: 170px;
+            }
         }
         &-wrap {
-            margin-bottom: 200px; 
-            padding-left: 40px;
-            padding-right: 40px;
+            margin-bottom: 120px; 
+            &:last-child {
+                margin-bottom: 70px;
+            }
+            @include abs.tablet{
+                margin-bottom: 30px; 
+            }
+            @include abs.desktop {
+                margin-bottom: 80px; 
+                &:last-child {
+                    margin-bottom: 110px;
+                }
+            }
+            @include abs.desktop-xxl {
+                margin-bottom: 100px; 
+                
+            }
             &:nth-child(2n) {
                 .services-item {
-                    margin-top: 80px;
+                    @include abs.tablet {
+                        margin-top: 90px;  
+                    }
+                    @include abs.desktop-sm {
+                        margin-top: 110px;
+                    }
+                    @include abs.desktop {
+                      margin-top: 80px;  
+                    }
                 }
+                
             }
         }
         &__heading {
             position: absolute;
             display: flex;
             align-items: center;
-            left: -30px;
-            top: -80px;
+            left: -15px;
+            top: -50px;
             color: abs.$base-color;
-            padding: 15px;
+            padding: 10px 5px;
             background: linear-gradient(140deg, abs.$accent-color 1%, abs.$second-accent-color 40%, abs.$second-dark-color 85%);
-            max-width: 100%;
+            width: 100%;
+            @include abs.desktop-sm {
+                padding: 10px;
+                top: -70px;
+            }
+            @include abs.desktop {
+                padding: 15px;
+                left: -30px;
+                top: -80px;
+            }
             &-img {
-                min-width: 120px;
+                min-width: 70px;
+                @include abs.desktop-xxl {
+                    min-width: 120px;
+                }
                 .icon {
-                    width: 120px;
-                    height: 120px; 
+                    width: 70px;
+                    height: 70px; 
+                    @include abs.desktop-sm {
+                        width: 90px;
+                        height: 90px;  
+                    }
+                    @include abs.desktop-xxl {
+                        width: 120px;
+                        height: 120px; 
+                    }
                 }
                 .icon-equipment {
-                    width: 110px;
+                    width: 60px;
+                    @include abs.desktop-sm {
+                        width: 80px; 
+                    }
+                    @include abs.desktop-xxl {
+                        width: 110px;
+                    }
                 }
             }
             &-text {
-                padding-left: 20px;
+                padding-left: 10px; 
+                @include abs.desktop-sm {
+                    padding-left: 20px; 
+                }
             }
         }
         &__description {
-            padding: 100px 30px 0;
+            padding: 70px 20px 30px;
+            @include abs.desktop {
+                padding-bottom: 40px;
+            }
+            @include abs.desktop-xxl {
+                padding: 100px 30px 40px;  
+            }
         }
         &__btn {
             position: absolute;
-            bottom: -30px;
-            right: 30px;
+            bottom: -20px;
+            right: 15px;
             z-index: 1;
+            @include abs.desktop {
+                bottom: -25px;
+                right: 30px;
+            }
+            @include abs.desktop-xxl {
+                bottom: -30px;
+            }
         }
     }
     &-bottom-info {
         text-align: center;
         color: abs.$base-color;
         text-shadow: abs.$shadow-white-text;
-        max-width: 900px;
+        max-width: 600px;
         margin: 0 auto;
+        @include abs.desktop-xxl {
+            max-width: 900px;
+        }
         h4 {
             text-shadow: abs.$shadow-white-text;
         }
         .btn-group {
-            margin-top: 50px;
+            margin-top: 30px;
+            @include abs.desktop {
+                margin-top: 50px;
+            }
         }
         
     }

@@ -14479,7 +14479,7 @@ var SplideRenderer = /*#__PURE__*/(/* unused pure expression or super */ null &&
 
 
 jquery_default()(function() {
-
+  if (document.querySelector('.splide')) {
     var homeSlider = new Splide('.home-slider .splide', {
       type: 'loop',
       speed: 1000,
@@ -14490,20 +14490,29 @@ jquery_default()(function() {
       perPage: 5,
       perMove: 1,
       pauseOnFocus: true,
-      focus  : 'center',
       gap: '20px',
       rewind : true,
       breakpoints: {
-        767: {
+        600: {
           perPage: 2,
+          gap: '15px',
+        },
+        767: {
+          perPage: 3,
+          gap: '15px',
+        },
+        1023: {
+          perPage: 4,
+          gap: '15px',
         },
         1199: {
-          perPage: 4,
+          perPage: 5,
         },
       },
     });
 
     homeSlider.mount();
+  }
 
     // Set SVG sprites code from the file to the html of every page. Needed for crossbrawser support
 
@@ -14527,33 +14536,46 @@ jquery_default()(function() {
 
     // change video size on screen resize
 
-    function resizeVideo() {
-      var videoHeight = jquery_default()(window).height();
-      var videoWidth = videoHeight * (9 / 16); 
-      jquery_default()('.welcome-video').css({
-          'width': videoWidth + 'px'
-      });
-    }
-    resizeVideo();
-    jquery_default()(window).resize(function(){
-      resizeVideo();
-    });
-
-    // sticky menu
-
-    function setStickyMenuHeight() {
-      let stickyMenu = jquery_default()(".sticky-menu-wrap");
-      let banner = jquery_default()(".welcome-banner");
-      let bannerHeight = banner.outerHeight();
-
-      stickyMenu.css("height", banner.outerHeight())
+    // function resizeVideo() {
+    //   var videoHeight = $(window).height();
+    //   var videoWidth = videoHeight * (9 / 16); 
+    //   $('.welcome-video').css({
+    //       'width': videoWidth + 'px'
+    //   });
+    // }
+    // if($(window).width() > 1200) {
+    //   resizeVideo();
+    // }
     
-    }
+    // $(window).resize(function(){
+    //   if($(window).width() > 1200) {
+    //     resizeVideo();
+    //   }
+    // });
 
-    setStickyMenuHeight()
+    // sticky menu height
+
+    
+      function setStickyMenuHeight() {
+        
+        let stickyMenu = jquery_default()(".sticky-menu-wrap");
+        let banner = jquery_default()(".welcome-banner");
+
+        if(banner) { stickyMenu.css("height", banner.outerHeight()) };     
+      
+      }
+
+    if(jquery_default()(window).width() > 767) {
+      setStickyMenuHeight();
+    }
     jquery_default()(window).resize(function(){
-      setStickyMenuHeight()
+      if(jquery_default()(window).width() > 767) {
+        setStickyMenuHeight();
+      } else {
+        jquery_default()(".sticky-menu-wrap").css("height", "50px");
+      }
     });
+
 
     // run animation on scroll
     function checkVisibility() {
@@ -14587,14 +14609,21 @@ jquery_default()(function() {
 
     jquery_default()(elements).css('height', maxHeight + 'px');
   }
-
+  
+  if(jquery_default()(window).width() > 767) {
     setEqualHeight('.work-stages-item'); 
-    setEqualHeight('.sertificate-text'); 
-    
+    setEqualHeight('.certificate-text');
+    setEqualHeight('.services-item');
+    setEqualHeight('.values-item');
+  }
 
     jquery_default()(window).on('resize', function () {
-      setEqualHeight('.work-stages-item');
-      setEqualHeight('.sertificate-text'); 
+      if(jquery_default()(window).width() > 767) {
+        setEqualHeight('.work-stages-item');
+        setEqualHeight('.certificate-text'); 
+        setEqualHeight('.services-item');
+        setEqualHeight('.values-item');
+      }
     });
 
     // Adapt vertical line height
@@ -14619,8 +14648,10 @@ jquery_default()(function() {
       }
   }
 
-  updateLineHeight();
-  jquery_default()(window).resize(updateLineHeight);
+    updateLineHeight();
+  jquery_default()(window).on('resize', function () {
+      updateLineHeight();
+  })
 
   // Modal windows
 
@@ -14699,6 +14730,22 @@ jquery_default()(function() {
       localStorage.setItem('cookiesAccepted', 'true'); 
       notification.css("display","none"); 
     });
+
+    // Mobile menu
+
+    let menuToggle = jquery_default()(".mobile-menu-toggle");
+    let mobileMenu = jquery_default()(".mobile-menu");
+
+    menuToggle.on("click", function () {
+        jquery_default()(this).toggleClass("open"); 
+        mobileMenu.toggleClass("open"); 
+    });
+
+    jquery_default()(".menu-item a").on("click", function () {
+        menuToggle.removeClass("open");
+        mobileMenu.removeClass("open");
+    });
+
   
 });
 }();

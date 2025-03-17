@@ -3,52 +3,64 @@
 .welcome {
     display: flex;
     flex-direction: column;
-    @include abs.tablet {
-        height: calc(100vh - 50px);
+    @include abs.desktop-sm {
+        height: calc(100vh - 50px); 
     }
     @include abs.desktop {
-        height: calc(100vh - 100px); 
+        height: calc(100vh - 70px); 
     }
     &-banner {
         position: relative;
-        height: 100vh;
-        background: url(../assets/img/baner.jpg) 0 50% no-repeat;
+        height: 80vh;
+        background: url(../assets/img/baner.jpg) center left 45% no-repeat;
         background-size: cover;
         @include abs.tablet {
+            height: 400px;
+        }
+        @include abs.desktop-sm {
             height: 60%;
         }
     }
     &-text {
         position: relative;
+        padding: 40px 0;
+        @include abs.desktop {
+            padding: 0;
+        }
         &-wrap {
             background-color: abs.$light-color;
-            @include abs.only-mobile {
-                margin-top: 100px;
-            }
-            @include abs.tablet {
+            @include abs.desktop-sm {
                 flex-grow: 1;
             }
         }
         h3 {
             color: abs.$second-dark-color;
-            margin-left: -20px;
         }
         .arrow {
-            position: absolute;
-            right: -100px;
-            bottom: -50px;
+            display: none;
+            @include abs.tablet {
+                position: absolute;
+                display: block;
+                right: -35px;
+                bottom: 10px;
+            }
+            @include abs.desktop {
+                right: -100px;
+                bottom: -30px;
+            }
         }
     }
     &-heading {
-        max-width: 700px;
+        max-width: 400px;
         color: abs.$light-color;
-        @include abs.only-mobile {
-            margin-top: 50px;
+        @include abs.only-large-mobile {
+            margin-left: 40px;
+        }
+        @include abs.desktop {
+            max-width: 700px;
         }
         &-wrap {
-            @include abs.tablet {
-                height: 100%;
-            }
+            height: 100%;
         }
         &__buttons {
             display: flex;
@@ -67,33 +79,36 @@
         h1 {
             text-shadow: 0 2px 5px rgba(20, 18, 18, 0.5);
         }
-        h1, h5 {
+        h1, h6 {
             line-height: 0.7;
         }
-        h5 {
+        h6 {
             margin-left: 5px;
         }
         h4 {
-            margin: 25px 0;
-            @include abs.desktop {
-                margin: 35px 0; 
-            }
+            margin: 35px 0; 
         }
-        h4,h5 {
+        h4,h6 {
             text-shadow: abs.$shadow-white-text;
         }
     }
     &-video {
-        position: absolute;
-        height: calc(100vh - 320px);
-        @include abs.only-mobile {
-            margin-top: 30px;
-        }
+        display: none;
         @include abs.tablet {
+            display: block;
+            position: absolute;
+            z-index: 3;
             left: auto;
             top: 0;
-            right: 21px;
+            right: 40px;
+            height: 100% ;
+        }
+        @include abs.desktop-sm {
+            height: 65vh;
+        }
+        @include abs.desktop-xxl {
             height: calc(100vh - 150px);
+            right: 50px;
         }
         video {
             height: 100%;

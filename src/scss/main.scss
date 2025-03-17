@@ -15,13 +15,23 @@ color: abs.$dark-color;
 @include abs.desktop {
     font-size: abs.$text-size-desktop;
 }
-@include abs.desktop-xl {
+@include abs.desktop-xxl {
     font-size: abs.$text-size-xxl-desktop;
 }
 }
 
 *, ::after, ::before {
 box-sizing: border-box;
+}
+.row>* {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-md {
+  @include abs.only-desktop-sm {
+    max-width: 940px;
+
+  }
 }
 
 a {
@@ -36,7 +46,7 @@ a {
     @include abs.desktop {
       font-size: abs.$text-size-desktop;
     }
-    @include abs.desktop-xl {
+    @include abs.desktop-xxl {
       font-size: abs.$text-size-xxl-desktop;
     }
   }
@@ -47,7 +57,7 @@ a {
     @include abs.desktop {
       font-size: abs.$h1-size-desktop;
     }
-    @include abs.desktop-xl {
+    @include abs.desktop-xxl {
       font-size: abs.$h1-size-xxl-desktop;
     }
   }
@@ -58,7 +68,7 @@ a {
     @include abs.desktop {
       font-size: abs.$h2-size-desktop;
     }
-    @include abs.desktop-xl {
+    @include abs.desktop-xxl {
       font-size: abs.$h2-size-xxl-desktop;
     }
   }
@@ -69,7 +79,7 @@ a {
     @include abs.desktop {
       font-size: abs.$h3-size-desktop;
     }
-    @include abs.desktop-xl {
+    @include abs.desktop-xxl {
       font-size: abs.$h3-size-xxl-desktop;
     }
   }
@@ -79,7 +89,7 @@ a {
     @include abs.desktop {
       font-size: abs.$h4-size-desktop;
     }
-    @include abs.desktop-xl {
+    @include abs.desktop-xxl {
       font-size: abs.$h4-size-xxl-desktop;
     }
   }
@@ -89,7 +99,7 @@ a {
     @include abs.desktop {
       font-size: abs.$h5-size-desktop;
     }
-    @include abs.desktop-xl {
+    @include abs.desktop-xxl {
       font-size: abs.$h5-size-xxl-desktop;
     }
   }
@@ -98,7 +108,7 @@ a {
     @include abs.desktop {
       font-size: abs.$h6-size-desktop;
     }
-    @include abs.desktop-xl {
+    @include abs.desktop-xxl {
       font-size: abs.$h6-size-xxl-desktop;
     }
   }
@@ -116,10 +126,7 @@ a {
   }
 
   a,p,b {
-    line-height: 1.3em;
-    @include abs.desktop-xl {
-      line-height: 1.5em;
-    }
+    line-height: 1.5em;
   }
 
   textarea {
@@ -137,8 +144,8 @@ a {
     position: relative;
     max-width: 100%;
     box-sizing: border-box;
-    @include abs.desktop {
-      padding: 0 70px;
+    @include abs.desktop-xl {
+      padding: 0 20px;
     }
   }
 
@@ -149,7 +156,7 @@ a {
     border-image-source: linear-gradient(abs.$second-accent-color 25%, abs.$accent-color 75%);
     border-image-slice: 1;
     border-width: 3px;
-    @include abs.desktop {
+    @include abs.desktop-xl {
       padding-bottom: 30px;
       padding-top: 30px;
     }
@@ -168,16 +175,22 @@ a {
       }
     }
     &.all {
-      border: 5px solid abs.$accent-color;
+      border: 4px solid abs.$accent-color;
       border-image-source: linear-gradient(45deg, rgba(213,171,2,0.5), rgba(144,48,49,0.5));
       border-image-slice: 1;
       padding: 15px;
+      @include abs.desktop {
+        border-width: 5px;
+      }
     }
   }
 
   .accent-bg {
-    background: linear-gradient(90deg, #D5AB02 0%, #BB2A2B 48.28%, #612122 74.49%);
+    background: linear-gradient( #D5AB02 0%, #BB2A2B 48.28%, #612122 74.49%);
     color: abs.$base-color;
+    @include abs.desktop {
+      background: linear-gradient(90deg, #D5AB02 0%, #BB2A2B 48.28%, #612122 74.49%);
+    }
   }
 
 
@@ -186,11 +199,15 @@ a {
     @include abs.desktop {
       padding: 80px 0;
     }
-    &__heading {
+    &__title {
       text-align: center;
       h2 {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         line-height: 1;
+        max-width: abs.$max-width;
+        @include abs.desktop {
+          margin-bottom: 30px;
+        }
       }
       &.light {
         color: abs.$base-color;
@@ -208,26 +225,62 @@ a {
       &.border-bottom {
         h2 {
           display: inline-block;
-          padding-bottom: 30px;
+          padding-bottom: 10px;
           border-bottom: 5px solid rgba(213, 171, 2, 0.5);
         }
       }
     }
+    &__subtitle {
+      color: abs.$second-dark-color;
+
+    }
   }
 
-.btn-group {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    &.group-center {
-      justify-content: center;
+
+  .gradient-number {
+    background: linear-gradient(abs.$accent-color, abs.$second-accent-color 57%, abs.$dark-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0),0 0 0 rgba(81, 8, 3, 0.25);
+    font-family: abs.$AlumniSans-Black;
+}
+
+.quality {
+  &-content {
+    text-align: right;
+  }
+  &-buttons {
+    margin-top: 50px;
+    text-align: right;
+  }
+}
+
+.subtitle-left {
+  margin-left: -5px;
+  @include abs.desktop {
+      margin-left: -20px;
+  }
+}
+.subtitle-right {
+  margin-right: -5px;
+  @include abs.desktop {
+      margin-right: -20px;
+  }
+}
+
+.simple-list {
+  li {
+    &:before {
+      content: "";
+      min-width: 15px;
+      width: 15px;
+      height: 15px;
+      background: url("../assets/img/sprite.svg#whats-app") no-repeat;
+      @include abs.desktop-xl {
+        min-width: 25px;
+        width: 25px;
+        height: 25px;
+      }
     }
-    &.group-right {
-      justify-content: flex-end;
-    }
-    .simple-button {
-        min-width: 200px;
-        margin: 0 20px;
-    }
+  }
 }

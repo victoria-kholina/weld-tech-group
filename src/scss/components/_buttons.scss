@@ -19,13 +19,16 @@ input[type='submit'] {
     color: abs.$base-color;
     padding: 10px 25px;
     cursor: pointer;
+    white-space: nowrap;
     @include abs.desktop {
         font-size: abs.$h5-size-desktop;
-        height: 60px;
+        height: 50px;
         padding: 15px 40px;
     }
-    @include abs.desktop-xl {
+    @include abs.desktop-xxl {
         font-size: abs.$h5-size-xxl-desktop;
+        height: 60px;
+        padding: 15px 60px;
     }
 }
 
@@ -66,5 +69,31 @@ input[type='submit'] {
     background-color: abs.$accent-color;
     &:after {
         background: rgba(187,42,43,0.3);
+    }
+}
+
+.btn-group {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &.group-center {
+      justify-content: center;
+    }
+    &.group-right {
+      justify-content: flex-end;
+    }
+    &-nowrap {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .simple-button {
+        margin: 0 10px;
+        @include abs.desktop{
+          margin: 0 20px;
+        }
     }
 }

@@ -2,27 +2,54 @@
 
 .home-slider {
     background-color: abs.$light-color;
-    padding: 20px 0 60px;
+    padding: 15px 0 60px;
+    @include abs.desktop {
+        padding-top: 20px;
+    }
     .splide {
-        margin: 0 20px;
-        width: 90%;
+        margin: 0 15px;
         display: flex;
         align-items: center;
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
+        @include abs.tablet {
+            width: 90%;
+            flex-direction: row-reverse;
+        }
+        @include abs.desktop {
+            margin: 0 20px;
+        }
         &__track {
-            height: 500px;
+            height: 250px;
             width: 100%;
+            @include abs.desktop-sm {
+                height: 320px;
+            }
+            @include abs.desktop-xxl {
+                height: 500px;
+            }
         }
         &__arrows {
             width: auto;
             display: flex;
-            margin-left: 40px;
+            @include abs.only-mobile {
+                margin-top: 20px;
+            }
+            @include abs.tablet {
+                margin-left: 20px;
+            }
+            @include abs.desktop {
+                margin-left: 40px;
+            }
         }
         &__arrow {
             padding: 0;
             border: none;
-            width: 40px;
-            height: 40px;
+            width: 20px;
+            height: 20px;
+            @include abs.desktop {
+                width: 40px;
+                height: 40px;
+            }
             svg {
                 display: none;
             }
@@ -30,9 +57,12 @@
                 content: "";
                 width: 100%;
                 height: 100%;
-                border-right: 3px solid abs.$second-dark-color;
-                border-bottom: 3px solid abs.$second-dark-color;
+                border-right: 2px solid abs.$second-dark-color;
+                border-bottom: 2px solid abs.$second-dark-color;
                 transform: rotate(-45deg);
+                @include abs.desktop {
+                    border-width: 3px;
+                }
             }
             &--prev {
                 &:after {
@@ -43,7 +73,10 @@
         }
     }
     &-content {
-        margin-top: 50px;
+        margin-top: 30px;
+        @include abs.tablet {
+            margin-top: 50px;
+        }
         h4>span{
            color: abs.$second-dark-color
         }

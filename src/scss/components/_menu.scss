@@ -7,7 +7,7 @@
     margin-right: 20px;
     &-desktop {
         display: none;
-       @include  abs.desktop-sm {
+       @include  abs.tablet {
             display: block;
         }
     }
@@ -15,11 +15,11 @@
         padding: 0 10px;
         white-space: nowrap;
         position: relative;
-       @include  abs.desktop-xl {
-            padding: 0 15px;
-        }
-        &:hover > a,
-        &:focus > a {
+        @include  abs.desktop-xl {
+                padding: 0 15px;
+            }
+        &:hover > .menu-item__name,
+        &:focus > .menu-item__name {
             color: abs.$accent-color;
             &:after {
                 transform: scale(1);
@@ -29,7 +29,7 @@
         &:focus > .submenu  {
             display: block;
         }
-        a {
+        &__name {
             display: block;
             position: relative;
             font-family: abs.$AlumniSans-Medium;
@@ -37,6 +37,11 @@
             font-size: abs.$h5-size-mobile;
             transition: ease-in 0.3s;
             padding: 5px 0;
+            cursor: pointer;
+            line-height: 1em;
+            @include  abs.tablet {
+                line-height: 1.3em;
+            }
            @include  abs.desktop {
                 font-size: abs.$h5-size-desktop;
             }
@@ -73,20 +78,20 @@
     right: -7px;
     background-color: abs.$dark-color;
     &-item {
-        padding: 0 20px 5px;
+        padding: 0 10px 5px;
         text-align: right; 
         &:last-child {
-            a {
+            .menu-item__name {
                 border: none;
             }
             
         }
-        a { 
+        .menu-item__name { 
             white-space: wrap;
             border-bottom: 2px solid abs.$accent-color;
         }
-        &:hover > a,
-        &:focus > a {
+        &:hover > .menu-item__name,
+        &:focus > .menu-item__name {
             color: abs.$accent-color;
         }
     }
@@ -107,11 +112,15 @@
         display: flex;
         flex-direction: column;
         margin-top: 10px;
+        margin-right: 0;
         &-item {
             padding-top: 5px;
             padding-bottom: 5px;
-            a {
+            .menu-item__name {
                 display: inline-block;
+                &:after {
+                    bottom: 0;
+                }
             }
         }
     }
@@ -119,15 +128,13 @@
         left: 0;
     }
     &-container {
-        position: relative;
-       @include  abs.desktop-sm {
+        display: flex;
+        justify-content: flex-end;
+       @include abs.tablet {
             display: none;
         }
     }
     &-toggle {
-        position: absolute;
-        top: 3px;
-        right: 0;
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -156,6 +163,16 @@
             }
         }
     }
+    .submenu {
+        position: static;
+        width: 100%;
+        border-right: 0;
+        border-left: 2px solid abs.$accent-color;
+        margin-top: 10px;
+        &-item {
+            text-align: left;
+        }
+    }
 }
 
 .sticky-menu {
@@ -165,11 +182,17 @@
     justify-content: space-between;
     @include abs.tablet {
         flex-direction: column;
+        margin-top: 50px;
+    }
+    @include abs.desktop-sm{
+        margin-top: 70px;
+    }
+    @include abs.desktop-xxl {
         margin-top: 100px;
     }
     &-wrap {
         position: fixed;
-        z-index: 9999;
+        z-index: 100;
         @include abs.only-mobile {
             left: 0;
             bottom: 0;
@@ -179,8 +202,12 @@
         @include abs.tablet {
             right: 0;
             top: 0;
-            width: 70px;
-            height: 100%;
+            width: 40px;
+            height: 400px;
+        }
+        @include abs.desktop-xxl {
+            width: 50px;
+            height: 50vh;
         }
     }
     &__item {
@@ -196,9 +223,12 @@
             justify-content: center;
             align-items: center;
             .icon {
-                width: 30px;
-                height: auto;
+                width: 20px;
+                height: 100%;
                 fill: abs.$base-color;
+                @include abs.desktop-xxl {
+                    width: 25px;
+                }
             }
         }
         &.icon-phone {

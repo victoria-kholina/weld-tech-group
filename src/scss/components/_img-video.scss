@@ -1,0 +1,117 @@
+@use '../abstracts/abstracts' as abs;
+
+.shadow-image,
+.shadow-video {
+    position: relative;
+    z-index: 1;
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+    }
+    &:before {
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background: linear-gradient(rgba(213, 171, 2, 0.2), rgba(187, 42, 43, 0.2));
+    }
+    &:after {
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(rgba(213, 171, 2, 0.5), rgba(187, 42, 43, 0.5));
+        bottom: 0;
+    } 
+}
+
+.shadow-image {
+    height: 400px;
+    width: 100%;
+    max-width: 280px;
+    transition: abs.$animation-transition;
+    opacity: 0;
+    transform: translateY(15px);
+    margin: 0 auto 40px;
+    @include abs.desktop {
+        max-width: 350px;
+        height: 500px;
+        transform: translateY(20px);
+        margin: 0 0 40px;
+    }
+    @include abs.desktop-xxl {
+        max-width: 450px;
+        height: 600px;
+    }
+    &-wrap {
+        position: relative;
+        overflow: hidden;
+        height: inherit;
+        margin: 0 auto;
+        img {
+            position: absolute;
+            width: auto;
+            height: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+    }
+    &:before{
+        height: 100%;
+    }
+    &:after {
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        transform: scale(0.95);
+    } 
+    &.animated {
+        opacity: 1;
+        transform: translateY(0); 
+    }                  
+    &.right {
+        &.animated {
+            &:after {
+                transform: scale(1) translate(15px, 15px);
+                @include abs.desktop {
+                    transform: scale(1) translate(25px, 25px);
+                }
+            }
+        }
+        
+    }
+    &.left {
+        &.animated {
+           &:after {
+            transform: scale(1) translate(-15px, 15px);
+            @include abs.desktop {
+                transform: scale(1) translate(-25px, 25px);
+            }
+            }
+        }
+    }
+  }
+
+  .shadow-video {
+    width: 100%;
+    height: auto;
+    &:before{
+        height: 98%;
+    }
+    &.right {
+        &:after {
+            right: 0;
+            transform: scale(1) translate(15px, 15px);
+            @include abs.desktop {
+                transform: scale(1) translate(25px, 25px);
+            }
+        }
+        
+    }
+    &.left {
+        &:after {
+        left: 0;
+        transform: scale(1) translate(-15px, 15px);
+        @include abs.desktop {
+            transform: scale(1) translate(-25px, 25px);
+            }
+        }
+    }
+  }

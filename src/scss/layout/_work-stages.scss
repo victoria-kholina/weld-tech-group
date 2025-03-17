@@ -4,18 +4,30 @@
 .work-stages {
     &-row {
         position: relative;
-        margin: 100px 0;
+        margin: 50px 0 20px;
+        @include abs.only-mobile {
+            padding-left: 20px;
+        }
+        @include abs.desktop-sm {
+            margin-bottom: 50px;
+        }
+        @include abs.desktop {
+            margin: 100px 0;
+        }
         .stage-line {
             position: absolute;
             height: 100%;
             width: 2px;
-            left: 50%;
+            left: 20px;
             margin-left: -1px;
             min-height: 200px;
             padding: 0;
             z-index: -1;
             background: linear-gradient(abs.$accent-color, #C86A16, #C24A21, abs.$second-accent-color, #9A2526, abs.$second-dark-color);
             transition: abs.$animation-transition;
+            @include abs.tablet {
+                left: 50%;
+            }
             @include abs.desktop {
                 width: 3px;
             }
@@ -23,31 +35,46 @@
     }
     &-item {
         display: flex;
-        justify-content: flex-end;
         position: relative;
-        text-align: right;
         &__wrap {
-            width: 80%;  
+            min-width: 300px;
+            @include abs.desktop {
+                width: 80%; 
+            }
         }
         &__title {
             display: block;
             width: 100%;
-            border-bottom: 3px solid;
+            border-bottom: 2px solid;
             line-height: 1.4;
+            @include abs.desktop {
+                border-bottom: 3px solid;
+            }
         }
         &__description {
             padding-top: 10px;
+            @include abs.only-mobile {
+                padding-bottom: 20px;
+            }
         }
         &__title,
         &__description {
-            padding-right: 50px; 
+            padding-left: 20px; 
+            @include abs.tablet {
+                padding-right: 30px; 
+            }
+            @include abs.desktop {
+                padding-right: 70px;
+            }
         }
         @include abs.tablet {
+            justify-content: flex-end;
+            text-align: right;
             &:nth-child(2n) {
                 text-align: left;
                 justify-content: flex-start;
                 .stage-circle { 
-                left: -30px;
+                left: -20px;
                 right: auto;
                 }
                 .work-stages-item__title {
@@ -55,31 +82,54 @@
                 }
                 .work-stages-item__title,
                 .work-stages-item__description {
-                padding-left: 50px;
+                padding-left: 30px;
                 padding-right: 0;
                 }
             }  
           }
+          @include abs.desktop {
+            &:nth-child(2n) {
+                .stage-circle {
+                    left: -30px;
+                }
+                .work-stages-item__title,
+                .work-stages-item__description {
+                padding-left: 70px;
+                padding-right: 0;
+                }
+            }
+          }
         .stage-circle {
             position: absolute;
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: abs.$base-color;
             font-size: abs.$h3-size-mobile;
             font-family: abs.$AlumniSans-Medium;
-            outline: 10px solid;
+            outline: 5px solid;
             border-radius: 50%;
-            right: -30px;
-            top: 30px;
+            left: -20px;
+            top: 25px;
             margin-top: -10px;
             box-sizing: content-box;
+            @include abs.tablet {
+                left: auto;
+                right: -20px;
+            }
             @include abs.desktop {
                 font-size: abs.$h3-size-desktop;
+                right: -30px;
+                top: 20px;
+                width: 60px;
+                height: 60px;
+                outline: 10px solid;
+                
             }
             @include abs.desktop-xxl {
+                top: 30px;
                 font-size: abs.$h3-size-xxl-desktop;
             }
         }
@@ -125,12 +175,12 @@
         }
         &.item-5 {
             h4 {
-                color: #C24A21;
-                border-color: #C24A21;
+                color: #9A2526;
+                border-color: #9A2526;
             }
             .stage-circle {
-                background-color: #c24a21;
-                outline-color: rgba(194, 74, 33, 0.5);
+                background-color: #9a2526;
+                outline-color: rgba(154, 37, 38, 0.5);
             }
         }
         &.item-6 {

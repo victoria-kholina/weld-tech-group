@@ -1,5 +1,5 @@
 $sm-mobile:             375px;
-$lg-mobile:             600px;
+$lg-mobile:             576px;
 $tablet:                768px;
 $desktop-sm:            992px;
 $desktop:               1200px;
@@ -35,11 +35,14 @@ $desktop-xxl:           1700px;
 @mixin desktop-large-height {
   @media screen and (min-height: 769px) and (min-width: $desktop-sm ){ @content; }
 }
-@mixin up-sm-desktop {
+@mixin up-desktop-sm {
   @media screen and (max-width: 991px) { @content; }
 }
 @mixin up-desktop {
   @media screen and (max-width: 1199px) { @content; }
+}
+@mixin only-desktop-sm {
+  @media screen and (min-width: $desktop-sm) and (max-width: 1199px){ @content; }
 }
 @mixin only-tablet {
   @media screen and (min-width: $tablet) and (max-width: 991px){ @content; }

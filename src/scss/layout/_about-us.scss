@@ -2,18 +2,51 @@
 
 .about-us {
     &-content {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        text-align: right;
         @include abs.desktop {
             padding-left: 30px;
         }
         h4 {
             padding: 50px 0;
-            color: abs.$second-dark-color
+            color: abs.$second-dark-color;
+            max-width: 600px;
+            @include abs.desktop-xxl {
+                max-width: abs.$max-width;
+            }
         }
     }
     &-buttons {
+        margin-right: 0;
         .arrow {
-            margin-right: 30px;
+            margin-right: 15px;
+            @include abs.desktop {
+                margin-right: 30px;
+            }
             }
     }
-    
+
+    &-page {
+        &-row {
+            margin-top: 40px;
+            @include abs.desktop {
+                margin-top: 80px;
+            }
+        }
+        &__text {
+            @include abs.desktop {
+               padding-right: 50px; 
+            }
+        }
+        &__video {
+            margin-top: 60px;
+            margin-bottom: 20px;
+            @include abs.desktop {
+                margin-top: 0;
+            }
+        }
+
+    }
 }
