@@ -56,11 +56,6 @@
     }
     &-map {
         text-align: center;
-        border-left: 3px solid abs.$accent-color;
-        border-right: 3px solid abs.$accent-color;
-        border-image-source: linear-gradient(abs.$second-accent-color 25%, abs.$accent-color 75%);
-        border-image-slice: 1;
-        border-width: 3px!important;
         iframe {
             height: 350px;
             @include abs.desktop {

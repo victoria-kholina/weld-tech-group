@@ -1,7 +1,7 @@
 @use '../abstracts/abstracts' as abs;
 
 .services {
-    background: url(../assets/img/services-bg.jpg) center no-repeat;
+    background: url(../assets/img/services-bg.webp) center no-repeat;
     background-size: cover;
     &-item {
         background-color: abs.$light-color;
@@ -61,19 +61,26 @@
             position: absolute;
             display: flex;
             align-items: center;
-            left: -15px;
+            left: 0;
             top: -50px;
             color: abs.$base-color;
             padding: 10px 5px;
             background: linear-gradient(140deg, abs.$accent-color 1%, abs.$second-accent-color 40%, abs.$second-dark-color 85%);
             width: 100%;
+            &.animate-on-scroll {
+                &.animated {
+                    transform: translateX(-15px);
+                    @include abs.desktop {
+                        transform: translateX(-30px);
+                    }
+                }
+            }
             @include abs.desktop-sm {
                 padding: 10px;
                 top: -70px;
             }
             @include abs.desktop {
                 padding: 15px;
-                left: -30px;
                 top: -80px;
             }
             &-img {
@@ -153,4 +160,75 @@
         }
         
     }
+    &-experiance {
+        margin-right: 50px;
+        margin-bottom: 60px;
+        @include abs.desktop-sm {
+            margin-bottom: 0;
+        }
+        h4 {
+            margin: 20px 0;
+        }
+    }
+}
+
+.service-page {
+    h3, h4, h5 {
+        color: abs.$second-dark-color;
+    }
+    &-info {
+        padding: 0 30px;
+        &__title {
+            margin: 20px 0;
+            @include abs.tablet {
+                margin-top: 0;
+            }
+        }
+        
+        .accent-list {
+            li {
+                margin-bottom: 20px;
+                &:before {
+                    top: 4px;
+                }
+            }
+        }
+        &-wrap {
+            margin-top: 40px;
+            @include abs.tablet {
+                margin-top: 60px;
+            }
+            @include abs.desktop {
+                margin-top: 80px;
+            }
+            .gradient-border.left {
+                @include abs.only-mobile {
+                    border: none;
+                }
+            }
+        }
+    }
+    &-bottom {
+        text-align: center;
+        max-width: abs.$max-width-lg;
+        margin: 40px auto 0;
+        @include abs.tablet {
+            margin-top: 60px;
+        }
+        @include abs.desktop {
+            margin: 80px auto 0;
+        } 
+    }
+}
+
+.capacitive-equipmant {
+    .service-page-info {
+        .gradient-border {
+            margin-bottom: 20px;
+            @include abs.desktop {
+                margin-bottom: 80px;
+            }
+        }
+    }
+    
 }

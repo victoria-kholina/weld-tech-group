@@ -2,8 +2,6 @@
 
 
 .values {
-    background: url(../assets/img/light-bg-img-1.jpg) center no-repeat;
-    background-size: cover;
     &-heading {
         margin-bottom: 60px;
         @include abs.desktop {
@@ -11,7 +9,7 @@
         }
     }
     &-item {
-        &.accent-border.all {
+        &.accent-text-block.all {
            padding: 5px 15px 15px;
             @include abs.desktop {
                 padding: 15px 30px 30px;

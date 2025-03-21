@@ -13,6 +13,7 @@
     &-content {
         background: abs.$base-color;
         width: 100vw;
+        height: 90vh;
         margin: 5vh auto;
         padding: 40px 20px 20px;
         position: relative;
@@ -26,6 +27,20 @@
     &-body {
         display: none;
         padding: 20px;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            @include abs.tablet {
+                width: auto;
+                height: 100%;
+            }
+        }
     }
     .close {
         position: absolute;
@@ -37,7 +52,7 @@
     }
     iframe {
         width: 100%;
-        height: calc(100vh - 100px);
+        height: 100%;
         border: none;
         display: none;
     }

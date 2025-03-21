@@ -14657,16 +14657,22 @@ jquery_default()(function() {
 
   jquery_default()(".open-modal").click(function(){
     let contentType = jquery_default()(this).data("type"); 
-    let pdfSrc = jquery_default()(this).data("src");  
-    let htmlContent = jquery_default()(this).data("content");
+    let htmlContent = jquery_default()(this).next("modal-content");
 
     jquery_default()("#modal-iframe").hide().attr("src", "");
-    jquery_default()("#modal-html").hide().html("");
+    jquery_default()("#modal-body").hide().html("");
 
     if (contentType === "pdf") {
-      jquery_default()("#modal-iframe").attr("src", pdfSrc).show();
-    } else if (contentType === "html") {
-      jquery_default()("#modal-html").html(htmlContent).show();
+      let linkSrc = jquery_default()(this).data("src");  
+      jquery_default()("#modal-iframe").attr("src", linkSrc).css("display", "flex");
+    } else if (contentType === "img") {
+      let imageModal = jquery_default()('<img>', {
+        src:  jquery_default()(this).attr("src"),
+        alt: 'Modal Image'
+      })
+      jquery_default()("#modal-body").html(imageModal).css("display", "flex");
+    } else {
+      jquery_default()("#modal-body").html(htmlContent).css("display", "flex");
     }
 
     jquery_default()("#modal-window").fadeIn();
@@ -14677,7 +14683,7 @@ jquery_default()(function() {
       jquery_default()("#modal-window").fadeOut();
       setTimeout(() => { 
         jquery_default()("#modal-iframe").attr("src", ""); 
-        jquery_default()("#modal-html").html(""); 
+        jquery_default()("#modal-body").html(""); 
       }, 300);
     }
   });

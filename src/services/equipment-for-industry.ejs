@@ -7,7 +7,79 @@
     
 </head>
 <body>
-    <%- include('../templates/header.ejs' , { isInnerPage: true }) %>
+<%- include('../templates/header.ejs' , { isInnerPage: true }) %>
+
+<section class="simple-section service-page light-image-bg">
+    <div class="container-md container-xxl h-100">
+        <div class="container-md container-xxl h-100">
+            <div class="simple-section__title dark">
+                <h2>Оборудование для промышленности</h2>
+                <p class="accent-text-block all">
+                    Мы изготавливаем дополнительное оборудование для различных производственных линий и систем, 
+                    применяемых в химической, пищевой, фармацевтической и смежных отраслях.</p>
+            </div>
+        </div>
+        <div class="row service-page-info-wrap">
+            <div class="col-12 col-md-6">
+                <div class="service-page-info">
+                    <ul class="accent-list">
+                        <li>
+                            <div>
+                                <h5>Конвейеры и рольганги</h5>
+                                <p>Поворотные, подъёмные, со скребковыми или бесконечными лентами.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>Пересекающие мосты и промышленные «ванны»</h5>
+                                <p>(мойки, ёмкости для промывки и очистки).</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 gradient-border left">
+                <div class="service-page-info">
+                    <ul class="accent-list">
+                        <li>
+                            <div>
+                                <h5>Бункеры для сыпучих продуктов</h5>
+                                <p>Проектируем под нужды клиента, учитывая специфику хранимых материалов.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>Оборудование для приёма, погрузки и разгрузки</h5>
+                                <p>В том числе специализированные механизмы для пищевых предприятий.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            
+            <div class="col-12 service-page-bottom">
+                <h4>При производстве используется токарно-фрезерная обработка, а также современные сварочные технологии для высоколегированных и низкоуглеродистых сталей, алюминия и титана. 
+                    Мы обеспечиваем как изготовление нового оборудования, так и модернизацию уже имеющихся линий.</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="simple-section">
+    <div class="container-md container-xxl h-100">
+        <div class="simple-section__title dark">
+
+            <h2>Наши работы</h2>
+            <p class="accent-text-block all">
+                Каждый наш проект воплощает в себе точное соответствие требованиям заказчика, продуманную экономическую модель и безупречное техническое исполнение.
+        </div>
+        <%- include('../templates/gallery-all.ejs') %>
+    </div>
+</section>
+
+<%- include('../templates/know-more.ejs') %>
+
 
 <%- include('../templates/footer.ejs') %>
 

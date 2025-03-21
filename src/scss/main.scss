@@ -149,7 +149,7 @@ a {
     }
   }
 
-  .accent-border {
+  .accent-text-block {
     border-bottom: 3px solid abs.$accent-color;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -184,6 +184,39 @@ a {
       }
     }
   }
+  .gradient-border {
+    border-image-slice: 1;
+    border-color: abs.$accent-color;
+    &.left,
+    &.right {
+      border-image-source: linear-gradient(abs.$second-accent-color 25%, abs.$accent-color 75%);
+    }
+    &.bottom,
+    &.top {
+      border-image-source: linear-gradient(90deg, abs.$second-accent-color 25%, abs.$accent-color 75%);
+    }
+    &.left {
+      border-left: 2px solid;
+    }
+    &.right {
+      border-right: 2px solid;
+    }
+    &.bottom {
+      border-bottom: 2px solid;
+    }
+    &.top {
+      border-top: 2px solid;
+    }
+    &.left,
+    &.right,
+    &.bottom,
+    &.top {
+      @include abs.desktop {
+        border-width: 3px;
+      }
+    }
+
+  }
 
   .accent-bg {
     background: linear-gradient( #D5AB02 0%, #BB2A2B 48.28%, #612122 74.49%);
@@ -192,21 +225,23 @@ a {
       background: linear-gradient(90deg, #D5AB02 0%, #BB2A2B 48.28%, #612122 74.49%);
     }
   }
-
-
-  .simple-section {
+  .simple-section,
+  .block-padding {
     padding: 60px 0;
     @include abs.desktop {
       padding: 80px 0;
     }
+  }
+
+  .simple-section {
     &__title {
       text-align: center;
       h2 {
-        margin-bottom: 15px;
+        margin: 0 auto 15px;
         line-height: 1;
         max-width: abs.$max-width;
         @include abs.desktop {
-          margin-bottom: 30px;
+          margin: 0 auto 30px;
         }
       }
       &.light {
@@ -268,19 +303,26 @@ a {
   }
 }
 
-.simple-list {
-  li {
-    &:before {
-      content: "";
-      min-width: 15px;
-      width: 15px;
-      height: 15px;
-      background: url("../assets/img/sprite.svg#whats-app") no-repeat;
-      @include abs.desktop-xl {
-        min-width: 25px;
-        width: 25px;
-        height: 25px;
-      }
-    }
+.light-image-bg {
+  background: url(../assets/img/light-bg-img-1.webp) center no-repeat;
+    background-size: cover;
+}
+.dark-image-bg {
+  background: url(../assets/img/services-bg.webp) center no-repeat;
+    background-size: cover;
+}
+
+.know-more {
+  border-top: 10px solid abs.$accent-color;
+  border-bottom: 10px solid abs.$accent-color;
+  border-image-source: linear-gradient(90deg, rgba(187, 42, 43, 0.7) 25%, rgba(213, 171, 2, 0.7) 75%);
+  border-image-slice: 1;
+  @include abs.desktop {
+    border-width: 20px;
+  }
+  &-text {
+    color: abs.$base-color;
+    text-align: center;
   }
 }
+

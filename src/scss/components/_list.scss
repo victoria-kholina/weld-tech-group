@@ -1,0 +1,45 @@
+@use '../abstracts/abstracts' as abs;
+
+  .accent-list,
+  .simple-list {
+    li {
+      display: flex;
+      margin-top: 10px;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:before {
+        content: '';
+        display: block;
+        position: relative;
+        top: 2px;
+        margin-right: 10px;
+        background-size: contain;
+        min-width: 15px;
+        width: 15px;
+        height: 15px;
+        @include abs.desktop-xl {
+          margin-right: 15px;
+          min-width: 25px;
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+  
+  .simple-list {
+    li {
+      &:before {
+        background: url("../assets/img/sprite-bg-icons.svg#check") no-repeat;
+      }
+    }
+  }
+
+  .accent-list {
+    li {
+      &:before {
+        background: url("../assets/img/sprite-bg-icons.svg#check-circle") no-repeat;
+      }
+    }
+  }

@@ -7,7 +7,66 @@
     
 </head>
 <body>
-    <%- include('../templates/header.ejs' , { isInnerPage: true }) %>
+<%- include('../templates/header.ejs' , { isInnerPage: true }) %>
+
+<section class="simple-section service-page light-image-bg">
+    <div class="container-md container-xxl h-100">
+        <div class="container-md container-xxl h-100">
+            <div class="simple-section__title dark">
+                <h2>Металлоконструкции и площадки обслуживания</h2>
+                <p class="accent-text-block all">
+                    Мы производим и монтируем металлические конструкции различной сложности, включая фермы, лестницы, поручни, каркасы для монтажа шкафов управления и многое другое. Все изделия соответствуют нормам прочности и безопасности.</p>
+            </div>
+        </div>
+        <div class="row service-page-info-wrap">
+            <div class="col-12">
+                <div class="service-page-info">
+                    <h3 class="service-page-info__title">Виды материалов для металлоконструкций:</h3>
+                    <ul class="accent-list">
+                        <li>
+                            <div>
+                                <h5>Чёрная сталь (Ст.20)</h5>
+                                <p>Конструкции могут покрываться порошковыми красками или химически стойкими эмалями; применимы для использования как внутри помещений, так и на открытом воздухе.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>Алюминий и сплавы</h5>
+                                <p>Лёгкие, мобильные и прочные решения, особенно актуальные при необходимости частой перестановки или транспортировки конструкций.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h5>Высоколегированные (нержавеющие) стали (AISI–316L, AISI–304L, AISI–430)</h5>
+                                <p>Обладают высокой коррозионной стойкостью, 
+                                    элегантным внешним видом и идеально подходят для пищевой, химической и фармацевтической промышленности.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-12 service-page-bottom">
+                <h4>Сварка осуществляется методами WIG–TIG (AC/DC) и MIG–MAG, что обеспечивает высокую точность, чистоту швов и длительный срок службы конструкций.</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="simple-section">
+    <div class="container-md container-xxl h-100">
+        <div class="simple-section__title dark">
+
+            <h2>Наши работы</h2>
+            <p class="accent-text-block all">
+                Каждый наш проект воплощает в себе точное соответствие требованиям заказчика, продуманную экономическую модель и безупречное техническое исполнение.
+        </div>
+        <%- include('../templates/gallery-all.ejs') %>
+    </div>
+</section>
+
+<%- include('../templates/know-more.ejs') %>
+
 
 <%- include('../templates/footer.ejs') %>
 

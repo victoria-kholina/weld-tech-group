@@ -186,16 +186,22 @@ $(function() {
 
   $(".open-modal").click(function(){
     let contentType = $(this).data("type"); 
-    let pdfSrc = $(this).data("src");  
-    let htmlContent = $(this).data("content");
+    let htmlContent = $(this).next("modal-content");
 
     $("#modal-iframe").hide().attr("src", "");
-    $("#modal-html").hide().html("");
+    $("#modal-body").hide().html("");
 
     if (contentType === "pdf") {
-      $("#modal-iframe").attr("src", pdfSrc).show();
-    } else if (contentType === "html") {
-      $("#modal-html").html(htmlContent).show();
+      let linkSrc = $(this).data("src");  
+      $("#modal-iframe").attr("src", linkSrc).css("display", "flex");
+    } else if (contentType === "img") {
+      let imageModal = $('<img>', {
+        src:  $(this).attr("src"),
+        alt: 'Modal Image'
+      })
+      $("#modal-body").html(imageModal).css("display", "flex");
+    } else {
+      $("#modal-body").html(htmlContent).css("display", "flex");
     }
 
     $("#modal-window").fadeIn();
@@ -206,7 +212,7 @@ $(function() {
       $("#modal-window").fadeOut();
       setTimeout(() => { 
         $("#modal-iframe").attr("src", ""); 
-        $("#modal-html").html(""); 
+        $("#modal-body").html(""); 
       }, 300);
     }
   });

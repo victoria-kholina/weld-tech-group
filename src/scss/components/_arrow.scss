@@ -22,7 +22,6 @@
       }
     }
     &.animate-on-scroll {
-      transition: abs.$animation-transition;
       opacity: 0;
     }
     &.animated {

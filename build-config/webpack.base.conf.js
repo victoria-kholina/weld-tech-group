@@ -72,7 +72,7 @@ module.exports = {
             {
                 test: /\.(mp4|webm|ogg)$/, 
                 type: 'asset/resource',
-                generator: { filename: `${PATHS.assets}video/[name][ext]` }
+                generator: { filename: `${PATHS.assets}img/[name][ext]` }
             }
         ]
     },
@@ -111,5 +111,6 @@ module.exports = {
                 { from: path.join(PATHS.src, PATHS.assets, 'fonts'), to: path.join(PATHS.dist, PATHS.assets, 'fonts') }
             ]
         })
+        
     ]
 };

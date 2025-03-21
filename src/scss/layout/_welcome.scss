@@ -12,7 +12,7 @@
     &-banner {
         position: relative;
         height: 80vh;
-        background: url(../assets/img/baner.jpg) center left 45% no-repeat;
+        background: url(../assets/img/baner.webp) center left 45% no-repeat;
         background-size: cover;
         @include abs.tablet {
             height: 400px;
