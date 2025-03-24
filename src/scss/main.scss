@@ -12,6 +12,7 @@ font-size: abs.$text-size-mobile;
 color: abs.$dark-color;
 -webkit-text-size-adjust: 100%;
 -webkit-tap-highlight-color: transparent;
+background-color: abs.$base-color;
 @include abs.desktop {
     font-size: abs.$text-size-desktop;
 }
@@ -326,3 +327,10 @@ a {
   }
 }
 
+.lazy-image {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  &.loaded {
+    opacity: 1;
+  }
+}

@@ -9,6 +9,45 @@
 <body>
 <%- include('../templates/header.ejs' , { isInnerPage: true }) %>
 
+<section class="simple-section">
+    <div class="container-md container-xxl h-100">
+        <div class="simple-section__title dark">
+            <h2>Галлерея проектов</h2>
+            <p class="accent-text-block all">
+                <b>Наши проекты - это наша гордость!</b><br> Благодаря накопленному опыту и налаженным деловым связям наши проекты выполняются в соответствии 
+                с установленными сроками и бюджетными планами, обеспечивая заказчикам надёжный результат и соблюдение 
+                всех нормативно-правовых требований.</p>
+        </div>
+        <div class="tabs tabs-gallery">
+            <div class="tabs-btn-wrap">
+                <button class="tabs-btn tabs-gallery-btn active" data-tab="tab1">Разное</button>
+                <button class="tabs-btn tabs-gallery-btn" data-tab="tab2">Монтаж технологических трубопроводов</button>
+                <button class="tabs-btn tabs-gallery-btn" data-tab="tab3">Производство ёмкостного оборудования</button>
+                <button class="tabs-btn tabs-gallery-btn" data-tab="tab4">Пищевая промышленность</button>
+                <button class="tabs-btn tabs-gallery-btn" data-tab="tab5">Химическая, енергетическая промышленность</button>
+            </div>
+            
+            <div class="tabs-content tabs-gallery-content active" id="tab1">
+                <%- include('../templates/gallery-all.ejs') %>
+            </div>
+            <div class="tabs-content tabs-gallery-content" id="tab2">
+                <%- include('../templates/gallery-instalation-pipelines.ejs') %>
+            </div>
+            <div class="tabs-content tabs-gallery-content" id="tab3">
+                <%- include('../templates/gallery-capacitive-equipmaint.ejs') %>
+            </div>
+            <div class="tabs-content tabs-gallery-content" id="tab4">
+                <%- include('../templates/gallery-food-industry.ejs') %>
+            </div>
+            <div class="tabs-content tabs-gallery-content" id="tab5">
+                <%- include('../templates/gallery-chemical-energy-industry.ejs') %>
+            </div>
+        </div>
+     </div>
+</section>
+
+<%- include('../templates/features.ejs') %>
+
 <%- include('../templates/footer.ejs') %>
 
 </body>

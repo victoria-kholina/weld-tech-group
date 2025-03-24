@@ -1,0 +1,114 @@
+@use '../abstracts/abstracts' as abs;
+
+.tabs {
+    width: 100%;
+    margin: 60px auto 0;
+    @include abs.desktop {
+        margin: 80px auto 0; 
+    }
+    &-btn {
+        flex: 1;
+        width: 100%;
+        padding: 10px 15px;
+        white-space: normal;
+        height: auto;
+        @include abs.desktop-sm {
+            width: auto;
+        }
+        &-wrap {
+            display: flex;
+            flex-direction: column;
+            @include abs.desktop-sm {
+                flex-direction: row;
+            }
+        }
+    }
+
+    .gallery {
+        padding: 0;
+    }
+  
+    &-content {
+      display: none;
+      padding: 15px;
+      @include abs.desktop {
+        padding: 30px;
+      }  
+      &.active {
+        display: block;
+      }
+    }
+    
+    .zoom-In.animate-on-scroll {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    &-gallery {
+        &-content {
+            border: 1px solid abs.$light-color;
+            border-top: none;
+        }
+        &-btn {
+            background-color: abs.$light-color;
+            border-bottom: 3px solid transparent;
+            color: abs.$accent-color;
+            border-bottom: 2px solid abs.$accent-color;
+            @include abs.desktop {
+                border-bottom: 3px solid abs.$accent-color;
+            }
+            &:hover,
+            &.active {
+                color: abs.$base-color;
+                background-color: rgba(213, 171, 2, 0.8);
+            }
+            
+            &:nth-child(2),
+            &:nth-child(4) {
+                color: #c86a16;
+                border-bottom: 2px solid #c86a16;
+                @include abs.desktop {
+                  border-bottom: 3px solid #c86a16;
+                }
+                &:hover,
+                &.active {
+                    background-color: rgba(200, 106, 22, 0.8);
+                }
+            }
+            &:nth-child(3) {
+                color: abs.$second-accent-color;
+                border-bottom: 2px solid abs.$second-accent-color;
+                @include abs.desktop {
+                    border-bottom: 3px solid abs.$second-accent-color;
+                }
+                &:hover,
+                &.active {
+                    background-color: rgba(187, 42, 43, 0.8);
+                }
+            }
+            &:nth-child(2),
+            &:nth-child(4),
+            &:nth-child(3) {
+                &:hover,
+                &.active {
+                    color: abs.$base-color;
+                } 
+            }  
+        }
+    }
+
+    &-solutions {
+        &-btn {
+            background-color: abs.$accent-color;
+            color: abs.$base-color;
+            @include abs.tablet {
+                margin: 15px;
+            }
+            &:hover,
+            &.active {
+                background: linear-gradient(140deg, abs.$accent-color 1%, abs.$second-accent-color 40%, abs.$second-dark-color 85%);
+            }
+        }
+        
+    }
+  }

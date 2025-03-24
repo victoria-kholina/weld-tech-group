@@ -45,54 +45,33 @@ $(function() {
 
     // Set SVG sprites code from the file to the html of every page. Needed for crossbrawser support
 
-    const basePath = window.location.pathname.includes('/services/')
-    ? '../assets/img/sprite.svg' : './assets/img/sprite.svg'; 
+    const basePath = '/assets/img/sprite.svg'; // абсолютный путь от корня
 
     $.ajax({
-      url: basePath, 
+      url: basePath,
       method: 'GET',
       dataType: 'text',
       success: function (data) {
         const parser = new DOMParser();
-        const svgDoc= parser.parseFromString(data, 'image/svg+xml');
+        const svgDoc = parser.parseFromString(data, 'image/svg+xml');
         const svgElem = svgDoc.documentElement;
-        $('body').append(svgElem); 
+        document.body.prepend(svgElem); // лучше prepend — для доступа в <use>
       },
       error: function () {
-        console.error('Error in downloading svg');
+        console.error('Ошибка при загрузке SVG спрайта:', basePath);
       },
     });
-
-    // change video size on screen resize
-
-    // function resizeVideo() {
-    //   var videoHeight = $(window).height();
-    //   var videoWidth = videoHeight * (9 / 16); 
-    //   $('.welcome-video').css({
-    //       'width': videoWidth + 'px'
-    //   });
-    // }
-    // if($(window).width() > 1200) {
-    //   resizeVideo();
-    // }
     
-    // $(window).resize(function(){
-    //   if($(window).width() > 1200) {
-    //     resizeVideo();
-    //   }
-    // });
-
-    // sticky menu height
 
     
-      function setStickyMenuHeight() {
-        
-        let stickyMenu = $(".sticky-menu-wrap");
-        let banner = $(".welcome-banner");
-
-        if(banner) { stickyMenu.css("height", banner.outerHeight()) };     
+    function setStickyMenuHeight() {
       
-      }
+      let stickyMenu = $(".sticky-menu-wrap");
+      let banner = $(".welcome-banner");
+
+      if(banner) { stickyMenu.css("height", banner.outerHeight()) };     
+    
+    }
 
     if($(window).width() > 767) {
       setStickyMenuHeight();
@@ -279,6 +258,50 @@ $(function() {
     $(".menu-item a").on("click", function () {
         menuToggle.removeClass("open");
         mobileMenu.removeClass("open");
+    });
+
+    function loadImage(img) {
+      const $img = $(img);
+      const src = $img.attr('data-src');
+      if (src) {
+        $img.attr('src', src)
+          .on('load', function () {
+            $img.addClass('loaded');
+          })
+          .removeAttr('data-src');
+      }
+    }
+  
+    function lazyLoadVisibleImages() {
+      $('.lazy-image[data-src]').each(function () {
+        const rect = this.getBoundingClientRect();
+        const inViewport = rect.top < window.innerHeight && rect.bottom > 0;
+        if (inViewport) {
+          loadImage(this);
+        }
+      });
+    }
+  
+    // При загрузке страницы
+    lazyLoadVisibleImages();
+  
+    // При скролле
+    $(window).on('scroll', lazyLoadVisibleImages);
+  
+    // Если изображения находятся в табах — загружаем при активации
+    $('.tabs-btn').on('click', function () {
+      const tabId = $(this).data('tab');
+  
+      $('.tabs-btn').removeClass('active');
+      $(this).addClass('active');
+  
+      $('.tabs-content').removeClass('active');
+      $('#' + tabId).addClass('active');
+  
+      // Загружаем изображения внутри активного таба
+      $('#' + tabId).find('.lazy-image[data-src]').each(function () {
+        loadImage(this);
+      });
     });
 
   
