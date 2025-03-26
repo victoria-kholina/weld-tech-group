@@ -304,6 +304,7 @@ a {
   }
 }
 
+
 .light-image-bg {
   background: url(../assets/img/light-bg-img-1.webp) center no-repeat;
     background-size: cover;
@@ -312,21 +313,9 @@ a {
   background: url(../assets/img/services-bg.webp) center no-repeat;
     background-size: cover;
 }
-
-.know-more {
-  border-top: 10px solid abs.$accent-color;
-  border-bottom: 10px solid abs.$accent-color;
-  border-image-source: linear-gradient(90deg, rgba(187, 42, 43, 0.7) 25%, rgba(213, 171, 2, 0.7) 75%);
-  border-image-slice: 1;
-  @include abs.desktop {
-    border-width: 20px;
-  }
-  &-text {
-    color: abs.$base-color;
-    text-align: center;
-  }
+.light-bg {
+  background-color: abs.$light-color;
 }
-
 .lazy-image {
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -334,3 +323,15 @@ a {
     opacity: 1;
   }
 }
+
+.accent-section-borders {
+  border-top: 10px solid abs.$accent-color;
+    border-bottom: 10px solid abs.$accent-color;
+    border-image-source: linear-gradient(90deg, rgba(187, 42, 43, 0.7) 25%, rgba(213, 171, 2, 0.7) 75%);
+    border-image-slice: 1;
+    color: abs.$base-color;
+    @include abs.desktop {
+      border-width: 20px;
+    }
+}
+

@@ -7,7 +7,206 @@
     
 </head>
 <body>
-    <%- include('../templates/header.ejs' , { isInnerPage: true }) %>
+<%- include('../templates/header.ejs' , { isInnerPage: true }) %>
+
+
+<section class="simple-section">
+    <div class="container-md container-xxl h-100">
+        <div class="simple-section__title dark">
+            <h2>Наши проекты</h2>
+            <p class="accent-text-block all">
+                <b>Наши проекты - это наша гордость!</b><br>Благодаря накопленному опыту и налаженным деловым связям наши проекты выполняются в соответствии с установленными сроками и бюджетными планами, обеспечивая заказчикам надёжный результат и соблюдение всех нормативно-правовых требований.</p>
+        </div>
+
+        <div class="projects">
+            <div class="row projects-row">
+                <div class="col-12 col-md-4 projects__title">
+                    <svg class="icon">
+                        <use xlink:href="#pipelines"></use>
+                    </svg>
+                    <h3>Монтаж трубопроводов для пищевых предприятий и химических производств</h3>
+                </div>
+                <div class="col-12 col-md-8 projects__text">
+                    <ul class="accent-list">
+                        <li>
+                            <p>Установка высокотехнологичных систем транспортировки жидкостей, газов и сыпучих материалов.</p>
+                        </li>
+                        <li>
+                            <p>Учёт жёстких требований безопасности и санитарно-гигиенических норм.</p>
+                        </li>
+                        <li>
+                            <p>Сварка труб из нержавеющих и высоколегированных сталей, титана, алюминия и других материалов с учётом химических и температурных особенностей среды.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="row projects-row">
+                <div class="col-12 col-md-4 projects__title">
+                    <svg class="icon icon-equipment">
+                        <use xlink:href="#industry-equipment"></use>
+                    </svg>
+                    <h3>Изготовление и ввод в эксплуатацию конвейерных систем и рольгангов</h3>
+                </div>
+                <div class="col-12 col-md-8 projects__text">
+                    <ul class="accent-list">
+                        <li>
+                            <p>Проектирование и производство конвейеров для непрерывного движения грузов в пищевой, химической и других отраслях.</p>
+                        </li>
+                        <li>
+                            <p>Монтаж и пуско-наладка оборудования на месте, обучение персонала заказчика.</p>
+                        </li>
+                        <li>
+                            <p>Интеграция в уже существующие производственные линии с учётом ограниченного пространства и особенностей производственного процесса.</p>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div> 
+            <div class="row projects-row">
+                <div class="col-12 col-md-4 projects__title">
+                    <svg class="icon">
+                        <use xlink:href="#capacitive-equipment"></use>
+                    </svg>
+                    <h3>Производство резервуаров для молочных продуктов, напитков и агрессивных сред</h3>
+                </div>
+                <div class="col-12 col-md-8 projects__text">
+                    <ul class="accent-list">
+                        <li>
+                            <p>Изготовление емкостей разного объема и конфигурации — от типовых до полностью нестандартных решений.</p>
+                        </li>
+                        <li>
+                            <p>Применение высококачественных сплавов для обеспечения коррозионной стойкости, термоизоляции и герметичности.</p>
+                        </li>
+                        <li>
+                            <p>Возможность установки систем нагрева/охлаждения, смесителей и датчиков контроля (температура, уровень, давление и т.д.).</p>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="row projects-row">
+                <div class="col-12 col-md-4 projects__title">
+                    <svg class="icon">
+                        <use xlink:href="#metal-structures"></use>
+                    </svg>  
+                    <h3>Установка дополнительных площадок и сервисных платформ в фармацевтической сфере</h3>
+                </div>
+                <div class="col-12 col-md-8 projects__text">
+                    <ul class="accent-list">
+                        <li>
+                            <p>Изготовление и монтаж металлоконструкций, отвечающих требованиям стерильности и GMP-стандартам.</p>
+                        </li>
+                        <li>
+                            <p>Проектирование площадок для безопасного обслуживания технологических линий и оборудования, в том числе в многоуровневых помещениях.</p>
+                        </li>
+                        <li>
+                            <p>Продуманные решения для оптимизации рабочих процессов, повышения безопасности и удобства персонала.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+
+<section id="work-stages" class="simple-section work-stages light-image-bg projects-page-stages">
+    <div class="container-md container-xxl h-100">
+  
+      <div class="simple-section__title dark border-bottom">
+        <h2>Этапы работы над проектом</h2>
+      </div>
+
+      <%- include('../templates/work-stages.ejs') %>
+    </div>
+</section>
+
+<section id="quality" class="simple-section quality">
+    <div class="container-md container-xxl h-100">
+      <div class="row">
+        <div class="col-12 col-lg-4 quality-image">
+  
+          <div class="shadow-image left animate-on-scroll">
+            <div class="shadow-image-wrap">
+                <img src="../assets/img/IMG_2732.webp" alt="Quality work">
+            </div>
+          </div>
+  
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="quality-content">
+            <h3 class="simple-section__subtitle subtitle-right">Мы используем только высококачественные<br> материалы и оборудование</h3>
+            <p class="accent-text-block right">
+                Мы используем исключительно проверенную металлопродукцию и работаем только с надёжными поставщиками, 
+                чьи материалы соответствуют международным стандартам качества и безопасности. 
+                В процессе отбора мы учитываем такие параметры, как химический состав, механические характеристики, 
+                коррозионная стойкость и сертификация металлопроката. <br><br>
+                
+                Благодаря строгому контролю на всех этапах — 
+                от закупки до входящего контроля на производстве мы можем гарантировать стабильность свойств металлов и сплавов, 
+                что напрямую влияет на долговечность и надёжность готовых конструкций.<br><br>
+
+                Для обеспечения высокого качества и надёжности сварочных и монтажных работ наша компания 
+                использует современный комплекс оборудования и технологий. Мы постоянно обновляем парк станков и 
+                сварочных аппаратов, совершенствуя производственные процессы и гарантируя стабильные результаты даже 
+                при выполнении проектов повышенной сложности.
+
+            <div class="quality-buttons">
+                <div class="btn-group row justify-content-end">
+                    <span class="arrow arrow-right arrow-dark animate-on-scroll"></span>
+                    <a href="./projects/our-equipment.html" class="simple-button">Наше оборудование</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="simple-section know-more dark-image-bg accent-section-borders">
+    <div class="container-md container-xxl h-100">
+        <div class="simple-section__title light border-bottom">
+            <h2>Наши преимущества</h2>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="know-more-item">
+                    <svg class="icon">
+                        <use xlink:href="#globe"></use>
+                      </svg>
+                    <h4>Международный опыт</h4>
+                    <p>Реализуем проекты в различных правовых и технических средах.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="know-more-item">
+                    <svg class="icon">
+                        <use xlink:href="#road"></use>
+                      </svg>
+                    <h4>Гибкость</h4>
+                    <p>Готовы взяться как за типовой монтаж, так и за индивидуальные, сложные задачи под ключ.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="know-more-item">
+                    <svg class="icon">
+                        <use xlink:href="#quality-certificate-yellow"></use>
+                      </svg>
+                    <h4>Высокие стандарты</h4>
+                    <p>Соблюдаем требования европейских норм, уделяя особое внимание безопасности и качеству.</p> 
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="know-more-item">
+                    <svg class="icon">
+                        <use xlink:href="#mechanic-yellow"></use>
+                      </svg>
+                    <h4>Технологичность</h4>
+                    <p>Постоянно обновляем парк оборудования, применяем современные методы сварки, контроля качества и управления проектами.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
 
 <%- include('../templates/footer.ejs') %>
 

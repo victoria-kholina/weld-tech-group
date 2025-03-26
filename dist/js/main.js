@@ -14516,54 +14516,33 @@ jquery_default()(function() {
 
     // Set SVG sprites code from the file to the html of every page. Needed for crossbrawser support
 
-    const basePath = window.location.pathname.includes('/services/')
-    ? '../assets/img/sprite.svg' : './assets/img/sprite.svg'; 
+    const basePath = '/assets/img/sprite.svg'; // абсолютный путь от корня
 
     jquery_default().ajax({
-      url: basePath, 
+      url: basePath,
       method: 'GET',
       dataType: 'text',
       success: function (data) {
         const parser = new DOMParser();
-        const svgDoc= parser.parseFromString(data, 'image/svg+xml');
+        const svgDoc = parser.parseFromString(data, 'image/svg+xml');
         const svgElem = svgDoc.documentElement;
-        jquery_default()('body').append(svgElem); 
+        document.body.prepend(svgElem); // лучше prepend — для доступа в <use>
       },
       error: function () {
-        console.error('Error in downloading svg');
+        console.error('Ошибка при загрузке SVG спрайта:', basePath);
       },
     });
-
-    // change video size on screen resize
-
-    // function resizeVideo() {
-    //   var videoHeight = $(window).height();
-    //   var videoWidth = videoHeight * (9 / 16); 
-    //   $('.welcome-video').css({
-    //       'width': videoWidth + 'px'
-    //   });
-    // }
-    // if($(window).width() > 1200) {
-    //   resizeVideo();
-    // }
     
-    // $(window).resize(function(){
-    //   if($(window).width() > 1200) {
-    //     resizeVideo();
-    //   }
-    // });
-
-    // sticky menu height
 
     
-      function setStickyMenuHeight() {
-        
-        let stickyMenu = jquery_default()(".sticky-menu-wrap");
-        let banner = jquery_default()(".welcome-banner");
-
-        if(banner) { stickyMenu.css("height", banner.outerHeight()) };     
+    function setStickyMenuHeight() {
       
-      }
+      let stickyMenu = jquery_default()(".sticky-menu-wrap");
+      let banner = jquery_default()(".welcome-banner");
+
+      if(banner) { stickyMenu.css("height", banner.outerHeight()) };     
+    
+    }
 
     if(jquery_default()(window).width() > 767) {
       setStickyMenuHeight();
@@ -14750,6 +14729,50 @@ jquery_default()(function() {
     jquery_default()(".menu-item a").on("click", function () {
         menuToggle.removeClass("open");
         mobileMenu.removeClass("open");
+    });
+
+    function loadImage(img) {
+      const $img = jquery_default()(img);
+      const src = $img.attr('data-src');
+      if (src) {
+        $img.attr('src', src)
+          .on('load', function () {
+            $img.addClass('loaded');
+          })
+          .removeAttr('data-src');
+      }
+    }
+  
+    function lazyLoadVisibleImages() {
+      jquery_default()('.lazy-image[data-src]').each(function () {
+        const rect = this.getBoundingClientRect();
+        const inViewport = rect.top < window.innerHeight && rect.bottom > 0;
+        if (inViewport) {
+          loadImage(this);
+        }
+      });
+    }
+  
+    // При загрузке страницы
+    lazyLoadVisibleImages();
+  
+    // При скролле
+    jquery_default()(window).on('scroll', lazyLoadVisibleImages);
+  
+    // Если изображения находятся в табах — загружаем при активации
+    jquery_default()('.tabs-btn').on('click', function () {
+      const tabId = jquery_default()(this).data('tab');
+  
+      jquery_default()('.tabs-btn').removeClass('active');
+      jquery_default()(this).addClass('active');
+  
+      jquery_default()('.tabs-content').removeClass('active');
+      jquery_default()('#' + tabId).addClass('active');
+  
+      // Загружаем изображения внутри активного таба
+      jquery_default()('#' + tabId).find('.lazy-image[data-src]').each(function () {
+        loadImage(this);
+      });
     });
 
   

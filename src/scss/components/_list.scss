@@ -29,7 +29,7 @@
   }
   
   .simple-list {
-    li {
+    &>li {
       &:before {
         background: url("../assets/img/sprite-bg-icons.svg#check") no-repeat;
       }
@@ -37,7 +37,7 @@
   }
 
   .accent-list {
-    li {
+    &>li {
       &:before {
         background: url("../assets/img/sprite-bg-icons.svg#check-circle") no-repeat;
       }

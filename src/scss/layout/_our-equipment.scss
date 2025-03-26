@@ -1,0 +1,27 @@
+@use '../abstracts/abstracts' as abs;
+
+.our-equipment {
+    &-tabs {
+        .accent-list {
+            &>li {
+                margin-bottom: 30px;
+               &:before {
+                    top: 8px;
+                } 
+            }
+        }
+        .simple-list {
+            margin-top: 15px;
+        }
+        h3, b {
+            color: abs.$second-dark-color;
+        }
+        h3 {
+            margin-bottom: 30px;
+        }
+        h4 {
+            color: abs.$second-accent-color;
+        }
+    }
+
+}

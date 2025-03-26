@@ -1,0 +1,38 @@
+@use '../abstracts/abstracts' as abs;
+
+.know-more {
+    
+    &-text {
+      text-align: center;
+      max-width: abs.$max-width-lg;
+      margin: 0 auto;
+    }
+    &-item {
+        text-align: center;
+        margin-top: 40px;
+        @include abs.desktop {
+          margin-top: 80px;
+        }
+        
+        h4 {
+          color: abs.$accent-color;
+          padding: 10px 0;
+          @include abs.only-mobile {
+            font-size: abs.$h3-size-mobile;
+          }
+          @include abs.desktop {
+            padding: 20px 0;
+          }
+    
+        }
+        .icon {
+          height: 70px;
+          width: 70px;
+          @include abs.desktop {
+            height: 100px;
+            width: 100px;
+          }
+        }
+        
+      }
+  }

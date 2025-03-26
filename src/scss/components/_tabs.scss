@@ -12,18 +12,17 @@
         padding: 10px 15px;
         white-space: normal;
         height: auto;
-        @include abs.desktop-sm {
+        @include abs.tablet {
             width: auto;
         }
         &-wrap {
             display: flex;
             flex-direction: column;
-            @include abs.desktop-sm {
+            @include abs.tablet {
                 flex-direction: row;
             }
         }
     }
-
     .gallery {
         padding: 0;
     }
@@ -44,7 +43,7 @@
         transform: scale(1);
     }
 
-    &-gallery {
+    &-accent {
         &-content {
             border: 1px solid abs.$light-color;
             border-top: none;
@@ -101,12 +100,35 @@
         &-btn {
             background-color: abs.$accent-color;
             color: abs.$base-color;
+            margin: 5px 0;
             @include abs.tablet {
                 margin: 15px;
             }
             &:hover,
             &.active {
                 background: linear-gradient(140deg, abs.$accent-color 1%, abs.$second-accent-color 40%, abs.$second-dark-color 85%);
+            }
+        }
+        &-content {
+            h4 {
+                color: abs.$second-dark-color;
+                padding: 30px 0 20px;
+                @include abs.tablet {
+                    &:first-child {
+                        padding-top: 0;
+                    }
+                }
+            }
+            .simple-list {
+                b {
+                    color: abs.$second-dark-color; 
+                }
+            }
+            &>.row {
+                margin-bottom: 20px;
+                @include abs.desktop {
+                    margin-bottom: 40px;
+                }
             }
         }
         

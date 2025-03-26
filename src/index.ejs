@@ -90,41 +90,7 @@
 
 <%- include('./templates/features.ejs') %>
 
-<section id="stuff" class="simple-section stuff">
-  <div class="container-md container-xxl h-100">
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-8 stuff-content">
-        <div class="stuff-content__heading">
-          <h3>Более</h3>
-          <div class="stuff-content__heading-row">
-            <h2 class="gradient-number animate-on-scroll zoom-In">50</h2>
-            <h4>высококвалифицированных сотрудников с многолетним опытом сварки композиционных материалов и других материалов, 
-            имеющих сложные характеристики свариваемости.</h4>
-            
-          </div>
-          
-        </div>
-        <div class="stuff-content__text">
-          <p class="accent-text-block left">
-            <b>Наша команда</b> — это высококвалифицированные сварщики и конструкторы, которые регулярно проходят обучение и осваивают современные 
-            технологии, документируют и сертифицируют каждый этап работ. Ключевую роль в компании играют сварщики, способные выполнять 
-            сварку «под зеркало» (mirror welding), а также сварку труб из нержавеющей стали, различных сплавов и конструкций. 
-            Они безупречно справляются с работами на материалах от углеродистой и легированной стали (включая карбиды) до трудносвариваемых 
-            металлов, обеспечивая высокое качество стыков и монтажных соединений.
-        </p>
-        </div>
-        
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="shadow-image right animate-on-scroll">
-          <div class="shadow-image-wrap">
-              <img src="./assets/img/welder.webp" alt="Welder">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<%- include('./templates/stuff.ejs') %>
 
 <%- include('./templates/services.ejs', { isInnerPage: false }) %>
 
@@ -175,96 +141,23 @@
         строгом соблюдении технических регламентов и тесном взаимодействии с заказчиками на каждом этапе.</p>
     </div>
 
-    <div class="row work-stages-row">
-      <div class="col-12 col-md-6 offset-sm-0 work-stages-item item-1">
-        <div class="work-stages-item__wrap">
-          <h4 class="work-stages-item__title">Консультация</h4>
-          <p class="work-stages-item__description">На первой консультации мы уточняем основные требования и специфику проекта, отвечаем на вопросы клиента и обсуждаем дальнейший 
-            план работы.</p>
-            <div class="stage-circle zoom-In animate-on-scroll">1</div>
-        </div>
-      </div>
+      <%- include('./templates/work-stages.ejs') %>
 
-      <div class="col-12 col-md-6 offset-md-6 work-stages-item item-2">
-        <div class="work-stages-item__wrap">
-          <h4 class="work-stages-item__title">Анализ и планирование</h4>
-          <p class="work-stages-item__description">Определяем технические параметры, сроки и бюджет учитывая нюансы отрасли и местные нормативы.</p>
-          <div class="stage-circle zoom-In animate-on-scroll">2</div>
+      <div class="btn-group group-center">
+        <div class="btn-group-nowrap">
+          <a href="./projects/projects.html" class="simple-button">Подробнее о проектах</a>
+          <span class="arrow arrow-left arrow-dark animate-on-scroll"></span>
+        </div>
+        <div class="btn-group-nowrap">
+          <span class="arrow arrow-right arrow-dark animate-on-scroll"></span>
+          <a href="./projects/industry-solutions.ejs" class="simple-button">Отраслевые решения</a>
         </div>
       </div>
-
-      <div class="col-12 col-md-6 offset-sm-0 work-stages-item item-3">
-        <div class="work-stages-item__wrap">
-          <h4 class="work-stages-item__title">Проектирование</h4>
-          <p class="work-stages-item__description">Создаём детализированные чертежи и 3D-модели, согласовываем спецификации и график поставок материалов.</p>
-          <div class="stage-circle zoom-In animate-on-scroll">3</div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 offset-md-6 work-stages-item item-4">
-        <div class="work-stages-item__wrap">
-          <h4 class="work-stages-item__title">Производство и сварочные работы</h4>
-          <p class="work-stages-item__description">Мы используем современные технологии  (WIG–TIG, MIG–MAG, орбитальная сварка и др.) и сертифицированные материалы.</p>
-          <div class="stage-circle zoom-In animate-on-scroll">4</div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 offset-sm-0 work-stages-item item-5">
-        <div class="work-stages-item__wrap">
-          <h4 class="work-stages-item__title">Монтаж и проверка</h4>
-          <p class="work-stages-item__description">Опытные бригады выезжают на объект выполняют установку и пуско-наладку. Проводим тестирование на герметичность, 
-          прочность и соответствие техническим требованиям.</p>
-          <div class="stage-circle zoom-In animate-on-scroll">5</div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 offset-md-6 work-stages-item item-6">
-        <div class="work-stages-item__wrap">
-          <h4 class="work-stages-item__title">Сдача объекта и сопровождение</h4>
-          <p class="work-stages-item__description">Оформляем необходимую документацию (сертификаты, акты приёмки), даём гарантии и при необходимости обеспечиваем сервисное обслуживание.</p>
-          <div class="stage-circle zoom-In animate-on-scroll">6</div>
-        </div>
-      </div>
-      <span class="stage-line"></span>
-    </div>
-    <div class="btn-group group-center">
-      <div class="btn-group-nowrap">
-        <a href="./projects/projects.html" class="simple-button">Подробнее о проектах</a>
-        <span class="arrow arrow-left arrow-dark animate-on-scroll"></span>
-      </div>
-      <div class="btn-group-nowrap">
-        <span class="arrow arrow-right arrow-dark animate-on-scroll"></span>
-        <a href="./projects/industry-solutions.ejs" class="simple-button">Отраслевые решения</a>
-      </div>
-      
-    </div>
   </div>
 </section>
 
-<section id="certificates" class="simple-section certificate">
-  <div class="container-md container-xxl h-100">
-    <div class="simple-section__title light border-bottom">
-      <h2>Мы обладаем сертификатами,<br>
-        которые имеют значение!</h2>
-    </div>
-    <div class="row certificate-row">
-      <div class="col-12 col-md-6">
-        <div class="row flex-column align-items-center">
-          <h2 class="certificate-name zoom-In animate-on-scroll">ISO 3834 – 2</h2>
-          <h5 class="certificate-text">подтверждает компетентность персонала и качество выполняемых работ.</h5>
-          <img src="../src/assets/img/EN-ISO-3834-2.webp" class="certificate-image open-modal" alt="Preview ISO 3834 – 2" data-type="pdf" data-src="../assets/img/pdf/EN-ISO-3834-2-ENG.pdf">
-        </div>
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="row flex-column align-items-center">
-           <h2 class="certificate-name zoom-In animate-on-scroll">EN 1090-1034</h2>
-            <h5 class="certificate-text">подтверждает наличие эффективной системы контроля качества на заводе и соответствие продукции европейским требованиям</h5>
-            <img src="../src/assets/img/1090-1034.webp" class="certificate-image open-modal" alt="Preview 1090-1034" data-type="pdf" data-src="../assets/img/pdf/EN-1090-ENG.pdf">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+<%- include('./templates/certificates.ejs') %>
 
 <%- include('./templates/footer.ejs') %>
 
