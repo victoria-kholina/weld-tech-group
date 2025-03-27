@@ -2,7 +2,8 @@
 
 <html lang="ru">
 <head>
-    <title>Weld Tech Group</title>
+    <title>Weld Tech Group - Наши проекты</title>
+    <meta name="description" content="Наша команда опытных специалистов реализует проекты в Польше, Литве, Германии и других странах Евросоюза. Монтаж трубопроводов, резервуары, конвейеры, площадки — под ключ.">
     <%- include('../templates/meta.ejs') %>
     
 </head>
@@ -10,7 +11,8 @@
 <%- include('../templates/header.ejs' , { isInnerPage: true }) %>
 
 
-<section class="simple-section">
+<section class="simple-section projects-section">
+    
     <div class="container-md container-xxl h-100">
         <div class="simple-section__title dark">
             <h2>Наши проекты</h2>
@@ -104,6 +106,14 @@
                     </ul>
                 </div>
             </div> 
+            <div class="row projects-bottom-text">
+                <h4><span>Каждый наш проект</span> — это точность, надежность и внимание к деталям. <br>
+                    Ознакомьтесь с нашими выполненными работами в галерее!</h4>
+                    <div class="btn-group">
+                      <a href="../projects/gallery-projects.html" class="simple-button">Галлерея проектов</a>
+                      <span class="arrow arrow-left arrow-dark animate-on-scroll"></span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -152,7 +162,7 @@
             <div class="quality-buttons">
                 <div class="btn-group row justify-content-end">
                     <span class="arrow arrow-right arrow-dark animate-on-scroll"></span>
-                    <a href="./projects/our-equipment.html" class="simple-button">Наше оборудование</a>
+                    <a href="../projects/our-equipment.html" class="simple-button">Наше оборудование</a>
                 </div>
             </div>
           </div>
@@ -167,7 +177,7 @@
             <h2>Наши преимущества</h2>
         </div>
         <div class="row">
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="know-more-item">
                     <svg class="icon">
                         <use xlink:href="#globe"></use>
@@ -176,7 +186,7 @@
                     <p>Реализуем проекты в различных правовых и технических средах.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="know-more-item">
                     <svg class="icon">
                         <use xlink:href="#road"></use>
@@ -185,7 +195,7 @@
                     <p>Готовы взяться как за типовой монтаж, так и за индивидуальные, сложные задачи под ключ.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="know-more-item">
                     <svg class="icon">
                         <use xlink:href="#quality-certificate-yellow"></use>
@@ -194,7 +204,7 @@
                     <p>Соблюдаем требования европейских норм, уделяя особое внимание безопасности и качеству.</p> 
                 </div>
             </div>
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-6 col-lg-3">
                 <div class="know-more-item">
                     <svg class="icon">
                         <use xlink:href="#mechanic-yellow"></use>

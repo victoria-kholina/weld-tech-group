@@ -72,19 +72,4 @@
             }
         }
     }
-    &-content {
-        margin-top: 30px;
-        @include abs.tablet {
-            margin-top: 50px;
-        }
-        h4>span{
-           color: abs.$second-dark-color
-        }
-        .btn-group { 
-            margin-top: 30px;
-            .simple-button {
-                margin-left: 0;
-            }
-        }
-    }
 }
