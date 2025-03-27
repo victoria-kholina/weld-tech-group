@@ -7,7 +7,7 @@ const fs = require('fs');
 
 const PATHS = {
     src: path.resolve(__dirname, '../src'),
-    dist: path.resolve(__dirname, '../dist'),
+    dist: path.resolve(__dirname, '../docs'),
     styles: 'css/',
     assets: 'assets/',
     services: 'services',
