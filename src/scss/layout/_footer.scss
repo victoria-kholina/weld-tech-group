@@ -119,7 +119,7 @@
         text-align: center;
         @include abs.tablet {
             display: flex;
-            justify-content: space-between;  
+            justify-content: center;  
         }
         p, a {
             font-family: abs.$AlumniSans-Medium;

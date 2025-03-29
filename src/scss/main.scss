@@ -334,4 +334,19 @@ a {
       border-width: 20px;
     }
 }
+.visible-tablet,
+.visible-only-mobile {
+  display: none;
+}
 
+.visible-tablet {
+  @include abs.tablet {
+    display: block;
+    }
+}
+
+.visible-only-mobile {
+  @include abs.only-mobile {
+    display: block;
+    }
+}

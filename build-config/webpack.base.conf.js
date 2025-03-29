@@ -93,7 +93,7 @@ module.exports = {
             new ImageMinimizerPlugin({
                 minimizer: {
                     implementation: ImageMinimizerPlugin.imageminGenerate,
-                    options: { plugins: [['imagemin-webp', { quality: 60 }]] }
+                    options: { plugins: [['imagemin-webp', { quality: 80 }]] }
                 }
             })
         ]

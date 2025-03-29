@@ -85,18 +85,29 @@
 <div class="sticky-menu-wrap">
   <ul class="sticky-menu">
     <li class="sticky-menu__item icon-phone">
-      <a href="tel:+48510552446" target="_blank">
+      <a href="#contacts" class="visible-tablet">
+        <svg class="icon">
+          <use xlink:href="#phone"></use>
+        </svg>
+      </a>
+      <a href="tel:+48510552446" target="_blank" class="visible-only-mobile">
         <svg class="icon">
           <use xlink:href="#phone"></use>
         </svg>
       </a>
     </li>
     <li class="sticky-menu__item icon-mail">
-      <a href="mailto:info@weld-tech.group" target="_blank">
+      <a href="#contacts"  class="visible-tablet">
         <svg class="icon">
           <use xlink:href="#mail"></use>
         </svg>
       </a>
+      <a href="mailto:info@weld-tech.group" target="_blank" class="visible-only-mobile">
+        <svg class="icon">
+          <use xlink:href="#mail"></use>
+        </svg>
+      </a>
+
     </li>
     <li class="sticky-menu__item icon-location">
       <a href="#contacts">

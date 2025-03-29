@@ -17,7 +17,7 @@
     }
     &-name {
         color: abs.$accent-color;
-        box-shadow: abs.$shadow-white-text;
+        text-shadow: abs.$shadow-white-text;
         font-size: 56px;
         @include abs.desktop {
             font-size: 76px;

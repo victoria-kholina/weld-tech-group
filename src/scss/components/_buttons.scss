@@ -78,6 +78,9 @@ input[type='submit'] {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    @include abs.only-mobile {
+        overflow: hidden;
+    }
     &.group-center {
       justify-content: center;
     }

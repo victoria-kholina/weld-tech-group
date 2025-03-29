@@ -1,0 +1,42 @@
+<div class="accent-bg simple-section form-section">
+    <div class="container-md container-xxl h-100">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="form-section-text">
+                    <h3>Форма обратной связи</h3>
+                    <h5>Ждём ваших обращений и будем рады помочь воплотить в жизнь проекты любой сложности!</h5>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 ">
+                <form id="contact-form" class="contact-form" method="POST">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="contact-form-group">
+                                <label for="user-name">Ваше имя <span class="accent-text">*</span></label>
+                                <input type="text" id="user-name" name="user-name" class="contact-form-group__item" required>
+                            </div>
+                            <div class="contact-form-group">
+                                <label for="user-email">Ваш email <span class="accent-text">*</span></label>
+                                <input  type="email" id="user-email" name="user-email" class="contact-form-group__item" required 
+                                        pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" 
+                                        title="Введите корректный email (например, example@mail.com)">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="contact-form-group h-100">
+                                <label for="user-message">Ваше сообщение</label>
+                                <textarea id="user-message" name="user-message" class="contact-form-group__item textarea-item"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-group d-flex justify-content-end">
+                        <input type="submit" value="Отправить" class="contact-form-group__button simple-button">
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <p id="form-status" class="contact-form-status"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
