@@ -1,0 +1,25 @@
+{
+  "title": "Weld Tech Group - Kontaktai",
+  "meta": {
+    "title": "Weld Tech Group - Kontaktai",
+    "description": "Susisiekite su mumis, kad aptartume jūsų projektą. Esame pasirengę padėti atlikti bet kokio sudėtingumo užduotis."
+  },
+  "pageTitle": "Kontaktai",
+  "description": "Esame pasirengę atsakyti į visus jūsų klausimus ir padėti įgyvendinti projektą.",
+  "address": {
+    "title": "Adresas",
+    "street": "Pramonės g. 123",
+    "city": "Varšuva",
+    "postalCode": "00-001",
+    "country": "Lenkija"
+  },
+  "contact": {
+    "title": "Kontaktinė informacija",
+    "phone": "+48 123 456 789",
+    "email": "info@weldtechgroup.pl"
+  },
+  "form": {
+    "title": "Kontaktinė forma",
+    "description": "Užpildykite formą ir mes su jumis susisieksime kuo greičiau."
+  }
+} 

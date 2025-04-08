@@ -1,0 +1,57 @@
+{
+  "title": "Weld Tech Group - About the Company",
+  "meta": {
+    "description": "Over 15 years of experience in industrial facilities. We specialize in professional welding and installation of technological pipelines, production of equipment and metal structures for chemical, food, pharmaceutical and other industrial sectors."
+  },
+  "pageTitle": "About Us",
+  "alt": {
+    "image": "Weld Tech Group team and equipment",
+    "team": "Weld Tech Group team",
+    "equipment": "Weld Tech Group equipment",
+    "work": "Weld Tech Group work"
+  },
+  "history": {
+    "title": "Our History and Values",
+    "text": {
+      "1Peace": "The company",
+      "2Peace": "has been constantly expanding its range of services and improving the quality of work in the field of welding and installation of technological pipelines, production of metal structures and industrial containers since its establishment. International experience gained in various industries: food, chemical, energy.",
+      "3Peace": "Obtaining certificates",
+      "4Peace": "and engineering staff allows for developing documentation and managing projects, ensuring work execution guarantee.",
+      "5Peace": "Our reliability and professionalism are confirmed by long-term relationships with regular clients in Poland, Lithuania, Germany and other European countries."
+    }
+  },
+  "video": {
+    "notSupported": "Your browser does not support video."
+  },
+  "values": {
+    "title": "Five immutable principles that form the basis of our work.",
+    "items": {
+      "quality": {
+        "title": "Quality proven by time",
+        "text": "We apply modern welding methods, using only certified materials. Each production stage is strictly controlled, which guarantees durability and safety of finished structures."
+      },
+      "teamwork": {
+        "title": "Teamwork",
+        "text": "Our specialists have a high level of preparation and regularly improve their qualifications. They can work with a wide range of materials: from high-alloy and low-alloy steels to titanium and aluminum. Such a professional approach allows us to flawlessly implement both standard and non-standard projects."
+      },
+      "customer": {
+        "title": "Customer orientation",
+        "text": "We listen to customer needs and strive to propose an optimal solution taking into account budget, deadlines and specifics of a particular enterprise. Individual approach and flexibility in work help build long-term partnership relations."
+      },
+      "responsibility": {
+        "title": "Responsibility and transparency",
+        "text": "Compliance with technical standards, environmental requirements and safety standards — unconditional priority. We document and certify each stage of work, ensuring maximum complete reporting to clients and controlling bodies."
+      },
+      "improvement": {
+        "title": "Continuous improvement",
+        "text": "We invest in modern equipment, innovative technologies and employee training. This ensures a high level of competence and allows us to maintain a leading position in the welding and installation services market."
+      }
+    },
+    "bottomText": "Thanks to such a comprehensive approach, Weld Tech Group enjoys well-deserved trust from both large industrial enterprises and small companies looking for a reliable contractor. Our main goal is to transform customer ideas into efficient, safe and durable solutions that are an example of quality and professionalism."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "text": "providing reliable, innovative and environmentally friendly solutions in welding and metal processing, contributing to the development of industry in local and international markets. We strive not only to meet customer needs, but also to exceed their expectations through high quality work, use of advanced technologies and continuous process improvement."
+  },
+  "experience": "Our team of experienced specialists carries out projects in Poland, Lithuania, Germany and other EU countries."
+} 

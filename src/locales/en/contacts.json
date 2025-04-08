@@ -1,0 +1,34 @@
+{
+  "title": "Weld Tech Group - Contact",
+  "meta": {
+    "title": "Weld Tech Group - Contact",
+    "description": "Contact us to discuss your project. We are ready to help with tasks of any complexity."
+  },
+  "pageTitle": "Contact",
+  "description": "We are ready to answer all your questions and help with project implementation.",
+  "address": {
+    "title": "Address",
+    "street": "Industrial St. 123",
+    "city": "Warsaw",
+    "postalCode": "00-001",
+    "country": "Poland"
+  },
+  "contact": {
+    "title": "Contact Information",
+    "phone": "+48 123 456 789",
+    "email": "info@weldtechgroup.pl"
+  },
+  "form": {
+    "title": "Contact Form",
+    "description": "Fill out the form and we will contact you as soon as possible.",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send"
+    },
+    "success": "Thank you for your message! We will contact you soon.",
+    "error": "An error occurred while sending the message. Please try again later."
+  }
+} 

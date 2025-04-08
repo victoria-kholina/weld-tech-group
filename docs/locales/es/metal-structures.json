@@ -1,0 +1,26 @@
+{
+  "title": "Weld Tech Group - Estructuras metálicas y plataformas de servicio",
+  "meta_description": "Fabricación y montaje de estructuras metálicas: cerchas, escaleras, barandillas, marcos. Acero, aluminio, acero inoxidable. Alta precisión en soldadura, protección anticorrosiva, fiabilidad y durabilidad de las estructuras.",
+  "main_title": "Estructuras metálicas y plataformas de servicio",
+  "main_description": "Fabricamos y montamos estructuras metálicas de diversa complejidad, incluyendo cerchas, escaleras, barandillas, marcos para montaje de armarios de control y mucho más. Todos los productos cumplen con las normas de resistencia y seguridad.",
+  "materials": {
+    "title": "Tipos de materiales para estructuras metálicas:",
+    "steel": {
+      "title": "Acero al carbono (St.20)",
+      "description": "Las estructuras pueden recubrirse con pinturas en polvo o esmaltes químicamente resistentes; adecuadas para uso tanto en interiores como en exteriores."
+    },
+    "aluminum": {
+      "title": "Aluminio y aleaciones",
+      "description": "Soluciones ligeras, móviles y resistentes, especialmente importantes cuando se requiere reubicación o transporte frecuente de las estructuras."
+    },
+    "stainless": {
+      "title": "Aceros de alta aleación (inoxidables) (AISI–316L, AISI–304L, AISI–430)",
+      "description": "Se caracterizan por su alta resistencia a la corrosión, aspecto elegante y son ideales para la industria alimentaria, química y farmacéutica."
+    }
+  },
+  "bottom_description": "La soldadura se realiza mediante métodos WIG–TIG (AC/DC) y MIG–MAG, lo que garantiza alta precisión, limpieza de las soldaduras y larga vida útil de las estructuras.",
+  "realisations": {
+    "title": "Nuestras realizaciones",
+    "description": "Cada uno de nuestros proyectos refleja el cumplimiento exacto de los requisitos del cliente, un modelo económico bien pensado y una ejecución técnica impecable."
+  }
+} 

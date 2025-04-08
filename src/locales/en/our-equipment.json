@@ -1,0 +1,111 @@
+{
+  "title": "Weld Tech Group - Equipment",
+  "meta_description": "Modern equipment of Weld Tech Group: welding machines, CNC machines, quality control systems. Technological base for precise and fast project implementation.",
+  "main_title": "Equipment",
+  "main_description": "We ensure high quality and reliability through modern equipment and advanced technologies.",
+  "tabs": {
+    "welding": "Welding Equipment",
+    "machining": "Machines and Equipment for Processing",
+    "weld_preparation": "Equipment for Weld Preparation and Processing",
+    "quality_control": "Quality Control and Testing",
+    "lifting": "Lifting and Transport Equipment"
+  },
+  "sections": {
+    "welding": {
+      "title": "Welding Equipment",
+      "tig": {
+        "title": "TIG (WIG) Welding Machines",
+        "description": "Allow obtaining high-quality welds when working with stainless steel, titanium alloys, and other materials requiring precise and careful welding.",
+        "manual": "Manual TIG (WIG) welding machines — for welding tubes, thin sheets, and parts with complex shapes.",
+        "orbital": "Orbital welding — automated equipment for welding tubes with diameters from 6 to 115 mm and wall thicknesses up to 3 mm, ensuring high productivity and reproducibility of results."
+      },
+      "mig": {
+        "title": "MIG-MAG Welding Machines",
+        "description": "High-productivity machines for welding carbon and alloyed steels, as well as aluminum alloys. Ensure stable arc and uniform penetration, which is especially important when working with thicker wall thicknesses."
+      },
+      "mma": {
+        "title": "MMA (Shielded Metal Arc Welding)",
+        "description": "Traditional arc welding technology, necessary in the assembly of metal structures with large cross-sections, as well as in conditions requiring mobility or work in the open air."
+      },
+      "oxy": {
+        "title": "Equipment for Gas Welding and Brazing",
+        "description": "Used for specific tasks such as brazing non-ferrous metals or small-series welding work requiring special precision and careful temperature control."
+      }
+    },
+    "machining": {
+      "title": "Machines and Equipment for Processing",
+      "cnc": {
+        "title": "CNC Machines for Metal Cutting",
+        "description": "(laser, plasma, or water — depending on needs) Allow obtaining precise parts with minimal deviations, which is especially important in the production of complex metal structures and technological pipeline components."
+      },
+      "lathes": {
+        "title": "Lathes and Milling Machines",
+        "description": "(including CNC models) Ensure high precision in processing parts, flanges, fittings, and other pipeline system elements. Modern machines reduce production cycle time and ensure stable part quality in large series."
+      },
+      "bending": {
+        "title": "Bending and Rolling Machines",
+        "description": "Used for bending sheet metal and forming cylindrical or conical elements used in tank constructions and housing parts."
+      },
+      "drilling": {
+        "title": "Drilling and Cutting Machines",
+        "description": "Help save time and ensure high reproducibility of holes and cuts in tubes, sheets, and structural profiles."
+      }
+    },
+    "weld_preparation": {
+      "title": "Equipment for Weld Preparation and Processing",
+      "grinding": {
+        "title": "Machines for Grinding and Polishing",
+        "description": "Allow bringing welds and metal surfaces to the required degree of cleanliness and smoothness, which is especially important in the food and pharmaceutical industries, where hygiene is important."
+      },
+      "passivation": {
+        "title": "Systems for Pickling and Passivation",
+        "description": "Used when working with stainless steel, where it is necessary to restore corrosion resistance after welding and final processing."
+      }
+    },
+    "quality_control": {
+      "title": "Quality Control and Testing",
+      "ndt": {
+        "title": "Equipment for Non-Destructive Testing (NDT)",
+        "ultrasonic": "Ultrasonic Defectoscopes",
+        "radiographic": "Radiographic Systems for Weld Control",
+        "penetrant": "Penetrant Testing (PT)",
+        "magnetic": "Magnetic Testing (MT)",
+        "description": "All these methods help detect internal and surface defects in time, increasing the safety and reliability of structures."
+      },
+      "measuring": {
+        "title": "Instruments for Geometry and Linear Dimensions Measurement",
+        "description": "Digital calipers, laser meters, precision gauges allow verifying the conformity of parts with drawings and tolerances."
+      }
+    },
+    "lifting": {
+      "title": "Lifting and Transport Equipment",
+      "cranes": {
+        "title": "Cranes and Hoists",
+        "description": "Used for handling heavy sheet materials, tubes, and finished metal structures within the workshop."
+      },
+      "forklifts": {
+        "title": "Forklifts",
+        "description": "Ensure efficient logistics in the company, simplifying storage and transportation of products."
+      }
+    }
+  },
+  "why_important": {
+    "title": "Why is it Important?",
+    "precision": {
+      "title": "Guarantee of High <br> Precision and Quality",
+      "description": "The use of modern CNC machines and certified welding equipment minimizes the possibility of errors, guaranteeing high final product quality."
+    },
+    "speed": {
+      "title": "High Work <br> Speed and Efficiency",
+      "description": "Thanks to process automation, Weld Tech Group can efficiently execute orders, maintain stable quality, and meet short assembly and production deadlines."
+    },
+    "flexibility": {
+      "title": "Maximum Flexibility and <br> Versatility",
+      "description": "A wide range of equipment allows us to work with various metals and alloys, including difficult-to-weld materials (titanium, aluminum, highly alloyed steels)."
+    },
+    "full_cycle": {
+      "title": "Guarantee of Complete <br> Work Cycle",
+      "description": "Our own production and welding-assembly base allows comprehensive solution of production tasks: from metal cutting and bending to final assembly and testing."
+    }
+  }
+} 

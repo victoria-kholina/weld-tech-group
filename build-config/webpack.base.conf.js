@@ -36,6 +36,13 @@ module.exports = {
     devtool: 'source-map',
     module: {
         rules: [
+            {
+                test: /\.json$/,
+                type: 'asset/source',
+                generator: {
+                    filename: '[path][name][ext]'
+                }
+            },
             { 
                 test: /\.ejs$/i, 
                 use: [
@@ -108,9 +115,13 @@ module.exports = {
                 { from: path.join(PATHS.src, 'favicon.ico'), to: path.join(PATHS.dist, 'favicon.ico') },
                 { from: path.join(PATHS.src, PATHS.assets, 'css'), to: path.join(PATHS.dist, PATHS.assets, 'css') },
                 { from: path.join(PATHS.src, PATHS.assets, 'img'), to: path.join(PATHS.dist, PATHS.assets, 'img') },
-                { from: path.join(PATHS.src, PATHS.assets, 'fonts'), to: path.join(PATHS.dist, PATHS.assets, 'fonts') }
+                { from: path.join(PATHS.src, PATHS.assets, 'fonts'), to: path.join(PATHS.dist, PATHS.assets, 'fonts') },
+                {
+                    from: path.join(PATHS.src, 'locales'),
+                    to: 'locales',
+                    noErrorOnMissing: true
+                }
             ]
         })
-        
     ]
 };

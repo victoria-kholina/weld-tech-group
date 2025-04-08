@@ -1,0 +1,28 @@
+{
+    "title": "Etapas de trabajo",
+    "description": "Proceso de implementación del proyecto en Weld Tech Group",
+    "stage1": {
+      "title": "Consulta",
+      "description": "En la primera consulta, aclaramos los requisitos principales y las especificidades del proyecto, respondemos a las preguntas del cliente y discutimos el plan de trabajo posterior."
+    },
+    "stage2": {
+      "title": "Análisis y planificación",
+      "description": "Determinamos los parámetros técnicos, plazos y presupuesto, teniendo en cuenta los matices de la industria y las regulaciones locales."
+    },
+    "stage3": {
+      "title": "Diseño",
+      "description": "Creamos dibujos detallados y modelos 3D, coordinamos especificaciones y horarios de entrega de materiales."
+    },
+    "stage4": {
+      "title": "Producción y trabajos de soldadura",
+      "description": "Utilizamos tecnologías modernas (WIG–TIG, MIG–MAG, soldadura orbital y otras) y materiales certificados."
+    },
+    "stage5": {
+      "title": "Instalación y verificación",
+      "description": "Equipos experimentados van al sitio, realizan la instalación y puesta en marcha. Realizamos pruebas de estanqueidad, resistencia y cumplimiento de los requisitos técnicos."
+    },
+    "stage6": {
+      "title": "Entrega y servicio",
+      "description": "Preparamos la documentación necesaria (certificados, informes de aceptación), proporcionamos garantías y, si es necesario, garantizamos el servicio de mantenimiento."
+    }
+} 

@@ -1,0 +1,26 @@
+{
+  "title": "Weld Tech Group - Metalinės konstrukcijos ir aptarnavimo platformos",
+  "meta_description": "Metalinių konstrukcijų gamyba ir montavimas: santvaros, laiptai, turėklai, rėmai. Plienas, aliuminis, nerūdijantis plienas. Aukštas suvirinimo tikslumas, antikorozinė apsauga, patikimumas ir konstrukcijų ilgaamžiškumas.",
+  "main_title": "Metalinės konstrukcijos ir aptarnavimo platformos",
+  "main_description": "Mes gaminame ir montuojame įvairios sudėtingumo metalines konstrukcijas, įskaitant santvaras, laiptus, turėklus, rėmus valdymo spintelių montavimui ir daug daugiau. Visi gaminiai atitinka stiprumo ir saugumo normas.",
+  "materials": {
+    "title": "Metalinių konstrukcijų medžiagų rūšys:",
+    "steel": {
+      "title": "Anglinis plienas (St.20)",
+      "description": "Konstrukcijos gali būti dengiamos miltelinėmis dažais arba cheminiais atspariais emaliais; tinka naudoti tiek patalpose, tiek lauke."
+    },
+    "aluminum": {
+      "title": "Aliuminis ir lydiniai",
+      "description": "Lengvi, mobilūs ir patvarūs sprendimai, ypač svarbūs kai reikia dažnai perkelti arba transportuoti konstrukcijas."
+    },
+    "stainless": {
+      "title": "Aukštai legiruoti (nerūdijantys) plienai (AISI–316L, AISI–304L, AISI–430)",
+      "description": "Pasižymi aukšta korozijos atsparumu, elegantišku išvaizda ir puikiai tinka maisto, cheminės ir farmacijos pramonei."
+    }
+  },
+  "bottom_description": "Suvirinimas atliekamas WIG–TIG (AC/DC) ir MIG–MAG metodais, o tai užtikrina aukštą tikslumą, švarų suvirinimą ir ilgą konstrukcijų tarnavimo laiką.",
+  "realisations": {
+    "title": "Mūsų realizacijos",
+    "description": "Kiekvienas mūsų projektas atspindi tikslų kliento reikalavimų įvykdymą, gerai apgalvotą ekonominį modelį ir nepriekaištingą techninį įgyvendinimą."
+  }
+} 

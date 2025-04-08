@@ -1,0 +1,46 @@
+{
+  "contact": {
+    "title": "Kontakt",
+    "whatYouGet": {
+      "title": "Co otrzymujesz, zwracając się do nas?!",
+      "professionalAdvice": {
+        "title": "Profesjonalne doradztwo",
+        "description": "w zakresie spawania, montażu rurociągów, wytwarzania konstrukcji metalowych i innych usług."
+      },
+      "costCalculation": {
+        "title": "Kalkulację kosztów i terminów realizacji",
+        "description": "opartą na rzeczywistym doświadczeniu i przejrzystych cenach."
+      },
+      "individualSolution": {
+        "title": "Indywidualne rozwiązanie",
+        "description": "dobierzemy optymalne technologie i materiały zgodne z Twoimi wymaganiami."
+      }
+    },
+    "map": {
+      "title": "Mapa dojazdu"
+    },
+    "address": {
+      "title": "Adres biura:"
+    },
+    "phone": {
+      "title": "Telefon:"
+    },
+    "email": {
+      "title": "E-mail:"
+    },
+    "whatsapp": {
+      "title": "WhatsApp:"
+    },
+    "viber": {
+      "title": "Viber:"
+    },
+    "telegram": {
+      "title": "Telegram:"
+    }
+  },
+  "copyright": "@Copyright 2025-2026. Wszelkie prawa zastrzeżone.",
+  "cookie": {
+    "text": "Używamy plików cookie, aby zapewnić wygodę korzystania z witryny, personalizację treści i dostarczanie najbardziej istotnych informacji. Pliki cookie pomagają nam analizować interakcję użytkowników z witryną, poprawiać jej funkcjonalność i dostosowywać nasze usługi do Twoich potrzeb. Kontynuując korzystanie z tej witryny, potwierdzasz zgodę na używanie plików cookie",
+    "accept": "Akceptuj"
+  }
+} 

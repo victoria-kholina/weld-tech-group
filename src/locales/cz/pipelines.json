@@ -1,0 +1,43 @@
+{
+  "title": "Weld Tech Group - Montáž technologických potrubí",
+  "meta_description": "Profesionální montáž a svařování potrubí z nerezové oceli, titanu, hliníku a uhlíkových ocelí. Používáme TIG, orbitální svařování, MIG–MAG a MMA. Kompletní cyklus: od projektování po testování.",
+  "main_title": "Montáž technologických potrubí",
+  "main_description": "Profesionálně se zabýváme montáží a svařováním technologických potrubí z nerezové oceli (AISI-304L, AISI-308L, AISI-316L, AISI-321), uhlíkových ocelí (St.20, 30), a také z titanu a hliníku.",
+  "welding_technologies": {
+    "title": "Používané svařovací technologie:",
+    "tig": {
+      "title": "Ruční svařování v ochranné atmosféře argonu (WIG – TIG)",
+      "diameter": "Průměr potrubí: od 6 mm",
+      "thickness": "Tloušťka stěny: od 0,8 mm"
+    },
+    "orbital": {
+      "title": "Orbitální svařování (WIG – TIG)",
+      "diameter": "Průměr potrubí: od 20 mm do 115 mm",
+      "thickness": "Tloušťka stěny: do 3 mm"
+    },
+    "mma": {
+      "title": "MMA a MIG–MAG",
+      "description": "Používá se při práci se stěnami potrubí nad 8 mm (s předchozí přípravou hran a vícevrstvým plněním)."
+    }
+  },
+  "wall_thickness": {
+    "title": "Tloušťka stěn a metoda svařování:",
+    "thin": {
+      "title": "Do 2,6 mm (AISI-304L, AISI-316L, AISI-321)",
+      "description": "Metoda \"Pendel\" bez použití přídavného materiálu (WIG–TIG)."
+    },
+    "medium": {
+      "title": "Nad 2,6 mm",
+      "description": "Svařování dělicích drážek s použitím přídavného materiálu (WIG–TIG)."
+    },
+    "thick": {
+      "title": "Nad 8 mm",
+      "description": "Dodatečně se používá MMA nebo MIG–MAG (s přípravou hran a vícevrstvým svařováním)."
+    }
+  },
+  "bottom_description": "Tato kombinovaná metoda poskytuje výhodu v kvalitě, rychlosti a nákladech. Provádíme kompletní rozsah doprovodných prací: projektování, řezání, přípravu potrubí, montáž armatur, kontrolu a testování potrubních systémů.",
+  "realisations": {
+    "title": "Naše realizace",
+    "description": "Každý náš projekt odráží přesné splnění požadavků zákazníka, promyšlený ekonomický model a bezchybné technické provedení."
+  }
+} 

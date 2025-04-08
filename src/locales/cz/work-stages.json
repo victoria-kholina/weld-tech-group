@@ -1,0 +1,28 @@
+{
+    "title": "Pracovní etapy",
+    "description": "Proces realizace projektu ve Weld Tech Group",
+    "stage1": {
+      "title": "Konzultace",
+      "description": "Na první konzultaci upřesňujeme hlavní požadavky a specifika projektu, odpovídáme na otázky klienta a diskutujeme o dalším pracovním plánu."
+    },
+    "stage2": {
+      "title": "Analýza a plánování",
+      "description": "Stanovujeme technické parametry, termíny a rozpočet s ohledem na nuance odvětví a místní předpisy."
+    },
+    "stage3": {
+      "title": "Návrh",
+      "description": "Vytváříme podrobné výkresy a 3D modely, koordinujeme specifikace a harmonogram dodávek materiálů."
+    },
+    "stage4": {
+      "title": "Výroba a svářečské práce",
+      "description": "Používáme moderní technologie (WIG–TIG, MIG–MAG, orbitální svařování a další) a certifikované materiály."
+    },
+    "stage5": {
+      "title": "Montáž a ověření",
+      "description": "Zkušené týmy vyjíždějí na místo, provádějí instalaci a uvedení do provozu. Provádíme testy těsnosti, pevnosti a souladu s technickými požadavky."
+    },
+    "stage6": {
+      "title": "Předání a servis",
+      "description": "Připravujeme potřebnou dokumentaci (certifikáty, přejímací protokoly), poskytujeme záruky a v případě potřeby zajišťujeme servisní údržbu."
+    }
+} 

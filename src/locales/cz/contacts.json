@@ -1,0 +1,25 @@
+{
+  "title": "Weld Tech Group - Kontakt",
+  "meta": {
+    "title": "Weld Tech Group - Kontakt",
+    "description": "Kontaktujte nás pro projednání vašeho projektu. Jsme připraveni pomoci s úkoly jakékoliv složitosti."
+  },
+  "pageTitle": "Kontakt",
+  "description": "Jsme připraveni odpovědět na všechny vaše otázky a pomoci s realizací projektu.",
+  "address": {
+    "title": "Adresa",
+    "street": "Průmyslová 123",
+    "city": "Varšava",
+    "postalCode": "00-001",
+    "country": "Polsko"
+  },
+  "contact": {
+    "title": "Kontaktní informace",
+    "phone": "+48 123 456 789",
+    "email": "info@weldtechgroup.pl"
+  },
+  "form": {
+    "title": "Kontaktní formulář",
+    "description": "Vyplňte formulář a my se s vámi co nejdříve spojíme."
+  }
+} 

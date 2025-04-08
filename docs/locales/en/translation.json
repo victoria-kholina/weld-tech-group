@@ -1,0 +1,61 @@
+{
+  "common": {
+    "menu": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "projects": "Projects",
+      "contacts": "Contacts"
+    },
+    "buttons": {
+      "send": "Send",
+      "more": "Learn More",
+      "gallery": "View Gallery"
+    }
+  },
+  "home": {
+    "title": "Weld Tech Group - Industrial Solutions",
+    "description": "Professional welding and installation services for industrial enterprises. High-quality equipment and experienced specialists.",
+    "hero": {
+      "title": "Industrial Solutions",
+      "subtitle": "Professional welding and installation services"
+    }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "description": "Our team of experienced specialists implements projects in Poland, Lithuania, Germany and other EU countries. Pipeline installation, tanks, conveyors, platforms — comprehensively.",
+    "gallery": "Project Gallery",
+    "equipment": "Our Equipment",
+    "industry": "Industry Solutions"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Comprehensive services for industrial enterprises: from design to commissioning of equipment.",
+    "list": {
+      "welding": "Welding Works",
+      "installation": "Installation Works",
+      "design": "Design",
+      "maintenance": "Maintenance"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Weld Tech Group is a team of professionals with extensive experience in industrial welding and installation works.",
+    "advantages": {
+      "experience": "International Experience",
+      "quality": "High Standards",
+      "technology": "Modern Technology",
+      "flexibility": "Flexibility"
+    }
+  },
+  "contacts": {
+    "title": "Contact Us",
+    "description": "Get in touch with us for any questions about our services and projects.",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "send": "Send Message"
+    }
+  }
+} 

@@ -1,0 +1,57 @@
+{
+  "title": "Weld Tech Group - Über das Unternehmen",
+  "meta": {
+    "description": "Mehr als 15 Jahre Erfahrung in Industrieanlagen. Wir sind spezialisiert auf professionelles Schweißen und Installation von technologischen Rohrleitungen, Herstellung von Ausrüstungen und Metallkonstruktionen für die chemische, Lebensmittel-, pharmazeutische und andere Industrien."
+  },
+  "pageTitle": "Über uns",
+  "alt": {
+    "image": "Team und Ausrüstung von Weld Tech Group",
+    "team": "Team von Weld Tech Group",
+    "equipment": "Ausrüstung von Weld Tech Group",
+    "work": "Arbeiten von Weld Tech Group"
+  },
+  "history": {
+    "title": "Unsere Geschichte und Werte",
+    "text": {
+      "1Peace": "Das Unternehmen",
+      "2Peace": "erweitert seit seiner Gründung ständig sein Dienstleistungsspektrum und verbessert die Qualität der Arbeiten im Bereich Schweißen und Installation von technologischen Rohrleitungen, Herstellung von Metallkonstruktionen und Industrietanks. Internationale Erfahrungen in verschiedenen Branchen: Lebensmittel, Chemie, Energie.",
+      "3Peace": "Die Erlangung von Zertifikaten",
+      "4Peace": "und Ingenieurpersonal ermöglicht die Erstellung von Dokumentation und Projektleitung, was die Ausführung der Arbeiten garantiert.",
+      "5Peace": "Unsere Zuverlässigkeit und Professionalität werden durch langjährige Beziehungen zu Stammkunden in Polen, Litauen, Deutschland und anderen europäischen Ländern bestätigt."
+    }
+  },
+  "video": {
+    "notSupported": "Ihr Browser unterstützt kein Video."
+  },
+  "values": {
+    "title": "Fünf unveränderliche Prinzipien, die unserer Arbeit zugrunde liegen.",
+    "items": {
+      "quality": {
+        "title": "Zeitgeprüfte Qualität",
+        "text": "Wir wenden moderne Schweißmethoden an und verwenden ausschließlich zertifizierte Materialien. Jede Produktionsphase wird streng kontrolliert, was die Langlebigkeit und Sicherheit der fertigen Konstruktionen gewährleistet."
+      },
+      "teamwork": {
+        "title": "Teamarbeit",
+        "text": "Unsere Spezialisten haben ein hohes Ausbildungsniveau und verbessern regelmäßig ihre Qualifikationen. Sie können mit einer breiten Palette von Materialien arbeiten: von hochlegierten und niedriglegierten Stählen bis hin zu Titan und Aluminium. Dieser professionelle Ansatz ermöglicht es uns, sowohl Standard- als auch Nicht-Standard-Projekte perfekt umzusetzen."
+      },
+      "customer": {
+        "title": "Kundenorientierung",
+        "text": "Wir hören auf die Bedürfnisse des Kunden und bemühen uns, eine optimale Lösung unter Berücksichtigung des Budgets, der Fristen und der Besonderheiten des jeweiligen Unternehmens anzubieten. Der individuelle Ansatz und die Flexibilität in der Arbeit helfen, langfristige Partnerschaftsbeziehungen aufzubauen."
+      },
+      "responsibility": {
+        "title": "Verantwortung und Transparenz",
+        "text": "Die Einhaltung technischer Normen, Umweltanforderungen und Sicherheitsstandards ist eine unbedingte Priorität. Wir dokumentieren und zertifizieren jede Arbeitsphase und stellen sicher, dass die Berichterstattung gegenüber Kunden und Aufsichtsbehörden so vollständig wie möglich ist."
+      },
+      "improvement": {
+        "title": "Kontinuierliche Verbesserung",
+        "text": "Wir investieren in moderne Ausrüstung, innovative Technologien und Mitarbeiterschulungen. Dies gewährleistet ein hohes Kompetenzniveau und ermöglicht es uns, führende Positionen auf dem Markt für Schweiß- und Montagedienstleistungen zu halten."
+      }
+    },
+    "bottomText": "Dank dieses umfassenden Ansatzes genießt Weld Tech Group das verdiente Vertrauen sowohl großer Industrieunternehmen als auch kleiner Unternehmen, die einen zuverlässigen Auftragnehmer suchen. Unser Hauptziel ist es, die Ideen der Kunden in effiziente, sichere und langlebige Lösungen zu verwandeln, die ein Beispiel für Qualität und Professionalität sind."
+  },
+  "mission": {
+    "title": "Unsere Mission",
+    "text": "die Bereitstellung zuverlässiger, innovativer und umweltfreundlicher Lösungen im Bereich Schweißen und Metallverarbeitung, die zur Entwicklung der Industrie auf lokalen und internationalen Märkten beitragen. Wir streben nicht nur danach, die Bedürfnisse der Kunden zu erfüllen, sondern auch ihre Erwartungen durch hohe Arbeitsqualität, den Einsatz fortschrittlicher Technologien und kontinuierliche Prozessverbesserung zu übertreffen."
+  },
+  "experience": "Unser Team erfahrener Spezialisten realisiert Projekte in Polen, Litauen, Deutschland und anderen EU-Ländern."
+} 

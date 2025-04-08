@@ -57,7 +57,8 @@
         @include abs.tablet {
             margin-top: 50px;
         }
-        h4>span{
+        h4>b{
+            font-family: abs.$AlumniSans-Medium;
            color: abs.$second-dark-color
         }
         .btn-group { 

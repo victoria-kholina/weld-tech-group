@@ -1,0 +1,20 @@
+{
+  "alt": {
+    "logo": "Logo Weld Tech Group"
+  },
+  "menu": {
+    "home": "Domů",
+    "about": "O nás",
+    "services": "Naše služby",
+    "services_pipelines": "Montáž technologických potrubí",
+    "services_equipment": "Zařízení pro průmysl",
+    "services_capacitive": "Výroba kapacitních zařízení",
+    "services_metal": "Kovové konstrukce a servisní plošiny",
+    "projects": "Projekty",
+    "projects_about": "O projektech",
+    "projects_gallery": "Galerie projektů",
+    "projects_solutions": "Oborová řešení",
+    "projects_equipment": "Naše vybavení",
+    "contact": "Kontakt"
+  }
+} 

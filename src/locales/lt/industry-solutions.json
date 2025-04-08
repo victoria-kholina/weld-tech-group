@@ -1,0 +1,79 @@
+{
+  "title": "Weld Tech Group - Pramonės sprendimai",
+  "meta_description": "Weld Tech Group sprendimai maisto, cheminės, farmacinės ir kitoms pramonės šakoms. Atsižvelgiame į sanitarijos, techninius ir gamybos reikalavimus kiekvienoje šakoje.",
+  "main_title": "Pramonės sprendimai",
+  "main_description": "<b> Weld Tech Group </b> įmonė įgyvendina projektus įvairioms pramonės šakoms, atsižvelgdama į specifinius montavimo, higienos, saugumo ir efektyvumo reikalavimus.",
+  "tabs": {
+    "food": "Maisto pramonė",
+    "chemical": "Cheminė pramonė",
+    "pharmaceutical": "Farmacinė pramonė"
+  },
+  "alt": {
+    "food_industry": "maisto pramonės įranga",
+    "chemical_industry": "cheminės pramonės įranga",
+    "pharmaceutical_industry": "pramoniniai vamzdynai"
+  },
+  "sections": {
+    "food": {
+      "specificity": {
+        "title": "Specifika ir užduotys:",
+        "item1": "Griežti sanitarijos ir higienos reikalavimai (pvz., HACCP).",
+        "item2": "Būtinybė nepriekaištingo suvirinimų kokybės ir patogaus įrangos sanitarijos apdorojimo.",
+        "item3": "Nerūdijančių plienų ir maisto saugumui atitinkančių medžiagų naudojimas."
+      },
+      "offer": {
+        "title": "Ką siūlome:",
+        "item1": "Skysčių ir biriųjų medžiagų vamzdynų sistemų projektavimas ir montavimas.",
+        "item2": "Specializuotų bakų (pienui, alui, sulčioms ir kt.) gamyba, atsižvelgiant į terminį apdorojimą arba aušinimą.",
+        "item3": "Papildomų konstrukcijų (konvejeriai, ritinėliai, plovimo vonios) gamyba, pritaikytų aukštam drėgniui ir agresyviems valymo priemonėms."
+      }
+    },
+    "chemical": {
+      "specificity": {
+        "title": "Specifika ir užduotys:",
+        "item1": "Agresyvios aplinkos (rūgštys, šarmai, organiniai tirpikliai ir kt.).",
+        "item2": "Išsamūs sandarumo, korozijos atsparumo ir personalo saugumo reikalavimai.",
+        "item3": "Specializuotos įrangos poreikis cheminių medžiagų saugojimui ir apdorojimui."
+      },
+      "offer": {
+        "title": "Ką siūlome:",
+        "item1": "Bakų ir vamzdynų gamyba darbui su agresyviomis cheminėmis aplinkomis.",
+        "item2": "Ilgalaikės metalinės konstrukcijos, atsparios korozijai ir temperatūros svyravimams.",
+        "item3": "Specializuotų technologinių procesų nestandartinių sistemų gamybos galimybė."
+      }
+    },
+    "pharmaceutical": {
+      "specificity": {
+        "title": "Specifika ir užduotys:",
+        "item1": "Griežti grynumo reikalavimai (GMP, FDA ir kt.).",
+        "item2": "Pilnas aukštų steriliškumo standartų laikymasis ir kryžminės taršos prevencija.",
+        "item3": "Minimaliu priemaišų kiekiu aukšto grynumo lydinių naudojimas."
+      },
+      "offer": {
+        "title": "Ką siūlome:",
+        "item1": "Aukšto grynumo aplinkų (injekcijų vanduo, farmacinis garas) saugojimo sistemų vamzdynų montavimas.",
+        "item2": "Bakų gamyba su specialiu vidinio paviršiaus apdorojimu (šlifavimas, pasyvavimas).",
+        "item3": "Aukštos tikslumo suvirinimas (pvz., orbitinis), mažinantis šiurkštumą ir suvirinimus, kurie sulaiko mikroorganizmus."
+      }
+    }
+  },
+  "realisations": {
+    "title": "Mūsų realizacijos"
+  },
+  "other_industries": {
+    "title": "Kitos pramonės šakos ir kryptys",
+    "description": "Be pagrindinių krypčių (maisto, cheminės, farmacinės), taip pat bendradarbiaujame su įmonėmis iš:",
+    "energy": {
+      "title": "Energetikos",
+      "description": "Garų, dujų, suspausto oro vamzdynai, metalinių konstrukcijų montavimas katilinėms ir turbininėms salėms."
+    },
+    "construction": {
+      "title": "Statybos technikos",
+      "description": "Gamybos linijų komponentų gamyba ir montavimas, įskaitant sudėtingų metalinių konstrukcijų suvirinimą."
+    },
+    "oil_gas": {
+      "title": "Naftos ir dujų sektoriaus",
+      "description": "Naftos produktų bakai, dujotiekiai, atitinkama armatūra."
+    }
+  }
+} 

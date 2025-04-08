@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "equipment": "Equipment",
+    "projects": "Projects",
+    "gallery": "Gallery",
+    "contacts": "Contact"
+  },
+  "alt": {
+    "logo": "Weld Tech Group Logo"
+  },
+  "menu": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Our Services",
+    "services_pipelines": "Installation of technological pipelines",
+    "services_equipment": "Equipment for industry",
+    "services_capacitive": "Production of capacitive equipment",
+    "services_metal": "Metal structures and service platforms",
+    "projects": "Projects",
+    "projects_about": "About Projects",
+    "projects_gallery": "Project Gallery",
+    "projects_solutions": "Industry Solutions",
+    "projects_equipment": "Our Equipment",
+    "contact": "Contact"
+  }
+} 

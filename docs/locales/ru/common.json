@@ -1,0 +1,25 @@
+{
+  "buttons": {
+    "more": "Подробнее",
+    "contact": "Контакты",
+    "services": "Наши услуги",
+    "gallery": "Галерея проектов",
+    "moreProjects": "Больше проектов",
+    "industrySolutions": "Отраслевые решения"
+  },
+  "navigation": {
+    "home": "Главная",
+    "about": "О нас",
+    "services": "Услуги",
+    "projects": "Проекты",
+    "equipment": "Оборудование",
+    "contacts": "Контакты"
+  },
+  "footer": {
+    "address": "Адрес",
+    "phone": "Телефон",
+    "email": "Электронная почта",
+    "workingHours": "Рабочее время",
+    "allRightsReserved": "Все права защищены"
+  }
+} 

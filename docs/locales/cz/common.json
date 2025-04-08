@@ -1,0 +1,25 @@
+{
+  "buttons": {
+    "more": "Více",
+    "contact": "Kontakt",
+    "services": "Naše služby",
+    "gallery": "Galerie projektů",
+    "moreProjects": "Další projekty",
+    "industrySolutions": "Oborová řešení"
+  },
+  "navigation": {
+    "home": "Domů",
+    "about": "O nás",
+    "services": "Služby",
+    "projects": "Projekty",
+    "equipment": "Vybavení",
+    "contacts": "Kontakty"
+  },
+  "footer": {
+    "address": "Adresa",
+    "phone": "Telefon",
+    "email": "E-mail",
+    "workingHours": "Pracovní doba",
+    "allRightsReserved": "Všechna práva vyhrazena"
+  }
+} 

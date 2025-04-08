@@ -1,0 +1,61 @@
+{
+  "common": {
+    "menu": {
+      "home": "Inicio",
+      "about": "Sobre nosotros",
+      "services": "Servicios",
+      "projects": "Proyectos",
+      "contacts": "Contacto"
+    },
+    "buttons": {
+      "send": "Enviar",
+      "more": "Más información",
+      "gallery": "Ver galería"
+    }
+  },
+  "home": {
+    "title": "Weld Tech Group - Soluciones industriales",
+    "description": "Servicios profesionales de soldadura y montaje para empresas industriales. Equipamiento de alta calidad y especialistas experimentados.",
+    "hero": {
+      "title": "Soluciones industriales",
+      "subtitle": "Servicios profesionales de soldadura y montaje"
+    }
+  },
+  "projects": {
+    "title": "Nuestros proyectos",
+    "description": "Nuestro equipo de especialistas experimentados implementa proyectos en Polonia, Lituania, Alemania y otros países de la UE. Instalación de tuberías, tanques, transportadores, plataformas — de manera integral.",
+    "gallery": "Galería de proyectos",
+    "equipment": "Nuestro equipamiento",
+    "industry": "Soluciones sectoriales"
+  },
+  "services": {
+    "title": "Nuestros servicios",
+    "description": "Servicios integrales para empresas industriales: desde el diseño hasta la puesta en marcha de equipos.",
+    "list": {
+      "welding": "Trabajos de soldadura",
+      "installation": "Trabajos de montaje",
+      "design": "Diseño",
+      "maintenance": "Mantenimiento"
+    }
+  },
+  "about": {
+    "title": "Sobre nosotros",
+    "description": "Weld Tech Group es un equipo de profesionales con amplia experiencia en trabajos industriales de soldadura y montaje.",
+    "advantages": {
+      "experience": "Experiencia internacional",
+      "quality": "Altos estándares",
+      "technology": "Tecnología moderna",
+      "flexibility": "Flexibilidad"
+    }
+  },
+  "contacts": {
+    "title": "Contacto",
+    "description": "Contáctenos sobre nuestros servicios y proyectos.",
+    "form": {
+      "name": "Su nombre",
+      "email": "Su email",
+      "message": "Su mensaje",
+      "send": "Enviar mensaje"
+    }
+  }
+} 

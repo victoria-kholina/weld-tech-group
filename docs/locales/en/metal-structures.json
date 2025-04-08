@@ -1,0 +1,26 @@
+{
+  "title": "Weld Tech Group - Metal Structures and Service Platforms",
+  "meta_description": "Manufacturing and installation of metal structures: trusses, stairs, railings, frames. Steel, aluminum, stainless steel. High welding precision, corrosion protection, reliability, and durability of structures.",
+  "main_title": "Metal Structures and Service Platforms",
+  "main_description": "We manufacture and install metal structures of various complexity, including trusses, stairs, railings, frames for control cabinet mounting, and much more. All products meet strength and safety standards.",
+  "materials": {
+    "title": "Types of materials for metal structures:",
+    "steel": {
+      "title": "Carbon steel (St.20)",
+      "description": "Structures can be coated with powder paints or chemically resistant enamels; suitable for use both indoors and outdoors."
+    },
+    "aluminum": {
+      "title": "Aluminum and alloys",
+      "description": "Light, mobile, and durable solutions, especially important when frequent relocation or transportation of structures is required."
+    },
+    "stainless": {
+      "title": "High-alloy (stainless) steels (AISI–316L, AISI–304L, AISI–430)",
+      "description": "Characterized by high corrosion resistance, elegant appearance, and are ideal for food, chemical, and pharmaceutical industries."
+    }
+  },
+  "bottom_description": "Welding is performed using WIG–TIG (AC/DC) and MIG–MAG methods, which ensures high precision, clean welds, and long service life of structures.",
+  "realisations": {
+    "title": "Our Realizations",
+    "description": "Each of our projects reflects exact fulfillment of customer requirements, a well-thought-out economic model, and impeccable technical execution."
+  }
+} 

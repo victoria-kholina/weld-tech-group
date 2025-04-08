@@ -1,0 +1,79 @@
+{
+  "title": "Weld Tech Group - Soluciones industriales",
+  "meta_description": "Soluciones de Weld Tech Group para las industrias alimentaria, química, farmacéutica y otras. Tenemos en cuenta los requisitos sanitarios, técnicos y de producción de cada sector.",
+  "main_title": "Soluciones industriales",
+  "main_description": "La empresa <b> Weld Tech Group </b> realiza proyectos para diversas industrias, teniendo en cuenta los requisitos específicos de montaje, higiene, seguridad y eficiencia.",
+  "tabs": {
+    "food": "Industria alimentaria",
+    "chemical": "Industria química",
+    "pharmaceutical": "Industria farmacéutica"
+  },
+  "alt": {
+    "food_industry": "equipamiento para la industria alimentaria",
+    "chemical_industry": "equipamiento para la industria química",
+    "pharmaceutical_industry": "tuberías industriales"
+  },
+  "sections": {
+    "food": {
+      "specificity": {
+        "title": "Especificidad y tareas:",
+        "item1": "Requisitos estrictos de higiene y sanidad (por ejemplo, HACCP).",
+        "item2": "Necesidad de una calidad impecable de las soldaduras y facilidad de limpieza sanitaria del equipo.",
+        "item3": "Uso de aceros inoxidables y materiales que cumplan con la seguridad alimentaria."
+      },
+      "offer": {
+        "title": "Lo que ofrecemos:",
+        "item1": "Diseño y montaje de sistemas de tuberías para productos líquidos y a granel.",
+        "item2": "Fabricación de tanques especializados (para leche, cerveza, zumos, etc.) considerando el tratamiento térmico o refrigeración.",
+        "item3": "Fabricación de estructuras adicionales (cintas transportadoras, rodillos, lavaderos), adaptadas a alta humedad y agentes de limpieza agresivos."
+      }
+    },
+    "chemical": {
+      "specificity": {
+        "title": "Especificidad y tareas:",
+        "item1": "Ambientes agresivos (ácidos, álcalis, disolventes orgánicos, etc.).",
+        "item2": "Requisitos detallados de estanqueidad, resistencia a la corrosión y seguridad del personal.",
+        "item3": "Necesidad de equipamiento especializado para almacenamiento y procesamiento de sustancias químicas."
+      },
+      "offer": {
+        "title": "Lo que ofrecemos:",
+        "item1": "Fabricación de tanques y tuberías para trabajar con ambientes químicos agresivos.",
+        "item2": "Estructuras metálicas duraderas, resistentes a la corrosión y fluctuaciones de temperatura.",
+        "item3": "Posibilidad de fabricar sistemas no estándar para procesos tecnológicos especializados."
+      }
+    },
+    "pharmaceutical": {
+      "specificity": {
+        "title": "Especificidad y tareas:",
+        "item1": "Requisitos estrictos de pureza (GMP, FDA y otros).",
+        "item2": "Cumplimiento total de altos estándares de esterilidad y prevención de contaminación cruzada.",
+        "item3": "Uso de aleaciones de alta pureza con contenido mínimo de impurezas."
+      },
+      "offer": {
+        "title": "Lo que ofrecemos:",
+        "item1": "Montaje de tuberías y sistemas de almacenamiento de ambientes de alta pureza (agua para inyección, vapor farmacéutico).",
+        "item2": "Fabricación de tanques con tratamiento especial de la superficie interna (pulido, pasivación).",
+        "item3": "Soldadura de alta precisión (por ejemplo, orbital), minimizando rugosidades y soldaduras que retienen microorganismos."
+      }
+    }
+  },
+  "realisations": {
+    "title": "Nuestras realizaciones"
+  },
+  "other_industries": {
+    "title": "Otras industrias y direcciones",
+    "description": "Además de las áreas clave (alimentaria, química, farmacéutica), también trabajamos con empresas de:",
+    "energy": {
+      "title": "Energía",
+      "description": "Tuberías para vapor, gas, aire comprimido, montaje de estructuras metálicas para salas de calderas y turbinas."
+    },
+    "construction": {
+      "title": "Maquinaria de construcción",
+      "description": "Fabricación y montaje de componentes para líneas de producción, incluyendo soldadura de estructuras metálicas complejas."
+    },
+    "oil_gas": {
+      "title": "Sector petrolero y gasístico",
+      "description": "Tanques para productos petrolíferos, gasoductos, accesorios correspondientes."
+    }
+  }
+} 

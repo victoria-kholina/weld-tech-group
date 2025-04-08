@@ -1,0 +1,30 @@
+{
+  "title": "Weld Tech Group - Produkcja urządzeń pojemnościowych",
+  "meta_description": "Projektowanie i produkcja zbiorników i pojemników do 20 m³ dla cieczy, materiałów sypkich i gazów. Pracujemy ze stalią nierdzewną, aluminium, tytanem. Niezawodne spawanie hermetyczne, rozwiązania na zamówienie.",
+  "main_title": "Produkcja urządzeń pojemnościowych",
+  "main_description": "Produkujemy różne typy zbiorników i pojemników do przechowywania cieczy, materiałów sypkich i gazów.",
+  "volume": {
+    "title": "Pojemniki do 20 m³ produkowane są w całości we własnym zakresie (większe objętości na zamówienie)."
+  },
+  "custom": {
+    "title": "Projektujemy i wytwarzamy pojemniki o niestandardowych kształtach i wymiarach, dostosowane do wymiarów i specyfikacji pomieszczeń klienta."
+  },
+  "materials": {
+    "title": "Używane materiały:",
+    "stainless": "Stale wysokostopowe: AISI-304L, AISI-308L, AISI-316L, AISI-321",
+    "carbon": "Stale niskowęglowe: St.10, 20, 30",
+    "aluminum": "Aluminium i jego stopy: AL, AMG, AMC",
+    "titanium": "Tytan: WT1-00, WT-0"
+  },
+  "environments": {
+    "title": "Typowe środowiska przechowywania i produkty:",
+    "liquids": "Woda, glikol propylenowy, alkohol, piwo, mleko i produkty mleczne",
+    "bulk": "Materiały sypkie (mąka, cukier, różne proszki)",
+    "chemicals": "Kwasy, zasady, produkty naftowe, gazy, sprężone powietrze i inne"
+  },
+  "bottom_description": "W razie potrzeby w pojemnikach montowane są mieszadła, płaszcze chłodzące lub grzewcze (nośnik ciepła może być cieczą lub prądem elektrycznym). Spawanie odbywa się metodami WIG-TIG, MIG-MAG, co zapewnia wysoką niezawodność i szczelność.",
+  "realisations": {
+    "title": "Nasze realizacje",
+    "description": "Każdy nasz projekt odzwierciedla precyzyjne spełnienie wymagań klienta, dobrze przemyślany model ekonomiczny i bezbłędną realizację techniczną."
+  }
+} 

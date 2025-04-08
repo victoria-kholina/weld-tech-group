@@ -1,0 +1,43 @@
+{
+  "title": "Weld Tech Group - Montaje de tuberías tecnológicas",
+  "meta_description": "Montaje y soldadura profesional de tuberías de acero inoxidable, titanio, aluminio y aceros al carbono. Utilizamos TIG, soldadura orbital, MIG–MAG y MMA. Ciclo completo: desde el diseño hasta las pruebas.",
+  "main_title": "Montaje de tuberías tecnológicas",
+  "main_description": "Nos dedicamos profesionalmente al montaje y soldadura de tuberías tecnológicas de acero inoxidable (AISI-304L, AISI-308L, AISI-316L, AISI-321), aceros al carbono (St.20, 30), así como de titanio y aluminio.",
+  "welding_technologies": {
+    "title": "Tecnologías de soldadura utilizadas:",
+    "tig": {
+      "title": "Soldadura manual en atmósfera de argón (WIG – TIG)",
+      "diameter": "Diámetro de tubería: desde 6 mm",
+      "thickness": "Espesor de pared: desde 0,8 mm"
+    },
+    "orbital": {
+      "title": "Soldadura orbital (WIG – TIG)",
+      "diameter": "Diámetro de tubería: desde 20 mm hasta 115 mm",
+      "thickness": "Espesor de pared: hasta 3 mm"
+    },
+    "mma": {
+      "title": "MMA y MIG–MAG",
+      "description": "Se utiliza para trabajar con paredes de tubería superiores a 8 mm (con preparación previa de bordes y relleno multicapa)."
+    }
+  },
+  "wall_thickness": {
+    "title": "Espesor de pared y método de soldadura:",
+    "thin": {
+      "title": "Hasta 2,6 mm (AISI-304L, AISI-316L, AISI-321)",
+      "description": "Método \"Pendel\" sin uso de material de aporte (WIG–TIG)."
+    },
+    "medium": {
+      "title": "Superior a 2,6 mm",
+      "description": "Soldadura de ranuras divisorias con uso de material de aporte (WIG–TIG)."
+    },
+    "thick": {
+      "title": "Superior a 8 mm",
+      "description": "Adicionalmente se utiliza MMA o MIG–MAG (con preparación de bordes y soldadura multicapa)."
+    }
+  },
+  "bottom_description": "Este método combinado proporciona ventajas en calidad, velocidad y costos. Realizamos toda la gama de trabajos asociados: diseño, corte, preparación de tuberías, montaje de válvulas, verificación y prueba de sistemas de tuberías.",
+  "realisations": {
+    "title": "Nuestras realizaciones",
+    "description": "Cada uno de nuestros proyectos refleja el cumplimiento exacto de los requisitos del cliente, un modelo económico bien pensado y una ejecución técnica impecable."
+  }
+} 

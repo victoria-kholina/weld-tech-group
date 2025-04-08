@@ -1,0 +1,25 @@
+{
+  "title": "Weld Tech Group - Kontakt",
+  "meta": {
+    "title": "Weld Tech Group - Kontakt",
+    "description": "Kontaktieren Sie uns, um Ihr Projekt zu besprechen. Wir sind bereit, bei Aufgaben jeder Komplexität zu helfen."
+  },
+  "pageTitle": "Kontakt",
+  "description": "Wir sind bereit, alle Ihre Fragen zu beantworten und bei der Projektdurchführung zu helfen.",
+  "address": {
+    "title": "Adresse",
+    "street": "Industriestr. 123",
+    "city": "Warschau",
+    "postalCode": "00-001",
+    "country": "Polen"
+  },
+  "contact": {
+    "title": "Kontaktinformationen",
+    "phone": "+48 123 456 789",
+    "email": "info@weldtechgroup.pl"
+  },
+  "form": {
+    "title": "Kontaktformular",
+    "description": "Füllen Sie das Formular aus und wir werden uns so schnell wie möglich bei Ihnen melden."
+  }
+} 

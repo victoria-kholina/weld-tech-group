@@ -1,0 +1,100 @@
+{
+  "title": "Weld Tech Group - Unsere Projekte",
+  "meta_description": "Unser Team erfahrener Spezialisten führt Projekte in Polen, Litauen, Deutschland und anderen EU-Ländern durch. Rohrleitungsmontage, Tanks, Förderanlagen, Plattformen — umfassend.",
+  "main_title": "Unsere Projekte",
+  "main_description": {
+    "part_1": "Unsere Projekte — unser Stolz!",
+    "part_2": "Dank gesammelter Erfahrungen und aufgebauter Geschäftsbeziehungen werden unsere Projekte termingerecht und budgetgerecht durchgeführt, wobei wir unseren Kunden zuverlässige Ergebnisse und die Einhaltung aller rechtlichen Anforderungen garantieren."
+  },
+  "sections": {
+    "pipelines": {
+      "title": "Rohrleitungsmontage für Lebensmittel- und Chemieunternehmen",
+      "items": [
+        "Montage fortschrittlicher Systeme für den Transport von Flüssigkeiten, Gasen und Schüttgütern",
+        "Einhaltung strenger Sicherheitsanforderungen und Hygienestandards",
+        "Schweißen von Rohren aus nichtrostendem und hochlegiertem Stahl, Titan, Aluminium und anderen Materialien unter Berücksichtigung chemischer und thermischer Umgebungseigenschaften"
+      ]
+    },
+    "conveyors": {
+      "title": "Herstellung und Inbetriebnahme von Förderanlagen und Rollen",
+      "items": [
+        "Konstruktion und Herstellung von Förderanlagen für kontinuierlichen Materialtransport in Lebensmittel-, Chemie- und anderen Industriezweigen",
+        "Vor-Ort-Montage und Inbetriebnahme von Anlagen, Schulung des Kundenpersonals",
+        "Integration mit bestehenden Produktionslinien unter Berücksichtigung begrenzter Räume und Produktionsprozessspezifikationen"
+      ]
+    },
+    "tanks": {
+      "title": "Herstellung von Tanks für Milchprodukte, Getränke und aggressive Umgebungen",
+      "items": [
+        "Herstellung von Tanks verschiedener Volumen und Konfigurationen — von Standard bis hin zu vollständig maßgeschneiderten Lösungen",
+        "Verwendung hochwertiger Legierungen, die Korrosionsbeständigkeit, Wärmeisolierung und Dichtheit gewährleisten",
+        "Möglichkeit zur Installation von Heiz-/Kühlsystemen, Mischern und Kontrollsensoren (Temperatur, Füllstand, Druck etc.)"
+      ]
+    },
+    "platforms": {
+      "title": "Montage von Zusatz- und Wartungsplattformen im Pharmasektor",
+      "items": [
+        "Herstellung und Montage von Metallkonstruktionen, die Sterilitätsanforderungen und GMP-Standards entsprechen",
+        "Konstruktion von Plattformen für sichere Wartung von Technologieanlagen und Ausrüstung, einschließlich mehrstöckiger Räume",
+        "Intelligente Lösungen, die Arbeitsprozesse optimieren und die Sicherheit und den Komfort des Personals erhöhen"
+      ]
+    }
+  },
+  "bottom_text": {
+    "part_1": "Jedes unserer Projekte",
+    "part_2": "das ist Präzision, Zuverlässigkeit und Liebe zum Detail.",
+    "part_3": "Lernen Sie unsere realisierten Arbeiten in der Galerie kennen!"
+  },
+  "gallery_button": "Projektgalerie",
+  "work_stages": {
+    "title": "Projektarbeitsphasen"
+  },
+  "quality": {
+    "title": "Wir verwenden nur hochwertige Materialien und Ausrüstung",
+    "description": {
+      "part_1": "Wir verwenden nur geprüfte Metallurgie und arbeiten nur mit zuverlässigen Lieferanten zusammen, deren Materialien internationalen Qualitäts- und Sicherheitsstandards entsprechen. Bei der Auswahl berücksichtigen wir Parameter wie chemische Zusammensetzung, mechanische Eigenschaften, Korrosionsbeständigkeit und Zertifizierung von Metallprodukten.",
+      "part_2": "Dank strenger Kontrollen in allen Phasen — vom Einkauf bis zur Vorabkontrolle in der Produktion — können wir die Stabilität der Eigenschaften von Metallen und Legierungen garantieren, was sich direkt auf die Langlebigkeit und Zuverlässigkeit fertiger Konstruktionen auswirkt.",
+      "part_3": "Um hohe Qualität und Zuverlässigkeit bei Schweiß- und Montagearbeiten zu gewährleisten, verwendet unser Unternehmen einen modernen Komplex von Ausrüstung und Technologien. Wir modernisieren kontinuierlich unseren Maschinen- und Schweißausrüstungspark, verbessern Produktionsprozesse und garantieren stabile Ergebnisse auch bei der Durchführung hochkomplexer Projekte."
+    },
+    "equipment_button": "Unsere Ausrüstung"
+  },
+  "advantages": {
+    "title": "Unsere Vorteile",
+    "international": {
+      "title": "Internationale Erfahrung",
+      "description": "Wir führen Projekte in verschiedenen rechtlichen und technischen Umgebungen durch."
+    },
+    "flexibility": {
+      "title": "Flexibilität",
+      "description": "Wir sind bereit, sowohl Standardmontagen als auch individuelle, komplexe Aufgaben umfassend zu übernehmen."
+    },
+    "standards": {
+      "title": "Hohe Standards",
+      "description": "Wir halten uns an europäische Normanforderungen und legen besonderen Wert auf Sicherheit und Qualität."
+    },
+    "technology": {
+      "title": "Technologische Entwicklung",
+      "description": "Wir modernisieren kontinuierlich unseren Ausrüstungspark und verwenden moderne Methoden für Schweißen, Qualitätskontrolle und Projektmanagement."
+    }
+  },
+  "gallery": {
+    "title": "Projektgalerie",
+    "description": "Lernen Sie unsere realisierten Projekte kennen und überzeugen Sie sich, wie wir Ihrem Unternehmen helfen können.",
+    "viewMore": "Mehr anzeigen"
+  },
+  "categories": {
+    "pipelines": "Technologische Rohrleitungen",
+    "equipment": "Industrieausrüstung",
+    "structures": "Metallkonstruktionen",
+    "capacitive": "Tankausrüstung"
+  },
+  "details": {
+    "client": "Kunde",
+    "location": "Standort",
+    "year": "Durchführungsjahr",
+    "scope": "Arbeitsumfang",
+    "description": "Projektbeschreibung"
+  },
+  "everyProject": "Jedes unserer Projekte — das ist Präzision, Zuverlässigkeit und Liebe zum Detail.",
+  "viewGallery": "Lernen Sie unsere realisierten Projekte kennen und überzeugen Sie sich, wie wir Ihrem Unternehmen helfen können."
+} 

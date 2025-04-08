@@ -1,0 +1,57 @@
+{
+  "title": "Weld Tech Group - O společnosti",
+  "meta": {
+    "description": "Více než 15 let zkušeností v průmyslových zařízeních. Specializujeme se na profesionální svařování a instalaci technologických potrubí, výrobu zařízení a kovových konstrukcí pro chemický, potravinářský, farmaceutický a další průmysl."
+  },
+  "pageTitle": "O nás",
+  "alt": {
+    "image": "Tým a vybavení Weld Tech Group",
+    "team": "Tým Weld Tech Group",
+    "equipment": "Vybavení Weld Tech Group",
+    "work": "Práce Weld Tech Group"
+  },
+  "history": {
+    "title": "Naše historie a hodnoty",
+    "text": {
+      "1Peace": "Společnost",
+      "2Peace": "od svého založení neustále rozšiřuje spektrum služeb a zvyšuje kvalitu prací v oblasti svařování a montáže technologických potrubí, výroby kovových konstrukcí a průmyslových nádrží. Mezinárodní zkušenosti získané v různých odvětvích: potravinářském, chemickém, energetickém.",
+      "3Peace": "Získání certifikátů",
+      "4Peace": "a inženýrského personálu umožňuje vypracovávat dokumentaci a vést projekty, zajišťující záruku provedení prací.",
+      "5Peace": "Naše spolehlivost a profesionalita jsou potvrzeny dlouholetými vztahy s pravidelnými klienty v Polsku, Litvě, Německu a dalších evropských zemích."
+    }
+  },
+  "video": {
+    "notSupported": "Váš prohlížeč nepodporuje video."
+  },
+  "values": {
+    "title": "Pět neměnných principů, na kterých je založena naše práce.",
+    "items": {
+      "quality": {
+        "title": "Kvalita prověřená časem",
+        "text": "Aplikujeme moderní metody svařování, využívajíce pouze certifikované materiály. Každá fáze výroby je přísně kontrolována, což zajišťuje trvanlivost a bezpečnost hotových konstrukcí."
+      },
+      "teamwork": {
+        "title": "Týmová práce",
+        "text": "Naši specialisté mají vysokou úroveň přípravy a pravidelně zvyšují kvalifikaci. Umí pracovat se širokým spektrem materiálů: od vysoce legovaných a nízkolegovaných ocelí po titan a hliník. Tento profesionální přístup nám umožňuje bezchybně realizovat jak standardní, tak nestandardní projekty."
+      },
+      "customer": {
+        "title": "Orientace na zákazníka",
+        "text": "Nasloucháme potřebám zákazníka a snažíme se nabídnout optimální řešení s ohledem na rozpočet, termíny a specifika konkrétního podniku. Individuální přístup a flexibilita v práci pomáhají budovat dlouhodobé partnerské vztahy."
+      },
+      "responsibility": {
+        "title": "Odpovědnost a transparentnost",
+        "text": "Dodržování technických norem, environmentálních požadavků a bezpečnostních standardů je bezpodmínečnou prioritou. Dokumentujeme a certifikujeme každou fázi prací, zajišťujíce maximálně kompletní reporting před zákazníky a kontrolními orgány."
+      },
+      "improvement": {
+        "title": "Neustálé zlepšování",
+        "text": "Investujeme do moderního vybavení, inovativních technologií a školení zaměstnanců. To zajišťuje vysokou úroveň kompetence a umožňuje nám udržovat vedoucí pozice na trhu svařovacích a montážních služeb."
+      }
+    },
+    "bottomText": "Díky tomuto komplexnímu přístupu si Weld Tech Group získává zaslouženou důvěru jak velkých průmyslových podniků, tak malých firem hledajících spolehlivého dodavatele. Naším hlavním cílem je proměnit nápady zákazníků v efektivní, bezpečná a trvanlivá řešení, která jsou příkladem kvality a profesionality."
+  },
+  "mission": {
+    "title": "Naše mise",
+    "text": "poskytování spolehlivých, inovativních a ekologických řešení v oblasti svařování a zpracování kovů, přispívání k rozvoji průmyslu na místních a mezinárodních trzích. Snažíme se nejen uspokojit potřeby zákazníků, ale také překonat jejich očekávání díky vysoké kvalitě práce, využití pokročilých technologií a neustálému zlepšování procesů."
+  },
+  "experience": "Náš tým zkušených specialistů realizuje projekty v Polsku, Litvě, Německu a dalších zemích EU."
+} 

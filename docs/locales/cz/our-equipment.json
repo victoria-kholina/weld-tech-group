@@ -1,0 +1,111 @@
+{
+  "title": "Weld Tech Group - Zařízení",
+  "meta_description": "Moderní zařízení Weld Tech Group: svařovací stroje, CNC stroje, systémy kontroly kvality. Technologická základna pro přesnou a rychlou realizaci projektů.",
+  "main_title": "Zařízení",
+  "main_description": "Zajišťujeme vysokou kvalitu a spolehlivost práce díky modernímu zařízení a pokročilým technologiím.",
+  "tabs": {
+    "welding": "Svařovací zařízení",
+    "machining": "Stroje a zařízení pro obrábění",
+    "weld_preparation": "Zařízení pro přípravu a zpracování svarů",
+    "quality_control": "Kontrola kvality a zkoušení",
+    "lifting": "Manipulační a dopravní zařízení"
+  },
+  "sections": {
+    "welding": {
+      "title": "Svařovací zařízení",
+      "tig": {
+        "title": "Svařovací stroje TIG (WIG)",
+        "description": "Umožňují získat vysoce kvalitní svary při práci s nerezovou ocelí, titanovými slitinami a dalšími materiály vyžadujícími přesné a pečlivé svařování.",
+        "manual": "Ruční svařovací stroje TIG (WIG) — pro svařování trubek, tenkých plechů a výrobků složitých tvarů.",
+        "orbital": "Orbitální svařování — automatizované zařízení pro svařování trubek o průměru od 6 do 115 mm a tloušťce stěny do 3 mm, zajišťující vysokou produktivitu a opakovatelnost výsledků."
+      },
+      "mig": {
+        "title": "Svařovací stroje MIG-MAG",
+        "description": "Vysokoproduktivní stroje pro svařování uhlíkových a legovaných ocelí, stejně jako hliníkových slitin. Zajišťují stabilní oblouk a rovnoměrné prohřátí, což je zvláště důležité při práci s tlustšími stěnami."
+      },
+      "mma": {
+        "title": "MMA (Svařování obalenou elektrodou)",
+        "description": "Tradiční technologie obloukového svařování, která je nezbytná při montáži kovových konstrukcí velkého průřezu a také v podmínkách vyžadujících mobilitu nebo práci na volném prostranství."
+      },
+      "oxy": {
+        "title": "Zařízení pro plynové svařování a pájení",
+        "description": "Používá se pro specifické úkoly, jako je pájení neželezných kovů nebo malosériové svařovací práce vyžadující zvláštní přesnost a pečlivou kontrolu teploty."
+      }
+    },
+    "machining": {
+      "title": "Stroje a zařízení pro obrábění",
+      "cnc": {
+        "title": "CNC stroje pro řezání kovů",
+        "description": "(laserové, plazmové nebo vodní — podle potřeby) Umožňují získat přesné díly s minimálními odchylkami, což je zvláště důležité při výrobě složitých kovových konstrukcí a uzlů technologických potrubí."
+      },
+      "lathes": {
+        "title": "Soustruhy a frézky",
+        "description": "(včetně modelů s CNC) Zajišťují vysokou přesnost obrábění dílů, přírub, tvarovek a dalších prvků potrubních systémů. Moderní stroje zkracují čas výrobního cyklu a zajišťují stabilní kvalitu dílů ve velkých sériích."
+      },
+      "bending": {
+        "title": "Ohybačky a válcovací stroje",
+        "description": "Používají se pro ohýbání plechového kovu a tvarování válcových nebo kuželových prvků používaných v konstrukcích nádrží a skříňových dílů."
+      },
+      "drilling": {
+        "title": "Vrtací stroje a stroje pro řezání",
+        "description": "Pomáhají šetřit čas a zajišťují vysokou opakovatelnost otvorů a výřezů v trubkách, pleších a konstrukčních profilech."
+      }
+    },
+    "weld_preparation": {
+      "title": "Zařízení pro přípravu a zpracování svarů",
+      "grinding": {
+        "title": "Stroje pro broušení a leštění",
+        "description": "Umožňují dovést svary a kovové povrchy do požadovaného stupně čistoty a hladkosti, což je zvláště důležité v potravinářském a farmaceutickém průmyslu, kde je důležitá hygiena."
+      },
+      "passivation": {
+        "title": "Systémy pro leptání a pasivaci",
+        "description": "Používají se při práci s nerezovou ocelí, kde je potřeba obnovit korozní odolnost po svařování a finálním zpracování."
+      }
+    },
+    "quality_control": {
+      "title": "Kontrola kvality a zkoušení",
+      "ndt": {
+        "title": "Zařízení pro nedestruktivní zkoušení (NDT)",
+        "ultrasonic": "Ultrazvukové defektoskopy",
+        "radiographic": "Rentgenografické systémy pro kontrolu svarů",
+        "penetrant": "Kapilární zkoušení (PT)",
+        "magnetic": "Magnetické zkoušení (MT)",
+        "description": "Všechny tyto metody pomáhají včas odhalit vnitřní a povrchové vady, zvyšují bezpečnost a spolehlivost konstrukcí."
+      },
+      "measuring": {
+        "title": "Přístroje pro měření geometrie a lineárních rozměrů",
+        "description": "Digitální posuvná měřidla, laserové dálkoměry, přesné kalibry umožňují kontrolovat shodu dílů s výkresy a tolerancemi."
+      }
+    },
+    "lifting": {
+      "title": "Manipulační a dopravní zařízení",
+      "cranes": {
+        "title": "Jeřáby a kladkostroje",
+        "description": "Používají se pro manipulaci s těžkými plechovými materiály, trubkami a hotovými kovovými konstrukcemi uvnitř dílny."
+      },
+      "forklifts": {
+        "title": "Vysokozdvižné vozíky",
+        "description": "Zajišťují efektivní logistiku v podniku, zjednodušují skladování a přepravu výrobků."
+      }
+    }
+  },
+  "why_important": {
+    "title": "Proč je to důležité?",
+    "precision": {
+      "title": "Záruka vysoké přesnosti a kvality",
+      "description": "Použití moderních CNC strojů a certifikovaných svařovacích strojů minimalizuje možnost chyb, což garantuje vysokou kvalitu konečného produktu."
+    },
+    "speed": {
+      "title": "Vysoká rychlost práce a efektivita",
+      "description": "Díky automatizaci procesů může společnost Weld Tech Group efektivně plnit zakázky, zachovávat stabilní kvalitu a dodržovat krátké termíny montáže a výroby."
+    },
+    "flexibility": {
+      "title": "Maximální flexibilita a univerzálnost",
+      "description": "Široký park zařízení nám umožňuje pracovat s různými kovy a slitinami, včetně obtížně svařitelných materiálů (titan, hliník, vysoce legované oceli)."
+    },
+    "full_cycle": {
+      "title": "Zajištění kompletního cyklu prací",
+      "description": "Vlastní výrobní a svařovací-montážní základna umožňuje komplexně řešit výrobní úkoly: od řezání a ohýbání kovu až po finální montáž a zkoušení."
+    }
+  }
+} 

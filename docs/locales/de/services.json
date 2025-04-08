@@ -1,0 +1,55 @@
+{
+  "title": "Weld Tech Group - Unsere Dienstleistungen",
+  "meta": {
+    "description": "Weld Tech Group bietet Dienstleistungen im Bereich der Installation technologischer Rohrleitungen, Herstellung und Installation von Ausrüstungen, Produktion von Behältern, Metallkonstruktionen und Serviceplattformen."
+  },
+  "experience": {
+    "title": "Jahrelange Erfahrung im Schweißen komplexer Materialien",
+    "description": "Unser Team besteht aus über 50 hochqualifizierten Mitarbeitern mit jahrelanger Erfahrung im Schweißen von Verbundwerkstoffen und anderen Materialien mit komplexen Schweißeigenschaften. Wir verfügen über alle erforderlichen Zertifizierungen, die unsere Kompetenz und die Qualität der durchgeführten Arbeiten bestätigen."
+  },
+  "methods": {
+    "title": "Angebotene Schweißmethoden:",
+    "list1": {
+      "tig": "WIG-Schweißen",
+      "mig": "MIG-MAG-Schweißen",
+      "tigElectrode": "WIG-Schweißen mit Elektrode",
+      "electrode": "Elektrodenschweißen",
+      "oxyacetylene": "Autogenschweißen"
+    },
+    "list2": {
+      "softSoldering": "Weichlöten",
+      "hardSoldering": "Hartlöten",
+      "planing": "Hobeln",
+      "plasmaCutting": "Plasmaschneiden",
+      "arcPlasmaCutting": "Lichtbogen-Plasmaschneiden"
+    }
+  },
+  "image": {
+    "alt": "Qualitätsarbeit"
+  },
+  "section": {
+    "title": "Unsere Dienstleistungen",
+    "description": "Durch jahrelange Erfahrung haben wir gelernt, für jede Aufgabe Lösungen zu finden, ohne Qualität und Termine zu vernachlässigen."
+  },
+  "items": {
+    "pipelines": {
+      "title": "Installation technologischer Rohrleitungen",
+      "description": "Wir beschäftigen uns professionell mit der Installation und dem Schweißen technologischer Rohrleitungen aus Edelstahl (AISI-304L, AISI-308L, AISI-316L, AISI-321), Kohlenstoffstählen (St.20, 30) sowie aus Titan und Aluminium."
+    },
+    "equipment": {
+      "title": "Ausrüstungen für die Industrie",
+      "description": "Wir stellen zusätzliche Ausrüstungen für verschiedene Produktionslinien und Systeme her, die in der chemischen, Lebensmittel-, pharmazeutischen und verwandten Industrie eingesetzt werden."
+    },
+    "capacitive": {
+      "title": "Herstellung von Behälterausrüstungen",
+      "description": "Wir beschäftigen uns professionell mit der Installation und dem Schweißen technologischer Rohrleitungen aus Edelstahl (AISI-304L, AISI-308L, AISI-316L, AISI-321), Kohlenstoffstählen (St.20, 30) sowie aus Titan und Aluminium."
+    },
+    "structures": {
+      "title": "Metallkonstruktionen und Serviceplattformen",
+      "description": "Wir stellen Metallkonstruktionen verschiedener Komplexität her und installieren sie, einschließlich Fachwerke, Treppen, Geländer, Rahmen für die Montage von Schaltschränken und vieles mehr. Alle Produkte entsprechen den Normen für Festigkeit und Sicherheit."
+    }
+  },
+  "bottomInfo": {
+    "title": "Kontaktieren Sie uns noch heute, und unsere Spezialisten werden schnell Ihre Fragen beantworten, die Projektdetails erklären und ein individuelles kommerzielles Angebot vorbereiten."
+  }
+} 

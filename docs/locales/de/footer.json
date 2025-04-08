@@ -1,0 +1,46 @@
+{
+  "contact": {
+    "title": "Kontakt",
+    "whatYouGet": {
+      "title": "Was erhalten Sie, wenn Sie sich an uns wenden?!",
+      "professionalAdvice": {
+        "title": "Professionelle Beratung",
+        "description": "im Bereich Schweißen, Rohrleitungsinstallation, Herstellung von Metallkonstruktionen und anderen Dienstleistungen."
+      },
+      "costCalculation": {
+        "title": "Kosten- und Terminberechnung",
+        "description": "basierend auf realer Erfahrung und transparenter Preisgestaltung."
+      },
+      "individualSolution": {
+        "title": "Individuelle Lösung",
+        "description": "wir wählen die optimalen Technologien und Materialien entsprechend Ihren Anforderungen aus."
+      }
+    },
+    "map": {
+      "title": "Anfahrtskarte"
+    },
+    "address": {
+      "title": "Büroadresse:"
+    },
+    "phone": {
+      "title": "Telefon:"
+    },
+    "email": {
+      "title": "E-Mail:"
+    },
+    "whatsapp": {
+      "title": "WhatsApp:"
+    },
+    "viber": {
+      "title": "Viber:"
+    },
+    "telegram": {
+      "title": "Telegram:"
+    }
+  },
+  "copyright": "@Copyright 2025-2026. Alle Rechte vorbehalten.",
+  "cookie": {
+    "text": "Wir verwenden Cookies, um die Benutzerfreundlichkeit der Website zu gewährleisten, den Inhalt zu personalisieren und die relevantesten Informationen bereitzustellen. Cookies helfen uns, die Interaktion der Benutzer mit der Website zu analysieren, ihre Funktionalität zu verbessern und unsere Dienste an Ihre Bedürfnisse anzupassen. Durch die weitere Nutzung dieser Website bestätigen Sie Ihre Zustimmung zur Verwendung von Cookies",
+    "accept": "Akzeptieren"
+  }
+} 

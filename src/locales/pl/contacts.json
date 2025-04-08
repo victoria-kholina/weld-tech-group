@@ -1,0 +1,25 @@
+{
+  "title": "Weld Tech Group - Kontakt",
+  "meta": {
+    "title": "Weld Tech Group - Kontakt",
+    "description": "Skontaktuj się z nami, aby omówić swój projekt. Jesteśmy gotowi pomóc w realizacji zadań o dowolnej złożoności."
+  },
+  "pageTitle": "Kontakt",
+  "description": "Jesteśmy gotowi odpowiedzieć na wszystkie Twoje pytania i pomóc w realizacji projektu.",
+  "address": {
+    "title": "Adres",
+    "street": "ul. Przemysłowa 123",
+    "city": "Warszawa",
+    "postalCode": "00-001",
+    "country": "Polska"
+  },
+  "contact": {
+    "title": "Dane kontaktowe",
+    "phone": "+48 123 456 789",
+    "email": "info@weldtechgroup.pl"
+  },
+  "form": {
+    "title": "Formularz kontaktowy",
+    "description": "Wypełnij formularz, a skontaktujemy się z Tobą w najbliższym czasie."
+  }
+} 

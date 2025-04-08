@@ -1,0 +1,100 @@
+{
+  "title": "Weld Tech Group - Naše projekty",
+  "meta_description": "Náš tým zkušených specialistů realizuje projekty v Polsku, Litvě, Německu a dalších zemích Evropské unie. Montáž potrubí, nádrže, dopravníky, plošiny — komplexně.",
+  "main_title": "Naše projekty",
+  "main_description": {
+    "part_1": "Naše projekty jsou naší pýchou!",
+    "part_2": "Díky získaným zkušenostem a navázaným obchodním kontaktům jsou naše projekty realizovány v stanovených termínech a podle rozpočtových plánů, což zákazníkům zajišťuje spolehlivý výsledek a dodržování všech právních požadavků."
+  },
+  "sections": {
+    "pipelines": {
+      "title": "Montáž potrubí pro potravinářské a chemické závody",
+      "items": [
+        "Montáž pokročilých systémů pro přepravu tekutin, plynů a sypkých materiálů.",
+        "Zohlednění přísných bezpečnostních požadavků a hygienických norem.",
+        "Svařování trubek z nerezové a vysoce legované oceli, titanu, hliníku a dalších materiálů s ohledem na chemické a teplotní vlastnosti prostředí."
+      ]
+    },
+    "conveyors": {
+      "title": "Výroba a uvedení do provozu dopravních systémů a válečků",
+      "items": [
+        "Projektování a výroba dopravníků pro kontinuální přepravu nákladů v potravinářském, chemickém a dalších odvětvích.",
+        "Montáž a uvedení zařízení do provozu na místě, školení personálu zákazníka.",
+        "Integrace se stávajícími výrobními linkami s ohledem na omezený prostor a specifika výrobního procesu."
+      ]
+    },
+    "tanks": {
+      "title": "Výroba nádrží pro mléčné výrobky, nápoje a agresivní média",
+      "items": [
+        "Výroba nádob různých objemů a konfigurací — od standardních po zcela nestandardní řešení.",
+        "Použití vysoce kvalitních slitin zajišťujících odolnost proti korozi, tepelnou izolaci a těsnost.",
+        "Možnost montáže topných/chladicích systémů, míchadel a kontrolních čidel (teplota, hladina, tlak atd.)."
+      ]
+    },
+    "platforms": {
+      "title": "Montáž dodatečných a servisních plošin ve farmaceutickém sektoru",
+      "items": [
+        "Výroba a montáž kovových konstrukcí splňujících požadavky na sterilitu a standardy GMP.",
+        "Projektování plošin pro bezpečnou obsluhu technologických linek a zařízení, včetně víceúrovňových prostor.",
+        "Promyšlená řešení optimalizující pracovní procesy, zvyšující bezpečnost a komfort personálu."
+      ]
+    }
+  },
+  "bottom_text": {
+    "part_1": "Každý náš projekt",
+    "part_2": "to je přesnost, spolehlivost a péče o detaily.",
+    "part_3": "Seznamte se s našimi realizovanými pracemi v galerii!"
+  },
+  "gallery_button": "Galerie projektů",
+  "work_stages": {
+    "title": "Etapy práce na projektu"
+  },
+  "quality": {
+    "title": "Používáme pouze vysoce kvalitní materiály a zařízení",
+    "description": {
+      "part_1": "Používáme pouze prověřenou metalurgii a spolupracujeme pouze se spolehlivými dodavateli, jejichž materiály splňují mezinárodní standardy kvality a bezpečnosti. V procesu výběru zohledňujeme parametry jako chemické složení, mechanické vlastnosti, odolnost proti korozi a certifikaci kovových výrobků.",
+      "part_2": "Díky přísné kontrole ve všech fázích — od nákupu po předběžnou kontrolu ve výrobě můžeme garantovat stabilitu vlastností kovů a slitin, což přímo ovlivňuje trvanlivost a spolehlivost hotových konstrukcí.",
+      "part_3": "Pro zajištění vysoké kvality a spolehlivosti svařovacích a montážních prací naše společnost používá moderní komplex zařízení a technologií. Neustále modernizujeme park strojů a svařovacího zařízení, zdokonalujeme výrobní procesy a garantujeme stabilní výsledky i při realizaci projektů se zvýšenou složitostí."
+    },
+    "equipment_button": "Naše vybavení"
+  },
+  "advantages": {
+    "title": "Naše výhody",
+    "international": {
+      "title": "Mezinárodní zkušenosti",
+      "description": "Realizujeme projekty v různých právních a technických prostředích."
+    },
+    "flexibility": {
+      "title": "Flexibilita",
+      "description": "Jsme připraveni přijmout jak standardní montáž, tak i individuální, složité úkoly komplexně."
+    },
+    "standards": {
+      "title": "Vysoké standardy",
+      "description": "Dodržujeme požadavky evropských norem, přičemž věnujeme zvláštní pozornost bezpečnosti a kvalitě."
+    },
+    "technology": {
+      "title": "Technologická vyspělost",
+      "description": "Neustále modernizujeme park strojů, používáme moderní metody svařování, kontroly kvality a řízení projektů."
+    }
+  },
+  "gallery": {
+    "title": "Galerie projektů",
+    "description": "Seznamte se s našimi realizovanými projekty a přesvědčte se, jak vám můžeme pomoci ve vašem podniku.",
+    "viewMore": "Vidět více"
+  },
+  "categories": {
+    "pipelines": "Technologické potrubí",
+    "equipment": "Průmyslové vybavení",
+    "structures": "Kovové konstrukce",
+    "capacitive": "Kapacitní zařízení"
+  },
+  "details": {
+    "client": "Zákazník",
+    "location": "Umístění",
+    "year": "Rok realizace",
+    "scope": "Rozsah prací",
+    "description": "Popis projektu"
+  },
+  "everyProject": "Každý náš projekt — to je přesnost, spolehlivost a péče o detaily.",
+  "viewGallery": "Seznamte se s našimi realizovanými pracemi v galerii!"
+} 

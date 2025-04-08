@@ -1,0 +1,20 @@
+{
+  "alt": {
+    "logo": "Logo Weld Tech Group"
+  },
+  "menu": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Unsere Dienstleistungen",
+    "services_pipelines": "Installation von Prozessleitungen",
+    "services_equipment": "Ausrüstung für die Industrie",
+    "services_capacitive": "Herstellung von Behälterausrüstung",
+    "services_metal": "Metallkonstruktionen und Serviceplattformen",
+    "projects": "Projekte",
+    "projects_about": "Über Projekte",
+    "projects_gallery": "Projektgalerie",
+    "projects_solutions": "Branchenlösungen",
+    "projects_equipment": "Unsere Ausrüstung",
+    "contact": "Kontakt"
+  }
+} 

@@ -1,0 +1,111 @@
+{
+  "title": "Weld Tech Group - Įranga",
+  "meta_description": "Moderni Weld Tech Group įranga: suvirinimo aparatai, CNC staklės, kokybės kontrolės sistemos. Technologinė bazė tiksliai ir greitai įgyvendinti projektams.",
+  "main_title": "Įranga",
+  "main_description": "Užtikriname aukštą kokybę ir patikimumą naudodami modernią įrangą ir pažangias technologijas.",
+  "tabs": {
+    "welding": "Suvirinimo įranga",
+    "machining": "Staklės ir įranga apdirbimui",
+    "weld_preparation": "Įranga siūlių paruošimui ir apdirbimui",
+    "quality_control": "Kokybės kontrolė ir bandymai",
+    "lifting": "Kėlimo ir transporto įranga"
+  },
+  "sections": {
+    "welding": {
+      "title": "Suvirinimo įranga",
+      "tig": {
+        "title": "TIG (WIG) suvirinimo aparatai",
+        "description": "Leidžia gauti aukštos kokybės siūles dirbant su nerūdijančiu plienu, titano lydiniais ir kitais medžiagomis, reikalaujančiomis tikslaus ir kruopštaus suvirinimo.",
+        "manual": "Rankiniai TIG (WIG) suvirinimo aparatai — vamzdžių, plonų lakštų ir sudėtingų formų gaminių suvirinimui.",
+        "orbital": "Orbitinis suvirinimas — automatizuota įranga vamzdžių suvirinimui, kurių skersmuo nuo 6 iki 115 mm ir sienelės storis iki 3 mm, užtikrinanti aukštą produktyvumą ir rezultatų atkartojamumą."
+      },
+      "mig": {
+        "title": "MIG-MAG suvirinimo aparatai",
+        "description": "Aukštos produktyvumo aparatai anglinio ir legiruoto plieno, taip pat aliuminio lydinių suvirinimui. Užtikrina stabilų lanką ir vienodą prasiskverbimą, kas ypač svarbu dirbant su storesnėmis sienelėmis."
+      },
+      "mma": {
+        "title": "MMA (Suvirinimas apvalkaluota elektrodu)",
+        "description": "Tradicinė lankinio suvirinimo technologija, būtina montuojant didelio skerspjūvio metalines konstrukcijas, taip pat sąlygose, reikalaujančiose mobilumo arba darbo atvirame ore."
+      },
+      "oxy": {
+        "title": "Dujinio suvirinimo ir lydymo įranga",
+        "description": "Naudojama specifinėms užduotims, tokioms kaip spalvotųjų metalų lydymas arba mažos serijos suvirinimo darbai, reikalaujantys ypatingo tikslumo ir kruopštaus temperatūros kontroliavimo."
+      }
+    },
+    "machining": {
+      "title": "Staklės ir įranga apdirbimui",
+      "cnc": {
+        "title": "CNC staklės metalų pjaustymui",
+        "description": "(lazerinės, plazminės arba vandens — priklausomai nuo poreikių) Leidžia gauti tikslius detales su minimaliais nuokrypiais, kas ypač svarbu gaminant sudėtingas metalines konstrukcijas ir technologinių vamzdynų mazgus."
+      },
+      "lathes": {
+        "title": "Tornai ir frezavimo staklės",
+        "description": "(įskaitant CNC modelius) Užtikrina aukštą detalių, flanšių, jungiamųjų detalių ir kitų vamzdynų sistemų elementų apdirbimo tikslumą. Modernios staklės sutrumpina gamybos ciklo laiką ir užtikrina stabilų detalių kokybę didelėse serijose."
+      },
+      "bending": {
+        "title": "Lenkimo ir valcavimo staklės",
+        "description": "Naudojamos lakštinio metalo lenkimui ir cilindrinių arba kūginių elementų formavimui, naudojamų bakų konstrukcijose ir korpusinėse detalėse."
+      },
+      "drilling": {
+        "title": "Gręžimo staklės ir pjaustymo įranga",
+        "description": "Padeda sutaupyti laiką ir užtikrina aukštą skylėčių ir išpjovų vamzdžiuose, lakštuose ir konstrukcinėse profiliuose atkartojamumą."
+      }
+    },
+    "weld_preparation": {
+      "title": "Įranga siūlių paruošimui ir apdirbimui",
+      "grinding": {
+        "title": "Šlifavimo ir poliravimo staklės",
+        "description": "Leidžia pritaikyti siūles ir metalinius paviršius reikiamam švarumo ir švelnumo laipsniui, kas ypač svarbu maisto ir farmacijos pramonėje, kur svarbi higiena."
+      },
+      "passivation": {
+        "title": "Rūgštinimo ir pasyvavimo sistemos",
+        "description": "Naudojamos dirbant su nerūdijančiu plienu, kur reikia atstatyti korozinį atsparumą po suvirinimo ir galutinio apdirbimo."
+      }
+    },
+    "quality_control": {
+      "title": "Kokybės kontrolė ir bandymai",
+      "ndt": {
+        "title": "Nenardančiosios kontrolės įranga (NDT)",
+        "ultrasonic": "Ultragarsiniai defektoskopai",
+        "radiographic": "Rentgenografinės sistemos siūlių kontrolei",
+        "penetrant": "Pralaidumo kontrolė (PT)",
+        "magnetic": "Magnetinė kontrolė (MT)",
+        "description": "Visi šie metodai padeda laiku atskleisti vidines ir paviršines defektus, didina konstrukcijų saugumą ir patikimumą."
+      },
+      "measuring": {
+        "title": "Geometrijos ir tiesinių matmenų matavimo prietaisai",
+        "description": "Skaitmeniniai slankmačiai, lazeriniai tolimačiai, preciziniai kalibrai leidžia kontroliuoti detalių atitikimą brėžiniams ir leistiniesiems nuokrypiams."
+      }
+    },
+    "lifting": {
+      "title": "Kėlimo ir transporto įranga",
+      "cranes": {
+        "title": "Kranai ir keltuvai",
+        "description": "Naudojami sunkių lakštinių medžiagų, vamzdžių ir gatavų metalinių konstrukcijų perkėlimui ceche."
+      },
+      "forklifts": {
+        "title": "Šakiniai keltuvai",
+        "description": "Užtikrina efektyvią įmonės logistiką, supaprastina gaminių saugojimą ir transportavimą."
+      }
+    }
+  },
+  "why_important": {
+    "title": "Kodėl tai svarbu?",
+    "precision": {
+      "title": "Aukšto tikslumo ir kokybės <br> garantija",
+      "description": "Modernių CNC staklių ir sertifikuotų suvirinimo aparatų naudojimas sumažina klaidų tikimybę, o tai garantuoja aukštą galutinio produkto kokybę."
+    },
+    "speed": {
+      "title": "Aukštas darbo <br> greitis ir efektyvumas",
+      "description": "Dėl procesų automatizavimo Weld Tech Group gali efektyviai atlikti užsakymus, išlaikyti stabilią kokybę ir laikytis trumpų montavimo ir gamybos terminų."
+    },
+    "flexibility": {
+      "title": "Maksimalus lankstumas ir <br> universalumas",
+      "description": "Platus įrangos parkas leidžia mums dirbti su įvairiais metalais ir lydiniais, įskaitant sunkiai suvirinamus medžiagas (titanas, aliuminis, aukštai legiruotos plienai)."
+    },
+    "full_cycle": {
+      "title": "Pilno darbo ciklo <br> užtikrinimas",
+      "description": "Nuosava gamybos ir suvirinimo-montavimo bazė leidžia kompleksiškai spręsti gamybos užduotis: nuo metalo pjaustymo ir lenkimo iki galutinio montavimo ir bandymų."
+    }
+  }
+} 

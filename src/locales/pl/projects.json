@@ -1,0 +1,100 @@
+{
+  "title": "Weld Tech Group - Nasze projekty",
+  "meta_description": "Nasz zespół doświadczonych specjalistów realizuje projekty w Polsce, na Litwie, w Niemczech i innych krajach UE. Montaż rurociągów, zbiorniki, przenośniki, platformy — kompleksowo.",
+  "main_title": "Nasze projekty",
+  "main_description": {
+    "part_1": "Nasze projekty — nasza duma!",
+    "part_2": "Dzięki zgromadzonemu doświadczeniu i nawiązanym kontaktom biznesowym nasze projekty są realizowane na czas i zgodnie z planami budżetowymi, zapewniając klientom niezawodne rezultaty i przestrzeganie wszystkich wymogów prawnych."
+  },
+  "sections": {
+    "pipelines": {
+      "title": "Montaż rurociągów dla zakładów spożywczych i produkcji chemicznej",
+      "items": [
+        "Montaż zaawansowanych systemów transportu cieczy, gazów i materiałów sypkich",
+        "Przestrzeganie rygorystycznych wymogów bezpieczeństwa i norm higienicznych",
+        "Spawanie rur ze stali nierdzewnej i wysokostopowej, tytanu, aluminium i innych materiałów, uwzględniając właściwości chemiczne i termiczne środowiska"
+      ]
+    },
+    "conveyors": {
+      "title": "Produkcja i uruchomienie systemów przenośnikowych i rolek",
+      "items": [
+        "Projektowanie i produkcja przenośników do ciągłego transportu materiałów w przemyśle spożywczym, chemicznym i innych",
+        "Montaż i uruchomienie urządzeń na miejscu, szkolenie personelu klienta",
+        "Integracja z istniejącymi liniami produkcyjnymi, uwzględniając ograniczoną przestrzeń i specyfikę procesu produkcyjnego"
+      ]
+    },
+    "tanks": {
+      "title": "Produkcja zbiorników na produkty mleczne, napoje i środowiska agresywne",
+      "items": [
+        "Produkcja zbiorników o różnych pojemnościach i konfiguracjach — od standardowych po w pełni niestandardowe rozwiązania",
+        "Wykorzystanie wysokiej jakości stopów zapewniających odporność na korozję, izolację termiczną i szczelność",
+        "Możliwość montażu systemów grzewczych/chłodniczych, mieszadeł i czujników kontrolnych (temperatura, poziom, ciśnienie itp.)"
+      ]
+    },
+    "platforms": {
+      "title": "Montaż dodatkowych i serwisowych platform w sektorze farmaceutycznym",
+      "items": [
+        "Produkcja i montaż konstrukcji metalowych spełniających wymogi sterylności i standardy GMP",
+        "Projektowanie platform do bezpiecznej obsługi linii technologicznych i urządzeń, w tym przestrzeni wielokondygnacyjnych",
+        "Inteligentne rozwiązania optymalizujące procesy pracy, zwiększające bezpieczeństwo i komfort personelu"
+      ]
+    }
+  },
+  "bottom_text": {
+    "part_1": "Każdy nasz projekt",
+    "part_2": "to precyzja, niezawodność i dbałość o szczegóły.",
+    "part_3": "Zapoznaj się z naszymi zrealizowanymi pracami w galerii!"
+  },
+  "gallery_button": "Galeria projektów",
+  "work_stages": {
+    "title": "Etapy pracy nad projektem"
+  },
+  "quality": {
+    "title": "Używamy tylko wysokiej jakości materiałów i urządzeń",
+    "description": {
+      "part_1": "Używamy tylko sprawdzonej metalurgii i współpracujemy tylko z niezawodnymi dostawcami, których materiały spełniają międzynarodowe standardy jakości i bezpieczeństwa. W procesie wyboru uwzględniamy parametry takie jak skład chemiczny, właściwości mechaniczne, odporność na korozję i certyfikacja wyrobów metalowych.",
+      "part_2": "Dzięki rygorystycznej kontroli na wszystkich etapach — od zakupu do wstępnej kontroli w produkcji — możemy zagwarantować stabilność właściwości metali i stopów, co bezpośrednio wpływa na trwałość i niezawodność gotowych konstrukcji.",
+      "part_3": "Aby zapewnić wysoką jakość i niezawodność prac spawalniczych i montażowych, nasza firma wykorzystuje nowoczesny kompleks urządzeń i technologii. Nieustannie modernizujemy park maszyn i urządzeń spawalniczych, doskonaląc procesy produkcyjne i zapewniając stabilne wyniki nawet przy realizacji projektów o wysokiej złożoności."
+    },
+    "equipment_button": "Nasze urządzenia"
+  },
+  "advantages": {
+    "title": "Nasze zalety",
+    "international": {
+      "title": "Doświadczenie międzynarodowe",
+      "description": "Realizujemy projekty w różnych środowiskach prawnych i technicznych."
+    },
+    "flexibility": {
+      "title": "Elastyczność",
+      "description": "Jesteśmy gotowi podjąć się zarówno standardowego montażu, jak i indywidualnych, złożonych zadań kompleksowo."
+    },
+    "standards": {
+      "title": "Wysokie standardy",
+      "description": "Przestrzegamy wymogów norm europejskich, zwracając szczególną uwagę na bezpieczeństwo i jakość."
+    },
+    "technology": {
+      "title": "Rozwój technologiczny",
+      "description": "Nieustannie modernizujemy park urządzeń, wykorzystując nowoczesne metody spawania, kontroli jakości i zarządzania projektami."
+    }
+  },
+  "gallery": {
+    "title": "Galeria projektów",
+    "description": "Zapoznaj się z naszymi zrealizowanymi projektami i przekonaj się, jak możemy pomóc Twojej firmie.",
+    "viewMore": "Zobacz więcej"
+  },
+  "categories": {
+    "pipelines": "Rurociągi technologiczne",
+    "equipment": "Urządzenia przemysłowe",
+    "structures": "Konstrukcje metalowe",
+    "capacitive": "Urządzenia zbiornikowe"
+  },
+  "details": {
+    "client": "Klient",
+    "location": "Lokalizacja",
+    "year": "Rok realizacji",
+    "scope": "Zakres prac",
+    "description": "Opis projektu"
+  },
+  "everyProject": "Każdy nasz projekt — to precyzja, niezawodność i dbałość o szczegóły.",
+  "viewGallery": "Zapoznaj się z naszymi zrealizowanymi pracami w galerii!"
+} 

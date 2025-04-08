@@ -1,0 +1,28 @@
+{
+    "title": "Arbeitsschritte",
+    "description": "Projektumsetzungsprozess bei Weld Tech Group",
+    "stage1": {
+      "title": "Beratung",
+      "description": "Bei der ersten Beratung klären wir die Hauptanforderungen und Spezifikationen des Projekts, beantworten die Fragen des Kunden und besprechen den weiteren Arbeitsplan."
+    },
+    "stage2": {
+      "title": "Analyse und Planung",
+      "description": "Wir bestimmen technische Parameter, Termine und Budget unter Berücksichtigung von Branchennuancen und lokalen Vorschriften."
+    },
+    "stage3": {
+      "title": "Design",
+      "description": "Wir erstellen detaillierte Zeichnungen und 3D-Modelle, koordinieren Spezifikationen und Materiallieferpläne."
+    },
+    "stage4": {
+      "title": "Produktion und Schweißarbeiten",
+      "description": "Wir verwenden moderne Technologien (WIG–TIG, MIG–MAG, Orbital-Schweißen und andere) und zertifizierte Materialien."
+    },
+    "stage5": {
+      "title": "Installation und Verifizierung",
+      "description": "Erfahrene Teams fahren zum Standort, führen die Installation und Inbetriebnahme durch. Wir führen Tests auf Dichtheit, Festigkeit und Einhaltung der technischen Anforderungen durch."
+    },
+    "stage6": {
+      "title": "Übergabe und Service",
+      "description": "Wir bereiten die erforderliche Dokumentation vor (Zertifikate, Abnahmeprotokolle), gewähren Garantien und stellen bei Bedarf Wartungsdienstleistungen sicher."
+    }
+} 

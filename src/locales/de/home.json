@@ -1,0 +1,48 @@
+{
+  "title": "Weld Tech Group - Zuverlässigkeit, die sich bewährt hat!",
+  "meta": {
+    "description": "Über 15 Jahre Erfahrung in Industrieanlagen. Wir sind spezialisiert auf professionelles Schweißen und Installation von Prozessleitungen, Herstellung von Ausrüstung und Metallkonstruktionen für die chemische, Lebensmittel-, pharmazeutische und andere Industriezweige."
+  },
+  "hero": {
+    "title": "Weld Tech Group",
+    "subtitle": "Zuverlässigkeit, die sich bewährt hat!",
+    "description": "Ihr zuverlässiger Partner für die Installation von Prozessleitungen und die Herstellung von Industrie-Metallkonstruktionen."
+  },
+  "video": {
+    "notSupported": "Ihr Browser unterstützt kein Video."
+  },
+  "experience": {
+    "title": "15+ Jahre Erfahrung in Industrieanlagen.",
+    "description": "Wir sind spezialisiert auf professionelles Schweißen und Installation von Prozessleitungen, Herstellung von Ausrüstung und Metallkonstruktionen für die chemische, Lebensmittel-, pharmazeutische und andere Industriezweige."
+  },
+  "about": {
+    "image": {
+      "alt": "Arbeit von Weld Tech Group"
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "text": "Bereitstellung zuverlässiger, innovativer und umweltfreundlicher Lösungen im Bereich Schweißen und Metallverarbeitung, Beitrag zur Entwicklung der Industrie auf lokalen und internationalen Märkten. Wir streben danach, nicht nur die Bedürfnisse der Kunden zu erfüllen, sondern auch ihre Erwartungen durch hohe Arbeitsqualität, Einsatz fortschrittlicher Technologien und kontinuierliche Prozessverbesserung zu übertreffen."
+    },
+    "experience": "Unser Team erfahrener Spezialisten realisiert Projekte in Polen, Litauen, Deutschland und anderen Ländern der Europäischen Union."
+  },
+  "gallery": {
+    "metalConstructions": "Metallkonstruktionen",
+    "hugePipelines": "Große Rohrleitungen",
+    "industrialEquipment": "Industrieausrüstung",
+    "pipelines": "Rohrleitungen",
+    "pipelineWork": "Arbeiten an Rohrleitungen",
+    "capacitiveEquipment": "Behälterausrüstung",
+    "welder": "Schweißer",
+    "pipelineConstruction": "Rohrleitungsbau",
+    "curvedPipelines": "Gekrümmte Rohrleitungen"
+  },
+  "projects": {
+    "everyProject": "Jedes unserer Projekte",
+    "quality": "ist Präzision, Zuverlässigkeit und Liebe zum Detail.",
+    "viewGallery": "Entdecken Sie unsere realisierten Arbeiten in der Galerie!"
+  },
+  "workStages": {
+    "title": "Wie arbeiten wir an Projekten?!",
+    "description": "Unser Arbeitsansatz basiert auf sorgfältiger Vorbereitung, strikter Einhaltung technischer Vorschriften und enger Zusammenarbeit mit den Kunden in jeder Phase."
+  }
+} 

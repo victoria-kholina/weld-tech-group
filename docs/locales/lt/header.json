@@ -1,0 +1,20 @@
+{
+  "alt": {
+    "logo": "Weld Tech Group logotipas"
+  },
+  "menu": {
+    "home": "Pagrindinis",
+    "about": "Apie mus",
+    "services": "Mūsų paslaugos",
+    "services_pipelines": "Technologinių vamzdynų montavimas",
+    "services_equipment": "Pramonės įranga",
+    "services_capacitive": "Talpinės įrangos gamyba",
+    "services_metal": "Metalinės konstrukcijos ir aptarnavimo platformos",
+    "projects": "Projektai",
+    "projects_about": "Apie projektus",
+    "projects_gallery": "Projektų galerija",
+    "projects_solutions": "Pramonės sprendimai",
+    "projects_equipment": "Mūsų įranga",
+    "contact": "Kontaktai"
+  }
+} 

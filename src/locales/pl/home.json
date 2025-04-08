@@ -1,0 +1,72 @@
+{
+  "title": "Weld Tech Group - niezawodność sprawdzona przez czas!",
+  "meta": {
+    "description": "Ponad 15 lat doświadczenia na obiektach przemysłowych. Specjalizujemy się w profesjonalnym spawaniu i montażu rurociągów technologicznych, produkcji urządzeń i konstrukcji metalowych dla przemysłu chemicznego, spożywczego, farmaceutycznego i innych branż przemysłowych."
+  },
+  "hero": {
+    "title": "Weld Tech Group",
+    "subtitle": "niezawodność sprawdzona przez czas!",
+    "description": "Twój niezawodny partner w zakresie montażu rurociągów technologicznych i produkcji przemysłowych konstrukcji metalowych."
+  },
+  "video": {
+    "notSupported": "Twoja przeglądarka nie obsługuje wideo."
+  },
+  "experience": {
+    "title": "15+ lat doświadczenia na obiektach przemysłowych.",
+    "description": "Specjalizujemy się w profesjonalnym spawaniu i montażu rurociągów technologicznych, produkcji urządzeń i konstrukcji metalowych dla przemysłu chemicznego, spożywczego, farmaceutycznego i innych branż przemysłowych."
+  },
+  "about": {
+    "image": {
+      "alt": "Praca Weld Tech Group"
+    },
+    "mission": {
+      "title": "Nasza misja",
+      "text": "zapewnianie niezawodnych, innowacyjnych i przyjaznych dla środowiska rozwiązań w zakresie spawania i obróbki metali, przyczyniając się do rozwoju przemysłu na rynkach lokalnych i międzynarodowych. Dążymy nie tylko do zaspokajania potrzeb klientów, ale i przekraczania ich oczekiwań poprzez wysoką jakość prac, stosowanie zaawansowanych technologii i ciągłe doskonalenie procesów."
+    },
+    "experience": "Nasz zespół doświadczonych specjalistów realizuje projekty w Polsce, na Litwie, w Niemczech i innych krajach Unii Europejskiej."
+  },
+  "gallery": {
+    "metalConstructions": "konstrukcje metalowe",
+    "hugePipelines": "duże rurociągi",
+    "industrialEquipment": "urządzenia dla przemysłu",
+    "pipelines": "rurociągi",
+    "pipelineWork": "prace na rurociągach",
+    "capacitiveEquipment": "urządzenia pojemnościowe",
+    "welder": "spawacz",
+    "pipelineConstruction": "konstrukcje rurociągów",
+    "curvedPipelines": "zakrzywione duże rurociągi"
+  },
+  "projects": {
+    "everyProject": "Każdy nasz projekt",
+    "quality": "to precyzja, niezawodność i dbałość o szczegóły.",
+    "viewGallery": "Zapoznaj się z naszymi zrealizowanymi pracami w galerii!"
+  },
+  "workStages": {
+    "title": "Jak pracujemy nad projektami?!",
+    "description": "Nasze podejście do pracy opiera się na starannym przygotowaniu, ścisłym przestrzeganiu przepisów technicznych i bliskiej współpracy z klientami na każdym etapie.",
+    "stage1": {
+      "title": "Konsultacja",
+      "description": "Na pierwszej konsultacji doprecyzowujemy główne wymagania i specyfikę projektu, odpowiadamy na pytania klienta i omawiamy dalszy plan pracy."
+    },
+    "stage2": {
+      "title": "Analiza i planowanie",
+      "description": "Określamy parametry techniczne, terminy i budżet, uwzględniając niuanse branżowe i lokalne przepisy."
+    },
+    "stage3": {
+      "title": "Projektowanie",
+      "description": "Tworzymy szczegółowe rysunki i modele 3D, uzgadniamy specyfikacje i harmonogram dostaw materiałów."
+    },
+    "stage4": {
+      "title": "Produkcja i prace spawalnicze",
+      "description": "Wykorzystujemy nowoczesne technologie (WIG–TIG, MIG–MAG, spawanie orbitalne i inne) i certyfikowane materiały."
+    },
+    "stage5": {
+      "title": "Montaż i weryfikacja",
+      "description": "Doświadczone brygady wyjeżdżają na obiekt, wykonują instalację i uruchomienie. Przeprowadzamy testy szczelności, wytrzymałości i zgodności z wymaganiami technicznymi."
+    },
+    "stage6": {
+      "title": "Oddanie obiektu i obsługa",
+      "description": "Przygotowujemy niezbędną dokumentację (certyfikaty, protokoły odbioru), udzielamy gwarancji i w razie potrzeby zapewniamy obsługę serwisową."
+    }
+  }
+} 

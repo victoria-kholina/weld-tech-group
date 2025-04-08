@@ -1,0 +1,25 @@
+{
+  "alt": {
+    "metal_constructions": "kovové konstrukce",
+    "huge_pipelines": "velké potrubí",
+    "equipment_for_industry": "zařízení pro průmysl",
+    "pipelines": "potrubí",
+    "pipelines_work": "práce na potrubí",
+    "capacitive_equipment": "kapacitní zařízení",
+    "welder": "svářeč",
+    "pipelines_constructions": "konstrukce potrubí",
+    "curve_huge_pipelines": "zakřivené velké potrubí",
+    "food_industry": "potravinářský průmysl"
+  },
+  "title": "Weld Tech Group - Galerie projektů",
+  "meta_description": "Fotogalerie realizovaných projektů společnosti Weld Tech Group. Vizuální potvrzení kvality prací, konstrukcí a výrobních řešení.",
+  "main_title": "Galerie projektů",
+  "main_description": "Níže jsou uvedeny fotografie našich realizací pro názornou demonstraci kvality, přesnosti provedení a technických možností společnosti Weld Tech Group.",
+  "tabs": {
+    "various": "Různé",
+    "pipelines": "Montáž technologických potrubí",
+    "capacitive": "Výroba kapacitních zařízení",
+    "food": "Potravinářský průmysl",
+    "chemical": "Chemický, energetický průmysl"
+  }
+} 

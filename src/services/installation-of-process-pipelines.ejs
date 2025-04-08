@@ -2,9 +2,9 @@
 
 <html lang="pl">
 <head>
-    <title>Weld Tech Group - Montaż rurociągów technologicznych</title>
+    <title data-i18n="pipelines.title">Weld Tech Group - Montaż rurociągów technologicznych</title>
     <%- include('../templates/meta.ejs') %>
-    <meta name="description" content="Profesjonalny montaż i spawanie rurociągów ze stali nierdzewnej, tytanu, aluminium i stali węglowych. Stosujemy TIG, spawanie orbitalne, MIG–MAG i MMA. Pełny cykl: od projektowania do testowania.">
+    <meta name="description" data-i18n="pipelines.meta_description" content="Profesjonalny montaż i spawanie rurociągów ze stali nierdzewnej, tytanu, aluminium i stali węglowych. Stosujemy TIG, spawanie orbitalne, MIG–MAG i MMA. Pełny cykl: od projektowania do testowania.">
 </head>
 <body>
 <%- include('../templates/header.ejs' , { isInnerPage: true }) %>
@@ -14,8 +14,8 @@
     <div class="container-md container-xxl h-100">
         <div class="container-md container-xxl h-100">
             <div class="simple-section__title dark">
-                <h2>Montaż rurociągów technologicznych</h2>
-                <p class="accent-text-block all">
+                <h2 data-i18n="pipelines.main_title">Montaż rurociągów technologicznych</h2>
+                <p class="accent-text-block all" data-i18n="pipelines.main_description">
                     Profesjonalnie zajmujemy się montażem i spawaniem rurociągów technologicznych 
                     ze stali nierdzewnej (AISI-304L, AISI-308L, AISI-316L, AISI-321), 
                     stali węglowych (St.20, 30), a także z tytanu i aluminium.</p>
@@ -25,26 +25,26 @@
             <div class="col-12 col-md-6">
                 <div class="service-page-info">
 
-                    <h3 class="service-page-info__title">Stosowane technologie spawania:</h3>
+                    <h3 class="service-page-info__title" data-i18n="pipelines.welding_technologies.title">Stosowane technologie spawania:</h3>
                     <ul class="accent-list">
                         <li>
                             <div>
-                                <h5>Spawanie ręczne w osłonie argonu (WIG – TIG)</h5>
-                                <p>Średnica rur: od 6 mm</p>
-                                <p>Grubość ścianki: od 0,8 mm</p>
+                                <h5 data-i18n="pipelines.welding_technologies.tig.title">Spawanie ręczne w osłonie argonu (WIG – TIG)</h5>
+                                <p data-i18n="pipelines.welding_technologies.tig.diameter">Średnica rur: od 6 mm</p>
+                                <p data-i18n="pipelines.welding_technologies.tig.thickness">Grubość ścianki: od 0,8 mm</p>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <h5>Spawanie orbitalne (WIG – TIG)</h5>
-                                <p>Średnica rur: od 20 mm do 115 mm</p>
-                                <p>Grubość ścianki: do 3 mm</p>
+                                <h5 data-i18n="pipelines.welding_technologies.orbital.title">Spawanie orbitalne (WIG – TIG)</h5>
+                                <p data-i18n="pipelines.welding_technologies.orbital.diameter">Średnica rur: od 20 mm do 115 mm</p>
+                                <p data-i18n="pipelines.welding_technologies.orbital.thickness">Grubość ścianki: do 3 mm</p>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <h5>MMA i MIG–MAG</h5>
-                                <p>Stosowane przy pracy ze ściankami rur powyżej 8 mm (z wcześniejszym przygotowaniem krawędzi i wielowarstwowym wypełnieniem).</p>
+                                <h5 data-i18n="pipelines.welding_technologies.mma.title">MMA i MIG–MAG</h5>
+                                <p data-i18n="pipelines.welding_technologies.mma.description">Stosowane przy pracy ze ściankami rur powyżej 8 mm (z wcześniejszym przygotowaniem krawędzi i wielowarstwowym wypełnieniem).</p>
                             </div>
                         </li>
                     </ul>
@@ -52,24 +52,24 @@
             </div>
             <div class="col-12 col-md-6 gradient-border left">
                 <div class="service-page-info">
-                    <h3 class="service-page-info__title">Grubość ścianek i metoda spawania:</h3>
+                    <h3 class="service-page-info__title" data-i18n="pipelines.wall_thickness.title">Grubość ścianek i metoda spawania:</h3>
                     <ul class="accent-list">
                         <li>
                             <div>
-                                <h5>Do 2,6 mm (AISI-304L, AISI-316L, AISI-321)</h5>
-                                <p>Metoda "Pendel" bez użycia materiału dodatkowego (WIG–TIG).</p>
+                                <h5 data-i18n="pipelines.wall_thickness.thin.title">Do 2,6 mm (AISI-304L, AISI-316L, AISI-321)</h5>
+                                <p data-i18n="pipelines.wall_thickness.thin.description">Metoda "Pendel" bez użycia materiału dodatkowego (WIG–TIG).</p>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <h5>Powyżej 2,6 mm</h5>
-                                <p>Spawanie rowków rozdzielczych z użyciem materiału dodatkowego (WIG–TIG).</p>
+                                <h5 data-i18n="pipelines.wall_thickness.medium.title">Powyżej 2,6 mm</h5>
+                                <p data-i18n="pipelines.wall_thickness.medium.description">Spawanie rowków rozdzielczych z użyciem materiału dodatkowego (WIG–TIG).</p>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <h5>Powyżej 8 mm</h5>
-                                <p>Dodatkowo stosowane MMA lub MIG–MAG (z przygotowaniem krawędzi i spawaniem wielowarstwowym).</p>
+                                <h5 data-i18n="pipelines.wall_thickness.thick.title">Powyżej 8 mm</h5>
+                                <p data-i18n="pipelines.wall_thickness.thick.description">Dodatkowo stosowane MMA lub MIG–MAG (z przygotowaniem krawędzi i spawaniem wielowarstwowym).</p>
                             </div>
                         </li>
                     </ul>
@@ -78,7 +78,7 @@
             </div>
             
             <div class="col-12 service-page-bottom">
-                <h4>Taka metoda kombinowana daje przewagę w jakości, szybkości i kosztach. 
+                <h4 data-i18n="pipelines.bottom_description">Taka metoda kombinowana daje przewagę w jakości, szybkości i kosztach. 
                     Wykonujemy pełny zakres prac towarzyszących: projektowanie, cięcie, przygotowanie rur, 
                     montaż armatury, sprawdzanie i testowanie systemów rurociągowych.</h4>
             </div>
@@ -89,9 +89,8 @@
 <section class="simple-section simple-gallery">
     <div class="container-md container-xxl h-100">
         <div class="simple-section__title dark">
-
-            <h2>Nasze realizacje</h2>
-            <p class="accent-text-block all">
+            <h2 data-i18n="pipelines.realisations.title">Nasze realizacje</h2>
+            <p class="accent-text-block all" data-i18n="pipelines.realisations.description">
                 Każdy nasz projekt odzwierciedla dokładne spełnienie wymagań klienta, przemyślany model ekonomiczny i bezbłędne wykonanie techniczne.
         </div>
         <%- include('../templates/gallery-instalation-pipelines.ejs') %>

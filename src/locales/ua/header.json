@@ -1,0 +1,20 @@
+{
+  "alt": {
+    "logo": "Логотип Weld Tech Group"
+  },
+  "menu": {
+    "home": "Головна",
+    "about": "Про нас",
+    "services": "Наші послуги",
+    "services_pipelines": "Монтаж технологічних трубопроводів",
+    "services_equipment": "Обладнання для промисловості",
+    "services_capacitive": "Виробництво ємнісного обладнання",
+    "services_metal": "Металеві конструкції та сервісні платформи",
+    "projects": "Проекти",
+    "projects_about": "Про проекти",
+    "projects_gallery": "Галерея проектів",
+    "projects_solutions": "Галузеві рішення",
+    "projects_equipment": "Наше обладнання",
+    "contact": "Контакти"
+  }
+} 

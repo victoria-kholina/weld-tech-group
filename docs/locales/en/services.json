@@ -1,0 +1,22 @@
+{
+  "title": "Our Services",
+  "description": "We offer comprehensive solutions in the installation of technological pipelines and production of industrial equipment.",
+  "services": {
+    "pipelines": {
+      "title": "Installation of Process Pipelines",
+      "description": "Professional installation and maintenance of process pipelines for various industrial sectors."
+    },
+    "equipment": {
+      "title": "Production of Industrial Equipment",
+      "description": "Manufacturing of specialized equipment and technological devices to order."
+    },
+    "structures": {
+      "title": "Metal Structures and Service Platforms",
+      "description": "Design and production of metal structures and service platforms."
+    },
+    "capacitive": {
+      "title": "Production of Capacitive Equipment",
+      "description": "Manufacturing of tanks, reactors and other capacitive equipment."
+    }
+  }
+} 

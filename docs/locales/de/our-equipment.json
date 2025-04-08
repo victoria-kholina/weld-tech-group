@@ -1,0 +1,111 @@
+{
+  "title": "Weld Tech Group - Ausstattung",
+  "meta_description": "Moderne Ausstattung von Weld Tech Group: Schweißgeräte, CNC-Maschinen, Qualitätskontrollsysteme. Technologische Basis für präzise und schnelle Projektumsetzung.",
+  "main_title": "Ausstattung",
+  "main_description": "Wir gewährleisten hohe Qualität und Zuverlässigkeit durch moderne Ausstattung und fortschrittliche Technologien.",
+  "tabs": {
+    "welding": "Schweißausstattung",
+    "machining": "Maschinen und Ausstattung für die Bearbeitung",
+    "weld_preparation": "Ausstattung für Schweißnahtvorbereitung und -bearbeitung",
+    "quality_control": "Qualitätskontrolle und Prüfung",
+    "lifting": "Hebe- und Transportausstattung"
+  },
+  "sections": {
+    "welding": {
+      "title": "Schweißausstattung",
+      "tig": {
+        "title": "TIG (WIG) Schweißgeräte",
+        "description": "Ermöglichen hochwertige Schweißnähte bei der Arbeit mit Edelstahl, Titanlegierungen und anderen Materialien, die präzises und sorgfältiges Schweißen erfordern.",
+        "manual": "Manuelle TIG (WIG) Schweißgeräte — für das Schweißen von Rohren, dünnen Blechen und Bauteilen mit komplexer Form.",
+        "orbital": "Orbitalschweißen — automatisierte Ausstattung für das Schweißen von Rohren mit Durchmessern von 6 bis 115 mm und Wandstärken bis zu 3 mm, die hohe Produktivität und Reproduzierbarkeit der Ergebnisse gewährleistet."
+      },
+      "mig": {
+        "title": "MIG-MAG Schweißgeräte",
+        "description": "Hochproduktive Geräte für das Schweißen von Kohlenstoff- und legierten Stählen sowie Aluminiumlegierungen. Gewährleisten stabilen Lichtbogen und gleichmäßiges Einbrandverhalten, was besonders wichtig ist bei der Arbeit mit dickeren Wandstärken."
+      },
+      "mma": {
+        "title": "MMA (Schweißen mit umhüllter Elektrode)",
+        "description": "Traditionelle Lichtbogenschweißtechnologie, die bei der Montage von Metallkonstruktionen mit großem Querschnitt sowie unter Bedingungen erforderlich ist, die Mobilität oder Arbeiten im Freien erfordern."
+      },
+      "oxy": {
+        "title": "Ausstattung für Gasschweißen und Löten",
+        "description": "Wird für spezifische Aufgaben wie das Löten von Nichteisenmetallen oder Kleinserien-Schweißarbeiten verwendet, die besondere Präzision und sorgfältige Temperaturkontrolle erfordern."
+      }
+    },
+    "machining": {
+      "title": "Maschinen und Ausstattung für die Bearbeitung",
+      "cnc": {
+        "title": "CNC-Maschinen für Metallzuschnitt",
+        "description": "(Laser-, Plasma- oder Wasserstrahl — je nach Bedarf) Ermöglichen die Herstellung präziser Teile mit minimalen Abweichungen, was besonders wichtig ist bei der Produktion komplexer Metallkonstruktionen und technologischer Rohrleitungskomponenten."
+      },
+      "lathes": {
+        "title": "Dreh- und Fräsmaschinen",
+        "description": "(einschließlich CNC-Modelle) Gewährleisten hohe Präzision bei der Bearbeitung von Teilen, Flanschen, Fittingen und anderen Rohrleitungssystemelementen. Moderne Maschinen verkürzen die Produktionszykluszeit und gewährleisten stabile Teilequalität in großen Serien."
+      },
+      "bending": {
+        "title": "Biege- und Walzmaschinen",
+        "description": "Werden für das Biegen von Blechmetall und die Formung zylindrischer oder konischer Elemente verwendet, die in Tankkonstruktionen und Gehäuseteilen zum Einsatz kommen."
+      },
+      "drilling": {
+        "title": "Bohr- und Schneidmaschinen",
+        "description": "Helfen Zeit zu sparen und gewährleisten hohe Reproduzierbarkeit von Löchern und Ausschnitten in Rohren, Blechen und Konstruktionsprofilen."
+      }
+    },
+    "weld_preparation": {
+      "title": "Ausstattung für Schweißnahtvorbereitung und -bearbeitung",
+      "grinding": {
+        "title": "Maschinen für Schleifen und Polieren",
+        "description": "Ermöglichen das Bringen von Schweißnähten und Metalloberflächen auf den erforderlichen Reinheits- und Glättungsgrad, was besonders wichtig ist in der Lebensmittel- und Pharmaindustrie, wo Hygiene wichtig ist."
+      },
+      "passivation": {
+        "title": "Systeme für Beizen und Passivieren",
+        "description": "Werden bei der Arbeit mit Edelstahl eingesetzt, wo nach dem Schweißen und der Endbearbeitung die Korrosionsbeständigkeit wiederhergestellt werden muss."
+      }
+    },
+    "quality_control": {
+      "title": "Qualitätskontrolle und Prüfung",
+      "ndt": {
+        "title": "Ausstattung für zerstörungsfreie Prüfung (NDT)",
+        "ultrasonic": "Ultraschall-Defektoskope",
+        "radiographic": "Röntgenografische Systeme für Schweißnahtprüfung",
+        "penetrant": "Eindringprüfung (PT)",
+        "magnetic": "Magnetpulverprüfung (MT)",
+        "description": "Alle diese Methoden helfen, innere und oberflächliche Fehler rechtzeitig zu erkennen und erhöhen die Sicherheit und Zuverlässigkeit von Konstruktionen."
+      },
+      "measuring": {
+        "title": "Geräte für Geometrie- und Längenmessung",
+        "description": "Digitale Messschieber, Laser-Distanzmesser, Präzisionskaliber ermöglichen die Überprüfung der Übereinstimmung von Teilen mit Zeichnungen und Toleranzen."
+      }
+    },
+    "lifting": {
+      "title": "Hebe- und Transportausstattung",
+      "cranes": {
+        "title": "Krane und Hebezeuge",
+        "description": "Werden für die Handhabung schwerer Blechmaterialien, Rohre und fertiger Metallkonstruktionen innerhalb der Werkstatt verwendet."
+      },
+      "forklifts": {
+        "title": "Gabelstapler",
+        "description": "Gewährleisten effiziente Logistik im Unternehmen und vereinfachen die Lagerung und den Transport von Produkten."
+      }
+    }
+  },
+  "why_important": {
+    "title": "Warum ist das wichtig?",
+    "precision": {
+      "title": "Garantie für hohe Präzision und Qualität",
+      "description": "Die Verwendung moderner CNC-Maschinen und zertifizierter Schweißgeräte minimiert die Fehlerwahrscheinlichkeit und garantiert hohe Endproduktqualität."
+    },
+    "speed": {
+      "title": "Hohe Arbeitsgeschwindigkeit und Effizienz",
+      "description": "Durch Prozessautomatisierung kann Weld Tech Group Aufträge effizient ausführen, stabile Qualität gewährleisten und kurze Montage- und Produktionszeiten einhalten."
+    },
+    "flexibility": {
+      "title": "Maximale Flexibilität und Universalität",
+      "description": "Ein breiter Maschinenpark ermöglicht uns die Arbeit mit verschiedenen Metallen und Legierungen, einschließlich schwer schweißbarer Materialien (Titan, Aluminium, hochlegierte Stähle)."
+    },
+    "full_cycle": {
+      "title": "Gewährleistung des vollständigen Arbeitszyklus",
+      "description": "Die eigene Produktions- und Schweiß-Montagebasis ermöglicht die komplexe Lösung von Produktionsaufgaben: vom Metallzuschnitt und Biegen bis zur Endmontage und Prüfung."
+    }
+  }
+} 

@@ -1,0 +1,43 @@
+{
+  "title": "Weld Tech Group - Montage von technologischen Rohrleitungen",
+  "meta_description": "Professionelle Montage und Schweißen von Rohrleitungen aus Edelstahl, Titan, Aluminium und Kohlenstoffstahl. Wir verwenden TIG, Orbitalschweißen, MIG–MAG und MMA. Kompletter Zyklus: von der Planung bis zur Prüfung.",
+  "main_title": "Montage von technologischen Rohrleitungen",
+  "main_description": "Wir sind professionell in der Montage und dem Schweißen von technologischen Rohrleitungen aus Edelstahl (AISI-304L, AISI-308L, AISI-316L, AISI-321), Kohlenstoffstahl (St.20, 30) sowie Titan und Aluminium tätig.",
+  "welding_technologies": {
+    "title": "Verwendete Schweißtechnologien:",
+    "tig": {
+      "title": "Manuelles Schweißen in Argonatmosphäre (WIG – TIG)",
+      "diameter": "Rohrdurchmesser: ab 6 mm",
+      "thickness": "Wandstärke: ab 0,8 mm"
+    },
+    "orbital": {
+      "title": "Orbitalschweißen (WIG – TIG)",
+      "diameter": "Rohrdurchmesser: von 20 mm bis 115 mm",
+      "thickness": "Wandstärke: bis 3 mm"
+    },
+    "mma": {
+      "title": "MMA und MIG–MAG",
+      "description": "Wird für die Arbeit mit Rohrwandstärken über 8 mm verwendet (mit vorheriger Kantenvorbereitung und mehrlagiger Füllung)."
+    }
+  },
+  "wall_thickness": {
+    "title": "Wandstärke und Schweißmethode:",
+    "thin": {
+      "title": "Bis 2,6 mm (AISI-304L, AISI-316L, AISI-321)",
+      "description": "\"Pendel\"-Methode ohne Verwendung von Zusatzwerkstoff (WIG–TIG)."
+    },
+    "medium": {
+      "title": "Über 2,6 mm",
+      "description": "Schweißen von Teilnuten unter Verwendung von Zusatzwerkstoff (WIG–TIG)."
+    },
+    "thick": {
+      "title": "Über 8 mm",
+      "description": "Zusätzlich wird MMA oder MIG–MAG verwendet (mit Kantenvorbereitung und mehrlagigem Schweißen)."
+    }
+  },
+  "bottom_description": "Diese kombinierte Methode bietet Vorteile in Bezug auf Qualität, Geschwindigkeit und Kosten. Wir führen das gesamte Spektrum der damit verbundenen Arbeiten durch: Planung, Schneiden, Rohrvorbereitung, Ventilmontage, Überprüfung und Prüfung von Rohrleitungssystemen.",
+  "realisations": {
+    "title": "Unsere Realisierungen",
+    "description": "Jedes unserer Projekte spiegelt die genaue Erfüllung der Kundenanforderungen, ein gut durchdachtes Wirtschaftsmodell und eine einwandfreie technische Ausführung wider."
+  }
+} 

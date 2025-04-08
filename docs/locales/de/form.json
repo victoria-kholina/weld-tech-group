@@ -1,0 +1,14 @@
+{
+  "title": "Kontaktformular",
+  "description": "Wir warten auf Ihre Nachrichten und helfen Ihnen gerne bei der Realisierung von Projekten jeder Komplexität!",
+  "name": {
+    "label": "Ihr Name"
+  },
+  "email": {
+    "label": "Ihre E-Mail"
+  },
+  "message": {
+    "label": "Ihre Nachricht"
+  },
+  "submit": "Senden"
+} 

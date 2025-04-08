@@ -2,9 +2,9 @@
 
 <html lang="pl">
 <head>
-    <title>Weld Tech Group - Produkcja i montaż urządzeń przemysłowych</title>
+    <title data-i18n="equipment.title">Weld Tech Group - Produkcja i montaż urządzeń przemysłowych</title>
     <%- include('../templates/meta.ejs') %>
-    <meta name="description" content="Produkujemy i montujemy urządzenia dla przemysłu spożywczego, chemicznego i farmaceutycznego. Przenośniki, zasobniki, zbiorniki przemysłowe i wanny myjące pod indywidualne potrzeby klienta.">
+    <meta name="description" data-i18n="equipment.meta_description" content="Produkujemy i montujemy urządzenia dla przemysłu spożywczego, chemicznego i farmaceutycznego. Przenośniki, zasobniki, zbiorniki przemysłowe i wanny myjące pod indywidualne potrzeby klienta.">
 </head>
 <body>
 <%- include('../templates/header.ejs' , { isInnerPage: true }) %>
@@ -13,8 +13,8 @@
     <div class="container-md container-xxl h-100">
         <div class="container-md container-xxl h-100">
             <div class="simple-section__title dark">
-                <h2>Produkcja i montaż urządzeń przemysłowych</h2>
-                <p class="accent-text-block all">
+                <h2 data-i18n="equipment.main_title">Produkcja i montaż urządzeń przemysłowych</h2>
+                <p class="accent-text-block all" data-i18n="equipment.main_description">
                     Produkujemy dodatkowe urządzenia dla różnych linii produkcyjnych i systemów, 
                     stosowanych w przemyśle chemicznym, spożywczym, farmaceutycznym i pokrewnych.</p>
             </div>
@@ -25,14 +25,14 @@
                     <ul class="accent-list">
                         <li>
                             <div>
-                                <h5>Przenośniki i rolki</h5>
-                                <p>Obrotowe, podnoszące, ze zgarniakami lub taśmami bez końca.</p>
+                                <h5 data-i18n="equipment.conveyors.title">Przenośniki i rolki</h5>
+                                <p data-i18n="equipment.conveyors.description">Obrotowe, podnoszące, ze zgarniakami lub taśmami bez końca.</p>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <h5>Mosty przejściowe i przemysłowe "wanny"</h5>
-                                <p>(myjki, zbiorniki do płukania i czyszczenia).</p>
+                                <h5 data-i18n="equipment.bridges.title">Mosty przejściowe i przemysłowe "wanny"</h5>
+                                <p data-i18n="equipment.bridges.description">(myjki, zbiorniki do płukania i czyszczenia).</p>
                             </div>
                         </li>
                     </ul>
@@ -43,23 +43,22 @@
                     <ul class="accent-list">
                         <li>
                             <div>
-                                <h5>Zasobniki na materiały sypkie</h5>
-                                <p>Projektujemy pod potrzeby klienta, uwzględniając specyfikę przechowywanych materiałów.</p>
+                                <h5 data-i18n="equipment.storage.title">Zasobniki na materiały sypkie</h5>
+                                <p data-i18n="equipment.storage.description">Projektujemy pod potrzeby klienta, uwzględniając specyfikę przechowywanych materiałów.</p>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <h5>Urządzenia do przyjmowania, załadunku i rozładunku</h5>
-                                <p>W tym specjalistyczne mechanizmy dla zakładów spożywczych.</p>
+                                <h5 data-i18n="equipment.loading.title">Urządzenia do przyjmowania, załadunku i rozładunku</h5>
+                                <p data-i18n="equipment.loading.description">W tym specjalistyczne mechanizmy dla zakładów spożywczych.</p>
                             </div>
                         </li>
                     </ul>
-                    
                 </div>
             </div>
             
             <div class="col-12 service-page-bottom">
-                <h4>W produkcji wykorzystujemy obróbkę tokarsko-frezarską, a także nowoczesne technologie spawania dla stali wysokostopowych i niskowęglowych, aluminium i tytanu. 
+                <h4 data-i18n="equipment.production.description">W produkcji wykorzystujemy obróbkę tokarsko-frezarską, a także nowoczesne technologie spawania dla stali wysokostopowych i niskowęglowych, aluminium i tytanu. 
                     Zapewniamy zarówno produkcję nowych urządzeń, jak i modernizację istniejących linii.</h4>
             </div>
         </div>
@@ -69,9 +68,8 @@
 <section class="simple-section simple-gallery">
     <div class="container-md container-xxl h-100">
         <div class="simple-section__title dark">
-
-            <h2>Nasze realizacje</h2>
-            <p class="accent-text-block all">
+            <h2 data-i18n="equipment.realisations.title">Nasze realizacje</h2>
+            <p class="accent-text-block all" data-i18n="equipment.realisations.description">
                 Każdy nasz projekt odzwierciedla dokładne spełnienie wymagań klienta, przemyślany model ekonomiczny i bezbłędne wykonanie techniczne.
         </div>
         <%- include('../templates/gallery-all.ejs') %>
@@ -79,7 +77,6 @@
 </section>
 
 <%- include('../templates/know-more.ejs') %>
-
 
 <%- include('../templates/footer.ejs') %>
 

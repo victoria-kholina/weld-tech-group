@@ -1,0 +1,61 @@
+{
+  "common": {
+    "menu": {
+      "home": "Pradinis",
+      "about": "Apie mus",
+      "services": "Paslaugos",
+      "projects": "Projektai",
+      "contacts": "Kontaktai"
+    },
+    "buttons": {
+      "send": "Siųsti",
+      "more": "Sužinokite daugiau",
+      "gallery": "Peržiūrėti galeriją"
+    }
+  },
+  "home": {
+    "title": "Weld Tech Group - Pramoninės sprendimai",
+    "description": "Profesionalios suvirinimo ir montavimo paslaugos pramonės įmonėms. Aukštos kokybės įranga ir patyrę specialistai.",
+    "hero": {
+      "title": "Pramoniniai sprendimai",
+      "subtitle": "Profesionalios suvirinimo ir montavimo paslaugos"
+    }
+  },
+  "projects": {
+    "title": "Mūsų projektai",
+    "description": "Mūsų patyrusių specialistų komanda įgyvendina projektus Lenkijoje, Lietuvoje, Vokietijoje ir kituose ES šalyse. Vamzdynų montavimas, bakai, konvejeriai, platformos — kompleksiškai.",
+    "gallery": "Projektų galerija",
+    "equipment": "Mūsų įranga",
+    "industry": "Pramonės sprendimai"
+  },
+  "services": {
+    "title": "Mūsų paslaugos",
+    "description": "Išsamios paslaugos pramonės įmonėms: nuo projektavimo iki įrangos paleidimo.",
+    "list": {
+      "welding": "Suvirinimo darbai",
+      "installation": "Montavimo darbai",
+      "design": "Projektavimas",
+      "maintenance": "Priežiūra"
+    }
+  },
+  "about": {
+    "title": "Apie mus",
+    "description": "Weld Tech Group yra profesionalų komanda su daugybe metų patirtimi pramoniniuose suvirinimo ir montavimo darbuose.",
+    "advantages": {
+      "experience": "Tarptautinė patirtis",
+      "quality": "Aukšti standartai",
+      "technology": "Moderni technologija",
+      "flexibility": "Lankstumas"
+    }
+  },
+  "contacts": {
+    "title": "Kontaktai",
+    "description": "Susisiekite su mumis dėl mūsų paslaugų ir projektų.",
+    "form": {
+      "name": "Vardas ir pavardė",
+      "email": "El. pašto adresas",
+      "message": "Žinutė",
+      "send": "Siųsti žinutę"
+    }
+  }
+} 

@@ -1,0 +1,55 @@
+{
+  "title": "Weld Tech Group - Our Services",
+  "meta": {
+    "description": "Weld Tech Group provides services in the field of technological pipeline installation, equipment manufacturing and installation, container production, metal structures and service platforms."
+  },
+  "experience": {
+    "title": "Years of experience in welding complex materials",
+    "description": "Our team consists of over 50 highly qualified workers with years of experience in welding composite materials and other materials with complex welding properties. We have all the necessary certifications confirming competence and quality of work performed."
+  },
+  "methods": {
+    "title": "Offered welding methods:",
+    "list1": {
+      "tig": "TIG welding",
+      "mig": "MIG-MAG welding",
+      "tigElectrode": "TIG welding with electrode",
+      "electrode": "Electrode welding",
+      "oxyacetylene": "Oxy-acetylene welding"
+    },
+    "list2": {
+      "softSoldering": "Soft soldering",
+      "hardSoldering": "Hard soldering",
+      "planing": "Planing",
+      "plasmaCutting": "Plasma cutting",
+      "arcPlasmaCutting": "Arc-plasma cutting"
+    }
+  },
+  "image": {
+    "alt": "Quality work"
+  },
+  "section": {
+    "title": "Our Services",
+    "description": "Using years of experience, we have learned to find solutions for every task without neglecting quality and implementation deadlines."
+  },
+  "items": {
+    "pipelines": {
+      "title": "Installation of technological pipelines",
+      "description": "We professionally deal with the installation and welding of technological pipelines made of stainless steel (AISI-304L, AISI-308L, AISI-316L, AISI-321), carbon steels (St.20, 30), as well as titanium and aluminum."
+    },
+    "equipment": {
+      "title": "Equipment for industry",
+      "description": "We manufacture additional equipment for various production lines and systems used in chemical, food, pharmaceutical and related industries."
+    },
+    "capacitive": {
+      "title": "Production of capacitive equipment",
+      "description": "We professionally deal with the installation and welding of technological pipelines made of stainless steel (AISI-304L, AISI-308L, AISI-316L, AISI-321), carbon steels (St.20, 30), as well as titanium and aluminum."
+    },
+    "structures": {
+      "title": "Metal structures and service platforms",
+      "description": "We manufacture and install metal structures of various complexity, including trusses, stairs, railings, frames for mounting control cabinets and much more. All products meet strength and safety standards."
+    }
+  },
+  "bottomInfo": {
+    "title": "Contact us right now, and our specialists will quickly answer your questions, explain project details and prepare an individual commercial offer."
+  }
+} 

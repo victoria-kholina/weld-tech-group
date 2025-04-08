@@ -1,0 +1,57 @@
+{
+  "title": "Weld Tech Group - Sobre la empresa",
+  "meta": {
+    "description": "Más de 15 años de experiencia en instalaciones industriales. Nos especializamos en soldadura profesional e instalación de tuberías tecnológicas, producción de equipos y estructuras metálicas para las industrias química, alimentaria, farmacéutica y otras."
+  },
+  "pageTitle": "Sobre nosotros",
+  "alt": {
+    "image": "Equipo y equipamiento de Weld Tech Group",
+    "team": "Equipo de Weld Tech Group",
+    "equipment": "Equipamiento de Weld Tech Group",
+    "work": "Trabajos de Weld Tech Group"
+  },
+  "history": {
+    "title": "Nuestra historia y valores",
+    "text": {
+      "1Peace": "La empresa",
+      "2Peace": "desde su fundación ha estado expandiendo constantemente su gama de servicios y mejorando la calidad del trabajo en el campo de la soldadura e instalación de tuberías tecnológicas, producción de estructuras metálicas y tanques industriales. Experiencia internacional obtenida en varias industrias: alimentaria, química, energética.",
+      "3Peace": "La obtención de certificados",
+      "4Peace": "y personal de ingeniería permite desarrollar documentación y gestionar proyectos, garantizando la ejecución del trabajo.",
+      "5Peace": "Nuestra fiabilidad y profesionalismo están confirmados por relaciones a largo plazo con clientes regulares en Polonia, Lituania, Alemania y otros países europeos."
+    }
+  },
+  "video": {
+    "notSupported": "Su navegador no soporta video."
+  },
+  "values": {
+    "title": "Cinco principios inmutables que sustentan nuestro trabajo.",
+    "items": {
+      "quality": {
+        "title": "Calidad probada en el tiempo",
+        "text": "Aplicamos métodos modernos de soldadura, utilizando solo materiales certificados. Cada etapa de producción está estrictamente controlada, lo que garantiza la durabilidad y seguridad de las estructuras terminadas."
+      },
+      "teamwork": {
+        "title": "Trabajo en equipo",
+        "text": "Nuestros especialistas tienen un alto nivel de formación y mejoran regularmente sus cualificaciones. Saben trabajar con una amplia gama de materiales: desde aceros altamente aleados y de baja aleación hasta titanio y aluminio. Este enfoque profesional nos permite implementar perfectamente tanto proyectos estándar como no estándar."
+      },
+      "customer": {
+        "title": "Orientación al cliente",
+        "text": "Escuchamos las necesidades del cliente y nos esforzamos por ofrecer la solución óptima teniendo en cuenta el presupuesto, los plazos y las especificidades de la empresa en particular. El enfoque individual y la flexibilidad en el trabajo ayudan a construir relaciones de asociación a largo plazo."
+      },
+      "responsibility": {
+        "title": "Responsabilidad y transparencia",
+        "text": "El cumplimiento de las normas técnicas, los requisitos ambientales y los estándares de seguridad es una prioridad incondicional. Documentamos y certificamos cada etapa del trabajo, proporcionando informes lo más completos posibles a los clientes y organismos de control."
+      },
+      "improvement": {
+        "title": "Mejora continua",
+        "text": "Invertimos en equipos modernos, tecnologías innovadoras y capacitación de empleados. Esto asegura un alto nivel de competencia y nos permite mantener posiciones de liderazgo en el mercado de servicios de soldadura y montaje."
+      }
+    },
+    "bottomText": "Gracias a este enfoque integral, Weld Tech Group goza de la confianza merecida tanto de grandes empresas industriales como de pequeñas empresas que buscan un contratista confiable. Nuestro objetivo principal es convertir las ideas de los clientes en soluciones eficientes, seguras y duraderas que sean un ejemplo de calidad y profesionalismo."
+  },
+  "mission": {
+    "title": "Nuestra misión",
+    "text": "proporcionar soluciones confiables, innovadoras y respetuosas con el medio ambiente en el campo de la soldadura y el procesamiento de metales, contribuyendo al desarrollo de la industria en los mercados locales e internacionales. Nos esforzamos no solo por satisfacer las necesidades de los clientes, sino también por superar sus expectativas gracias a la alta calidad del trabajo, el uso de tecnologías avanzadas y la mejora continua de los procesos."
+  },
+  "experience": "Nuestro equipo de especialistas experimentados implementa proyectos en Polonia, Lituania, Alemania y otros países de la UE."
+} 

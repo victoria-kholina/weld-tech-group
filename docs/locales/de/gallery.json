@@ -1,0 +1,25 @@
+{
+  "alt": {
+    "metal_constructions": "Metallkonstruktionen",
+    "huge_pipelines": "große Rohrleitungen",
+    "equipment_for_industry": "Ausrüstung für die Industrie",
+    "pipelines": "Rohrleitungen",
+    "pipelines_work": "Arbeit an Rohrleitungen",
+    "capacitive_equipment": "kapazitive Ausrüstung",
+    "welder": "Schweißer",
+    "pipelines_constructions": "Rohrleitungskonstruktionen",
+    "curve_huge_pipelines": "gekrümmte große Rohrleitungen",
+    "food_industry": "Lebensmittelindustrie"
+  },
+  "title": "Weld Tech Group - Projektgalerie",
+  "meta_description": "Fotogalerie der realisierten Projekte der Firma Weld Tech Group. Visueller Nachweis der Qualität von Arbeiten, Konstruktionen und Produktionslösungen.",
+  "main_title": "Projektgalerie",
+  "main_description": "Nachfolgend finden Sie Fotos unserer Realisierungen zur visuellen Demonstration der Qualität, Präzision und technischen Möglichkeiten der Firma Weld Tech Group.",
+  "tabs": {
+    "various": "Verschiedene",
+    "pipelines": "Montage von Prozessleitungen",
+    "capacitive": "Herstellung von Kapazitätsanlagen",
+    "food": "Lebensmittelindustrie",
+    "chemical": "Chemische, energetische Industrie"
+  }
+} 

@@ -1,7 +1,8 @@
 import './assets/css/bootstrap-grid.min.css'
 import '@splidejs/splide/css/core';
 import './scss/main.scss'
-
+import './assets/js/i18n.js'
+import './assets/js/main.js'
 
 import $ from 'jquery';
 import Splide from '@splidejs/splide';

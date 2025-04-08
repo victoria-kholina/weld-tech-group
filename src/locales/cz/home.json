@@ -1,0 +1,48 @@
+{
+  "title": "Weld Tech Group - spolehlivost prověřená časem!",
+  "meta": {
+    "description": "Více než 15 let zkušeností na průmyslových objektech. Specializujeme se na profesionální svařování a montáž technologických potrubí, výrobu zařízení a kovových konstrukcí pro chemický, potravinářský, farmaceutický a další průmyslové odvětví."
+  },
+  "hero": {
+    "title": "Weld Tech Group",
+    "subtitle": "spolehlivost prověřená časem!",
+    "description": "Váš spolehlivý partner v oblasti montáže technologických potrubí a výroby průmyslových kovových konstrukcí."
+  },
+  "video": {
+    "notSupported": "Váš prohlížeč nepodporuje video."
+  },
+  "experience": {
+    "title": "15+ let zkušeností na průmyslových objektech.",
+    "description": "Specializujeme se na profesionální svařování a montáž technologických potrubí, výrobu zařízení a kovových konstrukcí pro chemický, potravinářský, farmaceutický a další průmyslové odvětví."
+  },
+  "about": {
+    "image": {
+      "alt": "Práce Weld Tech Group"
+    },
+    "mission": {
+      "title": "Naše mise",
+      "text": "poskytování spolehlivých, inovativních a ekologicky šetrných řešení v oblasti svařování a zpracování kovů, přispívání k rozvoji průmyslu na lokálních a mezinárodních trzích. Usilujeme nejen o uspokojení potřeb zákazníků, ale i o překročení jejich očekávání díky vysoké kvalitě prací, používání pokročilých technologií a neustálému vylepšování procesů."
+    },
+    "experience": "Náš tým zkušených specialistů realizuje projekty v Polsku, Litvě, Německu a dalších zemích Evropské unie."
+  },
+  "gallery": {
+    "metalConstructions": "kovové konstrukce",
+    "hugePipelines": "velké potrubí",
+    "industrialEquipment": "průmyslové vybavení",
+    "pipelines": "potrubí",
+    "pipelineWork": "práce na potrubí",
+    "capacitiveEquipment": "kapacitní zařízení",
+    "welder": "svářeč",
+    "pipelineConstruction": "konstrukce potrubí",
+    "curvedPipelines": "zakřivené potrubí"
+  },
+  "projects": {
+    "everyProject": "Každý náš projekt",
+    "quality": "je přesnost, spolehlivost a péče o detaily.",
+    "viewGallery": "Prohlédněte si naše realizované práce v galerii!"
+  },
+  "workStages": {
+    "title": "Jak pracujeme na projektech?!",
+    "description": "Náš přístup k práci je založen na pečlivé přípravě, přísném dodržování technických předpisů a úzké spolupráci se zákazníky v každé fázi."
+  }
+} 

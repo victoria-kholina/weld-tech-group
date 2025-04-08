@@ -1,0 +1,29 @@
+{
+  "title": "Weld Tech Group - Výroba a montáž průmyslových zařízení",
+  "meta_description": "Vyrábíme a montujeme zařízení pro potravinářský, chemický a farmaceutický průmysl. Pásové dopravníky, zásobníky, průmyslové nádrže a mycí vany podle individuálních potřeb zákazníka.",
+  "main_title": "Výroba a montáž průmyslových zařízení",
+  "main_description": "Vyrábíme dodatečná zařízení pro různé výrobní linky a systémy používané v chemickém, potravinářském, farmaceutickém a příbuzném průmyslu.",
+  "conveyors": {
+    "title": "Pásové dopravníky a válečky",
+    "description": "Rotační, zvedací, se škrabáky nebo nekonečnými pásy."
+  },
+  "bridges": {
+    "title": "Přechodové mosty a průmyslové \"vany\"",
+    "description": "(mycí stroje, nádrže na oplachování a čištění)."
+  },
+  "storage": {
+    "title": "Zásobníky na sypké materiály",
+    "description": "Navrhujeme podle potřeb zákazníka s ohledem na specifika skladovaných materiálů."
+  },
+  "loading": {
+    "title": "Zařízení pro příjem, nakládku a vykládku",
+    "description": "Včetně specializovaných mechanismů pro potravinářské závody."
+  },
+  "production": {
+    "description": "Ve výrobě používáme soustružnické a frézovací obrábění a také moderní technologie svařování pro vysokolegované a nízkouhlíkové oceli, hliník a titan. Zajišťujeme jak výrobu nových zařízení, tak modernizaci stávajících linek."
+  },
+  "realisations": {
+    "title": "Naše realizace",
+    "description": "Každý náš projekt odráží přesné splnění požadavků zákazníka, promyšlený ekonomický model a bezchybné technické provedení."
+  }
+} 

@@ -1,0 +1,28 @@
+{
+    "title": "Work Stages",
+    "description": "Project implementation process at Weld Tech Group",
+    "stage1": {
+      "title": "Consultation",
+      "description": "At the first consultation, we clarify the main requirements and specifics of the project, answer the client's questions, and discuss the further work plan."
+    },
+    "stage2": {
+      "title": "Analysis and Planning",
+      "description": "We determine technical parameters, deadlines, and budget, taking into account industry nuances and local regulations."
+    },
+    "stage3": {
+      "title": "Design",
+      "description": "We create detailed drawings and 3D models, coordinate specifications, and material delivery schedules."
+    },
+    "stage4": {
+      "title": "Production and Welding Works",
+      "description": "We use modern technologies (WIG–TIG, MIG–MAG, orbital welding, and others) and certified materials."
+    },
+    "stage5": {
+      "title": "Installation and Verification",
+      "description": "Experienced teams go to the site, perform installation and commissioning. We conduct tests for tightness, strength, and compliance with technical requirements."
+    },
+    "stage6": {
+      "title": "Handover and Service",
+      "description": "We prepare necessary documentation (certificates, acceptance reports), provide warranties, and if needed, ensure service maintenance."
+    }
+} 

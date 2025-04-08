@@ -1,0 +1,61 @@
+{
+  "common": {
+    "menu": {
+      "home": "Startseite",
+      "about": "Über uns",
+      "services": "Dienstleistungen",
+      "projects": "Projekte",
+      "contacts": "Kontakt"
+    },
+    "buttons": {
+      "send": "Senden",
+      "more": "Mehr erfahren",
+      "gallery": "Galerie anzeigen"
+    }
+  },
+  "home": {
+    "title": "Weld Tech Group - Industrielle Lösungen",
+    "description": "Professionelle Schweiß- und Montagearbeiten für Industrieunternehmen. Hochwertige Ausrüstung und erfahrene Spezialisten.",
+    "hero": {
+      "title": "Industrielle Lösungen",
+      "subtitle": "Professionelle Schweiß- und Montagearbeiten"
+    }
+  },
+  "projects": {
+    "title": "Unsere Projekte",
+    "description": "Unser Team erfahrener Spezialisten realisiert Projekte in Polen, Litauen, Deutschland und anderen EU-Ländern. Rohrleitungsmontage, Tanks, Förderbänder, Plattformen — umfassend.",
+    "gallery": "Projektgalerie",
+    "equipment": "Unsere Ausrüstung",
+    "industry": "Branchenlösungen"
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "description": "Umfassende Dienstleistungen für Industrieunternehmen: von der Planung bis zur Inbetriebnahme von Anlagen.",
+    "list": {
+      "welding": "Schweißarbeiten",
+      "installation": "Montagearbeiten",
+      "design": "Konstruktion",
+      "maintenance": "Wartung"
+    }
+  },
+  "about": {
+    "title": "Über uns",
+    "description": "Weld Tech Group ist ein Team von Profis mit langjähriger Erfahrung in industriellen Schweiß- und Montagearbeiten.",
+    "advantages": {
+      "experience": "Internationale Erfahrung",
+      "quality": "Hohe Standards",
+      "technology": "Moderne Technologie",
+      "flexibility": "Flexibilität"
+    }
+  },
+  "contacts": {
+    "title": "Kontakt",
+    "description": "Kontaktieren Sie uns bei Fragen zu unseren Dienstleistungen und Projekten.",
+    "form": {
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail",
+      "message": "Ihre Nachricht",
+      "send": "Nachricht senden"
+    }
+  }
+} 

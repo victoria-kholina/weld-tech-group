@@ -1,0 +1,46 @@
+{
+  "contact": {
+    "title": "Kontakt",
+    "whatYouGet": {
+      "title": "Co získáte, když se na nás obrátíte?!",
+      "professionalAdvice": {
+        "title": "Profesionální poradenství",
+        "description": "v oblasti svařování, montáže potrubí, výroby kovových konstrukcí a dalších služeb."
+      },
+      "costCalculation": {
+        "title": "Kalkulaci nákladů a termínů realizace",
+        "description": "založenou na skutečných zkušenostech a transparentních cenách."
+      },
+      "individualSolution": {
+        "title": "Individuální řešení",
+        "description": "vybereme optimální technologie a materiály podle vašich požadavků."
+      }
+    },
+    "map": {
+      "title": "Mapa příjezdu"
+    },
+    "address": {
+      "title": "Adresa kanceláře:"
+    },
+    "phone": {
+      "title": "Telefon:"
+    },
+    "email": {
+      "title": "E-mail:"
+    },
+    "whatsapp": {
+      "title": "WhatsApp:"
+    },
+    "viber": {
+      "title": "Viber:"
+    },
+    "telegram": {
+      "title": "Telegram:"
+    }
+  },
+  "copyright": "@Copyright 2025-2026. Všechna práva vyhrazena.",
+  "cookie": {
+    "text": "Používáme soubory cookie pro zajištění pohodlného používání webu, personalizaci obsahu a poskytování nejrelevantnějších informací. Soubory cookie nám pomáhají analyzovat interakci uživatelů s webem, zlepšovat jeho funkčnost a přizpůsobovat naše služby vašim potřebám. Pokračováním v používání tohoto webu potvrzujete souhlas s používáním souborů cookie",
+    "accept": "Přijmout"
+  }
+} 

@@ -1,0 +1,20 @@
+{
+  "title": "Weld Tech Group - Projektų galerija",
+  "meta_description": "Weld Tech Group įmonės įgyvendintų projektų fotogalerija. Vizualus darbų, konstrukcijų ir gamybos sprendimų kokybės patvirtinimas.",
+  "main_title": "Projektų galerija",
+  "main_description": "Žemiau pateikiamos mūsų įgyvendinimų nuotraukos, skirtos vizualiai parodyti Weld Tech Group įmonės darbų kokybę, tikslumą ir technines galimybes.",
+  "tabs": {
+    "various": "Įvairūs",
+    "pipelines": "Technologinių vamzdynų montavimas",
+    "capacitive": "Talpinio įrenginio gamyba",
+    "food": "Maisto pramonė",
+    "chemical": "Cheminė, energetikos pramonė"
+  },
+  "alt": {
+    "metal_constructions": "Metalinės konstrukcijos",
+    "huge_pipelines": "Dideli vamzdynai",
+    "food_industry": "Maisto pramonė",
+    "capacitive_equipment": "Talpinė įranga",
+    "pipelines": "Vamzdynai"
+  }
+} 

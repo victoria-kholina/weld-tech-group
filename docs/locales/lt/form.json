@@ -1,0 +1,12 @@
+{
+  "name": "Vardas",
+  "email": "El. paštas",
+  "phone": "Telefonas",
+  "message": "Žinutė",
+  "send": "Siųsti",
+  "success": "Žinutė sėkmingai išsiųsta",
+  "error": "Įvyko klaida. Bandykite dar kartą",
+  "required": "Šis laukas yra privalomas",
+  "invalid_email": "Neteisingas el. pašto formatas",
+  "invalid_phone": "Neteisingas telefono numerio formatas"
+} 

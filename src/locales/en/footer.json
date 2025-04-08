@@ -1,0 +1,46 @@
+{
+  "contact": {
+    "title": "Contact Us",
+    "whatYouGet": {
+      "title": "What do you get when you contact us?!",
+      "professionalAdvice": {
+        "title": "Professional advice",
+        "description": "in welding, pipeline installation, metal structure manufacturing, and other services."
+      },
+      "costCalculation": {
+        "title": "Cost and deadline calculation",
+        "description": "based on real experience and transparent pricing."
+      },
+      "individualSolution": {
+        "title": "Individual solution",
+        "description": "we will select optimal technologies and materials according to your requirements."
+      }
+    },
+    "map": {
+      "title": "Route map"
+    },
+    "address": {
+      "title": "Office address:"
+    },
+    "phone": {
+      "title": "Phone:"
+    },
+    "email": {
+      "title": "Email:"
+    },
+    "whatsapp": {
+      "title": "WhatsApp:"
+    },
+    "viber": {
+      "title": "Viber:"
+    },
+    "telegram": {
+      "title": "Telegram:"
+    }
+  },
+  "copyright": "All rights reserved.",
+  "cookie": {
+    "text": "We use cookies to ensure website convenience, content personalization, and delivery of the most relevant information. Cookies help us analyze user interaction with the website, improve its functionality, and adapt our services to your needs. By continuing to use this website, you confirm your consent to the use of cookies",
+    "accept": "Accept"
+  }
+} 

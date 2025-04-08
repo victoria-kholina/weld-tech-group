@@ -1,0 +1,46 @@
+{
+  "contact": {
+    "title": "Contacto",
+    "whatYouGet": {
+      "title": "¿Qué obtienes al contactarnos?!",
+      "professionalAdvice": {
+        "title": "Asesoramiento profesional",
+        "description": "en el campo de la soldadura, instalación de tuberías, fabricación de estructuras metálicas y otros servicios."
+      },
+      "costCalculation": {
+        "title": "Cálculo de costos y plazos de implementación",
+        "description": "basado en experiencia real y precios transparentes."
+      },
+      "individualSolution": {
+        "title": "Solución individual",
+        "description": "seleccionaremos las tecnologías y materiales óptimos según sus requisitos."
+      }
+    },
+    "map": {
+      "title": "Mapa de ubicación"
+    },
+    "address": {
+      "title": "Dirección de la oficina:"
+    },
+    "phone": {
+      "title": "Teléfono:"
+    },
+    "email": {
+      "title": "E-mail:"
+    },
+    "whatsapp": {
+      "title": "WhatsApp:"
+    },
+    "viber": {
+      "title": "Viber:"
+    },
+    "telegram": {
+      "title": "Telegram:"
+    }
+  },
+  "copyright": "Todos los derechos reservados.",
+  "cookie": {
+    "text": "Utilizamos cookies para garantizar la comodidad de uso del sitio web, la personalización del contenido y la entrega de la información más relevante. Las cookies nos ayudan a analizar la interacción de los usuarios con el sitio web, mejorar su funcionalidad y adaptar nuestros servicios a sus necesidades. Al continuar utilizando este sitio web, confirma su consentimiento para el uso de cookies",
+    "accept": "Aceptar"
+  }
+} 

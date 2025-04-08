@@ -1,0 +1,23 @@
+{
+  "title": "Įranga",
+  "meta": {
+    "title": "Weld Tech Group - Įranga",
+    "description": "Profesionali suvirinimo ir metalo apdirbimo įranga. Aukštos kokybės įranga ir prietaisai."
+  },
+  "pageTitle": "Įranga",
+  "description": "Naudojame profesionalią ir modernią įrangą, kuri užtikrina aukštą darbų kokybę.",
+  "categories": {
+    "welding": {
+      "title": "Suvirinimo įranga",
+      "description": "Moderni suvirinimo įranga įvairiems suvirinimo tipams"
+    },
+    "cutting": {
+      "title": "Pjovimo įranga",
+      "description": "Precizinė metalo pjovimo įranga"
+    },
+    "processing": {
+      "title": "Apdirbimo įranga",
+      "description": "Metalo apdirbimo ir formavimo įranga"
+    }
+  }
+} 

@@ -1,0 +1,28 @@
+{
+    "title": "Darbo etapai",
+    "description": "Projekto įgyvendinimo procesas Weld Tech Group",
+    "stage1": {
+      "title": "Konsultacija",
+      "description": "Pirmoje konsultacijoje išsiaiškiname pagrindinius reikalavimus ir projekto specifiką, atsakome į kliento klausimus ir aptariame tolesnį darbo planą."
+    },
+    "stage2": {
+      "title": "Analizė ir planavimas",
+      "description": "Nustatome techninius parametrus, terminus ir biudžetą, atsižvelgdami į pramonės niuansus ir vietinius reglamentus."
+    },
+    "stage3": {
+      "title": "Projektavimas",
+      "description": "Kuriame detaliuosius brėžinius ir 3D modelius, koordinuojame specifikacijas ir medžiagų pristatymo grafikus."
+    },
+    "stage4": {
+      "title": "Gamyba ir suvirinimo darbai",
+      "description": "Naudojame modernias technologijas (WIG–TIG, MIG–MAG, orbitinis suvirinimas ir kitos) ir sertifikuotas medžiagas."
+    },
+    "stage5": {
+      "title": "Montavimas ir patikra",
+      "description": "Patyrę komandos vyksta į objektą, atlieka montavimą ir paleidimą. Atliekame sandarumo, stiprumo ir atitikties techniniams reikalavimams bandymus."
+    },
+    "stage6": {
+      "title": "Perdavimas ir aptarnavimas",
+      "description": "Ruošiame reikalingą dokumentaciją (sertifikatus, priėmimo aktus), suteikiame garantijas ir, jei reikia, užtikriname techninę priežiūrą."
+    }
+} 

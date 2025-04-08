@@ -1,0 +1,100 @@
+{
+  "title": "Weld Tech Group - Nuestros proyectos",
+  "meta_description": "Nuestro equipo de especialistas experimentados implementa proyectos en Polonia, Lituania, Alemania y otros países de la UE. Instalación de tuberías, tanques, transportadores, plataformas — de manera integral.",
+  "main_title": "Nuestros proyectos",
+  "main_description": {
+    "part_1": "¡Nuestros proyectos son nuestro orgullo!",
+    "part_2": "Gracias a la experiencia acumulada y los contactos comerciales establecidos, nuestros proyectos se implementan a tiempo y dentro del presupuesto, garantizando resultados confiables y el cumplimiento de todos los requisitos legales para nuestros clientes."
+  },
+  "sections": {
+    "pipelines": {
+      "title": "Instalación de tuberías para empresas de la industria alimentaria y química",
+      "items": [
+        "Instalación de sistemas avanzados para el transporte de líquidos, gases y materiales a granel",
+        "Cumplimiento de estrictos requisitos de seguridad y normas de higiene",
+        "Soldadura de tuberías de acero inoxidable y altamente aleado, titanio, aluminio y otros materiales, teniendo en cuenta las propiedades químicas y térmicas del entorno"
+      ]
+    },
+    "conveyors": {
+      "title": "Fabricación y puesta en marcha de sistemas de transporte y rodillos",
+      "items": [
+        "Diseño y fabricación de transportadores para el transporte continuo de materiales en las industrias alimentaria, química y otras",
+        "Instalación y puesta en marcha de equipos in situ, capacitación del personal del cliente",
+        "Integración con líneas de producción existentes, teniendo en cuenta el espacio limitado y las especificaciones del proceso de producción"
+      ]
+    },
+    "tanks": {
+      "title": "Fabricación de tanques para productos lácteos, bebidas y entornos agresivos",
+      "items": [
+        "Fabricación de tanques de varios volúmenes y configuraciones — desde soluciones estándar hasta completamente personalizadas",
+        "Uso de aleaciones de alta calidad que garantizan resistencia a la corrosión, aislamiento térmico y hermeticidad",
+        "Posibilidad de instalar sistemas de calefacción/refrigeración, mezcladores y sensores de control (temperatura, nivel, presión, etc.)"
+      ]
+    },
+    "platforms": {
+      "title": "Instalación de plataformas adicionales y de servicio en el sector farmacéutico",
+      "items": [
+        "Fabricación e instalación de estructuras metálicas que cumplen con los requisitos de esterilidad y estándares GMP",
+        "Diseño de plataformas para el mantenimiento seguro de líneas tecnológicas y equipos, incluyendo espacios de varios niveles",
+        "Soluciones inteligentes que optimizan los procesos de trabajo, aumentando la seguridad y comodidad del personal"
+      ]
+    }
+  },
+  "bottom_text": {
+    "part_1": "Cada uno de nuestros proyectos",
+    "part_2": "es precisión, fiabilidad y atención a los detalles.",
+    "part_3": "¡Conozca nuestros trabajos realizados en la galería!"
+  },
+  "gallery_button": "Galería de proyectos",
+  "work_stages": {
+    "title": "Etapas del trabajo del proyecto"
+  },
+  "quality": {
+    "title": "Utilizamos solo materiales y equipos de alta calidad",
+    "description": {
+      "part_1": "Utilizamos solo metalurgia verificada y trabajamos solo con proveedores confiables cuyos materiales cumplen con los estándares internacionales de calidad y seguridad. En el proceso de selección, consideramos parámetros como la composición química, propiedades mecánicas, resistencia a la corrosión y certificación de productos metálicos.",
+      "part_2": "Gracias al estricto control en todas las etapas — desde la adquisición hasta el control preliminar en la producción — podemos garantizar la estabilidad de las propiedades de los metales y aleaciones, lo que afecta directamente la durabilidad y confiabilidad de las estructuras terminadas.",
+      "part_3": "Para garantizar alta calidad y confiabilidad en trabajos de soldadura e instalación, nuestra empresa utiliza un complejo moderno de equipos y tecnologías. Modernizamos continuamente nuestro parque de máquinas y equipos de soldadura, mejorando los procesos de producción y garantizando resultados estables incluso en la implementación de proyectos altamente complejos."
+    },
+    "equipment_button": "Nuestro equipo"
+  },
+  "advantages": {
+    "title": "Nuestras ventajas",
+    "international": {
+      "title": "Experiencia internacional",
+      "description": "Implementamos proyectos en diversos entornos legales y técnicos."
+    },
+    "flexibility": {
+      "title": "Flexibilidad",
+      "description": "Estamos listos para asumir tanto instalaciones estándar como tareas individuales y complejas de manera integral."
+    },
+    "standards": {
+      "title": "Altos estándares",
+      "description": "Cumplimos con los requisitos de las normas europeas, prestando especial atención a la seguridad y calidad."
+    },
+    "technology": {
+      "title": "Desarrollo tecnológico",
+      "description": "Modernizamos continuamente nuestro parque de equipos, utilizando métodos modernos de soldadura, control de calidad y gestión de proyectos."
+    }
+  },
+  "gallery": {
+    "title": "Galería de proyectos",
+    "description": "Conozca nuestros proyectos realizados y vea cómo podemos ayudar a su empresa.",
+    "viewMore": "Ver más"
+  },
+  "categories": {
+    "pipelines": "Tuberías tecnológicas",
+    "equipment": "Equipamiento industrial",
+    "structures": "Estructuras metálicas",
+    "capacitive": "Equipos capacitivos"
+  },
+  "details": {
+    "client": "Cliente",
+    "location": "Ubicación",
+    "year": "Año de implementación",
+    "scope": "Alcance del trabajo",
+    "description": "Descripción del proyecto"
+  },
+  "everyProject": "Cada uno de nuestros proyectos es precisión, fiabilidad y atención a los detalles.",
+  "viewGallery": "¡Conozca nuestros trabajos realizados en la galería!"
+} 

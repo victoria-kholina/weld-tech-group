@@ -1,0 +1,26 @@
+{
+  "title": "Weld Tech Group - Metallkonstruktionen und Serviceplattformen",
+  "meta_description": "Herstellung und Montage von Metallkonstruktionen: Fachwerke, Treppen, Geländer, Rahmen. Stahl, Aluminium, Edelstahl. Hohe Schweißpräzision, Korrosionsschutz, Zuverlässigkeit und Langlebigkeit der Konstruktionen.",
+  "main_title": "Metallkonstruktionen und Serviceplattformen",
+  "main_description": "Wir fertigen und montieren Metallkonstruktionen verschiedener Komplexität, einschließlich Fachwerke, Treppen, Geländer, Rahmen für die Montage von Schaltschränken und vieles mehr. Alle Produkte erfüllen die Normen für Festigkeit und Sicherheit.",
+  "materials": {
+    "title": "Arten von Materialien für Metallkonstruktionen:",
+    "steel": {
+      "title": "Kohlenstoffstahl (St.20)",
+      "description": "Konstruktionen können mit Pulverlacken oder chemisch beständigen Emails beschichtet werden; geeignet für den Einsatz sowohl im Innen- als auch im Außenbereich."
+    },
+    "aluminum": {
+      "title": "Aluminium und Legierungen",
+      "description": "Leichte, mobile und langlebige Lösungen, besonders wichtig bei häufiger Notwendigkeit der Umstellung oder des Transports von Konstruktionen."
+    },
+    "stainless": {
+      "title": "Hochlegierte (rostfreie) Stähle (AISI–316L, AISI–304L, AISI–430)",
+      "description": "Zeichnen sich durch hohe Korrosionsbeständigkeit, elegantes Aussehen aus und sind ideal für die Lebensmittel-, Chemie- und Pharmaindustrie."
+    }
+  },
+  "bottom_description": "Das Schweißen erfolgt nach den Methoden WIG–TIG (AC/DC) und MIG–MAG, was hohe Präzision, saubere Schweißnähte und lange Lebensdauer der Konstruktionen gewährleistet.",
+  "realisations": {
+    "title": "Unsere Realisierungen",
+    "description": "Jedes unserer Projekte spiegelt die genaue Erfüllung der Kundenanforderungen, ein gut durchdachtes Wirtschaftsmodell und eine einwandfreie technische Ausführung wider."
+  }
+} 

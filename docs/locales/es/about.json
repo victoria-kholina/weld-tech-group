@@ -1,0 +1,40 @@
+{
+  "title": "Weld Tech Group - Sobre la empresa",
+  "meta": {
+    "description": "Más de 15 años de experiencia en instalaciones industriales. Nos especializamos en soldadura profesional e instalación de tuberías tecnológicas, fabricación de equipos y estructuras metálicas para las industrias química, alimentaria, farmacéutica y otras industrias."
+  },
+  "pageTitle": "Sobre nosotros",
+  "history": {
+    "title": "Nuestra historia y valores",
+    "text": "La empresa Weld Tech Group desde su fundación ha estado expandiendo constantemente su gama de servicios y mejorando la calidad del trabajo en el campo de la soldadura e instalación de tuberías tecnológicas, fabricación de estructuras metálicas y contenedores industriales. Experiencia internacional adquirida en diversas industrias: alimentaria, química, energética. La obtención de certificados ISO 3834 – 2,1090-1034 y personal de ingeniería permite desarrollar documentación y gestionar proyectos, garantizando la ejecución de los trabajos. Nuestra fiabilidad y profesionalismo están confirmados por relaciones a largo plazo con clientes regulares en Polonia, Lituania, Alemania y otros países europeos."
+  },
+  "video": {
+    "notSupported": "Tu navegador no soporta video."
+  },
+  "values": {
+    "title": "Cinco principios inmutables en los que se basa nuestro trabajo.",
+    "items": {
+      "quality": {
+        "title": "Calidad probada por el tiempo",
+        "text": "Aplicamos métodos modernos de soldadura, utilizando solo materiales certificados. Cada etapa de producción está estrictamente controlada, lo que garantiza la durabilidad y seguridad de las estructuras terminadas."
+      },
+      "teamwork": {
+        "title": "Trabajo en equipo",
+        "text": "Nuestros especialistas tienen un alto nivel de preparación y regularmente mejoran sus calificaciones. Saben trabajar con una amplia gama de materiales: desde aceros altamente aleados y de baja aleación hasta titanio y aluminio. Este enfoque profesional nos permite realizar perfectamente tanto proyectos estándar como no estándar."
+      },
+      "customer": {
+        "title": "Orientación al cliente",
+        "text": "Escuchamos las necesidades del cliente y nos esforzamos por proponer una solución óptima teniendo en cuenta el presupuesto, los plazos y las especificidades de la empresa específica. El enfoque individual y la flexibilidad en el trabajo ayudan a construir relaciones de asociación a largo plazo."
+      },
+      "responsibility": {
+        "title": "Responsabilidad y transparencia",
+        "text": "Cumplimiento de normas técnicas, requisitos ambientales y estándares de seguridad — prioridad incondicional. Documentamos y certificamos cada etapa de trabajo, asegurando un reporting máximo completo ante clientes y organismos de control."
+      },
+      "improvement": {
+        "title": "Mejora continua",
+        "text": "Invertimos en equipos modernos, tecnologías innovadoras y capacitación de empleados. Esto asegura un alto nivel de competencia y nos permite mantener una posición de liderazgo en el mercado de servicios de soldadura e instalación."
+      }
+    },
+    "bottomText": "Gracias a este enfoque integral, Weld Tech Group goza de la merecida confianza tanto de grandes empresas industriales como de pequeñas empresas que buscan un proveedor confiable. Nuestro objetivo principal es transformar las ideas de los clientes en soluciones eficientes, seguras y duraderas que sean un ejemplo de calidad y profesionalismo."
+  }
+} 

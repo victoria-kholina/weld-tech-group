@@ -1,0 +1,79 @@
+{
+  "title": "Weld Tech Group - Oborová řešení",
+  "meta_description": "Řešení Weld Tech Group pro potravinářský, chemický, farmaceutický a další průmysl. Zohledňujeme sanitární, technické a výrobní požadavky každého odvětví.",
+  "main_title": "Oborová řešení",
+  "main_description": "Společnost <b> Weld Tech Group </b> realizuje projekty pro různé průmyslová odvětví, přičemž zohledňuje specifické požadavky na montáž, hygienu, bezpečnost a efektivitu.",
+  "tabs": {
+    "food": "Potravinářský průmysl",
+    "chemical": "Chemický průmysl",
+    "pharmaceutical": "Farmaceutický průmysl"
+  },
+  "alt": {
+    "food_industry": "zařízení pro potravinářský průmysl",
+    "chemical_industry": "zařízení pro chemický průmysl",
+    "pharmaceutical_industry": "průmyslové potrubí"
+  },
+  "sections": {
+    "food": {
+      "specificity": {
+        "title": "Specifika a úkoly:",
+        "item1": "Přísné sanitární a hygienické požadavky (např. HACCP).",
+        "item2": "Potřeba bezvadné kvality svarů a snadnosti sanitárního zpracování zařízení.",
+        "item3": "Použití nerezových ocelí a materiálů odpovídajících bezpečnosti potravin."
+      },
+      "offer": {
+        "title": "Co nabízíme:",
+        "item1": "Projektování a montáž potrubních systémů pro tekuté a sypké produkty.",
+        "item2": "Výroba specializovaných nádrží (pro mléko, pivo, džusy atd.) s ohledem na tepelné zpracování nebo chlazení.",
+        "item3": "Výroba dodatečných konstrukcí (dopravníky, válečky, mycí vany), přizpůsobených vysoké vlhkosti a agresivním čisticím prostředkům."
+      }
+    },
+    "chemical": {
+      "specificity": {
+        "title": "Specifika a úkoly:",
+        "item1": "Agresivní prostředí (kyseliny, zásady, organická rozpouštědla atd.).",
+        "item2": "Detailní požadavky na těsnost, odolnost proti korozi a bezpečnost personálu.",
+        "item3": "Potřeba specializovaného zařízení pro skladování a zpracování chemických látek."
+      },
+      "offer": {
+        "title": "Co nabízíme:",
+        "item1": "Výroba nádrží a potrubí pro práci s agresivními chemickými prostředími.",
+        "item2": "Trvanlivé kovové konstrukce, odolné proti korozi a teplotním výkyvům.",
+        "item3": "Možnost výroby nestandardních systémů pro specializované technologické procesy."
+      }
+    },
+    "pharmaceutical": {
+      "specificity": {
+        "title": "Specifika a úkoly:",
+        "item1": "Přísné požadavky na čistotu (GMP, FDA a další).",
+        "item2": "Plné dodržování vysokých standardů sterility a prevence křížové kontaminace.",
+        "item3": "Použití slitin vysoké čistoty s minimálním obsahem nečistot."
+      },
+      "offer": {
+        "title": "Co nabízíme:",
+        "item1": "Montáž potrubí a systémů pro skladování prostředí vysoké čistoty (voda pro injekce, farmaceutická pára).",
+        "item2": "Výroba nádrží se speciální úpravou vnitřního povrchu (leštění, pasivace).",
+        "item3": "Svařování vysoké přesnosti (např. orbitální), minimalizující drsnost a svary zachytávající mikroorganismy."
+      }
+    }
+  },
+  "realisations": {
+    "title": "Naše realizace"
+  },
+  "other_industries": {
+    "title": "Další odvětví a směry",
+    "description": "Kromě klíčových oblastí (potravinářské, chemické, farmaceutické) spolupracujeme také se společnostmi z:",
+    "energy": {
+      "title": "Energetiky",
+      "description": "Potrubí pro páru, plyn, stlačený vzduch, montáž kovových konstrukcí pro kotelny a turbínové haly."
+    },
+    "construction": {
+      "title": "Stavebních strojů",
+      "description": "Výroba a montáž komponentů výrobních linek, včetně svařování složitých kovových konstrukcí."
+    },
+    "oil_gas": {
+      "title": "Ropného a plynárenského sektoru",
+      "description": "Nádrže pro ropné produkty, plynovody, příslušná armatura."
+    }
+  }
+} 

@@ -8,7 +8,14 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     devServer: {
         open: true,
         static: {
-            directory: baseWebpackConfig.externals.paths.dist
+            directory: baseWebpackConfig.externals.paths.dist,
+            staticOptions: {
+                setHeaders: (res, path) => {
+                    if (path.endsWith('.json')) {
+                        res.setHeader('Content-Type', 'application/json; charset=utf-8');
+                    }
+                }
+            }
         },
         watchFiles: {
             paths: [

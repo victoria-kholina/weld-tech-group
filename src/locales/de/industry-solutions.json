@@ -1,0 +1,79 @@
+{
+  "title": "Weld Tech Group - Branchenlösungen",
+  "meta_description": "Lösungen von Weld Tech Group für die Lebensmittel-, Chemie-, Pharmazeutische und andere Industrien. Wir berücksichtigen die sanitärtechnischen, technischen und produktionstechnischen Anforderungen jeder Branche.",
+  "main_title": "Branchenlösungen",
+  "main_description": "Die Firma <b> Weld Tech Group </b> realisiert Projekte für verschiedene Industriezweige unter Berücksichtigung spezifischer Anforderungen an Montage, Hygiene, Sicherheit und Effizienz.",
+  "tabs": {
+    "food": "Lebensmittelindustrie",
+    "chemical": "Chemische Industrie",
+    "pharmaceutical": "Pharmazeutische Industrie"
+  },
+  "alt": {
+    "food_industry": "Ausstattung für die Lebensmittelindustrie",
+    "chemical_industry": "Ausstattung für die chemische Industrie",
+    "pharmaceutical_industry": "Industrierohrleitungen"
+  },
+  "sections": {
+    "food": {
+      "specificity": {
+        "title": "Spezifika und Aufgaben:",
+        "item1": "Strenge hygienische und sanitäre Anforderungen (z.B. HACCP).",
+        "item2": "Notwendigkeit fehlerfreier Schweißnahtqualität und einfacher sanitärer Bearbeitung der Ausrüstung.",
+        "item3": "Verwendung von Edelstählen und Materialien, die der Lebensmittelsicherheit entsprechen."
+      },
+      "offer": {
+        "title": "Was wir anbieten:",
+        "item1": "Konzeption und Montage von Rohrleitungssystemen für flüssige und Schüttgüter.",
+        "item2": "Herstellung spezialisierter Behälter (für Milch, Bier, Säfte etc.) unter Berücksichtigung thermischer Behandlung oder Kühlung.",
+        "item3": "Fertigung zusätzlicher Konstruktionen (Förderbänder, Rollen, Waschbecken), angepasst an hohe Feuchtigkeit und aggressive Reinigungsmittel."
+      }
+    },
+    "chemical": {
+      "specificity": {
+        "title": "Spezifika und Aufgaben:",
+        "item1": "Aggressive Umgebungen (Säuren, Laugen, organische Lösungsmittel etc.).",
+        "item2": "Detaillierte Anforderungen an Dichtheit, Korrosionsbeständigkeit und Personalsicherheit.",
+        "item3": "Notwendigkeit spezialisierter Ausrüstung für die Lagerung und Verarbeitung chemischer Substanzen."
+      },
+      "offer": {
+        "title": "Was wir anbieten:",
+        "item1": "Herstellung von Behältern und Rohrleitungen für den Einsatz in aggressiven chemischen Umgebungen.",
+        "item2": "Langlebige Metallkonstruktionen, beständig gegen Korrosion und Temperaturschwankungen.",
+        "item3": "Möglichkeit zur Herstellung nicht standardisierter Systeme für spezialisierte technologische Prozesse."
+      }
+    },
+    "pharmaceutical": {
+      "specificity": {
+        "title": "Spezifika und Aufgaben:",
+        "item1": "Strenge Reinheitsanforderungen (GMP, FDA und andere).",
+        "item2": "Vollständige Einhaltung hoher Sterilitätsstandards und Vermeidung von Kreuzkontaminationen.",
+        "item3": "Verwendung von Legierungen hoher Reinheit mit minimalem Gehalt an Verunreinigungen."
+      },
+      "offer": {
+        "title": "Was wir anbieten:",
+        "item1": "Montage von Rohrleitungen und Systemen zur Lagerung hochreiner Umgebungen (Injektionswasser, pharmazeutischer Dampf).",
+        "item2": "Herstellung von Behältern mit spezieller Oberflächenbehandlung (Polieren, Passivierung).",
+        "item3": "Hochpräzises Schweißen (z.B. orbital), Minimierung von Rauheiten und Schweißnähten, die Mikroorganismen zurückhalten."
+      }
+    }
+  },
+  "realisations": {
+    "title": "Unsere Realisierungen"
+  },
+  "other_industries": {
+    "title": "Weitere Branchen und Richtungen",
+    "description": "Neben den Kernbereichen (Lebensmittel, Chemie, Pharmazeutik) arbeiten wir auch mit Unternehmen aus:",
+    "energy": {
+      "title": "Energiewirtschaft",
+      "description": "Rohrleitungen für Dampf, Gas, Druckluft, Montage von Metallkonstruktionen für Kesselhäuser und Turbinenhallen."
+    },
+    "construction": {
+      "title": "Baumaschinen",
+      "description": "Herstellung und Montage von Komponenten für Produktionslinien, einschließlich Schweißen komplexer Metallkonstruktionen."
+    },
+    "oil_gas": {
+      "title": "Öl- und Gassektor",
+      "description": "Behälter für Erdölprodukte, Gasleitungen, zugehörige Armaturen."
+    }
+  }
+} 

@@ -1,0 +1,55 @@
+{
+  "title": "Weld Tech Group - Mūsų paslaugos",
+  "meta": {
+    "description": "Weld Tech Group teikia paslaugas technologinių vamzdynų montavimo, įrangos gamybos ir montavimo, talpyklų gamybos, metalinių konstrukcijų ir aptarnavimo platformų srityje."
+  },
+  "experience": {
+    "title": "Daugiametė patirtis suvirinant sudėtingas medžiagas",
+    "description": "Mūsų komandą sudaro daugiau nei 50 aukštos kvalifikacijos darbuotojų, turinčių daugiametę patirtį kompozitinių medžiagų ir kitų medžiagų su sudėtingomis suvirinimo savybėmis suvirinime. Turime visus reikalingus sertifikatus, patvirtinančius kompetenciją ir atliekamų darbų kokybę."
+  },
+  "methods": {
+    "title": "Siūlomi suvirinimo metodai:",
+    "list1": {
+      "tig": "TIG suvirinimas",
+      "mig": "MIG-MAG suvirinimas",
+      "tigElectrode": "TIG suvirinimas elektrodu",
+      "electrode": "Elektrodinis suvirinimas",
+      "oxyacetylene": "Deguonies-acetileno suvirinimas"
+    },
+    "list2": {
+      "softSoldering": "Minkštas litavimas",
+      "hardSoldering": "Kietas litavimas",
+      "planing": "Struganimas",
+      "plasmaCutting": "Plazminis pjovimas",
+      "arcPlasmaCutting": "Lanko-plazminis pjovimas"
+    }
+  },
+  "image": {
+    "alt": "Kokybiškas darbas"
+  },
+  "section": {
+    "title": "Mūsų paslaugos",
+    "description": "Naudodamiesi daugiamete patirtimi, išmokome rasti sprendimus kiekvienai užduočiai, neatsižvelgdami į kokybę ir įgyvendinimo terminus."
+  },
+  "items": {
+    "pipelines": {
+      "title": "Technologinių vamzdynų montavimas",
+      "description": "Profesionaliai užsiimame technologinių vamzdynų montavimu ir suvirinimu iš nerūdijančio plieno (AISI-304L, AISI-308L, AISI-316L, AISI-321), anglies plienų (St.20, 30), taip pat iš titano ir aliuminio."
+    },
+    "equipment": {
+      "title": "Įranga pramonei",
+      "description": "Gaminame papildomą įrangą įvairioms gamybos linijoms ir sistemoms, naudojamoms chemijos, maisto, farmacijos ir susijusiose pramonės šakose."
+    },
+    "capacitive": {
+      "title": "Talpinės įrangos gamyba",
+      "description": "Profesionaliai užsiimame technologinių vamzdynų montavimu ir suvirinimu iš nerūdijančio plieno (AISI-304L, AISI-308L, AISI-316L, AISI-321), anglies plienų (St.20, 30), taip pat iš titano ir aliuminio."
+    },
+    "structures": {
+      "title": "Metalinės konstrukcijos ir aptarnavimo platformos",
+      "description": "Gaminame ir montuojame įvairaus sudėtingumo metalines konstrukcijas, įskaitant santvaras, laiptus, turėklus, rėmus valdymo spintelių montavimui ir dar daugiau. Visi gaminiai atitinka stiprumo ir saugos standartus."
+    }
+  },
+  "bottomInfo": {
+    "title": "Susisiekite su mumis dabar, ir mūsų specialistai greitai atsakys į jūsų klausimus, paaiškins projekto detales ir paruoš individualų komercinį pasiūlymą."
+  }
+} 
