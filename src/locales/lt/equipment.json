@@ -1,23 +1,29 @@
 {
-  "title": "Įranga",
-  "meta": {
-    "title": "Weld Tech Group - Įranga",
-    "description": "Profesionali suvirinimo ir metalo apdirbimo įranga. Aukštos kokybės įranga ir prietaisai."
+  "title": "Weld Tech Group - Pramonės įrangos gamyba ir montavimas",
+  "meta_description": "Gaminame ir montuojame įrangą maisto, chemijos ir farmacijos pramonei. Konvejeriai, bunkeriai, pramoniniai rezervuarai ir plovimo vonios pagal individualius kliento poreikius.",
+  "main_title": "Pramonės įrangos gamyba ir montavimas",
+  "main_description": "Gaminame papildomą įrangą įvairioms gamybos linijoms ir sistemoms, naudojamoms chemijos, maisto, farmacijos ir susijusiose pramonės šakose.",
+  "conveyors": {
+    "title": "Konvejeriai ir ritinėliai",
+    "description": "Sukamieji, kėlimo, su šukomis arba begaliniais diržais."
   },
-  "pageTitle": "Įranga",
-  "description": "Naudojame profesionalią ir modernią įrangą, kuri užtikrina aukštą darbų kokybę.",
-  "categories": {
-    "welding": {
-      "title": "Suvirinimo įranga",
-      "description": "Moderni suvirinimo įranga įvairiems suvirinimo tipams"
-    },
-    "cutting": {
-      "title": "Pjovimo įranga",
-      "description": "Precizinė metalo pjovimo įranga"
-    },
-    "processing": {
-      "title": "Apdirbimo įranga",
-      "description": "Metalo apdirbimo ir formavimo įranga"
-    }
+  "bridges": {
+    "title": "Perėjimo tiltai ir pramoninės \"vonios\"",
+    "description": "(plovimo mašinos, skalbimo ir valymo rezervuarai)."
+  },
+  "storage": {
+    "title": "Bunkeriai birioms medžiagoms",
+    "description": "Projektuojame pagal kliento poreikius, atsižvelgdami į saugomų medžiagų specifiką."
+  },
+  "loading": {
+    "title": "Įranga priėmimui, pakrovimui ir iškrovimui",
+    "description": "Įskaitant specializuotus mechanizmus maisto įmonėms."
+  },
+  "production": {
+    "description": "Gamyboje naudojame tekinimo ir frezavimo apdirbimą, taip pat modernias suvirinimo technologijas aukštalegiruotoms ir žemalegiruotoms plieno rūšims, aliuminiui ir titanui. Užtikriname tiek naujos įrangos gamybą, tiek esamų linijų modernizavimą."
+  },
+  "realisations": {
+    "title": "Mūsų realizacijos",
+    "description": "Kiekvienas mūsų projektas atspindi tikslų kliento reikalavimų įvykdymą, gerai apgalvotą ekonominį modelį ir nepriekaištingą techninį įgyvendinimą."
   }
 } 

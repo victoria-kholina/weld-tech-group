@@ -4,12 +4,6 @@
     "description": "Over 15 years of experience in industrial facilities. We specialize in professional welding and installation of technological pipelines, production of equipment and metal structures for chemical, food, pharmaceutical and other industrial sectors."
   },
   "pageTitle": "About Us",
-  "alt": {
-    "image": "Weld Tech Group team and equipment",
-    "team": "Weld Tech Group team",
-    "equipment": "Weld Tech Group equipment",
-    "work": "Weld Tech Group work"
-  },
   "history": {
     "title": "Our History and Values",
     "text": {
@@ -19,6 +13,9 @@
       "4Peace": "and engineering staff allows for developing documentation and managing projects, ensuring work execution guarantee.",
       "5Peace": "Our reliability and professionalism are confirmed by long-term relationships with regular clients in Poland, Lithuania, Germany and other European countries."
     }
+  },
+  "image": {
+    "alt": "Weld Tech Group - About the Company"
   },
   "video": {
     "notSupported": "Your browser does not support video."

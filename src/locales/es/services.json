@@ -33,7 +33,7 @@
   },
   "items": {
     "pipelines": {
-      "title": "Instalación de tuberías tecnológicas",
+      "title": "Instalación de tuberías <br> tecnológicas",
       "description": "Nos dedicamos profesionalmente a la instalación y soldadura de tuberías tecnológicas de acero inoxidable (AISI-304L, AISI-308L, AISI-316L, AISI-321), aceros al carbono (St.20, 30), así como de titanio y aluminio."
     },
     "equipment": {
@@ -41,11 +41,11 @@
       "description": "Fabricamos equipamiento adicional para diversas líneas de producción y sistemas utilizados en las industrias química, alimentaria, farmacéutica y afines."
     },
     "capacitive": {
-      "title": "Fabricación de equipos capacitivos",
+      "title": "Fabricación de equipos <br> capacitivos",
       "description": "Nos dedicamos profesionalmente a la instalación y soldadura de tuberías tecnológicas de acero inoxidable (AISI-304L, AISI-308L, AISI-316L, AISI-321), aceros al carbono (St.20, 30), así como de titanio y aluminio."
     },
     "structures": {
-      "title": "Estructuras metálicas y plataformas de servicio",
+      "title": "Estructuras metálicas <br> y plataformas de servicio",
       "description": "Fabricamos e instalamos estructuras metálicas de diversa complejidad, incluyendo cerchas, escaleras, barandillas, marcos para montaje de armarios de control y mucho más. Todos los productos cumplen con las normas de resistencia y seguridad."
     }
   },

@@ -1,14 +1,12 @@
 {
-  "title": "Mūsų sertifikatai",
-  "description": "Turime visus reikalingus sertifikatus ir licencijas",
-  "items": {
-    "iso_9001": "ISO 9001:2015",
-    "iso_14001": "ISO 14001:2015",
-    "iso_45001": "ISO 45001:2018",
-    "iso_3834": "ISO 3834-2",
-    "iso_1090": "ISO 1090",
-    "iso_15614": "ISO 15614-1",
-    "iso_9606": "ISO 9606-1",
-    "iso_14732": "ISO 14732"
+  "title": "Mes turime sertifikatus,<br> kurie turi reikšmę!",
+  "iso": {
+    "description": "patvirtina personalo kompetenciją ir atliekamų darbų kokybę.",
+    "imageAlt": "Peržiūrėti ISO 3834 – 2"
+  },
+  "en": {
+    "description": "patvirtina efektyvios kokybės kontrolės sistemos buvimą įmonėje ir gaminių atitiktį Europos reikalavimams",
+    "imageAlt": "Peržiūrėti 1090-1034"
   }
+  
 } 

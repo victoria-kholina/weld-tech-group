@@ -1,14 +1,26 @@
 {
   "alt": {
-    "metal_constructions": "construcciones metálicas",
-    "huge_pipelines": "tuberías grandes",
-    "equipment_for_industry": "equipos para la industria",
+    "metalConstructions": "construcciones metálicas",
+    "hugePipelines": "tuberías grandes",
+    "industrialEquipment": "equipos para la industria",
     "pipelines": "tuberías",
-    "pipelines_work": "trabajo en tuberías",
-    "capacitive_equipment": "equipos capacitivos",
+    "pipelineWork": "trabajo en tuberías",
+    "capacitiveEquipment": "equipos capacitivos",
     "welder": "soldador",
-    "pipelines_constructions": "construcciones de tuberías",
-    "curve_huge_pipelines": "tuberías grandes curvas",
-    "food_industry": "industria alimentaria"
+    "pipelineConstruction": "construcciones de tuberías",
+    "curvedPipelines": "tuberías grandes curvas",
+    "foodIndustry": "industria alimentaria",
+    "chemicalEnergyIndustry": "industria química, energética"
+  },
+  "title": "Weld Tech Group - Galería de Proyectos",
+  "meta_description": "Galería de fotos de los proyectos realizados por Weld Tech Group. Evidencia visual de la calidad de trabajos, construcciones y soluciones de producción.",
+  "main_title": "Galería de Proyectos",
+  "main_description": "A continuación se muestran fotos de nuestras realizaciones para demostrar visualmente la calidad, precisión y capacidades técnicas de Weld Tech Group.",
+  "tabs": {
+    "various": "Varios",
+    "pipelines": "Montaje de tuberías de proceso",
+    "capacitive": "Fabricación de equipos capacitivos",
+    "food": "Industria alimentaria",
+    "chemical": "Industria química, energética"
   }
 } 

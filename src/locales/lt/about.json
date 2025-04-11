@@ -4,15 +4,18 @@
     "description": "Daugiau nei 15 metų patirties pramonės objektuose. Specializuojamės profesionaliame suvirinime ir technologinių vamzdynų montavime, įrangos ir metalinių konstrukcijų gamyboje cheminės, maisto, farmacijos ir kitoms pramonės šakoms."
   },
   "pageTitle": "Apie mus",
-  "alt": {
-    "image": "Weld Tech Group komanda ir įranga",
-    "team": "Weld Tech Group komanda",
-    "equipment": "Weld Tech Group įranga",
-    "work": "Weld Tech Group darbai"
-  },
   "history": {
     "title": "Mūsų istorija ir vertybės",
-    "text": "Įmonė Weld Tech Group nuo įkūrimo momento nuolat plečia paslaugų spektrą ir gerina darbų kokybę suvirinimo ir technologinių vamzdynų montavimo srityje, metalinių konstrukcijų ir pramoninių talpyklų gamyboje. Tarptautinė patirtis, įgyta įvairiose šakose: maisto, cheminėje, energetikoje. ISO 3834 – 2,1090-1034 sertifikatų ir inžinerinio personalo įgijimas leidžia rengti dokumentaciją ir vesti projektus, užtikrinant darbų atlikimo garantiją. Mūsų patikimumas ir profesionalumas patvirtinti ilgametiais santykiais su nuolatiniais klientais Lenkijoje, Lietuvoje, Vokietijoje ir kituose Europos šalyse."
+    "text": {
+      "1Peace": "Įmonė",
+      "2Peace": "Weld Tech Group nuo įkūrimo momento nuolat plečia paslaugų spektrą ir gerina darbų kokybę suvirinimo ir technologinių vamzdynų montavimo srityje, metalinių konstrukcijų ir pramoninių talpyklų gamyboje. Tarptautinė patirtis, įgyta įvairiose šakose: maisto, cheminėje, energetikoje.",
+      "3Peace": "ISO 3834 – 2,1090-1034 sertifikatų",
+      "4Peace": "ir inžinerinio personalo įgijimas leidžia rengti dokumentaciją ir vesti projektus, užtikrinant darbų atlikimo garantiją.",
+      "5Peace": "Mūsų patikimumas ir profesionalumas patvirtinti ilgametiais santykiais su nuolatiniais klientais Lenkijoje, Lietuvoje, Vokietijoje ir kituose Europos šalyse."
+    }
+  },
+  "image": {
+    "alt": "Weld Tech Group - Apie įmonę"
   },
   "video": {
     "notSupported": "Jūsų naršyklė nepalaiko vaizdo."

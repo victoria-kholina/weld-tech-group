@@ -2,30 +2,25 @@
 
 <html lang="pl">
 <head>
-    <title data-i18n="home.title">Weld Tech Group - niezawodność sprawdzona przez czas!</title>
-    <meta name="description" data-i18n="home.meta.description" content="Ponad 15 lat doświadczenia na obiektach przemysłowych. Specjalizujemy się w profesjonalnym spawaniu i montażu rurociągów technologicznych, 
-    produkcji urządzeń i konstrukcji metalowych dla przemysłu chemicznego, spożywczego, farmaceutycznego i 
-    innych branż przemysłowych." />
-    <%- include('./templates/meta.ejs') %>
+    <title data-i18n="home.title"></title>
+    <meta name="description" data-i18n-attr="[content]home.meta.description" />
+    <%- include('templates/meta.ejs') %>
     
 </head>
 <body class="home">
-  <%- include('./templates/header.ejs', { isInnerPage: false }) %>
+  <%- include('templates/header.ejs') %>
 
 <section id="welcome" class="welcome">
   <div class="welcome-banner">
     <div class="container-md container-xxl h-100">
       <div class="row align-items-center welcome-heading-wrap">
         <div class="welcome-heading">
-          <h1 data-i18n="home.hero.title">Weld Tech Group</h1>
-          <h6 data-i18n="home.hero.subtitle">niezawodność sprawdzona przez czas!</h6>
-          <h4 data-i18n="home.hero.description">Twój niezawodny partner w zakresie montażu 
-            rurociągów technologicznych i
-            produkcji przemysłowych 
-            konstrukcji metalowych.</h4>
+          <h1 data-i18n="home.hero.title"></h1>
+          <h6 data-i18n="home.hero.subtitle"></h6>
+          <h4 data-i18n="home.hero.description"></h4>
             <div class="welcome-heading__buttons">
-              <a href="about-us.html" class="simple-button" data-i18n="common.buttons.more">O firmie</a>
-              <a href="#contacts" class="simple-button" data-i18n="common.buttons.contact">Skontaktuj się z nami</a>
+              <a href="about-us.html" class="simple-button" data-i18n="common.buttons.more"></a>
+              <a href="#contacts" class="simple-button" data-i18n="common.buttons.contact"></a>
             </div>
         </div>
       </div>
@@ -33,7 +28,7 @@
         <video width="100%" height="100%" autoplay muted loop loading="lazy">
           <source src="assets/img/Weld-tech-video.webm" type="video/webm">
           <source src="assets/img/Weld-tech-video.mp4" type="video/mp4">
-          <span data-i18n="home.video.notSupported">Twoja przeglądarka nie obsługuje wideo.</span>
+          <span data-i18n="home.video.notSupported"></span>
         </video>
       </div>
     </div> 
@@ -44,12 +39,8 @@
       <div class="row align-items-center h-100">
         <div class="col-12 col-md-11 col-xl-8 row align-items-center">
           <div class="welcome-text">
-            <h3 class="subtitle-left" data-i18n="home.experience.title">15+ lat doświadczenia na obiektach przemysłowych.</h3>
-            <p class="accent-text-block left" data-i18n="home.experience.description">
-              Specjalizujemy się w profesjonalnym spawaniu i montażu rurociągów technologicznych, 
-              produkcji urządzeń i konstrukcji metalowych dla przemysłu chemicznego, spożywczego, farmaceutycznego i 
-              innych branż przemysłowych.
-            </p>
+            <h3 class="subtitle-left" data-i18n="home.experience.title"></h3>
+            <p class="accent-text-block left" data-i18n="home.experience.description"></p>
             <span class="arrow arrow-down arrow-dark animate-on-scroll"></span>
           </div>
         </div>
@@ -64,22 +55,19 @@
       <div class="col-12 col-md-6 col-lg-4 about-us-image">
         <div class="shadow-image left animate-on-scroll">
           <div class="shadow-image-wrap">
-              <img src="./assets/img/work-weld-tech.webp" alt="Praca Weld Tech Group" data-i18n="[alt]about.image.alt">
+              <img src="./assets/img/work-weld-tech.webp"  data-i18n-attr="[alt]about.image.alt">
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-8">
         <div class="about-us-content">
           <p class="accent-text-block right">
-            <b data-i18n="about.mission.title">Nasza misja</b> — <span data-i18n="about.mission.text">zapewnianie niezawodnych, innowacyjnych i przyjaznych dla środowiska rozwiązań w zakresie spawania 
-            i obróbki metali, przyczyniając się do rozwoju przemysłu na rynkach lokalnych i międzynarodowych. 
-            Dążymy nie tylko do zaspokajania potrzeb klientów, ale i przekraczania ich oczekiwań poprzez 
-            wysoką jakość prac, stosowanie zaawansowanych technologii i ciągłe doskonalenie procesów.</span>
+            <b data-i18n="about.mission.title"></b> — <span data-i18n="about.mission.text"></span>
           </p>
-          <h4 data-i18n="about.experience">Nasz zespół doświadczonych specjalistów realizuje projekty w Polsce, na Litwie, w Niemczech i innych krajach Unii Europejskiej.</h4>
+          <h4 data-i18n="about.experience"></h4>
           <div class="about-us-buttons row align-items-center justify-content-end">
             <span class="arrow arrow-right arrow-dark animate-on-scroll"></span>
-            <a href="#services" class="simple-button" data-i18n="common.buttons.services">Nasze usługi</a>
+            <a href="#services" class="simple-button" data-i18n="common.buttons.services"></a>
           </div>
         </div>
       </div>
@@ -87,43 +75,43 @@
   </div>
 </section>
 
-<%- include('./templates/features.ejs') %>
+<%- include('templates/features.ejs') %>
 
-<%- include('./templates/stuff.ejs') %>
+<%- include('templates/stuff.ejs') %>
 
-<%- include('./templates/services.ejs', { isInnerPage: false }) %>
+<%- include('templates/services.ejs') %>
 
 <section class="home-slider">
   <div class="splide">
     <div class="splide__track">
       <ul class="splide__list">
-         <li class="splide__slide"><img src="assets/img/gallery/all/metal-constructions-1.webp" alt="konstrukcje metalowe" data-i18n="[alt]gallery.metalConstructions"></li>
-         <li class="splide__slide"><img src="assets/img/gallery/all/huge-pipelines.webp" alt="duże rurociągi" data-i18n="[alt]gallery.hugePipelines"></li>
-         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_1414.webp" alt="urządzenia dla przemysłu" data-i18n="[alt]gallery.industrialEquipment"></li>
-         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_1415.webp" alt="urządzenia dla przemysłu" data-i18n="[alt]gallery.industrialEquipment"></li>
-         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_1504.webp" alt="rurociągi" data-i18n="[alt]gallery.pipelines"></li>
-         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_1696.webp" alt="prace na rurociągach" data-i18n="[alt]gallery.pipelineWork"></li>
-         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_2073.webp" alt="urządzenia pojemnościowe" data-i18n="[alt]gallery.capacitiveEquipment"></li>
-         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_2077.webp" alt="rurociągi" data-i18n="[alt]gallery.pipelines"></li>
-         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_2078.webp" alt="urządzenia pojemnościowe" data-i18n="[alt]gallery.capacitiveEquipment"></li>
-         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_2080.webp" alt="prace na rurociągach" data-i18n="[alt]gallery.pipelineWork"></li>
-         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_2200.webp" alt="rurociągi" data-i18n="[alt]gallery.pipelines"></li>
-         <li class="splide__slide"><img src="assets/img/gallery/all/photo_2023-09-19_21-25-44.webp" alt="duże rurociągi" data-i18n="[alt]gallery.hugePipelines"></li>
-         <li class="splide__slide"><img src="assets/img/gallery/all/photo_2023-09-26_14-58-16.webp" alt="spawacz" data-i18n="[alt]gallery.welder"></li>
-         <li class="splide__slide"><img src="assets/img/gallery/all/pipelines2.webp" alt="rurociągi" data-i18n="[alt]gallery.pipelines"></li>
-         <li class="splide__slide"><img src="assets/img/gallery/all/pipelines-construction.webp" alt="konstrukcje rurociągów" data-i18n="[alt]gallery.pipelineConstruction"></li>
-         <li class="splide__slide"><img src="assets/img/gallery/all/round-pipelines.webp" alt="zakrzywione duże rurociągi" data-i18n="[alt]gallery.curvedPipelines"></li>
-         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_2075.webp" alt="rurociągi" data-i18n="[alt]gallery.pipelines"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/metal-constructions-1.webp"  data-i18n-attr="[alt]gallery.alt.metalConstructions"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/huge-pipelines.webp"  data-i18n-attr="[alt]gallery.alt.hugePipelines"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_1414.webp"  data-i18n-attr="[alt]gallery.alt.industrialEquipment"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_1415.webp"  data-i18n-attr="[alt]gallery.alt.industrialEquipment"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_1504.webp"  data-i18n-attr="[alt]gallery.alt.pipelines"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_1696.webp"  data-i18n-attr="[alt]gallery.alt.pipelineWork"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_2073.webp"  data-i18n-attr="[alt]gallery.alt.capacitiveEquipment"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_2077.webp"  data-i18n-attr="[alt]gallery.alt.pipelines"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_2078.webp"  data-i18n-attr="[alt]gallery.alt.capacitiveEquipment"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_2080.webp"  data-i18n-attr="[alt]gallery.alt.pipelineWork"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_2200.webp"  data-i18n-attr="[alt]gallery.alt.pipelines"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/photo_2023-09-19_21-25-44.webp"  data-i18n-attr="[alt]gallery.alt.hugePipelines"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/photo_2023-09-26_14-58-16.webp"  data-i18n-attr="[alt]gallery.alt.welder"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/pipelines2.webp"  data-i18n-attr="[alt]gallery.alt.pipelines"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/pipelines-construction.webp"  data-i18n-attr="[alt]gallery.alt.pipelineConstruction"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/round-pipelines.webp"  data-i18n-attr="[alt]gallery.alt.curvedPipelines"></li>
+         <li class="splide__slide"><img src="assets/img/gallery/all/IMG_2075.webp"  data-i18n-attr="[alt]gallery.alt.pipelines"></li>
       </ul>
     </div>
   </div>
 
   <div class="container-md container-xxl h-100">
     <div class="row projects-bottom-text">
-      <h4><b data-i18n="projects.bottom_text.part_1">Każdy nasz projekt</b> — <span data-i18n="projects.bottom_text.part_2">to precyzja, niezawodność i dbałość o szczegóły.</span> <br>
-          <span data-i18n="projects.bottom_text.part_3">Zapoznaj się z naszymi zrealizowanymi pracami w galerii!</span></h4>
+      <h4><b data-i18n="projects.bottom_text.part_1"></b> — <span data-i18n="projects.bottom_text.part_2"></span> <br>
+          <span data-i18n="projects.bottom_text.part_3"></span></h4>
           <div class="btn-group">
-            <a href="../projects/gallery-projects.html" class="simple-button" data-i18n="projects.gallery_button">Galeria projektów</a>
+            <a href="../projects/gallery-projects.html" class="simple-button" data-i18n="projects.gallery_button"></a>
             <span class="arrow arrow-left arrow-dark animate-on-scroll"></span>
           </div>
     </div>
@@ -133,30 +121,28 @@
 <section id="work-stages" class="simple-section work-stages">
   <div class="container-md container-xxl h-100">
     <div class="simple-section__title dark">
-      <h2 data-i18n="work-stages.title">Jak pracujemy nad projektami?!</h2>
-      <p class="accent-text-block all" data-i18n="work-stages.description">
-        Nasze podejście do pracy opiera się na starannym przygotowaniu, 
-        ścisłym przestrzeganiu przepisów technicznych i bliskiej współpracy z klientami na każdym etapie.</p>
+      <h2 data-i18n="work-stages.title"></h2>
+      <p class="accent-text-block all" data-i18n="work-stages.description"></p>
     </div>
 
-    <%- include('./templates/work-stages.ejs') %>
+    <%- include('templates/work-stages.ejs') %>
 
     <div class="btn-group group-center">
       <div class="btn-group-nowrap">
-        <a href="./projects/projects.html" class="simple-button" data-i18n="common.buttons.moreProjects">Więcej o projektach</a>
+        <a href="./projects/projects.html" class="simple-button" data-i18n="common.buttons.moreProjects"></a>
         <span class="arrow arrow-left arrow-dark animate-on-scroll"></span>
       </div>
       <div class="btn-group-nowrap">
         <span class="arrow arrow-right arrow-dark animate-on-scroll"></span>
-        <a href="./projects/industry-solutions.html" class="simple-button" data-i18n="common.buttons.industrySolutions">Rozwiązania branżowe</a>
+        <a href="./projects/industry-solutions.html" class="simple-button" data-i18n="common.buttons.industrySolutions"></a>
       </div>
     </div>
   </div>
 </section>
 
-<%- include('./templates/certificates.ejs') %>
+<%- include('templates/certificates.ejs') %>
 
-<%- include('./templates/footer.ejs') %>
+<%- include('templates/footer.ejs') %>
 
 </body>
 </html>

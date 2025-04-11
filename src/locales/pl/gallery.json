@@ -1,15 +1,16 @@
 {
   "alt": {
-    "metal_constructions": "konstrukcje metalowe",
-    "huge_pipelines": "duże rurociągi",
-    "equipment_for_industry": "urządzenia dla przemysłu",
+    "metalConstructions": "konstrukcje metalowe",
+    "hugePipelines": "duże rurociągi",
+    "industrialEquipment": "urządzenia dla przemysłu",
     "pipelines": "rurociągi",
-    "pipelines_work": "praca na rurociągach",
-    "capacitive_equipment": "urządzenia pojemnościowe",
+    "pipelineWork": "praca na rurociągach",
+    "capacitiveEquipment": "urządzenia pojemnościowe",
     "welder": "spawacz",
-    "pipelines_constructions": "konstrukcje rurociągów",
-    "curve_huge_pipelines": "zakrzywione duże rurociągi",
-    "food_industry": "przemysł spożywczy"
+    "pipelineConstruction": "konstrukcje rurociągów",
+    "curvedPipelines": "zakrzywione duże rurociągi",
+    "foodIndustry": "przemysł spożywczy",
+    "chemicalEnergyIndustry": "przemysł chemiczny, energetyczny"
   },
   "title": "Weld Tech Group - Galeria projektów",
   "meta_description": "Fotogaleria zrealizowanych projektów firmy Weld Tech Group. Wizualne potwierdzenie jakości prac, konstrukcji i rozwiązań produkcyjnych.",

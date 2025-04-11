@@ -2,28 +2,27 @@
 
 <html lang="pl">
 <head>
-    <title data-i18n="gallery.title">Weld Tech Group - Galeria projektów</title>
-    <meta name="description" data-i18n="gallery.meta_description" content="Fotogaleria zrealizowanych projektów firmy Weld Tech Group. Wizualne potwierdzenie jakości prac, konstrukcji i rozwiązań produkcyjnych.">
+    <title data-i18n="gallery.title"></title>
+    <meta name="description" data-i18n-attr="[content]gallery.meta_description">
     <%- include('../templates/meta.ejs') %>
     
 </head>
 <body>
-<%- include('../templates/header.ejs' , { isInnerPage: true }) %>
+<%- include('../templates/header.ejs' ) %>
 
 <section class="simple-section">
     <div class="container-md container-xxl h-100">
         <div class="simple-section__title dark">
-            <h2 data-i18n="gallery.main_title">Galeria projektów</h2>
-            <p class="accent-text-block all" data-i18n="gallery.main_description">
-                Poniżej przedstawiono zdjęcia naszych realizacji, dla poglądowej demonstracji jakości, precyzji wykonania i możliwości technicznych firmy <b class="no-wrap">Weld Tech Group.</b></p>
+            <h2 data-i18n="gallery.main_title"></h2>
+            <p class="accent-text-block all" data-i18n="gallery.main_description"></p>
         </div>
         <div class="tabs tabs-accent">
             <div class="tabs-btn-wrap">
-                <button class="tabs-btn tabs-accent-btn active" data-tab="tab1" data-i18n="gallery.tabs.various">Różne</button>
-                <button class="tabs-btn tabs-accent-btn" data-tab="tab2" data-i18n="gallery.tabs.pipelines">Montaż rurociągów technologicznych</button>
-                <button class="tabs-btn tabs-accent-btn" data-tab="tab3" data-i18n="gallery.tabs.capacitive">Produkcja urządzeń pojemnościowych</button>
-                <button class="tabs-btn tabs-accent-btn" data-tab="tab4" data-i18n="gallery.tabs.food">Przemysł spożywczy</button>
-                <button class="tabs-btn tabs-accent-btn" data-tab="tab5" data-i18n="gallery.tabs.chemical">Przemysł chemiczny, energetyczny</button>
+                <button class="tabs-btn tabs-accent-btn active" data-tab="tab1" data-i18n="gallery.tabs.various"></button>
+                <button class="tabs-btn tabs-accent-btn" data-tab="tab2" data-i18n="gallery.tabs.pipelines"></button>
+                <button class="tabs-btn tabs-accent-btn" data-tab="tab3" data-i18n="gallery.tabs.capacitive"></button>
+                <button class="tabs-btn tabs-accent-btn" data-tab="tab4" data-i18n="gallery.tabs.food"></button>
+                <button class="tabs-btn tabs-accent-btn" data-tab="tab5" data-i18n="gallery.tabs.chemical"></button>
             </div>
             
             <div class="tabs-content tabs-accent-content active" id="tab1">

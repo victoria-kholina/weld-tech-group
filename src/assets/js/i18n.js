@@ -97,12 +97,27 @@ const initI18n = async () => {
         returnedObjectHandler: function(key, value, options) {
           return value;
         },
-        parseHtml: false,
+        parseHtml: true,
         react: {
           transSupportBasicHtmlNodes: false
         },
         parseMissingKeyHandler: function(key) {
+          console.warn('Missing translation for key:', key);
           return key;
+        },
+        postProcess: ['html'],
+        postProcess: ['attr'],
+        attr: {
+          list: ['data-i18n-attr'],
+          extensions: ['html', 'ejs'],
+          format: function(value, format, lng) {
+            if (format === 'attr') {
+              // Извлекаем только путь к переводу после [attr]
+              const match = value.match(/\[(.*?)\](.*)/);
+              return match ? match[2] : value;
+            }
+            return value;
+          }
         }
       });
 

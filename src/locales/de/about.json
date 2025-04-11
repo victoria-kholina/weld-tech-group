@@ -4,12 +4,6 @@
     "description": "Mehr als 15 Jahre Erfahrung in Industrieanlagen. Wir sind spezialisiert auf professionelles Schweißen und Installation von technologischen Rohrleitungen, Herstellung von Ausrüstungen und Metallkonstruktionen für die chemische, Lebensmittel-, pharmazeutische und andere Industrien."
   },
   "pageTitle": "Über uns",
-  "alt": {
-    "image": "Team und Ausrüstung von Weld Tech Group",
-    "team": "Team von Weld Tech Group",
-    "equipment": "Ausrüstung von Weld Tech Group",
-    "work": "Arbeiten von Weld Tech Group"
-  },
   "history": {
     "title": "Unsere Geschichte und Werte",
     "text": {
@@ -19,6 +13,9 @@
       "4Peace": "und Ingenieurpersonal ermöglicht die Erstellung von Dokumentation und Projektleitung, was die Ausführung der Arbeiten garantiert.",
       "5Peace": "Unsere Zuverlässigkeit und Professionalität werden durch langjährige Beziehungen zu Stammkunden in Polen, Litauen, Deutschland und anderen europäischen Ländern bestätigt."
     }
+  },
+  "image": {
+    "alt": "Weld Tech Group - Über das Unternehmen"
   },
   "video": {
     "notSupported": "Ihr Browser unterstützt kein Video."

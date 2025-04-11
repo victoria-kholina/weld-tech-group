@@ -7,7 +7,7 @@ const fs = require('fs');
 
 const PATHS = {
     src: path.resolve(__dirname, '../src'),
-    dist: path.resolve(__dirname, '../docs'),
+    dist: path.resolve(__dirname, '../dist'),
     styles: 'css/',
     assets: 'assets/',
     services: 'services',
@@ -47,12 +47,39 @@ module.exports = {
                 test: /\.ejs$/i, 
                 use: [
                     {
-                        loader: 'html-loader'
+                        loader: 'html-loader',
+                        options: {
+                            minimize: false,
+                            sources: {
+                                list: [
+                                    {
+                                        tag: 'img',
+                                        attribute: 'src',
+                                        type: 'src',
+                                    },
+                                    {
+                                        tag: 'video',
+                                        attribute: 'src',
+                                        type: 'src',
+                                    },
+                                    {
+                                        tag: 'source',
+                                        attribute: 'src',
+                                        type: 'src',
+                                    }
+                                ]
+                            }
+                        }
                     },
                     {
                         loader: 'template-ejs-loader',
                         options: {
-                            root: PATHS.src
+                            root: PATHS.src,
+                            data: {
+                                include: (file) => {
+                                    return fs.readFileSync(path.join(PATHS.src, 'templates', file), 'utf8');
+                                }
+                            }
                         }
                     }
                 ]

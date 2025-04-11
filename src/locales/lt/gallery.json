@@ -1,4 +1,17 @@
 {
+  "alt": {
+    "metalConstructions": "Metalinės konstrukcijos",
+    "hugePipelines": "Dideli vamzdynai",
+    "industrialEquipment": "Pramonės įranga",
+    "pipelines": "Vamzdynai",
+    "pipelineWork": "Darbas su vamzdynais",
+    "capacitiveEquipment": "Talpinė įranga",
+    "welder": "Suvirinimo darbininkas",
+    "pipelineConstruction": "Vamzdynų konstrukcijos",
+    "curvedPipelines": "Išlenkti dideli vamzdynai",
+    "foodIndustry": "Maisto pramonė",
+    "chemicalEnergyIndustry": "Cheminė, energetikos pramonė"
+  },
   "title": "Weld Tech Group - Projektų galerija",
   "meta_description": "Weld Tech Group įmonės įgyvendintų projektų fotogalerija. Vizualus darbų, konstrukcijų ir gamybos sprendimų kokybės patvirtinimas.",
   "main_title": "Projektų galerija",
@@ -9,23 +22,5 @@
     "capacitive": "Talpinio įrenginio gamyba",
     "food": "Maisto pramonė",
     "chemical": "Cheminė, energetikos pramonė"
-  },
-  "alt": {
-    "metal_constructions": "Metalinės konstrukcijos",
-    "huge_pipelines": "Dideli vamzdynai",
-    "equipment_for_industry": "Pramonės įranga",
-    "pipelines": "Vamzdynai",
-    "pipelines_work": "Darbas su vamzdynais",
-    "capacitive_equipment": "Talpinė įranga",
-    "welder": "Suvirinimo darbininkas",
-    "pipelines_constructions": "Vamzdynų konstrukcijos",
-    "curve_huge_pipelines": "Išlenkti dideli vamzdynai",
-    "food_industry": "Maisto pramonė",
-    "pipelineWork": "Darbas su vamzdynais",
-    "hugePipelines": "Dideli vamzdynai",
-    "pipelineConstruction": "Vamzdynų konstrukcijos",
-    "curvedPipelines": "Išlenkti vamzdynai",
-    "metalConstructions": "Metalinės konstrukcijos",
-    "industrialEquipment": "Pramonės įranga"
   }
 } 

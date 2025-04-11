@@ -1,15 +1,16 @@
 {
   "alt": {
-    "metal_constructions": "металлические конструкции",
-    "huge_pipelines": "большие трубопроводы",
-    "equipment_for_industry": "оборудование для промышленности",
+    "metalConstructions": "металлические конструкции",
+    "hugePipelines": "большие трубопроводы",
+    "industrialEquipment": "оборудование для промышленности",
     "pipelines": "трубопроводы",
-    "pipelines_work": "работа на трубопроводах",
-    "capacitive_equipment": "емкостное оборудование",
+    "pipelineWork": "работа на трубопроводах",
+    "capacitiveEquipment": "емкостное оборудование",
     "welder": "сварщик",
-    "pipelines_constructions": "конструкции трубопроводов",
-    "curve_huge_pipelines": "изогнутые большие трубопроводы",
-    "food_industry": "пищевая промышленность"
+    "pipelineConstruction": "конструкции трубопроводов",
+    "curvedPipelines": "изогнутые большие трубопроводы",
+    "foodIndustry": "пищевая промышленность",
+    "chemicalEnergyIndustry": "химическая, энергетическая промышленность"
   },
   "title": "Weld Tech Group - Галерея проектов",
   "meta_description": "Фотогалерея реализованных проектов компании Weld Tech Group. Визуальное подтверждение качества работ, конструкций и производственных решений.",

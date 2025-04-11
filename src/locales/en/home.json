@@ -1,6 +1,10 @@
 {
   "title": "Weld Tech Group - reliability proven by time!",
+  "meta": {
+    "description": "Over 15 years of experience in industrial facilities. We specialize in professional welding and installation of technological pipelines, production of equipment and metal structures for chemical, food, pharmaceutical and other industrial sectors."
+  },
   "hero": {
+    "title": "Weld Tech Group",
     "subtitle": "reliability proven by time!",
     "description": "Your reliable partner in the installation of technological pipelines and production of industrial metal structures."
   },
@@ -10,5 +14,15 @@
   "experience": {
     "title": "15+ years of experience in industrial facilities.",
     "description": "We specialize in professional welding and installation of technological pipelines, production of equipment and metal structures for chemical, food, pharmaceutical and other industrial sectors."
+  },
+  "about": {
+    "image": {
+      "alt": "Weld Tech Group work"
+    },
+    "mission": {
+      "title": "Our mission",
+      "text": "providing reliable, innovative and environmentally friendly solutions in the field of welding and metal processing, contributing to the development of industry in local and international markets. We strive not only to meet customer needs, but also to exceed their expectations through high quality work, use of advanced technologies and continuous process improvement."
+    },
+    "experience": "Our team of experienced specialists implements projects in Poland, Lithuania, Germany and other EU countries."
   }
 } 

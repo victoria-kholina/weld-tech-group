@@ -4,12 +4,6 @@
     "description": "Více než 15 let zkušeností v průmyslových zařízeních. Specializujeme se na profesionální svařování a instalaci technologických potrubí, výrobu zařízení a kovových konstrukcí pro chemický, potravinářský, farmaceutický a další průmysl."
   },
   "pageTitle": "O nás",
-  "alt": {
-    "image": "Tým a vybavení Weld Tech Group",
-    "team": "Tým Weld Tech Group",
-    "equipment": "Vybavení Weld Tech Group",
-    "work": "Práce Weld Tech Group"
-  },
   "history": {
     "title": "Naše historie a hodnoty",
     "text": {
@@ -19,6 +13,9 @@
       "4Peace": "a inženýrského personálu umožňuje vypracovávat dokumentaci a vést projekty, zajišťující záruku provedení prací.",
       "5Peace": "Naše spolehlivost a profesionalita jsou potvrzeny dlouholetými vztahy s pravidelnými klienty v Polsku, Litvě, Německu a dalších evropských zemích."
     }
+  },
+  "image": {
+    "alt": "Weld Tech Group - O společnosti"
   },
   "video": {
     "notSupported": "Váš prohlížeč nepodporuje video."

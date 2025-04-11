@@ -4,12 +4,6 @@
     "description": "Más de 15 años de experiencia en instalaciones industriales. Nos especializamos en soldadura profesional e instalación de tuberías tecnológicas, producción de equipos y estructuras metálicas para las industrias química, alimentaria, farmacéutica y otras."
   },
   "pageTitle": "Sobre nosotros",
-  "alt": {
-    "image": "Equipo y equipamiento de Weld Tech Group",
-    "team": "Equipo de Weld Tech Group",
-    "equipment": "Equipamiento de Weld Tech Group",
-    "work": "Trabajos de Weld Tech Group"
-  },
   "history": {
     "title": "Nuestra historia y valores",
     "text": {
@@ -19,6 +13,9 @@
       "4Peace": "y personal de ingeniería permite desarrollar documentación y gestionar proyectos, garantizando la ejecución del trabajo.",
       "5Peace": "Nuestra fiabilidad y profesionalismo están confirmados por relaciones a largo plazo con clientes regulares en Polonia, Lituania, Alemania y otros países europeos."
     }
+  },
+  "image": {
+    "alt": "Weld Tech Group - Sobre la empresa"
   },
   "video": {
     "notSupported": "Su navegador no soporta video."

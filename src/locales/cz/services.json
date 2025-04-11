@@ -33,7 +33,7 @@
   },
   "items": {
     "pipelines": {
-      "title": "Montáž technologických potrubí",
+      "title": "Montáž technologických <br> potrubí",
       "description": "Profesionálně se zabýváme montáží a svařováním technologických potrubí z nerezové oceli (AISI-304L, AISI-308L, AISI-316L, AISI-321), uhlíkových ocelí (St.20, 30), stejně jako z titanu a hliníku."
     },
     "equipment": {
@@ -41,11 +41,11 @@
       "description": "Vyrábíme dodatečné vybavení pro různé výrobní linky a systémy používané v chemickém, potravinářském, farmaceutickém a příbuzném průmyslu."
     },
     "capacitive": {
-      "title": "Výroba kapacitních zařízení",
+      "title": "Výroba kapacitních <br> zařízení",
       "description": "Profesionálně se zabýváme montáží a svařováním technologických potrubí z nerezové oceli (AISI-304L, AISI-308L, AISI-316L, AISI-321), uhlíkových ocelí (St.20, 30), stejně jako z titanu a hliníku."
     },
     "structures": {
-      "title": "Kovové konstrukce a servisní plošiny",
+      "title": "Kovové konstrukce a <br> servisní plošiny",
       "description": "Vyrábíme a montujeme kovové konstrukce různé složitosti, včetně vazníků, schodišť, zábradlí, rámů pro montáž ovládacích skříní a mnoho dalšího. Všechny výrobky splňují normy pevnosti a bezpečnosti."
     }
   },

@@ -1,15 +1,16 @@
 {
   "alt": {
-    "metal_constructions": "metal constructions",
-    "huge_pipelines": "huge pipelines",
-    "equipment_for_industry": "equipment for industry",
+    "metalConstructions": "metal constructions",
+    "hugePipelines": "huge pipelines",
+    "industrialEquipment": "equipment for industry",
     "pipelines": "pipelines",
-    "pipelines_work": "pipelines work",
-    "capacitive_equipment": "capacitive equipment",
+    "pipelineWork": "pipelines work",
+    "capacitiveEquipment": "capacitive equipment",
     "welder": "welder",
-    "pipelines_constructions": "pipelines constructions",
-    "curve_huge_pipelines": "curve huge pipelines",
-    "food_industry": "food industry"
+    "pipelineConstruction": "pipelines constructions",
+    "curvedPipelines": "curve huge pipelines",
+    "foodIndustry": "food industry",
+    "chemicalEnergyIndustry": "chemical, energy industry"
   },
   "title": "Weld Tech Group - Project Gallery",
   "meta_description": "Photo gallery of completed projects by Weld Tech Group. Visual confirmation of work quality, structures and production solutions.",

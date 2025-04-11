@@ -2,29 +2,26 @@
 
 <html lang="pl">
 <head>
-    <title data-i18n="industry-solutions.title">Weld Tech Group - Rozwiązania branżowe</title>
-    <meta name="description" data-i18n="industry-solutions.meta_description" content="Rozwiązania Weld Tech Group dla przemysłu spożywczego, chemicznego, farmaceutycznego i innych branż. Uwzględniamy wymagania sanitarne, techniczne i produkcyjne każdej branży.">
+    <title data-i18n="industry.title"></title>
+    <meta name="description" data-i18n-attr="[content]industry.meta_description">
     <%- include('../templates/meta.ejs') %>
     
 </head>
 <body>
-<%- include('../templates/header.ejs' , { isInnerPage: true }) %>
+<%- include('../templates/header.ejs', { isInnerPage: true }) %>
 
 <section class="simple-section">
     <div class="container-md container-xxl h-100">
         <div class="simple-section__title dark">
-            <h2 data-i18n="industry-solutions.main_title">Rozwiązania branżowe</h2>
-            <p class="accent-text-block all" data-i18n="[html]industry-solutions.main_description">
-                Firma Weld Tech Group realizuje projekty dla różnych branż przemysłowych, 
-                uwzględniając specyficzne wymagania dotyczące montażu, higieny, bezpieczeństwa i efektywności. <br>
-                Poniżej — główne obszary, w których nasze doświadczenie i kompetencje są szczególnie cenione.</p>
+            <h2 data-i18n="industry-solutions.main_title"></h2>
+            <p class="accent-text-block all" data-i18n="[html]industry-solutions.main_description"></p>
         </div>
 
         <div class="tabs tabs-solutions">
             <div class="tabs-btn-wrap">
-                <button class="tabs-btn tabs-solutions-btn active" data-tab="tab1"><h4 data-i18n="industry-solutions.tabs.food">Przemysł<br> spożywczy</h4></button>
-                <button class="tabs-btn tabs-solutions-btn" data-tab="tab2"><h4 data-i18n="industry-solutions.tabs.chemical">Przemysł<br> chemiczny</h4></button>
-                <button class="tabs-btn tabs-solutions-btn" data-tab="tab3"><h4 data-i18n="industry-solutions.tabs.pharmaceutical">Branża<br> farmaceutyczna</h4></button>
+                <button class="tabs-btn tabs-solutions-btn active" data-tab="tab1"><h4 data-i18n="industry-solutions.tabs.food"></h4></button>
+                <button class="tabs-btn tabs-solutions-btn" data-tab="tab2"><h4 data-i18n="industry-solutions.tabs.chemical"></h4></button>
+                <button class="tabs-btn tabs-solutions-btn" data-tab="tab3"><h4 data-i18n="industry-solutions.tabs.pharmaceutical"></h4></button>
             </div>
 
             <div class="tabs-content tabs-solutions-content active" id="tab1">
@@ -32,27 +29,27 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="shadow-image left animate-on-scroll">
                             <div class="shadow-image-wrap">
-                                <img src="../assets/img/gallery/food-industry/20210209_161352364_iOS.webp" alt="food industry equipment" data-i18n="industry-solutions.alt.food_industry">
+                                <img src="../assets/img/gallery/food-industry/20210209_161352364_iOS.webp" data-i18n-attr="[alt]industry-solutions.alt.food_industry">
                             </div>
                           </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-8">
-                        <h4 data-i18n="industry-solutions.sections.food.specificity.title">Specyfika i zadania:</h4>
+                        <h4 data-i18n="industry-solutions.sections.food.specificity.title"></h4>
                         <ul class="simple-list">
-                            <li><p data-i18n="industry-solutions.sections.food.specificity.item1">Rygorystyczne wymagania sanitarne i higieniczne (np. HACCP).</p></li>
-                            <li><p data-i18n="industry-solutions.sections.food.specificity.item2">Konieczność bezbłędnej jakości spoin i łatwości sanitarnej obróbki sprzętu.</p></li>
-                            <li><p data-i18n="industry-solutions.sections.food.specificity.item3">Wykorzystanie stali nierdzewnych i materiałów zgodnych z bezpieczeństwem żywności.</p></li>
+                            <li><p data-i18n="industry-solutions.sections.food.specificity.item1"></p></li>
+                            <li><p data-i18n="industry-solutions.sections.food.specificity.item2"></p></li>
+                            <li><p data-i18n="industry-solutions.sections.food.specificity.item3"></p></li>
                         </ul>
-                        <h4 data-i18n="industry-solutions.sections.food.offer.title">Co oferujemy:</h4>
+                        <h4 data-i18n="industry-solutions.sections.food.offer.title"></h4>
                         <ul class="simple-list">
-                            <li><p data-i18n="industry-solutions.sections.food.offer.item1"><b>Projektowanie i montaż</b> systemów rurociągowych dla produktów płynnych i sypkich.</p></li>
-                            <li><p data-i18n="industry-solutions.sections.food.offer.item2"><b>Produkcja wyspecjalizowanych zbiorników</b> (na mleko, piwo, soki itp.) z uwzględnieniem obróbki termicznej lub chłodzenia.</p></li>
-                            <li><p data-i18n="industry-solutions.sections.food.offer.item3"><b>Wykonanie dodatkowych konstrukcji</b> (przenośniki, rolki, wanny myjące), dostosowanych do wysokiej wilgotności i agresywnych środków czyszczących.</p></li>
+                            <li><p data-i18n="industry-solutions.sections.food.offer.item1"></p></li>
+                            <li><p data-i18n="industry-solutions.sections.food.offer.item2"></p></li>
+                            <li><p data-i18n="industry-solutions.sections.food.offer.item3"></p></li>
                         </ul>
                     </div>
                 </div>
                 <div class="simple-section__title dark border-bottom">
-                    <h2 data-i18n="industry-solutions.realisations.title">Nasze realizacje</h2>
+                    <h2 data-i18n="industry-solutions.realisations.title"></h2>
                 </div>
                 <%- include('../templates/gallery-food-industry.ejs') %>
             </div>
@@ -62,27 +59,27 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="shadow-image left animate-on-scroll">
                             <div class="shadow-image-wrap">
-                                <img src="../assets/img/gallery/chemical-energy-industry/photo_7_2024-05-10_18-51-58.webp" alt="chemical industry equipment" data-i18n="industry-solutions.alt.chemical_industry">
+                                <img src="../assets/img/gallery/chemical-energy-industry/photo_7_2024-05-10_18-51-58.webp" data-i18n-attr="[alt]industry-solutions.alt.chemical_industry">
                             </div>
                           </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-8">
-                        <h4 data-i18n="industry-solutions.sections.chemical.specificity.title">Specyfika i zadania:</h4>
+                        <h4 data-i18n="industry-solutions.sections.chemical.specificity.title"></h4>
                         <ul class="simple-list">
-                            <li><p data-i18n="industry-solutions.sections.chemical.specificity.item1">Środowiska agresywne (kwasy, zasady, rozpuszczalniki organiczne itp.).</p></li>
-                            <li><p data-i18n="industry-solutions.sections.chemical.specificity.item2">Szczegółowe wymagania dotyczące szczelności, odporności na korozję i bezpieczeństwa personelu.</p></li>
-                            <li><p data-i18n="industry-solutions.sections.chemical.specificity.item3">Potrzeba specjalistycznego sprzętu do przechowywania i przetwarzania substancji chemicznych.</p></li>
+                            <li><p data-i18n="industry-solutions.sections.chemical.specificity.item1"></p></li>
+                            <li><p data-i18n="industry-solutions.sections.chemical.specificity.item2"></p></li>
+                            <li><p data-i18n="industry-solutions.sections.chemical.specificity.item3"></p></li>
                         </ul>
-                        <h4 data-i18n="industry-solutions.sections.chemical.offer.title">Co oferujemy:</h4>
+                        <h4 data-i18n="industry-solutions.sections.chemical.offer.title"></h4>
                         <ul class="simple-list">
-                            <li><p data-i18n="industry-solutions.sections.chemical.offer.item1"><b>Produkcja zbiorników i rurociągów</b> do pracy z agresywnymi środowiskami chemicznymi.</p></li>
-                            <li><p data-i18n="industry-solutions.sections.chemical.offer.item2"><b>Trwałe konstrukcje metalowe,</b> odporne na korozję i wahania temperatury.</p></li>
-                            <li><p data-i18n="industry-solutions.sections.chemical.offer.item3"><b>Możliwość wykonania niestandardowych systemów</b> dla wyspecjalizowanych procesów technologicznych.</p></li>
+                            <li><p data-i18n="industry-solutions.sections.chemical.offer.item1"></p></li>
+                            <li><p data-i18n="industry-solutions.sections.chemical.offer.item2"></p></li>
+                            <li><p data-i18n="industry-solutions.sections.chemical.offer.item3"></p></li>
                         </ul>
                     </div>
                 </div>
                 <div class="simple-section__title dark border-bottom">
-                    <h2 data-i18n="industry-solutions.realisations.title">Nasze realizacje</h2>
+                    <h2 data-i18n="industry-solutions.realisations.title"></h2>
                 </div>
                 <%- include('../templates/gallery-chemical-energy-industry.ejs') %>
             </div>
@@ -91,27 +88,27 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="shadow-image left animate-on-scroll">
                             <div class="shadow-image-wrap">
-                                <img src="../assets/img/gallery/chemical-energy-industry/IMG_2201.webp" alt="industry pipelines" data-i18n="industry-solutions.alt.pharmaceutical_industry">
+                                <img src="../assets/img/gallery/chemical-energy-industry/IMG_2201.webp" data-i18n-attr="[alt]industry-solutions.alt.pharmaceutical_industry">
                             </div>
                           </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-8">
-                        <h4 data-i18n="industry-solutions.sections.pharmaceutical.specificity.title">Specyfika i zadania:</h4>
+                        <h4 data-i18n="industry-solutions.sections.pharmaceutical.specificity.title"></h4>
                         <ul class="simple-list">
-                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.specificity.item1">Rygorystyczne wymagania czystości (GMP, FDA i inne).</p></li>
-                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.specificity.item2">Pełne przestrzeganie wysokich standardów sterylności i zapobieganie zanieczyszczeniom krzyżowym.</p></li>
-                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.specificity.item3">Zastosowanie stopów wysokiej czystości o minimalnej zawartości zanieczyszczeń.</p></li>
+                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.specificity.item1"></p></li>
+                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.specificity.item2"></p></li>
+                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.specificity.item3"></p></li>
                         </ul>
-                        <h4 data-i18n="industry-solutions.sections.pharmaceutical.offer.title">Co oferujemy:</h4>
+                        <h4 data-i18n="industry-solutions.sections.pharmaceutical.offer.title"></h4>
                         <ul class="simple-list">
-                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.offer.item1"><b>Montaż rurociągów</b> i systemów przechowywania środowisk wysokiej czystości (woda do iniekcji, para farmaceutyczna).</p></li>
-                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.offer.item2"><b>Produkcja zbiorników</b> ze specjalną obróbką wykończeniową powierzchni wewnętrznej (polerowanie, pasywacja).</p></li>
-                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.offer.item3"><b>Spawanie wysokiej precyzji</b> (np. orbitalne), minimalizujące chropowatości i spoiny zatrzymujące mikroorganizmy.</p></li>
+                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.offer.item1"></p></li>
+                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.offer.item2"></p></li>
+                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.offer.item3"></p></li>
                         </ul>
                     </div>
                 </div>
                 <div class="simple-section__title dark border-bottom">
-                    <h2 data-i18n="industry-solutions.realisations.title">Nasze realizacje</h2>
+                    <h2 data-i18n="industry-solutions.realisations.title"></h2>
                 </div>
                 <%- include('../templates/gallery-chemical-energy-industry.ejs') %>
             </div>
@@ -123,9 +120,8 @@
 <section class="simple-section know-more dark-image-bg accent-section-borders">
     <div class="container-md container-xxl h-100">
         <div class="simple-section__title light">
-            <h2 data-i18n="industry-solutions.other_industries.title">Inne branże i kierunki</h2>
-            <p class="accent-text-block all" data-i18n="industry-solutions.other_industries.description">
-                Oprócz kluczowych obszarów (spożywczego, chemicznego, farmaceutycznego), współpracujemy również z przedsiębiorstwami z:</p>
+            <h2 data-i18n="industry-solutions.other_industries.title"></h2>
+            <p class="accent-text-block all" data-i18n="industry-solutions.other_industries.description"></p>
         </div>
         <div class="row">
             <div class="col-12 col-md-4">
@@ -133,8 +129,8 @@
                     <svg class="icon">
                         <use xlink:href="#electricity"></use>
                       </svg>
-                    <h4 data-i18n="industry-solutions.other_industries.energy.title">Energetyki</h4>
-                    <p data-i18n="industry-solutions.other_industries.energy.description">Rurociągi dla pary, gazu, sprężonego powietrza, montaż konstrukcji metalowych dla kotłowni i hal turbinowych.</p>
+                    <h4 data-i18n="industry-solutions.other_industries.energy.title"></h4>
+                    <p data-i18n="industry-solutions.other_industries.energy.description"></p>
                 </div>
             </div>
             <div class="col-12 col-md-4">
@@ -142,8 +138,8 @@
                     <svg class="icon">
                         <use xlink:href="#mechanic"></use>
                       </svg>
-                    <h4 data-i18n="industry-solutions.other_industries.construction.title">Maszyn budowlanych</h4>
-                    <p data-i18n="industry-solutions.other_industries.construction.description">Produkcja i montaż komponentów linii produkcyjnych, w tym spawanie złożonych konstrukcji metalowych.</p> 
+                    <h4 data-i18n="industry-solutions.other_industries.construction.title"></h4>
+                    <p data-i18n="industry-solutions.other_industries.construction.description"></p> 
                 </div>
             </div>
             <div class="col-12 col-md-4">
@@ -151,8 +147,8 @@
                     <svg class="icon">
                         <use xlink:href="#oil-barrel"></use>
                       </svg>
-                    <h4 data-i18n="industry-solutions.other_industries.oil_gas.title">Sektora naftowo-gazowego</h4>
-                    <p data-i18n="industry-solutions.other_industries.oil_gas.description">Zbiorniki na produkty naftowe, gazociągi, armatura towarzysząca.</p>
+                    <h4 data-i18n="industry-solutions.other_industries.oil_gas.title"></h4>
+                    <p data-i18n="industry-solutions.other_industries.oil_gas.description"></p>
                 </div>
             </div>
         </div>

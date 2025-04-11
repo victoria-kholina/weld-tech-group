@@ -33,7 +33,7 @@
   },
   "items": {
     "pipelines": {
-      "title": "Montaż technologicznych rurociągów",
+      "title": "Montaż technologicznych <br> rurociągów",
       "description": "Profesjonalnie zajmujemy się montażem i spawaniem rurociągów technologicznych ze stali nierdzewnej (AISI-304L, AISI-308L, AISI-316L, AISI-321), stali węglowych (St.20, 30), a także z tytanu i aluminium."
     },
     "equipment": {
@@ -41,11 +41,11 @@
       "description": "Produkujemy dodatkowe urządzenia dla różnych linii produkcyjnych i systemów stosowanych w przemyśle chemicznym, spożywczym, farmaceutycznym i pokrewnych."
     },
     "capacitive": {
-      "title": "Produkcja urządzeń pojemnościowych",
+      "title": "Produkcja <br> urządzeń pojemnościowych",
       "description": "Profesjonalnie zajmujemy się montażem i spawaniem rurociągów technologicznych ze stali nierdzewnej (AISI-304L, AISI-308L, AISI-316L, AISI-321), stali węglowych (St.20, 30), a także z tytanu i aluminium."
     },
     "structures": {
-      "title": "Konstrukcje metalowe i platformy serwisowe",
+      "title": "Konstrukcje metalowe <br> i platformy serwisowe",
       "description": "Produkujemy i montujemy konstrukcje metalowe o różnej złożoności, w tym kratownice, schody, poręcze, ramy do montażu szaf sterowniczych i wiele innych. Wszystkie wyroby spełniają normy wytrzymałości i bezpieczeństwa."
     }
   },

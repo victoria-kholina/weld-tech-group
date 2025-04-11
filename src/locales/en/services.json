@@ -33,7 +33,7 @@
   },
   "items": {
     "pipelines": {
-      "title": "Installation of technological pipelines",
+      "title": "Installation of technological <br> pipelines",
       "description": "We professionally deal with the installation and welding of technological pipelines made of stainless steel (AISI-304L, AISI-308L, AISI-316L, AISI-321), carbon steels (St.20, 30), as well as titanium and aluminum."
     },
     "equipment": {
@@ -41,11 +41,11 @@
       "description": "We manufacture additional equipment for various production lines and systems used in chemical, food, pharmaceutical and related industries."
     },
     "capacitive": {
-      "title": "Production of capacitive equipment",
+      "title": "Production of <br> capacitive equipment",
       "description": "We professionally deal with the installation and welding of technological pipelines made of stainless steel (AISI-304L, AISI-308L, AISI-316L, AISI-321), carbon steels (St.20, 30), as well as titanium and aluminum."
     },
     "structures": {
-      "title": "Metal structures and service platforms",
+      "title": "Metal structures and <br> service platforms",
       "description": "We manufacture and install metal structures of various complexity, including trusses, stairs, railings, frames for mounting control cabinets and much more. All products meet strength and safety standards."
     }
   },

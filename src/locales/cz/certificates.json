@@ -1,12 +1,10 @@
 {
-  "title": "Máme certifikáty, které mají význam!",
+  "title": "Máme certifikáty,<br> které mají význam!",
   "iso": {
-    "title": "ISO 3834 – 2",
     "description": "potvrzuje kompetence personálu a kvalitu prováděných prací.",
     "imageAlt": "Náhled ISO 3834 – 2"
   },
   "en": {
-    "title": "EN 1090-1034",
     "description": "potvrzuje existenci efektivního systému kontroly kvality v závodě a soulad výrobků s evropskými požadavky",
     "imageAlt": "Náhled 1090-1034"
   }

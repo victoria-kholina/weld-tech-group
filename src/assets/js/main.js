@@ -1,5 +1,6 @@
 import { initI18n } from './i18n';
 import i18next from 'i18next';
+import './language-detector';
 
 // Функция для перевода элементов с атрибутом data-i18n
 function translateElements() {
