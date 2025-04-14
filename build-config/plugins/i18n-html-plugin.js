@@ -80,7 +80,19 @@ class I18nHtmlPlugin {
                 // Строим абсолютный путь к включаемому файлу
                 const includePath = path.resolve(currentDir, file);
                 console.log(`Including file: ${includePath}`);
-                return fs.readFileSync(includePath, 'utf8');
+                // Читаем содержимое файла
+                const content = fs.readFileSync(includePath, 'utf8');
+                // Обрабатываем включаемый файл с тем же контекстом
+                return ejs.render(content, { lang: lang }, {
+                    async: false,
+                    root: this.root,
+                    filename: includePath
+                });
+            },
+            lang: lang,
+            // Добавляем функцию для генерации путей с учетом языка
+            assetPath: (file) => {
+                return `/${lang}/${file}`;
             }
         }, {
             async: true,
@@ -108,10 +120,32 @@ class I18nHtmlPlugin {
             return match;
         });
 
+        // Добавляем скрипты и стили
+        const scripts = `<script src="/assets/js/main.js"></script>`;
+        const styles = `<link rel="stylesheet" href="/assets/css/main.css">`;
+
+        // Вставляем скрипты перед закрывающим тегом body
+        content = content.replace(/<\/body>/, `${scripts}\n</body>`);
+
+        // Вставляем стили перед закрывающим тегом head
+        content = content.replace(/<\/head>/, `${styles}\n</head>`);
+
         return content;
     }
 
     apply(compiler) {
+        // Добавляем EJS файлы в зависимости
+        compiler.hooks.compilation.tap('I18nHtmlPlugin', (compilation) => {
+            const { pages } = this.options;
+            
+            pages.forEach(page => {
+                const templatePath = path.resolve(__dirname, `../../src/${page}`);
+                if (fs.existsSync(templatePath)) {
+                    compilation.fileDependencies.add(templatePath);
+                }
+            });
+        });
+
         compiler.hooks.thisCompilation.tap('I18nHtmlPlugin', (compilation) => {
             compilation.hooks.processAssets.tapPromise(
                 {

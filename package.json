@@ -6,7 +6,7 @@
   "scripts": {
     "dev": " webpack-dev-server --config ./build-config/webpack.dev.conf.js ",
     "prod": "webpack --config ./build-config/webpack.build.conf.js",
-    "static": "webpack --config ./build-config/webpack.static.conf.js"
+    "static": "webpack serve --config ./build-config/webpack.static.conf.js"
   },
   "browserslist": [
     ">1%",

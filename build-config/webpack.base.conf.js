@@ -1,8 +1,8 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const I18nHtmlPlugin = require('./plugins/i18n-html-plugin');
 const fs = require('fs');
 
 const PATHS = {
@@ -14,21 +14,42 @@ const PATHS = {
     projects: 'projects'
 };
 
-const getEjsFiles = (dir) => fs.readdirSync(dir).filter(file => file.endsWith('.ejs'));
+// Функция для поиска всех EJS файлов
+function findEjsFiles(dir) {
+    const files = fs.readdirSync(dir);
+    let ejsFiles = [];
 
-const generateHtmlPlugins = (directory, subDir = '') => {
-    return getEjsFiles(path.join(PATHS.src, subDir)).map(file => new HtmlWebpackPlugin({
-        template: path.join(PATHS.src, subDir, file),
-        filename: path.join(subDir, file.replace('.ejs', '.html')),
-        favicon: path.join(PATHS.dist, 'favicon.ico')
-    }));
-};
+    files.forEach(file => {
+        const fullPath = path.join(dir, file);
+        const stat = fs.statSync(fullPath);
+
+        if (stat.isDirectory()) {
+            // Пропускаем папку templates
+            if (file === 'templates') {
+                return;
+            }
+            // Рекурсивно ищем в поддиректориях
+            ejsFiles = ejsFiles.concat(findEjsFiles(fullPath));
+        } else if (file.endsWith('.ejs')) {
+            // Добавляем относительный путь к файлу
+            ejsFiles.push(path.relative(PATHS.src, fullPath));
+        }
+    });
+
+    return ejsFiles;
+}
+
+// Находим все EJS файлы
+const pages = findEjsFiles(PATHS.src);
+console.log('Found EJS pages:', pages);
 
 module.exports = {
     externals: { paths: PATHS },
-    entry: PATHS.src,
+    entry: {
+        main: './src/index.js'
+    },
     output: {
-        filename: 'js/[name].js',
+        filename: 'assets/js/main.js',
         publicPath: '/',
         path: PATHS.dist,
         clean: true
@@ -78,7 +99,8 @@ module.exports = {
                             data: {
                                 include: (file) => {
                                     return fs.readFileSync(path.join(PATHS.src, 'templates', file), 'utf8');
-                                }
+                                },
+                                lang: '<%= lang %>'
                             }
                         }
                     }
@@ -111,6 +133,8 @@ module.exports = {
         ]
     },
     optimization: {
+        splitChunks: false,
+        runtimeChunk: false,
         minimizer: [
             new ImageMinimizerPlugin({
                 minimizer: {
@@ -133,20 +157,26 @@ module.exports = {
         ]
     },
     plugins: [
-        new MiniCssExtractPlugin({ filename: `${PATHS.styles}[name].css` }),
-        ...generateHtmlPlugins(PATHS.src),
-        ...generateHtmlPlugins(PATHS.src, PATHS.services),
-        ...generateHtmlPlugins(PATHS.src, PATHS.projects),
+        new I18nHtmlPlugin({
+            root: PATHS.src,
+            pages: pages,
+            languages: ['pl', 'en', 'lt', 'de', 'ua', 'ru', 'cz', 'es']
+        }),
+        new MiniCssExtractPlugin({ 
+            filename: 'assets/css/main.css'
+        }),
         new CopyWebpackPlugin({
             patterns: [
-                { from: path.join(PATHS.src, 'favicon.ico'), to: path.join(PATHS.dist, 'favicon.ico') },
-                { from: path.join(PATHS.src, PATHS.assets, 'css'), to: path.join(PATHS.dist, PATHS.assets, 'css') },
-                { from: path.join(PATHS.src, PATHS.assets, 'img'), to: path.join(PATHS.dist, PATHS.assets, 'img') },
-                { from: path.join(PATHS.src, PATHS.assets, 'fonts'), to: path.join(PATHS.dist, PATHS.assets, 'fonts') },
                 {
-                    from: path.join(PATHS.src, 'locales'),
-                    to: 'locales',
-                    noErrorOnMissing: true
+                    from: path.join(PATHS.src, 'assets'),
+                    to: path.join(PATHS.dist, 'assets'),
+                    globOptions: {
+                        ignore: ['**/js/**', '**/css/**', '**/scss/**']
+                    }
+                },
+                {
+                    from: path.join(PATHS.src, 'favicon.ico'),
+                    to: path.join(PATHS.dist, 'favicon.ico')
                 }
             ]
         })

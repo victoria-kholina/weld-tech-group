@@ -1,14 +1,17 @@
 import './assets/css/bootstrap-grid.min.css'
 import '@splidejs/splide/css/core';
 import './scss/main.scss'
-import './assets/js/i18n.js'
-import './assets/js/main.js'
+import { getCurrentLanguage } from './assets/js/language-detector.js'
 
 import $ from 'jquery';
 import Splide from '@splidejs/splide';
 
-
+// Инициализируем приложение при загрузке DOM
 $(function() {
+  // Определяем текущий язык
+  const currentLanguage = getCurrentLanguage();
+  console.log('Current language:', currentLanguage);
+
   if (document.querySelector('.splide')) {
     var homeSlider = new Splide('.home-slider .splide', {
       type: 'loop',
@@ -44,63 +47,57 @@ $(function() {
     homeSlider.mount();
   }
 
-    // Set SVG sprites code from the file to the html of every page. Needed for crossbrawser support
+  // Set SVG sprites code from the file to the html of every page. Needed for crossbrawser support
+  const basePath = '/assets/img/sprite.svg'; // абсолютный путь от корня
 
-    const basePath = '/assets/img/sprite.svg'; // абсолютный путь от корня
+  $.ajax({
+    url: basePath,
+    method: 'GET',
+    dataType: 'text',
+    success: function (data) {
+      const parser = new DOMParser();
+      const svgDoc = parser.parseFromString(data, 'image/svg+xml');
+      const svgElem = svgDoc.documentElement;
+      document.body.prepend(svgElem); // лучше prepend — для доступа в <use>
+    },
+    error: function () {
+      console.error('Ошибка при загрузке SVG спрайта:', basePath);
+    },
+  });
 
-    $.ajax({
-      url: basePath,
-      method: 'GET',
-      dataType: 'text',
-      success: function (data) {
-        const parser = new DOMParser();
-        const svgDoc = parser.parseFromString(data, 'image/svg+xml');
-        const svgElem = svgDoc.documentElement;
-        document.body.prepend(svgElem); // лучше prepend — для доступа в <use>
-      },
-      error: function () {
-        console.error('Ошибка при загрузке SVG спрайта:', basePath);
-      },
-    });
-    
+  function setStickyMenuHeight() {
+    let stickyMenu = $(".sticky-menu-wrap");
+    let banner = $(".welcome-banner");
 
-    
-    function setStickyMenuHeight() {
-      
-      let stickyMenu = $(".sticky-menu-wrap");
-      let banner = $(".welcome-banner");
+    if(banner) { stickyMenu.css("height", banner.outerHeight()) };     
+  }
 
-      if(banner) { stickyMenu.css("height", banner.outerHeight()) };     
-    
-    }
-
+  if($(window).width() > 767) {
+    setStickyMenuHeight();
+  }
+  $(window).resize(function(){
     if($(window).width() > 767) {
       setStickyMenuHeight();
+    } else {
+      $(".sticky-menu-wrap").css("height", "50px");
     }
-    $(window).resize(function(){
-      if($(window).width() > 767) {
-        setStickyMenuHeight();
-      } else {
-        $(".sticky-menu-wrap").css("height", "50px");
+  });
+
+  // run animation on scroll
+  function checkVisibility() {
+    $('.animate-on-scroll').each(function () {
+      let elem = $(this);
+      let elemTop = elem.offset().top;
+      let windowBottom = $(window).scrollTop() + $(window).height();
+
+      if (windowBottom > elemTop && !elem.hasClass('animated')) {
+        elem.addClass('animated');
       }
     });
-
-
-    // run animation on scroll
-    function checkVisibility() {
-      $('.animate-on-scroll').each(function () {
-          let elem = $(this);
-          let elemTop = elem.offset().top;
-          let windowBottom = $(window).scrollTop() + $(window).height();
-
-          if (windowBottom > elemTop && !elem.hasClass('animated')) {
-              elem.addClass('animated');
-          }
-      });
   }
 
   $(window).on('scroll', checkVisibility);
-  checkVisibility(); 
+  checkVisibility();
 
   // Equal height function. 
 
