@@ -10789,29 +10789,36 @@ var __webpack_exports__ = {};
 
 ;// ./src/assets/js/language-detector.js
 // Список поддерживаемых языков
-const supportedLanguages = ['pl', 'en', 'lt', 'de', 'ua', 'ru', 'cz', 'es'];
+const supportedLanguages = ['pl', 'en', 'lt', 'de', 'uk', 'ru', 'cs', 'es'];
 
 // Функция для определения предпочтительного языка
 function getPreferredLanguage() {
     // Проверяем, есть ли сохраненный язык в localStorage
-    
     const savedLanguage = localStorage.getItem('preferredLanguage');
+    
     if (savedLanguage && supportedLanguages.includes(savedLanguage)) {
         return savedLanguage;
     }
 
-    // Получаем язык из navigator.language или navigator.languages
-    const browserLanguage = navigator.language || navigator.languages[0];
-    
-    // Оставляем только код языка (без региона)
-    const languageCode = browserLanguage.split('-')[0].toLowerCase();
-    
-    // Проверяем, поддерживается ли язык
-    if (supportedLanguages.includes(languageCode)) {
-        return languageCode;
+    // Проверяем основной язык браузера
+    const browserLanguage = navigator.language;
+    if (browserLanguage) {
+        const languageCode = browserLanguage.split('-')[0].toLowerCase();
+        if (supportedLanguages.includes(languageCode)) {
+            return languageCode;
+        }
+    }
+
+    // Проверяем все языки из navigator.languages
+    if (navigator.languages) {
+        for (const lang of navigator.languages) {
+            const languageCode = lang.split('-')[0].toLowerCase();
+            if (supportedLanguages.includes(languageCode)) {
+                return languageCode;
+            }
+        }
     }
     
-    // Если язык не поддерживается, возвращаем язык по умолчанию (польский)
     return 'pl';
 }
 
@@ -10833,30 +10840,41 @@ function redirectToLanguage() {
         currentPath.startsWith(`/${lang}/`) || currentPath === `/${lang}`
     );
     
-    if (isRootPath || !hasLanguagePrefix) {
-        const preferredLanguage = getPreferredLanguage();
-        // Сохраняем выбранный язык
-        localStorage.setItem('preferredLanguage', preferredLanguage);
-        
-        // Определяем путь для перенаправления
-        let redirectPath = `/${preferredLanguage}`;
-        if (currentPath !== '/' && currentPath !== '/index.html') {
-            // Если мы не на корневой странице, сохраняем текущий путь
-            redirectPath += currentPath;
-        } else {
-            // Если на корневой странице, добавляем index.html
-            redirectPath += '/index.html';
-        }
-        
-        // Перенаправляем на соответствующую страницу
-        window.location.href = redirectPath;
+    // Если мы уже на правильной странице, не делаем редирект
+    if (!isRootPath && hasLanguagePrefix) {
+        return;
     }
+    
+    const preferredLanguage = getPreferredLanguage();
+    
+    // Определяем путь для перенаправления
+    let redirectPath = preferredLanguage === 'pl' ? '/' : `/${preferredLanguage}`;
+    
+    if (currentPath !== '/' && currentPath !== '/index.html') {
+        // Если мы не на корневой странице, сохраняем текущий путь
+        redirectPath += currentPath;
+    } else if (preferredLanguage !== 'pl') {
+        // Если на корневой странице и не польский язык, добавляем index.html
+        redirectPath += '/index.html';
+    }
+    
+    // Если путь не изменился, не делаем редирект
+    if (redirectPath === currentPath) {
+        return;
+    }
+    
+    // Сохраняем выбранный язык
+    localStorage.setItem('preferredLanguage', preferredLanguage);
+    
+    // Выполняем редирект
+    window.location.href = redirectPath;
 }
 
-// Экспортируем функции для использования в других модулях
+// Экспортируем функции
 
 
 // Вызываем функцию при загрузке страницы
+console.log('Adding DOMContentLoaded listener...');
 document.addEventListener('DOMContentLoaded', redirectToLanguage); 
 // EXTERNAL MODULE: ./node_modules/jquery/dist/jquery.js
 var jquery = __webpack_require__(692);

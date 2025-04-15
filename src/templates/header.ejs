@@ -31,14 +31,123 @@
                     </ul>
                 </li>
                 <li class="menu-item"><a href="#contacts" class="menu-item__name" data-i18n="header.menu.contact"></a></li>
+                <li class="menu-item language-switcher">
+                  <span href="/pl/" class="menu-item__name language-switcher__link active">
+                    PL
+                    <svg class="icon">
+                      <use xlink:href="#Poland"></use>
+                    </svg>
+                  </span>
+                  <ul class="submenu">  
+                    <li class="submenu-item"><a href="/pl/" class="menu-item__name language-switcher__link">PL
+                      <svg class="icon">
+                        <use xlink:href="#Poland"></use>
+                      </svg>
+                      </a>
+                    </li>
+                    <li class="submenu-item"><a href="/en/" class="menu-item__name language-switcher__link">EN
+                      <svg class="icon">
+                        <use xlink:href="#United-Kingdom"></use>
+                      </svg>
+                      </a>
+                    </li>
+
+                    <li class="submenu-item"><a href="/lt/" class="menu-item__name language-switcher__link">LT
+                      <svg class="icon">
+                        <use xlink:href="#Lithuania"></use>
+                      </svg>
+                    </a></li>
+                    <li class="submenu-item"><a href="/de/" class="menu-item__name language-switcher__link">DE
+                      <svg class="icon">
+                        <use xlink:href="#Germany"></use>
+                      </svg>
+                    </a></li>
+                    <li class="submenu-item"><a href="/uk/" class=" menu-item__name language-switcher__link">UK
+                      <svg class="icon">
+                        <use xlink:href="#Ukraine"></use>
+                      </svg>
+                    </a></li>
+                    <li class="submenu-item">
+                      <a href="/ru/" class="menu-item__name language-switcher__link">RU
+                      <svg class="icon">
+                        <use xlink:href="#Russia"></use>
+                      </svg>
+                      </a></li> 
+                    <li class="submenu-item"><a href="/cs/" class="menu-item__name language-switcher__link">CS
+                      <svg class="icon">
+                        <use xlink:href="#Czech-Republic"></use>
+                      </svg>
+                    </a></li>
+                    <li class="submenu-item">
+                      <a href="/es/" class="menu-item__name language-switcher__link">ES
+                      <svg class="icon">
+                        <use xlink:href="#Spain"></use>
+                      </svg>
+                      </a></li>
+                  </ul>
+
+                </li>
+                
               </ul>
             </nav>
             <div class="mobile-menu-container">
+              <nav class="language-switcher-mobile-menu">
+                <ul class="menu">
+                  <li class="menu-item language-switcher">
+                    <span href="/pl/" class="language-switcher__link active">
+                      PL
+                      <svg class="icon">
+                        <use xlink:href="#Poland"></use>
+                      </svg>
+                    </span>
+                    <ul class="submenu">  
+                      <li class="submenu-item"><a href="/en/" class="language-switcher__link">EN
+                        <svg class="icon">
+                          <use xlink:href="#United-Kingdom"></use>
+                        </svg>
+                        </a></li>
+                      <li class="submenu-item"><a href="/lt/" class="language-switcher__link">LT
+                        <svg class="icon">
+                          <use xlink:href="#Lithuania"></use>
+                        </svg>
+                      </a></li>
+                      <li class="submenu-item"><a href="/de/" class="language-switcher__link">DE
+                        <svg class="icon">
+                          <use xlink:href="#Germany"></use>
+                        </svg>
+                      </a></li>
+                      <li class="submenu-item"><a href="/uk/" class="language-switcher__link">UK
+                        <svg class="icon">
+                          <use xlink:href="#Ukraine"></use>
+                        </svg>
+                      </a></li>
+                      <li class="submenu-item">
+                        <a href="/ru/" class="language-switcher__link">RU
+                        <svg class="icon">
+                          <use xlink:href="#Russia"></use>
+                        </svg>
+                        </a></li> 
+                      <li class="submenu-item"><a href="/cs/" class="language-switcher__link">CS
+                        <svg class="icon">
+                          <use xlink:href="#Czech-Republic"></use>
+                        </svg>
+                      </a></li>
+                      <li class="submenu-item">
+                        <a href="/es/" class="language-switcher__link">ES
+                        <svg class="icon">
+                          <use xlink:href="#Spain"></use>
+                        </svg>
+                        </a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
               <button class="mobile-menu-toggle">
                   <span class="line"></span>
                   <span class="line"></span>
                   <span class="line"></span>
               </button>
+              
               <nav class="mobile-menu">
                 <ul class="menu">
                     <li class="menu-item"><a href="/<%= lang %>/" class="menu-item__name" data-i18n="header.menu.home"></a></li>
@@ -62,10 +171,12 @@
                         </ul>
                     </li>
                     <li class="menu-item"><a href="#contacts" class="menu-item__name" data-i18n="header.menu.contact"></a></li>
+                    
                   </ul>
               </nav>
             </div> 
           </div>
+  
             
         </div>
       </div>

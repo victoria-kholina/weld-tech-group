@@ -179,7 +179,11 @@ class I18nHtmlPlugin {
                             // Сохраняем структуру директорий из src
                             const relativePath = path.dirname(page);
                             const outputFilename = path.basename(page, '.ejs') + '.html';
-                            const outputPath = path.join(distPath, lang, relativePath, outputFilename);
+                            
+                            // Для польской версии сохраняем в корень dist
+                            const outputPath = lang === 'pl' 
+                                ? path.join(distPath, relativePath, outputFilename)
+                                : path.join(distPath, lang, relativePath, outputFilename);
                             
                             // Создаем все необходимые поддиректории
                             const outputDir = path.dirname(outputPath);
@@ -191,7 +195,10 @@ class I18nHtmlPlugin {
                             const processedContent = await this.processTemplate(templatePath, lang);
                             
                             // Добавляем файл в компиляцию Webpack
-                            const assetPath = path.join(lang, relativePath, outputFilename).replace(/\\/g, '/');
+                            const assetPath = lang === 'pl'
+                                ? path.join(relativePath, outputFilename).replace(/\\/g, '/')
+                                : path.join(lang, relativePath, outputFilename).replace(/\\/g, '/');
+                            
                             compilation.emitAsset(assetPath, {
                                 source: () => processedContent,
                                 size: () => processedContent.length

@@ -24,15 +24,13 @@ function findEjsFiles(dir) {
         const stat = fs.statSync(fullPath);
 
         if (stat.isDirectory()) {
-            // Пропускаем папку templates
-            if (file === 'templates') {
-                return;
-            }
             // Рекурсивно ищем в поддиректориях
             ejsFiles = ejsFiles.concat(findEjsFiles(fullPath));
         } else if (file.endsWith('.ejs')) {
-            // Добавляем относительный путь к файлу
-            ejsFiles.push(path.relative(PATHS.src, fullPath));
+            // Добавляем относительный путь к файлу, если он не находится в папке templates
+            if (!fullPath.includes(path.sep + 'templates' + path.sep)) {
+                ejsFiles.push(path.relative(PATHS.src, fullPath));
+            }
         }
     });
 
@@ -160,7 +158,7 @@ module.exports = {
         new I18nHtmlPlugin({
             root: PATHS.src,
             pages: pages,
-            languages: ['pl', 'en', 'lt', 'de', 'ua', 'ru', 'cz', 'es']
+            languages: ['pl', 'en', 'lt', 'de', 'uk', 'ru', 'cs', 'es']
         }),
         new MiniCssExtractPlugin({ 
             filename: 'assets/css/main.css'

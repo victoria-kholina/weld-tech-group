@@ -1,0 +1,39 @@
+@use '../abstracts/abstracts' as abs;
+
+.language-switcher {
+    &:hover {
+        .language-switcher__link:after {
+            display: none;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: abs.$base-color;
+        font-family: abs.$AlumniSans-Medium;
+        .icon {
+            margin-left: 10px;
+            width: 20px;
+            height: 25px;
+            @include abs.desktop-xl {
+                width: 30px;
+                height: 35px;
+            }
+        }
+    }
+    .submenu {
+        width: auto;
+        right: -1px;
+        border-right: none;
+        @include abs.desktop {
+            right: 3px;
+        }
+        &-item {
+            .language-switcher__link {
+                border-bottom: none;
+            }
+        }
+        
+    }
+}
