@@ -58,12 +58,14 @@ function updateLanguageSwitcher() {
     
     // Обновляем все переключатели языка
     document.querySelectorAll('.language-switcher').forEach(switcher => {
-        // Обновляем активный язык
-        const activeLink = switcher.querySelector('.language-switcher__link.active');
-        if (activeLink) {
-            activeLink.textContent = currentLang.toUpperCase();
+        // Обновляем активный язык в основном переключателе
+        const mainLink = switcher.querySelector('.language-switcher__link:not(.submenu .language-switcher__link)');
+        if (mainLink) {
+            mainLink.textContent = currentLang.toUpperCase();
+            mainLink.classList.add('active');
+            
             // Обновляем иконку
-            const icon = activeLink.querySelector('.icon use');
+            const icon = mainLink.querySelector('.icon use');
             if (icon) {
                 const countryMap = {
                     'pl': 'Poland',
@@ -92,8 +94,12 @@ function updateLanguageSwitcher() {
                 link.href = `/${lang}${pathWithoutLang}`;
             }
             
-            // Показываем все языки, включая текущий
-            link.parentElement.style.display = '';
+            // Скрываем текущий язык в подменю
+            if (lang === currentLang) {
+                link.parentElement.style.display = 'none';
+            } else {
+                link.parentElement.style.display = '';
+            }
         });
     });
 }
