@@ -10,48 +10,5 @@
   "contact_us": "Susisiekite su mumis",
   "send_message": "Siųsti žinutę",
   "follow_us": "Sekite mus",
-  "all_rights_reserved": "Visos teisės saugomos.",
-  "contact": {
-    "title": "Kontaktas",
-    "whatYouGet": {
-      "title": "Ką gaunate,<br> kreipdamiesi į mus?!",
-      "professionalAdvice": {
-        "title": "Profesionalus konsultavimas",
-        "description": "suvirinimo, vamzdynų montavimo, metalinių konstrukcijų gamybos ir kitų paslaugų srityse."
-      },
-      "costCalculation": {
-        "title": "Kainų ir įgyvendinimo terminų skaičiavimą",
-        "description": "pagrįstą realia patirtimi ir skaidriomis kainomis."
-      },
-      "individualSolution": {
-        "title": "Individualų sprendimą",
-        "description": "parinksime optimalias technologijas ir medžiagas, atitinkančias jūsų reikalavimus."
-      }
-    },
-    "map": {
-      "title": "Keliavimo žemėlapis"
-    },
-    "address": {
-      "title": "Biuro adresas:"
-    },
-    "phone": {
-      "title": "Telefonas:"
-    },
-    "email": {
-      "title": "El. paštas:"
-    },
-    "whatsapp": {
-      "title": "WhatsApp:"
-    },
-    "viber": {
-      "title": "Viber:"
-    },
-    "telegram": {
-      "title": "Telegram:"
-    }
-  },
-  "cookie": {
-    "text": "Mes naudojame slapukus, kad užtikrintume patogų svetainės naudojimą, turinio personalizavimą ir svarbiausių informacijos pristatymą. Slapukai padeda mums analizuoti vartotojų sąveiką su svetaine, pagerinti jos funkcionalumą ir pritaikyti mūsų paslaugas pagal jūsų poreikius. Toliau naudodamiesi šia svetaine, patvirtinate sutikimą naudoti slapukus",
-    "accept": "Sutinku"
-  }
+  "all_rights_reserved": "Visos teisės saugomos."
 } 

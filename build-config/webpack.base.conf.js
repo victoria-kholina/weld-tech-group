@@ -24,11 +24,9 @@ function findEjsFiles(dir) {
         const stat = fs.statSync(fullPath);
 
         if (stat.isDirectory()) {
-            // Рекурсивно ищем в поддиректориях
             ejsFiles = ejsFiles.concat(findEjsFiles(fullPath));
         } else if (file.endsWith('.ejs')) {
-            // Добавляем относительный путь к файлу, если он не находится в папке templates
-            if (!fullPath.includes(path.sep + 'templates' + path.sep)) {
+                if (!fullPath.includes(path.sep + 'templates' + path.sep)) {
                 ejsFiles.push(path.relative(PATHS.src, fullPath));
             }
         }
@@ -65,9 +63,6 @@ module.exports = {
             { 
                 test: /\.ejs$/i, 
                 use: [
-                    {
-                        loader: 'html-loader'
-                    },
                     {
                         loader: 'template-ejs-loader',
                         options: {
@@ -109,8 +104,7 @@ module.exports = {
         ]
     },
     optimization: {
-        splitChunks: false,
-        runtimeChunk: false,
+        minimize: true,
         minimizer: [
             new ImageMinimizerPlugin({
                 minimizer: {
@@ -119,15 +113,10 @@ module.exports = {
                         plugins: [
                             ['imagemin-gifsicle', { interlaced: true }],
                             ['imagemin-mozjpeg', { quality: 60 }],
-                            ['imagemin-optipng', { optimizationLevel: 5 }]
+                            ['imagemin-optipng', { optimizationLevel: 5 }],
+                            ['imagemin-webp', { quality: 60 }]
                         ]
                     }
-                }
-            }),
-            new ImageMinimizerPlugin({
-                minimizer: {
-                    implementation: ImageMinimizerPlugin.imageminGenerate,
-                    options: { plugins: [['imagemin-webp', { quality: 80 }]] }
                 }
             })
         ]
@@ -157,4 +146,5 @@ module.exports = {
             ]
         })
     ]
+    
 };

@@ -12,25 +12,31 @@ function getPreferredLanguage() {
         return savedLanguage;
     }
 
-    // Проверяем основной язык браузера
+    // Если сохраненного языка нет, определяем язык браузера
     const browserLanguage = navigator.language;
     if (browserLanguage) {
         const languageCode = browserLanguage.split('-')[0].toLowerCase();
         if (supportedLanguages.includes(languageCode)) {
+            // Сохраняем язык браузера в localStorage
+            localStorage.setItem('preferredLanguage', languageCode);
             return languageCode;
         }
     }
 
-    // Проверяем все языки из navigator.languages
+    // Если язык браузера не поддерживается, проверяем все языки из navigator.languages
     if (navigator.languages) {
         for (const lang of navigator.languages) {
             const languageCode = lang.split('-')[0].toLowerCase();
             if (supportedLanguages.includes(languageCode)) {
+                // Сохраняем первый поддерживаемый язык из списка
+                localStorage.setItem('preferredLanguage', languageCode);
                 return languageCode;
             }
         }
     }
     
+    // Если ничего не найдено, используем польский язык по умолчанию
+    localStorage.setItem('preferredLanguage', 'pl');
     return 'pl';
 }
 
@@ -124,25 +130,25 @@ function redirectToLanguage() {
         return;
     }
     
-    // Если мы на корневой странице и нет сохраненного языка, делаем редирект на язык браузера
-    if (isRootPath && !localStorage.getItem('preferredLanguage')) {
-        const preferredLanguage = getPreferredLanguage();
-        
-        // Определяем путь для перенаправления
-        let redirectPath = preferredLanguage === 'pl' ? '/' : `/${preferredLanguage}`;
-        
-        if (preferredLanguage !== 'pl') {
-            redirectPath += '/index.html';
-        }
-        
-        // Сохраняем выбранный язык
-        localStorage.setItem('preferredLanguage', preferredLanguage);
-        
-        // Выполняем редирект
-        window.location.href = redirectPath;
-    } else {
+    // Получаем предпочтительный язык
+    const preferredLanguage = getPreferredLanguage();
+    
+    // Если предпочтительный язык - польский, просто обновляем переключатель
+    if (preferredLanguage === 'pl') {
         updateLanguageSwitcher();
+        return;
     }
+    
+    // Определяем путь для перенаправления
+    let redirectPath = `/${preferredLanguage}`;
+    
+    // Если мы на корневой странице, добавляем index.html
+    if (isRootPath) {
+        redirectPath += '/index.html';
+    }
+    
+    // Выполняем редирект
+    window.location.href = redirectPath;
 }
 
 // Обработчик клика по языковому переключателю
@@ -153,12 +159,23 @@ function handleLanguageSwitch(event) {
     // Получаем выбранный язык из текста ссылки
     const selectedLang = link.textContent.trim().toLowerCase();
     
-    // Сохраняем выбранный язык
+    // Сохраняем выбранный язык в localStorage
     localStorage.setItem('preferredLanguage', selectedLang);
     
     // Определяем путь для перехода
     const pathWithoutLang = getPathWithoutLang();
-    const newPath = selectedLang === 'pl' ? pathWithoutLang : `/${selectedLang}${pathWithoutLang}`;
+    let newPath;
+    
+    if (selectedLang === 'pl') {
+        // Для польского языка проверяем, находимся ли мы на корневой странице
+        if (pathWithoutLang === '/' || pathWithoutLang === '/index.html') {
+            newPath = '/';
+        } else {
+            newPath = pathWithoutLang;
+        }
+    } else {
+        newPath = `/${selectedLang}${pathWithoutLang}`;
+    }
     
     // Переходим на новую страницу
     window.location.href = newPath;

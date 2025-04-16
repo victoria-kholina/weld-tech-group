@@ -5,6 +5,7 @@ const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
 const mkdir = promisify(fs.mkdir);
 const ejs = require('ejs');
+const minify = require('html-minifier').minify;
 
 class I18nHtmlPlugin {
     constructor(options) {
@@ -145,6 +146,19 @@ class I18nHtmlPlugin {
 
         // Вставляем стили перед закрывающим тегом head
         content = content.replace(/<\/head>/, `${styles}\n</head>`);
+
+        // Минифицируем HTML
+        content = minify(content, {
+            collapseWhitespace: true,
+            removeComments: true,
+            removeRedundantAttributes: true,
+            removeScriptTypeAttributes: true,
+            removeStyleLinkTypeAttributes: true,
+            useShortDoctype: true,
+            minifyJS: true,
+            minifyCSS: true,
+            minifyURLs: true
+        });
 
         return content;
     }
