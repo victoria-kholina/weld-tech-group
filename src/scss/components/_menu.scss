@@ -130,6 +130,7 @@
     &-container {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
        @include abs.tablet {
             display: none;
         }

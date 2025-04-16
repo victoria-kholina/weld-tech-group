@@ -1,6 +1,8 @@
 // Список поддерживаемых языков
 const supportedLanguages = ['pl', 'en', 'lt', 'de', 'uk', 'ru', 'cs', 'es'];
 
+
+
 // Функция для определения предпочтительного языка
 function getPreferredLanguage() {
     // Проверяем, есть ли сохраненный язык в localStorage
@@ -54,32 +56,33 @@ function getPathWithoutLang() {
 // Функция для обновления активного языка в переключателе
 function updateLanguageSwitcher() {
     const currentLang = getCurrentLanguage();
-    const currentPath = window.location.pathname;
-    
+
     // Обновляем все переключатели языка
     document.querySelectorAll('.language-switcher').forEach(switcher => {
+
         // Обновляем активный язык в основном переключателе
-        const mainLink = switcher.querySelector('.language-switcher__link:not(.submenu .language-switcher__link)');
-        if (mainLink) {
-            mainLink.textContent = currentLang.toUpperCase();
-            mainLink.classList.add('active');
-            
-            // Обновляем иконку
-            const icon = mainLink.querySelector('.icon use');
-            if (icon) {
-                const countryMap = {
-                    'pl': 'Poland',
-                    'en': 'United-Kingdom',
-                    'lt': 'Lithuania',
-                    'de': 'Germany',
-                    'uk': 'Ukraine',
-                    'ru': 'Russia',
-                    'cs': 'Czech-Republic',
-                    'es': 'Spain'
-                };
-                icon.setAttribute('xlink:href', `#${countryMap[currentLang]}`);
-            }
-        }
+        let mainSwitcher = switcher.querySelector('.active-switcher');
+        let activeLang = mainSwitcher.querySelector('.active-switcher-lang');
+        // Обновляем текст
+        activeLang.textContent = currentLang.toUpperCase();
+        
+        // Обновляем иконку
+        const countryMap = {
+            'pl': 'Poland',
+            'en': 'United-Kingdom',
+            'lt': 'Lithuania',
+            'de': 'Germany',
+            'uk': 'Ukraine',
+            'ru': 'Russia',
+            'cs': 'Czech-Republic',
+            'es': 'Spain'
+        };
+
+        // Находим существующий SVG элемент
+        const svg = mainSwitcher.querySelector('.active-switcher-icon');
+        const use = svg.querySelector('use');
+        use.setAttribute('xlink:href', `#${countryMap[currentLang]}`);
+    
 
         // Обновляем ссылки в подменю
         const submenuLinks = switcher.querySelectorAll('.submenu .language-switcher__link');

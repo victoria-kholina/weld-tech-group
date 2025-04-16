@@ -66,29 +66,7 @@ module.exports = {
                 test: /\.ejs$/i, 
                 use: [
                     {
-                        loader: 'html-loader',
-                        options: {
-                            minimize: false,
-                            sources: {
-                                list: [
-                                    {
-                                        tag: 'img',
-                                        attribute: 'src',
-                                        type: 'src',
-                                    },
-                                    {
-                                        tag: 'video',
-                                        attribute: 'src',
-                                        type: 'src',
-                                    },
-                                    {
-                                        tag: 'source',
-                                        attribute: 'src',
-                                        type: 'src',
-                                    }
-                                ]
-                            }
-                        }
+                        loader: 'html-loader'
                     },
                     {
                         loader: 'template-ejs-loader',

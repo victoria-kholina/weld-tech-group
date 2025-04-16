@@ -705,16 +705,7 @@
   </symbol>
 
   <symbol fill="none" viewBox="0 0 30 23" id="Ukraine">
-    <g clip-path="url(#clip0_215_16)">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H30V23H0V0Z" fill="white"></path>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.66663H30V23H0V7.66663Z" fill="#0039A6"></path>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 15.3334H30V23H0V15.3334Z" fill="#D52B1E"></path>
-    </g>
-    <defs>
-      <clipPath id="clip0_215_16">
-        <rect width="30" height="23" fill="white"></rect>
-      </clipPath>
-    </defs>
+    <g clip-path="url(#a)" fill-rule="evenodd" clip-rule="evenodd"><path d="M0 0h30v23H0V0Z" fill="gold"/><path d="M0 0h30v11.5H0V0Z" fill="#0057B8"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h30v23H0z"/></clipPath></defs>
   </symbol>
 
   <symbol fill="none" viewBox="0 0 30 23" id="United-Kingdom">

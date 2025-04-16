@@ -10791,6 +10791,8 @@ var __webpack_exports__ = {};
 // Список поддерживаемых языков
 const supportedLanguages = ['pl', 'en', 'lt', 'de', 'uk', 'ru', 'cs', 'es'];
 
+
+
 // Функция для определения предпочтительного языка
 function getPreferredLanguage() {
     // Проверяем, есть ли сохраненный язык в localStorage
@@ -10826,7 +10828,73 @@ function getPreferredLanguage() {
 function getCurrentLanguage() {
     const currentPath = window.location.pathname;
     const pathLang = currentPath.split('/')[1];
-    return supportedLanguages.includes(pathLang) ? pathLang : getPreferredLanguage();
+    return supportedLanguages.includes(pathLang) ? pathLang : 'pl';
+}
+
+// Функция для получения текущего пути без языкового префикса
+function getPathWithoutLang() {
+    const currentPath = window.location.pathname;
+    const pathParts = currentPath.split('/');
+    const hasLangPrefix = supportedLanguages.includes(pathParts[1]);
+    
+    if (hasLangPrefix) {
+        return '/' + pathParts.slice(2).join('/');
+    }
+    return currentPath;
+}
+
+// Функция для обновления активного языка в переключателе
+function updateLanguageSwitcher() {
+    const currentLang = getCurrentLanguage();
+
+    // Обновляем все переключатели языка
+    document.querySelectorAll('.language-switcher').forEach(switcher => {
+
+        // Обновляем активный язык в основном переключателе
+        let mainSwitcher = switcher.querySelector('.active-switcher');
+        let activeLang = mainSwitcher.querySelector('.active-switcher-lang');
+        // Обновляем текст
+        activeLang.textContent = currentLang.toUpperCase();
+        
+        // Обновляем иконку
+        const countryMap = {
+            'pl': 'Poland',
+            'en': 'United-Kingdom',
+            'lt': 'Lithuania',
+            'de': 'Germany',
+            'uk': 'Ukraine',
+            'ru': 'Russia',
+            'cs': 'Czech-Republic',
+            'es': 'Spain'
+        };
+
+        // Находим существующий SVG элемент
+        const svg = mainSwitcher.querySelector('.active-switcher-icon');
+        const use = svg.querySelector('use');
+        use.setAttribute('xlink:href', `#${countryMap[currentLang]}`);
+    
+
+        // Обновляем ссылки в подменю
+        const submenuLinks = switcher.querySelectorAll('.submenu .language-switcher__link');
+        submenuLinks.forEach(link => {
+            const lang = link.textContent.trim().toLowerCase();
+            const pathWithoutLang = getPathWithoutLang();
+            
+            // Обновляем href для каждой ссылки
+            if (lang === 'pl') {
+                link.href = pathWithoutLang;
+            } else {
+                link.href = `/${lang}${pathWithoutLang}`;
+            }
+            
+            // Скрываем текущий язык в подменю
+            if (lang === currentLang) {
+                link.parentElement.style.display = 'none';
+            } else {
+                link.parentElement.style.display = '';
+            }
+        });
+    });
 }
 
 // Функция для перенаправления на соответствующую версию
@@ -10840,42 +10908,67 @@ function redirectToLanguage() {
         currentPath.startsWith(`/${lang}/`) || currentPath === `/${lang}`
     );
     
-    // Если мы уже на правильной странице, не делаем редирект
+    // Если мы уже на странице с указанным языком, просто обновляем переключатель
     if (!isRootPath && hasLanguagePrefix) {
+        updateLanguageSwitcher();
         return;
     }
     
-    const preferredLanguage = getPreferredLanguage();
-    
-    // Определяем путь для перенаправления
-    let redirectPath = preferredLanguage === 'pl' ? '/' : `/${preferredLanguage}`;
-    
-    if (currentPath !== '/' && currentPath !== '/index.html') {
-        // Если мы не на корневой странице, сохраняем текущий путь
-        redirectPath += currentPath;
-    } else if (preferredLanguage !== 'pl') {
-        // Если на корневой странице и не польский язык, добавляем index.html
-        redirectPath += '/index.html';
+    // Если мы на корневой странице и нет сохраненного языка, делаем редирект на язык браузера
+    if (isRootPath && !localStorage.getItem('preferredLanguage')) {
+        const preferredLanguage = getPreferredLanguage();
+        
+        // Определяем путь для перенаправления
+        let redirectPath = preferredLanguage === 'pl' ? '/' : `/${preferredLanguage}`;
+        
+        if (preferredLanguage !== 'pl') {
+            redirectPath += '/index.html';
+        }
+        
+        // Сохраняем выбранный язык
+        localStorage.setItem('preferredLanguage', preferredLanguage);
+        
+        // Выполняем редирект
+        window.location.href = redirectPath;
+    } else {
+        updateLanguageSwitcher();
     }
+}
+
+// Обработчик клика по языковому переключателю
+function handleLanguageSwitch(event) {
+    const link = event.target.closest('.language-switcher__link');
+    if (!link) return;
     
-    // Если путь не изменился, не делаем редирект
-    if (redirectPath === currentPath) {
-        return;
-    }
+    // Получаем выбранный язык из текста ссылки
+    const selectedLang = link.textContent.trim().toLowerCase();
     
     // Сохраняем выбранный язык
-    localStorage.setItem('preferredLanguage', preferredLanguage);
+    localStorage.setItem('preferredLanguage', selectedLang);
     
-    // Выполняем редирект
-    window.location.href = redirectPath;
+    // Определяем путь для перехода
+    const pathWithoutLang = getPathWithoutLang();
+    const newPath = selectedLang === 'pl' ? pathWithoutLang : `/${selectedLang}${pathWithoutLang}`;
+    
+    // Переходим на новую страницу
+    window.location.href = newPath;
 }
 
 // Экспортируем функции
 
 
-// Вызываем функцию при загрузке страницы
-console.log('Adding DOMContentLoaded listener...');
-document.addEventListener('DOMContentLoaded', redirectToLanguage); 
+// Вызываем функцию при загрузке страницы и при изменении URL
+document.addEventListener('DOMContentLoaded', () => {
+    redirectToLanguage();
+    
+    // Добавляем обработчик для изменений URL
+    window.addEventListener('popstate', redirectToLanguage);
+    
+    // Добавляем обработчик клика по языковому переключателю
+    document.querySelectorAll('.language-switcher').forEach(switcher => {
+        switcher.addEventListener('click', handleLanguageSwitch);
+    });
+}); 
 // EXTERNAL MODULE: ./node_modules/jquery/dist/jquery.js
 var jquery = __webpack_require__(692);
 var jquery_default = /*#__PURE__*/__webpack_require__.n(jquery);

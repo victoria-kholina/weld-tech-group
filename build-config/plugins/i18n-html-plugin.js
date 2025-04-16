@@ -83,15 +83,31 @@ class I18nHtmlPlugin {
                 // Читаем содержимое файла
                 const content = fs.readFileSync(includePath, 'utf8');
                 // Обрабатываем включаемый файл с тем же контекстом
-                return ejs.render(content, { lang: lang }, {
+                return ejs.render(content, { 
+                    lang: lang,
+                    // Добавляем хелпер для формирования путей
+                    path: (file) => {
+                        // Для польского языка путь без префикса
+                        if (lang === 'pl') {
+                            return `/${file}`;
+                        }
+                        // Для других языков добавляем префикс языка
+                        return `/${lang}/${file}`;
+                    }
+                }, {
                     async: false,
                     root: this.root,
                     filename: includePath
                 });
             },
             lang: lang,
-            // Добавляем функцию для генерации путей с учетом языка
-            assetPath: (file) => {
+            // Добавляем хелпер для формирования путей
+            path: (file) => {
+                // Для польского языка путь без префикса
+                if (lang === 'pl') {
+                    return `/${file}`;
+                }
+                // Для других языков добавляем префикс языка
                 return `/${lang}/${file}`;
             }
         }, {

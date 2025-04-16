@@ -2,10 +2,12 @@
 
 .language-switcher {
     &:hover {
+        .active-switcher:after,
         .language-switcher__link:after {
             display: none;
         }
     }
+    .active-switcher,
     &__link {
         display: flex;
         align-items: center;
