@@ -1,16 +1,25 @@
 import './assets/css/bootstrap-grid.min.css'
 import '@splidejs/splide/css/core';
 import './scss/main.scss'
-import { getCurrentLanguage } from './assets/js/language-detector.js'
+import './assets/js/language-detector.js'
 
 import $ from 'jquery';
 import Splide from '@splidejs/splide';
 
-// Инициализируем приложение при загрузке DOM
+
 $(function() {
-  // Определяем текущий язык
-  const currentLanguage = getCurrentLanguage();
-  console.log('Current language:', currentLanguage);
+
+  var preloaderSeen = sessionStorage.getItem('hasSeenPreloader');
+
+    if (!preloaderSeen) {
+      $(window).on('load', function() {
+        setTimeout(function() {
+          $('.preloader').fadeOut(500);
+          sessionStorage.setItem('hasSeenPreloader', 'true');
+        }, 1000);
+      });
+    }
+
 
   if (document.querySelector('.splide')) {
     var homeSlider = new Splide('.home-slider .splide', {
@@ -302,5 +311,4 @@ $(function() {
       });
     });
 
-  
 });

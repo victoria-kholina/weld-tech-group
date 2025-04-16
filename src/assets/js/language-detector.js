@@ -1,8 +1,6 @@
 // Список поддерживаемых языков
 const supportedLanguages = ['pl', 'en', 'lt', 'de', 'uk', 'ru', 'cs', 'es'];
 
-
-
 // Функция для определения предпочтительного языка
 function getPreferredLanguage() {
     // Проверяем, есть ли сохраненный язык в localStorage
@@ -65,7 +63,6 @@ function updateLanguageSwitcher() {
 
     // Обновляем все переключатели языка
     document.querySelectorAll('.language-switcher').forEach(switcher => {
-
         // Обновляем активный язык в основном переключателе
         let mainSwitcher = switcher.querySelector('.active-switcher');
         let activeLang = mainSwitcher.querySelector('.active-switcher-lang');
@@ -113,6 +110,17 @@ function updateLanguageSwitcher() {
     });
 }
 
+const preloader = document.querySelector('.preloader');
+
+// Функция для управления прелоадером
+function showPreloader() {
+    preloader.classList.remove('hidden');
+}
+
+function hidePreloader() {
+    preloader.classList.add('hidden');
+}
+
 // Функция для перенаправления на соответствующую версию
 function redirectToLanguage() {
     // Получаем текущий путь
@@ -127,6 +135,7 @@ function redirectToLanguage() {
     // Если мы уже на странице с указанным языком, просто обновляем переключатель
     if (!isRootPath && hasLanguagePrefix) {
         updateLanguageSwitcher();
+        hidePreloader();
         return;
     }
     
@@ -136,6 +145,7 @@ function redirectToLanguage() {
     // Если предпочтительный язык - польский, просто обновляем переключатель
     if (preferredLanguage === 'pl') {
         updateLanguageSwitcher();
+        hidePreloader();
         return;
     }
     
@@ -146,6 +156,7 @@ function redirectToLanguage() {
     if (isRootPath) {
         redirectPath += '/index.html';
     }
+    showPreloader();
     
     // Выполняем редирект
     window.location.href = redirectPath;
@@ -186,6 +197,9 @@ export { getPreferredLanguage, getCurrentLanguage, redirectToLanguage };
 
 // Вызываем функцию при загрузке страницы и при изменении URL
 document.addEventListener('DOMContentLoaded', () => {
+    // Скрываем прелоадер после загрузки страницы
+    window.addEventListener('load', hidePreloader);
+    
     redirectToLanguage();
     
     // Добавляем обработчик для изменений URL
