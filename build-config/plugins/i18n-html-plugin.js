@@ -89,7 +89,7 @@ class I18nHtmlPlugin {
                     // Добавляем хелпер для формирования путей
                     path: (file) => {
                         // Для польского языка путь без префикса
-                        if (lang === 'pl') {
+                        if (lang === 'en') {
                             return `/${file}`;
                         }
                         // Для других языков добавляем префикс языка
@@ -105,7 +105,7 @@ class I18nHtmlPlugin {
             // Добавляем хелпер для формирования путей
             path: (file) => {
                 // Для польского языка путь без префикса
-                if (lang === 'pl') {
+                if (lang === 'en') {
                     return `/${file}`;
                 }
                 // Для других языков добавляем префикс языка
@@ -211,7 +211,7 @@ class I18nHtmlPlugin {
                             const outputFilename = path.basename(page, '.ejs') + '.html';
                             
                             // Для польской версии сохраняем в корень dist
-                            const outputPath = lang === 'pl' 
+                            const outputPath = lang === 'en' 
                                 ? path.join(distPath, relativePath, outputFilename)
                                 : path.join(distPath, lang, relativePath, outputFilename);
                             
@@ -225,7 +225,7 @@ class I18nHtmlPlugin {
                             const processedContent = await this.processTemplate(templatePath, lang);
                             
                             // Добавляем файл в компиляцию Webpack
-                            const assetPath = lang === 'pl'
+                            const assetPath = lang === 'en'
                                 ? path.join(relativePath, outputFilename).replace(/\\/g, '/')
                                 : path.join(lang, relativePath, outputFilename).replace(/\\/g, '/');
                             

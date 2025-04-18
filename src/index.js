@@ -9,17 +9,6 @@ import Splide from '@splidejs/splide';
 
 $(function() {
 
-  var preloaderSeen = sessionStorage.getItem('hasSeenPreloader');
-
-    if (!preloaderSeen) {
-      $(window).on('load', function() {
-        setTimeout(function() {
-          $('.preloader').fadeOut(500);
-          sessionStorage.setItem('hasSeenPreloader', 'true');
-        }, 1000);
-      });
-    }
-
 
   if (document.querySelector('.splide')) {
     var homeSlider = new Splide('.home-slider .splide', {
