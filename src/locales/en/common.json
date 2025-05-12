@@ -7,6 +7,10 @@
     "moreProjects": "More Projects",
     "industrySolutions": "Industry Solutions"
   },
+  "browser_warning": {
+    "text": "We are sorry but your browser is outdated and does not support the modern technologies used on this website.<br> Please update your browser or use a different one.",
+    "close": "I understand, continue working with the site."
+  },
   "navigation": {
     "home": "Home",
     "about": "About Us",

@@ -21,5 +21,9 @@
     "email": "Correo electrónico",
     "workingHours": "Horario de trabajo",
     "allRightsReserved": "Todos los derechos reservados"
+  },
+  "browser_warning": {
+    "text": "Lo sentimos, pero su navegador está desactualizado y no admite las tecnologías modernas utilizadas en este sitio web.<br> Por favor, actualice su navegador o utilice otro.",
+    "close": "Entiendo, continuar trabajando con el sitio."
   }
 } 

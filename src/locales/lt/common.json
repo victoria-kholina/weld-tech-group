@@ -21,5 +21,9 @@
     "email": "El. paštas",
     "workingHours": "Darbo laikas",
     "allRightsReserved": "Visos teisės saugomos"
+  },
+  "browser_warning": {
+    "text": "Atsiprašome, bet jūsų naršyklė yra pasenusi ir nepalaiko šiuolaikinių technologijų, naudojamų šioje svetainėje.<br> Prašome atnaujinti savo naršyklę arba naudoti kitą.",
+    "close": "Aš suprantu, tęsti darbą su svetaine."
   }
 } 

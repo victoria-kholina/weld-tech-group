@@ -1,0 +1,61 @@
+{
+    "title": "Our vacancies | Join Our Industrial Team",
+    "meta": {
+        "description": "We are always looking for new talents to join our team. Check out our open positions and apply today!"
+    },
+    "pageTitle": "Our vacancies",
+    "mainDescription": "We are always looking for new talents to join our team. <br> Check out our open positions and apply today!",
+    "knowMoreTitle": "Join our professional team!",
+    "knowMore": "Be part of high-quality industrial projects, grow your career, and enjoy excellent working conditions. <br><br> Send your CV to our email — we’ll get in touch with you shortly!",
+    "card-1": {
+        "alt": "Welder at work",
+        "title": "Welder 141 (Process Piping)",
+        "description": "Our company is looking for an experienced 141 welder to perform welding tasks on process piping systems of various diameters. We invite candidates who are ready to work with both low-alloy and high-alloy steels and ensure top-level welding quality.",
+        "responsibilities": {
+            "title": "Responsibilities",
+            "item1": "Welding process pipelines of various diameters made of low-alloy and high-alloy steels.",
+            "item2": "Performing welding work in compliance with all quality standards and requirements.",
+            "item3": "Welding pipelines subject to X-ray inspection.",
+            "item4": "Maintaining a clean work environment and following occupational safety regulations."
+        },
+        "requirements": {
+            "title": "Requirements",
+            "item1": "At least 3 years of experience as a 141 welder.",
+            "item2": "Knowledge of welding techniques for pipelines of various diameters.",
+            "item3": "Ability to work with low-alloy and high-alloy steels.",
+            "item4": "Responsibility and discipline."
+        },
+        "conditions": {
+            "title": "What we offer?!",
+            "item1": "Employment in a stable company with career growth opportunities.",
+            "item2": "Excellent working conditions and full compliance with safety standards.",
+            "item3": "Training and qualification improvement programs."
+        }
+    },
+    "card-2": {
+        "alt": "Process Piping Installer at work",
+        "title": "Process Piping Installer",
+        "description": "Our company is hiring process piping installers. You will work with drawings and be responsible for the assembly of piping systems. We are looking for a reliable specialist capable of ensuring accuracy and high-quality installation.",
+        "responsibilities": {
+            "title": "Responsibilities",
+            "item1": "Installing process piping systems according to project documentation.",
+            "item2": "Reading isometric drawings.",
+            "item3": "Installing and connecting pipes, fittings, and shut-off valves.",
+            "item4": "Participating in commissioning activities."
+        },
+        "requirements": {
+            "title": "Candidate Requirements",
+            "item1": "At least 3 years of experience as a process piping installer.",
+            "item2": "Ability to work with isometric drawings and diagrams.",
+            "item3": "Knowledge of safety standards and regulations for piping installation.",
+            "item4": "Attention to detail and a sense of responsibility.",
+            "item5": "Willingness to travel for business trips."
+        },
+        "conditions": {
+            "title": "What we offer?!",
+            "item1": "Professional growth and development in a large and stable company.",
+            "item2": "Excellent working conditions.",
+            "item3": "Opportunities to participate in high-level and interesting projects."
+        }
+    }
+} 

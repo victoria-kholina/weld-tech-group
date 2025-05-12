@@ -1,0 +1,61 @@
+{
+    "title": "Mūsų darbo pasiūlymai | Prisijunkite prie mūsų pramoninės komandos",
+    "meta": {
+        "description": "Mes visada ieškome naujų talentų mūsų komandai. Peržiūrėkite mūsų atidarytas pozicijas ir kreipkitės jau šiandien!"
+    },
+    "pageTitle": "Mūsų darbo pasiūlymai",
+    "mainDescription": "Mes visada ieškome naujų talentų mūsų komandai. <br> Peržiūrėkite mūsų atidarytas pozicijas ir kreipkitės jau šiandien!",
+    "knowMoreTitle": "Prisijunkite prie mūsų profesionalios komandos!",
+    "knowMore": "Būkite aukštos kokybės pramoninių projektų dalimi, vystykite savo karjerą ir mėgaukitės puikiomis darbo sąlygomis. <br><br> Siųskite savo CV mūsų el. paštu — susisieksime su jumis netrukus!",
+    "card-1": {
+        "alt": "Suvirintojas darbe",
+        "title": "Suviintojas 141 (Technologiniai vamzdynai)",
+        "description": "Mūsų įmonė ieško patyrusio 141 suvirintojo atlikti suvirinimo darbus technologinių vamzdynų sistemose įvairių skersmenų. Kviečiame kandidatus, pasiruošusius dirbti tiek su mažai lydinėtais, tiek su daug lydinėtais plienais ir užtikrinti aukščiausią suvirinimo kokybę.",
+        "responsibilities": {
+            "title": "Pareigos",
+            "item1": "Technologinių vamzdynų suvirinimas įvairių skersmenų iš mažai lydinėtų ir daug lydinėtų plienų.",
+            "item2": "Suvirinimo darbų atlikimas laikantis visų kokybės standartų ir reikalavimų.",
+            "item3": "Vamzdynų suvirinimas, kurie turi būti kontroliuojami rentgeno spinduliais.",
+            "item4": "Švaraus darbo aplinkos palaikymas ir darbo apsaugos taisyklių laikymasis."
+        },
+        "requirements": {
+            "title": "Kandidato reikalavimai",
+            "item1": "Ne mažiau kaip 3 metų patirties kaip 141 suvirintojas.",
+            "item2": "Vamzdynų įvairių skersmenų suvirinimo technikų žinios.",
+            "item3": "Gebėjimas dirbti su mažai lydinėtais ir daug lydinėtais plienais.",
+            "item4": "Atsakingumas ir disciplinuotumas."
+        },
+        "conditions": {
+            "title": "Ką siūlome?!",
+            "item1": "Įdarbinimas stabilioje įmonėje su karjeros augimo galimybėmis.",
+            "item2": "Puikios darbo sąlygos ir visiškas saugos standartų laikymasis.",
+            "item3": "Mokymo ir kvalifikacijos kėlimo programos."
+        }
+    },
+    "card-2": {
+        "alt": "Technologinių vamzdynų montuotojas darbe",
+        "title": "Technologinių vamzdynų montuotojas",
+        "description": "Mūsų įmonė samdo technologinių vamzdynų montuotojus. Jūs dirbsite su brėžiniais ir būsite atsakingi už vamzdynų sistemų surinkimą. Ieškome patikimo specialisto, sugebėjusio užtikrinti tikslumą ir aukštą montavimo kokybę.",
+        "responsibilities": {
+            "title": "Pareigos",
+            "item1": "Technologinių vamzdynų sistemų montavimas pagal projekto dokumentaciją.",
+            "item2": "Izometrinių brėžinių skaitymas.",
+            "item3": "Vamzdų, jungiamųjų detalių ir užtvarinių vožtuvų montavimas ir prijungimas.",
+            "item4": "Dalyvavimas paleidimo darbuose."
+        },
+        "requirements": {
+            "title": "Kandidato reikalavimai",
+            "item1": "Ne mažiau kaip 3 metų patirties kaip technologinių vamzdynų montuotojas.",
+            "item2": "Gebėjimas dirbti su izometriniais brėžiniais ir schemomis.",
+            "item3": "Saugos standartų ir vamzdynų montavimo taisyklių žinios.",
+            "item4": "Dėmesys detalėms ir atsakingumas.",
+            "item5": "Pasiruošimas komandiruotėms."
+        },
+        "conditions": {
+            "title": "Ką siūlome?!",
+            "item1": "Profesinis augimas ir vystymasis didelėje ir stabilioje įmonėje.",
+            "item2": "Puikios darbo sąlygos.",
+            "item3": "Galimybė dalyvauti aukšto lygio ir įdomiuose projektuose."
+        }
+    }
+} 

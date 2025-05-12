@@ -7,6 +7,9 @@
     }
     &-row {
         margin-top: 10px;
+        @include abs.only-mobile {
+            flex-direction: column-reverse;
+        }
         @include abs.tablet {
             margin: 40px 0 60px;
         }
@@ -56,6 +59,9 @@
     }
     &-map {
         text-align: center;
+        @include abs.only-mobile {
+            margin: 20px 0
+        }
         iframe {
             height: 350px;
             @include abs.desktop {

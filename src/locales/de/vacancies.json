@@ -1,0 +1,61 @@
+{
+    "title": "Unsere Stellenangebote | Werden Sie Teil unseres Industrie-Teams",
+    "meta": {
+        "description": "Wir suchen immer nach neuen Talenten für unser Team. Schauen Sie sich unsere offenen Stellen an und bewerben Sie sich noch heute!"
+    },
+    "pageTitle": "Unsere Stellenangebote",
+    "mainDescription": "Wir suchen immer nach neuen Talenten für unser Team. <br> Schauen Sie sich unsere offenen Stellen an und bewerben Sie sich noch heute!",
+    "knowMoreTitle": "Werden Sie Teil unseres professionellen Teams!",
+    "knowMore": "Seien Sie Teil hochwertiger Industrieprojekte, entwickeln Sie Ihre Karriere und genießen Sie ausgezeichnete Arbeitsbedingungen. <br><br> Senden Sie Ihren Lebenslauf an unsere E-Mail-Adresse — wir werden uns in Kürze bei Ihnen melden!",
+    "card-1": {
+        "alt": "Schweißer bei der Arbeit",
+        "title": "Schweißer 141 (Prozessrohrleitungen)",
+        "description": "Unser Unternehmen sucht einen erfahrenen Schweißer 141 für Schweißarbeiten an Prozessrohrleitungssystemen verschiedener Durchmesser. Wir laden Kandidaten ein, die bereit sind, sowohl mit niedriglegierten als auch mit hochlegierten Stählen zu arbeiten und höchste Schweißqualität zu gewährleisten.",
+        "responsibilities": {
+            "title": "Aufgaben",
+            "item1": "Schweißen von Prozessrohrleitungen verschiedener Durchmesser aus niedriglegierten und hochlegierten Stählen.",
+            "item2": "Durchführung von Schweißarbeiten unter Einhaltung aller Qualitätsstandards und Anforderungen.",
+            "item3": "Schweißen von Rohrleitungen, die der Röntgenprüfung unterliegen.",
+            "item4": "Aufrechterhaltung einer sauberen Arbeitsumgebung und Einhaltung der Arbeitsschutzvorschriften."
+        },
+        "requirements": {
+            "title": "Anforderungen an den Kandidaten",
+            "item1": "Mindestens 3 Jahre Erfahrung als Schweißer 141.",
+            "item2": "Kenntnisse der Schweißtechniken für Rohrleitungen verschiedener Durchmesser.",
+            "item3": "Fähigkeit zur Arbeit mit niedriglegierten und hochlegierten Stählen.",
+            "item4": "Verantwortungsbewusstsein und Disziplin."
+        },
+        "conditions": {
+            "title": "Was wir bieten?!",
+            "item1": "Beschäftigung in einem stabilen Unternehmen mit Karrieremöglichkeiten.",
+            "item2": "Ausgezeichnete Arbeitsbedingungen und vollständige Einhaltung der Sicherheitsstandards.",
+            "item3": "Schulungs- und Qualifizierungsprogramme."
+        }
+    },
+    "card-2": {
+        "alt": "Prozessrohrleitungsmonteur bei der Arbeit",
+        "title": "Prozessrohrleitungsmonteur",
+        "description": "Unser Unternehmen sucht Prozessrohrleitungsmonteure. Sie werden mit Zeichnungen arbeiten und für die Montage von Rohrleitungssystemen verantwortlich sein. Wir suchen einen zuverlässigen Spezialisten, der in der Lage ist, Präzision und hochwertige Installation zu gewährleisten.",
+        "responsibilities": {
+            "title": "Aufgaben",
+            "item1": "Montage von Prozessrohrleitungssystemen gemäß Projektdokumentation.",
+            "item2": "Lesen von isometrischen Zeichnungen.",
+            "item3": "Installation und Anschluss von Rohren, Fittingen und Absperrventilen.",
+            "item4": "Teilnahme an Inbetriebnahmetätigkeiten."
+        },
+        "requirements": {
+            "title": "Anforderungen an den Kandidaten",
+            "item1": "Mindestens 3 Jahre Erfahrung als Prozessrohrleitungsmonteur.",
+            "item2": "Fähigkeit zur Arbeit mit isometrischen Zeichnungen und Schemata.",
+            "item3": "Kenntnisse der Sicherheitsstandards und Vorschriften für die Rohrleitungsinstallation.",
+            "item4": "Aufmerksamkeit für Details und Verantwortungsbewusstsein.",
+            "item5": "Bereitschaft zu Dienstreisen."
+        },
+        "conditions": {
+            "title": "Was wir bieten?!",
+            "item1": "Berufliches Wachstum und Entwicklung in einem großen und stabilen Unternehmen.",
+            "item2": "Ausgezeichnete Arbeitsbedingungen.",
+            "item3": "Möglichkeiten zur Teilnahme an hochwertigen und interessanten Projekten."
+        }
+    }
+} 

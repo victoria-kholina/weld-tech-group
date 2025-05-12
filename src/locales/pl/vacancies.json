@@ -1,0 +1,61 @@
+{
+    "title": "Nasze oferty pracy | Dołącz do naszego zespołu przemysłowego",
+    "meta": {
+        "description": "Zawsze szukamy nowych talentów do naszego zespołu. Sprawdź nasze otwarte stanowiska i aplikuj już dziś!"
+    },
+    "pageTitle": "Nasze oferty pracy",
+    "mainDescription": "Zawsze szukamy nowych talentów do naszego zespołu. <br> Sprawdź nasze otwarte stanowiska i aplikuj już dziś!",
+    "knowMoreTitle": "Dołącz do naszego profesjonalnego zespołu!",
+    "knowMore": " Bądź częścią wysokiej jakości projektów przemysłowych, rozwijaj swoją karierę i ciesz się doskonałymi warunkami pracy. <br><br> Wyślij swoje CV na nasz adres e-mail — skontaktujemy się z Tobą wkrótce!",
+    "card-1": {
+        "alt": "Spawacz przy pracy",
+        "title": "Spawacz 141 (Rurociągi technologiczne)",
+        "description": "Nasza firma poszukuje doświadczonego spawacza 141 do wykonywania prac spawalniczych na systemach rurociągów technologicznych o różnych średnicach. Zapraszamy kandydatów gotowych do pracy zarówno ze stalami niskostopowymi, jak i wysokostopowymi oraz zapewnienia najwyższej jakości spawania.",
+        "responsibilities": {
+            "title": "Obowiązki",
+            "item1": "Spawanie rurociągów technologicznych o różnych średnicach ze stali niskostopowych i wysokostopowych.",
+            "item2": "Wykonywanie prac spawalniczych zgodnie ze wszystkimi standardami jakości i wymaganiami.",
+            "item3": "Spawanie rurociągów podlegających kontroli rentgenowskiej.",
+            "item4": "Utrzymywanie czystego środowiska pracy i przestrzeganie przepisów BHP."
+        },
+        "requirements": {
+            "title": "Wymagania do kandydata",
+            "item1": "Minimum 3 lata doświadczenia jako spawacz 141.",
+            "item2": "Znajomość technik spawania rurociągów o różnych średnicach.",
+            "item3": "Umiejętność pracy ze stalami niskostopowymi i wysokostopowymi.",
+            "item4": "Odpowiedzialność i dyscyplina."
+        },
+        "conditions": {
+            "title": "Co oferujemy?!",
+            "item1": "Zatrudnienie w stabilnej firmie z możliwościami rozwoju kariery.",
+            "item2": "Doskonałe warunki pracy i pełne przestrzeganie standardów bezpieczeństwa.",
+            "item3": "Programy szkoleniowe i podnoszenia kwalifikacji."
+        }
+    },
+    "card-2": {
+        "alt": "Monter rurociągów technologicznych przy pracy",
+        "title": "Monter rurociągów technologicznych",
+        "description": "Nasza firma zatrudnia monterów rurociągów technologicznych. Będziesz pracować z rysunkami i odpowiadać za montaż systemów rurociągowych. Szukamy niezawodnego specjalisty zdolnego do zapewnienia precyzji i wysokiej jakości montażu.",
+        "responsibilities": {
+            "title": "Obowiązki",
+            "item1": "Montaż systemów rurociągów technologicznych zgodnie z dokumentacją projektową.",
+            "item2": "Czytanie rysunków izometrycznych.",
+            "item3": "Instalacja i podłączanie rur, złączek i zaworów odcinających.",
+            "item4": "Udział w pracach rozruchowych."
+        },
+        "requirements": {
+            "title": "Wymagania do kandydata",
+            "item1": "Minimum 3 lata doświadczenia jako monter rurociągów technologicznych.",
+            "item2": "Umiejętność pracy z rysunkami izometrycznymi i schematami.",
+            "item3": "Znajomość standardów bezpieczeństwa i przepisów montażu rurociągów.",
+            "item4": "Uwagę na szczegóły i odpowiedzialność.",
+            "item5": "Gotowość do wyjazdów służbowych."
+        },
+        "conditions": {
+            "title": "Co oferujemy?!",
+            "item1": "Rozwój zawodowy w dużej i stabilnej firmie.",
+            "item2": "Doskonałe warunki pracy.",
+            "item3": "Możliwości udziału w wysokopoziomowych i interesujących projektach."
+        }
+    }
+} 

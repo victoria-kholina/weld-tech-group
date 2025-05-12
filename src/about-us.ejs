@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 
-<html lang="pl">
+<html lang="<%= lang %>">
 <head>
     <title data-i18n="about.title"></title>
     <meta name="description" data-i18n-attr="[content]about.meta.description"/>
-    
+    <!-- Open Graph -->
+    <meta property="og:title" data-i18n-attr="[content]about.title">
+    <meta property="og:description" data-i18n-attr="[content]about.meta.description">
+    <meta property="og:image" content="<%= websiteUrl %>assets/img/preview-img/WeldTechMain.jpg">
+    <meta property="og:locale" content="<%= lang %>_<%= lang.toUpperCase() %>">
+   
+    <!-- Twitter Card -->
+    <meta name="twitter:title" data-i18n-attr="[content]about.title">
+    <meta name="twitter:description" data-i18n-attr="[content]about.meta.description">
+    <meta name="twitter:image" content="<%= websiteUrl %>assets/img/preview-img/WeldTechMain.jpg">
     <%- include('templates/meta.ejs') %>
     
 </head>
@@ -44,7 +53,7 @@
     </div>
 </section>
 
-<section class="simple-section values light-image-bg">
+<section class="simple-section values light-bg">
     <div class="container-md container-xxl h-100">
         <div class="simple-section__title dark border-bottom values-heading">
             <h2 data-i18n="about.values.title"></h2>

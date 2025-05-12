@@ -21,5 +21,9 @@
     "email": "E-Mail",
     "workingHours": "Öffnungszeiten",
     "allRightsReserved": "Alle Rechte vorbehalten"
+  },
+  "browser_warning": {
+    "text": "Es tut uns leid, aber Ihr Browser ist veraltet und unterstützt die auf dieser Website verwendeten modernen Technologien nicht.<br> Bitte aktualisieren Sie Ihren Browser oder verwenden Sie einen anderen.",
+    "close": "Ich verstehe, fortsetzen Sie mit der Website."
   }
 } 

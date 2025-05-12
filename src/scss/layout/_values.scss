@@ -4,9 +4,6 @@
 .values {
     &-heading {
         margin-bottom: 60px;
-        @include abs.desktop {
-            margin-bottom: 20px;
-        }
     }
     &-item {
         &.accent-text-block.all {

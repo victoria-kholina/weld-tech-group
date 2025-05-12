@@ -151,28 +151,34 @@ a {
   }
 
   .accent-text-block {
-    border-bottom: 3px solid abs.$accent-color;
+    border-bottom: 2px solid abs.$accent-color;
     padding-bottom: 20px;
     padding-top: 20px;
     border-image-source: linear-gradient(abs.$second-accent-color 25%, abs.$accent-color 75%);
     border-image-slice: 1;
-    border-width: 3px;
+    border-width: 2px;
+    @include abs.desktop{
+      border-width: 3px;
+      border-bottom: 3px solid abs.$accent-color;
+    }
     @include abs.desktop-xl {
       padding-bottom: 30px;
       padding-top: 30px;
     }
     &.left {
-      border-left: 3px solid;  
+      border-left: 2px solid;  
       padding-left: 15px;
       @include abs.desktop {
         padding-left: 30px;
+        border-left: 3px solid;
       }
     }
     &.right {
-      border-right: 3px solid;
+      border-right: 2px solid;
       padding-right: 15px;
       @include abs.desktop {
         padding-right: 30px;
+        border-right: 3px solid;
       }
     }
     &.all {
@@ -305,12 +311,8 @@ a {
 }
 
 
-.light-image-bg {
-  background: url(../assets/img/light-bg-img-1.webp) center no-repeat;
-    background-size: cover;
-}
 .dark-image-bg {
-  background: url(../assets/img/services-bg.webp) center no-repeat;
+  background: url(../assets/img/services-bg-1.webp) center no-repeat;
     background-size: cover;
 }
 .light-bg {
@@ -349,4 +351,37 @@ a {
   @include abs.only-mobile {
     display: block;
     }
+}
+.video {
+  background-color: abs.$light-color;
+  &-description {
+    max-width: abs.$max-width;
+    margin: 0 auto;
+    text-align: center;
+    @include abs.tablet {
+      margin-bottom: 30px;
+    }
+    @include abs.desktop {
+      margin-bottom: 50px;
+    }
+  }
+  &-container {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    video {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      @include abs.only-mobile {
+        max-width: 300px;
+      }
+      @include abs.tablet {
+        width: auto;
+        height: 90vh;
+      }
+    }
+  }
 }

@@ -16,7 +16,6 @@ class I18nHtmlPlugin {
 
     loadTranslations(lang) {
         const translationsPath = path.resolve(__dirname, '../../src/locales', lang);
-        console.log(`Loading translations from: ${translationsPath}`);
         
         if (!fs.existsSync(translationsPath)) {
             console.warn(`No translations found for language: ${lang} at path: ${translationsPath}`);
@@ -86,6 +85,7 @@ class I18nHtmlPlugin {
                 // Обрабатываем включаемый файл с тем же контекстом
                 return ejs.render(content, { 
                     lang: lang,
+                    websiteUrl: this.options.data?.websiteUrl || '',
                     // Добавляем хелпер для формирования путей
                     path: (file) => {
                         // Для польского языка путь без префикса
@@ -102,6 +102,7 @@ class I18nHtmlPlugin {
                 });
             },
             lang: lang,
+            websiteUrl: this.options.data?.websiteUrl || '',
             // Добавляем хелпер для формирования путей
             path: (file) => {
                 // Для польского языка путь без префикса

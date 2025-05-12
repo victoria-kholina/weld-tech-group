@@ -12,26 +12,25 @@
     box-shadow: abs.$shadow-white-text;
     &-content {
         background: abs.$base-color;
-        width: 100vw;
-        height: 90vh;
         margin: 5vh auto;
+        width: 100%;
+        height: 90vh;
         padding: 40px 20px 20px;
         position: relative;
         @include abs.tablet {
-            width: 80vw;
-        }
-        @include abs.desktop {
             width: 60vw;
         }
     }
     &-body {
         display: none;
-        padding: 20px;
         width: 100%;
         height: 100%;
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        @include abs.desktop{
+            padding: 20px;
+        }
         img {
             width: 100%;
             height: auto;
@@ -61,4 +60,47 @@
 
 .open-modal {
     cursor: pointer;
+}
+
+.warning-modal {
+    background: rgba(0, 0, 0, 0.9);
+    .modal-content {
+        width: 100%;
+        height: auto;
+        @include abs.tablet {
+            width: 500px;
+            height: 500px;
+        }
+    }
+    &-body {
+        text-align: center;
+        ul {
+            margin-top: 20px;
+            li {
+                margin-bottom: 20px;
+            }
+        }
+        ul>li>a {
+            color: abs.$second-accent-color;
+            font-family: abs.$OpenSans-Regular;
+        }
+        .close-warning-btn {
+            @include abs.only-mobile {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.desktop-browser-list {
+    display: none;
+    @include abs.desktop {
+        display: block;
+    }
+}
+.mobile-browser-list {
+    display: block;
+    @include abs.desktop {
+        display: none;
+    }
 }

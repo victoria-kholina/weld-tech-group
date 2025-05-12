@@ -1,0 +1,61 @@
+{
+    "title": "Naše volná místa | Připojte se k našemu průmyslovému týmu",
+    "meta": {
+        "description": "Neustále hledáme nové talenty do našeho týmu. Podívejte se na naše volné pozice a přihlaste se ještě dnes!"
+    },
+    "pageTitle": "Naše volná místa",
+    "mainDescription": "Neustále hledáme nové talenty do našeho týmu. <br>Podívejte se na naše volné pozice a přihlaste se ještě dnes!",
+    "knowMoreTitle": "Připojte se k našemu profesionálnímu týmu!",
+    "knowMore": "Buďte součástí vysoce kvalitních průmyslových projektů, rozvíjejte svou kariéru a užívejte si vynikající pracovní podmínky. <br><br> Pošlete svůj životopis na naši e-mailovou adresu — budeme vás kontaktovat v nejbližší době!",
+    "card-1": {
+        "alt": "Svářeč při práci",
+        "title": "Svářeč 141 (Technologické potrubí)",
+        "description": "Naše společnost hledá zkušeného svářeče 141 pro provádění svářecích prací na technologických potrubních systémech různých průměrů. Zveme kandidáty, kteří jsou připraveni pracovat jak s nízkolegovanými, tak s vysokolegovanými ocelemi a zajistit špičkovou kvalitu svařování.",
+        "responsibilities": {
+            "title": "Povinnosti",
+            "item1": "Svařování technologických potrubí různých průměrů z nízkolegovaných a vysokolegovaných ocelí.",
+            "item2": "Provádění svářecích prací v souladu se všemi kvalitativními standardy a požadavky.",
+            "item3": "Svařování potrubí podléhajících rentgenové kontrole.",
+            "item4": "Udržování čistého pracovního prostředí a dodržování předpisů o bezpečnosti práce."
+        },
+        "requirements": {
+            "title": "Požadavky na kandidáta",
+            "item1": "Minimálně 3 roky zkušeností jako svářeč 141.",
+            "item2": "Znalost technik svařování potrubí různých průměrů.",
+            "item3": "Schopnost práce s nízkolegovanými a vysokolegovanými ocelemi.",
+            "item4": "Odpovědnost a disciplína."
+        },
+        "conditions": {
+            "title": "Co nabízíme?!",
+            "item1": "Zaměstnání ve stabilní společnosti s možnostmi kariérního růstu.",
+            "item2": "Vynikající pracovní podmínky a plné dodržování bezpečnostních standardů.",
+            "item3": "Vzdělávací a kvalifikační programy."
+        }
+    },
+    "card-2": {
+        "alt": "Montér technologického potrubí při práci",
+        "title": "Montér technologického potrubí",
+        "description": "Naše společnost hledá montéry technologického potrubí. Budete pracovat s výkresy a být zodpovědní za montáž potrubních systémů. Hledáme spolehlivého specialistu schopného zajistit přesnost a kvalitní montáž.",
+        "responsibilities": {
+            "title": "Povinnosti",
+            "item1": "Montáž technologických potrubních systémů podle projektové dokumentace.",
+            "item2": "Čtení izometrických výkresů.",
+            "item3": "Instalace a připojení trubek, tvarovek a uzavíracích armatur.",
+            "item4": "Účast na uvádění do provozu."
+        },
+        "requirements": {
+            "title": "Požadavky na kandidáta",
+            "item1": "Minimálně 3 roky zkušeností jako montér technologického potrubí.",
+            "item2": "Schopnost práce s izometrickými výkresy a schématy.",
+            "item3": "Znalost bezpečnostních standardů a předpisů pro montáž potrubí.",
+            "item4": "Pozornost k detailům a smysl pro odpovědnost.",
+            "item5": "Ochota cestovat na služební cesty."
+        },
+        "conditions": {
+            "title": "Co nabízíme?!",
+            "item1": "Profesní růst a rozvoj ve velké a stabilní společnosti.",
+            "item2": "Vynikající pracovní podmínky.",
+            "item3": "Možnosti účasti na vysokoúrovňových a zajímavých projektech."
+        }
+    }
+} 

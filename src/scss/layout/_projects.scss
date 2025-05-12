@@ -43,8 +43,10 @@
     &__text {
         display: flex;
         align-items: center;
-        .accent-list {
-            padding-left: 20px;
+        @include abs.desktop {
+            .accent-list {
+                padding-left: 20px;
+            }
         }
     }
     &-page-stages {

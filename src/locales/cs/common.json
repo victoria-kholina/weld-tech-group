@@ -21,5 +21,9 @@
     "email": "E-mail",
     "workingHours": "Pracovní doba",
     "allRightsReserved": "Všechna práva vyhrazena"
+  },
+  "browser_warning": {
+    "text": "Omlouváme se, ale váš prohlížeč je zastaralý a nepodporuje moderní technologie používané na této stránce.<br> Aktualizujte prosím svůj prohlížeč nebo použijte jiný.",
+    "close": "Rozumím, pokračovat na stránkách."
   }
 } 

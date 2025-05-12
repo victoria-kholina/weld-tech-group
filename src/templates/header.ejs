@@ -1,4 +1,32 @@
 
+<div id="browser-warning-window" class="modal warning-modal">
+  <div class="modal-content">
+    <div class="warning-modal-body">
+      <h4 data-i18n="common.browser_warning.text"></h4>
+      <ul class="desktop-browser-list">
+        <li><a href="https://www.google.com/chrome/" target="_blank">Chrome (Windows, macOS, Linux)</a></li>
+        <li><a href="https://www.apple.com/safari/" target="_blank">Safari (iOS, macOS)</a></li>
+      </ul>
+      <ul class="mobile-browser-list">
+        <li><a href="https://play.google.com/store/apps/details?id=com.android.chrome" target="_blank" rel="noopener noreferrer">Chrome (Android)</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser" target="_blank" rel="noopener noreferrer">Samsung Internet (Android)</a></li>
+        <li><a href="https://apps.apple.com/app/safari/id1146560473" target="_blank" rel="noopener noreferrer">Safari (iPhone / iPad)</a></li>
+      </ul>
+      <button id="browser-warning-close" class="close-warning-btn simple-button">
+        <span data-i18n="common.browser_warning.close"></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="modal-window" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <iframe id="modal-iframe"></iframe>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
 <header class="main-header">
     <div class="container-fluid main-container h-100">
         <div class="row align-items-center h-100">
@@ -31,6 +59,7 @@
                         <li class="submenu-item"><a href="<%= path('projects/our-equipment.html') %>" class="menu-item__name" data-i18n="header.menu.projects_equipment"></a></li>
                     </ul>
                 </li>
+                <li class="menu-item"><a href="<%= path('vacancies.html') %>" class="menu-item__name" data-i18n="header.menu.vacancies"></a></li>
                 <li class="menu-item"><a href="#contacts" class="menu-item__name" data-i18n="header.menu.contact"></a></li>
                 <li class="menu-item language-switcher">
                   <span class="menu-item__name active-switcher">
@@ -40,47 +69,47 @@
                     </svg>
                   </span>
                   <ul class="submenu">  
-                    <li class="submenu-item"><a href="<%= path('/') %>" class="menu-item__name language-switcher__link">PL
+                    <li class="submenu-item"><a href="<%= path('') %>" class="menu-item__name language-switcher__link">PL
                       <svg class="icon">
                         <use xlink:href="#Poland"></use>
                       </svg>
                       </a>
                     </li>
-                    <li class="submenu-item"><a href="<%= path('/') %>" class="menu-item__name language-switcher__link">EN
+                    <li class="submenu-item"><a href="<%= path('') %>" class="menu-item__name language-switcher__link">EN
                       <svg class="icon">
                         <use xlink:href="#United-Kingdom"></use>
                       </svg>
                       </a>
                     </li>
 
-                    <li class="submenu-item"><a href="<%= path('/') %>" class="menu-item__name language-switcher__link">LT
+                    <li class="submenu-item"><a href="<%= path('') %>" class="menu-item__name language-switcher__link">LT
                       <svg class="icon">
                         <use xlink:href="#Lithuania"></use>
                       </svg>
                     </a></li>
-                    <li class="submenu-item"><a href="<%= path('/') %>" class="menu-item__name language-switcher__link">DE
+                    <li class="submenu-item"><a href="<%= path('') %>" class="menu-item__name language-switcher__link">DE
                       <svg class="icon">
                         <use xlink:href="#Germany"></use>
                       </svg>
                     </a></li>
-                    <li class="submenu-item"><a href="<%= path('/') %>" class=" menu-item__name language-switcher__link">UK
+                    <li class="submenu-item"><a href="<%= path('') %>" class=" menu-item__name language-switcher__link">UK
                       <svg class="icon">
                         <use xlink:href="#Ukraine"></use>
                       </svg>
                     </a></li>
                     <li class="submenu-item">
-                      <a href="<%= path('/') %>" class="menu-item__name language-switcher__link">RU
+                      <a href="<%= path('') %>" class="menu-item__name language-switcher__link">RU
                       <svg class="icon">
                         <use xlink:href="#Russia"></use>
                       </svg>
                       </a></li> 
-                    <li class="submenu-item"><a href="<%= path('/') %>" class="menu-item__name language-switcher__link">CS
+                    <li class="submenu-item"><a href="<%= path('') %>" class="menu-item__name language-switcher__link">CS
                       <svg class="icon">
                         <use xlink:href="#Czech-Republic"></use>
                       </svg>
                     </a></li>
                     <li class="submenu-item">
-                      <a href="<%= path('/') %>" class="menu-item__name language-switcher__link">ES
+                      <a href="<%= path('') %>" class="menu-item__name language-switcher__link">ES
                       <svg class="icon">
                         <use xlink:href="#Spain"></use>
                       </svg>
@@ -102,47 +131,47 @@
                       </svg>
                     </span>
                     <ul class="submenu">  
-                      <li class="submenu-item"><a href="<%= path('/') %>" class="menu-item__name language-switcher__link">PL
+                      <li class="submenu-item"><a href="<%= path('') %>" class="menu-item__name language-switcher__link">PL
                         <svg class="icon">
                           <use xlink:href="#Poland"></use>
                         </svg>
                         </a>
                       </li>
-                      <li class="submenu-item"><a href="<%= path('/') %>" class="menu-item__name language-switcher__link">EN
+                      <li class="submenu-item"><a href="<%= path('') %>" class="menu-item__name language-switcher__link">EN
                         <svg class="icon">
                           <use xlink:href="#United-Kingdom"></use>
                         </svg>
                         </a>
                       </li>
   
-                      <li class="submenu-item"><a href="<%= path('/') %>" class="menu-item__name language-switcher__link">LT
+                      <li class="submenu-item"><a href="<%= path('') %>" class="menu-item__name language-switcher__link">LT
                         <svg class="icon">
                           <use xlink:href="#Lithuania"></use>
                         </svg>
                       </a></li>
-                      <li class="submenu-item"><a href="<%= path('/') %>" class="menu-item__name language-switcher__link">DE
+                      <li class="submenu-item"><a href="<%= path('') %>" class="menu-item__name language-switcher__link">DE
                         <svg class="icon">
                           <use xlink:href="#Germany"></use>
                         </svg>
                       </a></li>
-                      <li class="submenu-item"><a href="<%= path('/') %>" class=" menu-item__name language-switcher__link">UK
+                      <li class="submenu-item"><a href="<%= path('') %>" class=" menu-item__name language-switcher__link">UK
                         <svg class="icon">
                           <use xlink:href="#Ukraine"></use>
                         </svg>
                       </a></li>
                       <li class="submenu-item">
-                        <a href="<%= path('/') %>" class="menu-item__name language-switcher__link">RU
+                        <a href="<%= path('') %>" class="menu-item__name language-switcher__link">RU
                         <svg class="icon">
                           <use xlink:href="#Russia"></use>
                         </svg>
                         </a></li> 
-                      <li class="submenu-item"><a href="<%= path('/') %>" class="menu-item__name language-switcher__link">CS
+                      <li class="submenu-item"><a href="<%= path('') %>" class="menu-item__name language-switcher__link">CS
                         <svg class="icon">
                           <use xlink:href="#Czech-Republic"></use>
                         </svg>
                       </a></li>
                       <li class="submenu-item">
-                        <a href="<%= path('/') %>" class="menu-item__name language-switcher__link">ES
+                        <a href="<%= path('') %>" class="menu-item__name language-switcher__link">ES
                         <svg class="icon">
                           <use xlink:href="#Spain"></use>
                         </svg>
@@ -159,7 +188,7 @@
               
               <nav class="mobile-menu">
                 <ul class="menu">
-                    <li class="menu-item"><a href="<%= path('/') %>" class="menu-item__name" data-i18n="header.menu.home"></a></li>
+                    <li class="menu-item"><a href="<%= path('') %>" class="menu-item__name" data-i18n="header.menu.home"></a></li>
                     <li class="menu-item"><a href="<%= path('about-us.html') %>" class="menu-item__name" data-i18n="header.menu.about"></a></li>
                     <li class="menu-item">
                       <span class="menu-item__name" data-i18n="header.menu.services"></span>
@@ -179,6 +208,7 @@
                           <li class="submenu-item"><a href="<%= path('projects/our-equipment.html') %>" class="menu-item__name" data-i18n="header.menu.projects_equipment"></a></li>
                         </ul>
                     </li>
+                    <li class="menu-item"><a href="<%= path('vacancies.html') %>" class="menu-item__name" data-i18n="header.menu.vacancies"></a></li>
                     <li class="menu-item"><a href="#contacts" class="menu-item__name" data-i18n="header.menu.contact"></a></li>
                     
                   </ul>
@@ -191,13 +221,7 @@
       </div>
 </header>
 
-<div id="modal-window" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <iframe id="modal-iframe"></iframe>
-    <div class="modal-body" id="modal-body"></div>
-  </div>
-</div>
+
 
 <div class="sticky-menu-wrap">
   <ul class="sticky-menu">

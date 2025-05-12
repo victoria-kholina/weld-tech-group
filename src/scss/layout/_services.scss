@@ -1,7 +1,7 @@
 @use '../abstracts/abstracts' as abs;
 
 .services {
-    background: url(../assets/img/services-bg.webp) center no-repeat;
+    background: url(../assets/img/services-bg-1.webp) center no-repeat;
     background-size: cover;
     &-item {
         background-color: abs.$light-color;
@@ -188,9 +188,6 @@
         .accent-list {
             li {
                 margin-bottom: 20px;
-                &:before {
-                    top: 4px;
-                }
             }
         }
         &-wrap {

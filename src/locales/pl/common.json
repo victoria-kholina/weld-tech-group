@@ -21,5 +21,9 @@
     "email": "E-mail",
     "workingHours": "Godziny pracy",
     "allRightsReserved": "Wszelkie prawa zastrzeżone"
+  },
+  "browser_warning": {
+    "text": "Przepraszamy, ale Twoja przeglądarka jest nieaktualna i nie obsługuje nowoczesnych technologii używanych na tej stronie.<br> Prosimy o aktualizację przeglądarki lub użycie innej.",
+    "close": "Rozumiem, kontynuować pracę z serwisem."
   }
 } 

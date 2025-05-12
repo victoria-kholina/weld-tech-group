@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 
-<html lang="pl">
+<html lang="<%= lang %>">
 <head>
     <title data-i18n="projects.title"></title>
     <meta name="description" data-i18n-attr="[content]projects.meta_description">
+       <!-- Open Graph -->
+       <meta property="og:title" data-i18n-attr="[content]projects.title">
+       <meta property="og:description" data-i18n-attr="[content]projects.meta_description">
+       <meta property="og:image" content="<%= websiteUrl %>assets/img/preview-img/WeldTechMetalMain.jpg">
+       <meta property="og:locale" content="<%= lang %>_<%= lang.toUpperCase() %>">
+         
+       <!-- Twitter Card -->
+       <meta name="twitter:title" data-i18n-attr="[content]projects.title">
+       <meta name="twitter:description" data-i18n-attr="[content]projects.meta_description">
+       <meta name="twitter:image" content="<%= websiteUrl %>assets/img/preview-img/WeldTechMetalMain.jpg">
+
     <%- include('../templates/meta.ejs') %>
     
 </head>
@@ -119,7 +130,7 @@
     </div>
 </section>
 
-<section id="work-stages" class="simple-section work-stages light-image-bg projects-page-stages">
+<section id="work-stages" class="simple-section work-stages light-bg projects-page-stages">
     <div class="container-md container-xxl h-100">
   
       <div class="simple-section__title dark border-bottom">
@@ -169,6 +180,7 @@
         <div class="simple-section__title light border-bottom">
             <h2 data-i18n="projects.advantages.title"></h2>
         </div>
+        
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="know-more-item">

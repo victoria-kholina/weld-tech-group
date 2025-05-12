@@ -4,6 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const I18nHtmlPlugin = require('./plugins/i18n-html-plugin');
 const fs = require('fs');
+const isProduction = process.env.NODE_ENV === 'production';
 
 const PATHS = {
     src: path.resolve(__dirname, '../src'),
@@ -26,18 +27,19 @@ function findEjsFiles(dir) {
         if (stat.isDirectory()) {
             ejsFiles = ejsFiles.concat(findEjsFiles(fullPath));
         } else if (file.endsWith('.ejs')) {
-                if (!fullPath.includes(path.sep + 'templates' + path.sep)) {
+            if (isProduction) {
                 ejsFiles.push(path.relative(PATHS.src, fullPath));
+            } else {
+                if (!fullPath.includes(path.sep + 'templates' + path.sep)) {
+                    ejsFiles.push(path.relative(PATHS.src, fullPath));
+                }
             }
         }
     });
-
     return ejsFiles;
 }
 
-// Находим все EJS файлы
 const pages = findEjsFiles(PATHS.src);
-console.log('Found EJS pages:', pages);
 
 module.exports = {
     externals: { paths: PATHS },
@@ -114,7 +116,7 @@ module.exports = {
                             ['imagemin-gifsicle', { interlaced: true }],
                             ['imagemin-mozjpeg', { quality: 60 }],
                             ['imagemin-optipng', { optimizationLevel: 5 }],
-                            ['imagemin-webp', { quality: 60 }]
+                            ['imagemin-webp', { quality: 80 }]
                         ]
                     }
                 }
@@ -125,7 +127,10 @@ module.exports = {
         new I18nHtmlPlugin({
             root: PATHS.src,
             pages: pages,
-            languages: ['pl', 'en', 'lt', 'de', 'uk', 'ru', 'cs', 'es']
+            languages: ['pl', 'en', 'lt', 'de', 'uk', 'ru', 'cs', 'es'],
+            data: {
+                websiteUrl: 'https://weld-techgroup.com/'
+            }
         }),
         new MiniCssExtractPlugin({ 
             filename: 'assets/css/main.css'
@@ -142,6 +147,10 @@ module.exports = {
                 {
                     from: path.join(PATHS.src, 'favicon.ico'),
                     to: path.join(PATHS.dist, 'favicon.ico')
+                },
+                {
+                    from: path.join(PATHS.src, 'assets/js/browser-detector.js'),
+                    to: path.join(PATHS.dist, 'assets/js/browser-detector.js')
                 }
             ]
         })

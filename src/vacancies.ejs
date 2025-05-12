@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="<%= lang %>">
+<head>
+    <title data-i18n="vacancies.title"></title>
+    <meta name="description" data-i18n-attr="[content]vacancies.meta.description"/>
+    <!-- Open Graph -->
+    <meta property="og:title" data-i18n-attr="[content]vacancies.title">
+    <meta property="og:description" data-i18n-attr="[content]vacancies.meta.description">
+    <meta property="og:image" content="<%= websiteUrl %>assets/img/preview-img/WeldTechVacancies.jpg">
+    <meta property="og:locale" content="<%= lang %>_<%= lang.toUpperCase() %>">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:title" data-i18n-attr="[content]vacancies.title">
+    <meta name="twitter:description" data-i18n-attr="[content]vacancies.meta.description">
+    <meta name="twitter:image" content="<%= websiteUrl %>assets/img/preview-img/WeldTechVacancies.jpg">
+    <%- include('templates/meta.ejs') %>
+    
+</head>
+<body>
+<%- include('templates/header.ejs') %>
+
+<section class="simple-section">
+    <div class="container-md container-xxl h-100">
+        <div class="simple-section__title dark border-bottom">
+          <h2 data-i18n="vacancies.pageTitle"></h2>
+          <p class="accent-text-block all" data-i18n="vacancies.mainDescription"></p>
+        </div>
+
+        <div class="tabs tabs-solutions">
+            <div class="tabs-btn-wrap">
+                <button class="tabs-btn tabs-solutions-btn active" data-tab="tab1"><h4 data-i18n="vacancies.card-1.title"></h4></button>
+                <button class="tabs-btn tabs-solutions-btn" data-tab="tab2"><h4 data-i18n="vacancies.card-2.title"></h4></button>
+            </div>
+
+            <div class="tabs-content tabs-solutions-content active" id="tab1">
+                <div class="vacancies-card accent-text-block all">
+                    <div class="vacancies-card__description">
+                        <h2 data-i18n="vacancies.card-1.title"></h2>
+                        <p data-i18n="vacancies.card-1.description"></p>
+                        <h4 data-i18n="vacancies.card-1.responsibilities.title"></h4>
+                        <ul class="simple-list">
+                            <li><p data-i18n="vacancies.card-1.responsibilities.item1"></p></li>
+                            <li><p data-i18n="vacancies.card-1.responsibilities.item2"></p></li>
+                            <li><p data-i18n="vacancies.card-1.responsibilities.item3"></p></li>
+                            <li><p data-i18n="vacancies.card-1.responsibilities.item4"></p></li>
+                        </ul>
+                        <h4 data-i18n="vacancies.card-1.requirements.title"></h4>
+                        <ul class="simple-list">
+                            <li><p data-i18n="vacancies.card-1.requirements.item1"></p></li>
+                            <li><p data-i18n="vacancies.card-1.requirements.item2"></p></li>
+                            <li><p data-i18n="vacancies.card-1.requirements.item3"></p></li>
+                            <li><p data-i18n="vacancies.card-1.requirements.item4"></p></li>
+                        </ul>
+                        <h4 data-i18n="vacancies.card-1.conditions.title"></h4>
+                        <ul class="accent-list">
+                            <li><p data-i18n="vacancies.card-1.conditions.item1"></p></li>
+                            <li><p data-i18n="vacancies.card-1.conditions.item2"></p></li>
+                            <li><p data-i18n="vacancies.card-1.conditions.item3"></p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-content tabs-solutions-content " id="tab2">
+                <div class="vacancies-card accent-text-block all">
+                    <div class="vacancies-card__description">
+                        <h2 data-i18n="vacancies.card-2.title"></h2>
+                        <p data-i18n="vacancies.card-2.description"></p>
+                        <h4 data-i18n="vacancies.card-2.responsibilities.title"></h4>
+                        <ul class="simple-list">
+                            <li><p data-i18n="vacancies.card-2.responsibilities.item1"></p></li>
+                            <li><p data-i18n="vacancies.card-2.responsibilities.item2"></p></li>
+                            <li><p data-i18n="vacancies.card-2.responsibilities.item3"></p></li>
+                            <li><p data-i18n="vacancies.card-2.responsibilities.item4"></p></li>
+                        </ul>   
+                        <h4 data-i18n="vacancies.card-2.requirements.title"></h4> 
+                        <ul class="simple-list">
+                            <li><p data-i18n="vacancies.card-2.requirements.item1"></p></li>
+                            <li><p data-i18n="vacancies.card-2.requirements.item2"></p></li>
+                            <li><p data-i18n="vacancies.card-2.requirements.item3"></p></li>
+                            <li><p data-i18n="vacancies.card-2.requirements.item4"></p></li>
+                            <li><p data-i18n="vacancies.card-2.requirements.item5"></p></li>
+                        </ul>   
+                        <h4 data-i18n="vacancies.card-2.conditions.title"></h4>   
+                        <ul class="accent-list">
+                            <li><p data-i18n="vacancies.card-2.conditions.item1"></p></li>
+                            <li><p data-i18n="vacancies.card-2.conditions.item2"></p></li>
+                            <li><p data-i18n="vacancies.card-2.conditions.item3"></p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+
+<section class="simple-section know-more dark-image-bg accent-section-borders vacancies-know-more">
+    <div class="container-md container-xxl h-100">
+        <h3 class="know-more-text" data-i18n="vacancies.knowMoreTitle"></h3>
+        <h4 class="know-more-text" data-i18n="vacancies.knowMore"></h4>
+        <a href="mailto:info@weld-tech.group" class="visible-only-mobile vacancies-know-more__email">info@weld-tech.group</a>
+        <p class="visible-tablet vacancies-know-more__email">info@weld-tech.group</p>
+    </div>
+</section>
+
+<div class="copyright">
+    <div class="container-md container-xxl copyright-content">
+        <!-- <a href="./privacy-policy.html" target="_blank">Polityka prywatności</a> -->
+        <p>@Copyright 2025-2026. <span data-i18n="footer.copyright"></span></p>
+      </div>
+</div>
+
+</body>
+</html>

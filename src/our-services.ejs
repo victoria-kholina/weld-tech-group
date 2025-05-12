@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 
-<html lang="pl">
+<html lang="<%= lang %>">
 <head>
     <title data-i18n="services.title"></title>
     <meta name="description" data-i18n-attr="[content]services.meta.description">
+    <!-- Open Graph -->
+    <meta property="og:title" data-i18n-attr="[content]services.title">
+    <meta property="og:description" data-i18n-attr="[content]services.meta.description">
+    <meta property="og:image" content="<%= websiteUrl %>assets/img/preview-img/WeldTechServices.jpg">
+    <meta property="og:locale" content="<%= lang %>_<%= lang.toUpperCase() %>">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:title" data-i18n-attr="[content]services.title">
+    <meta name="twitter:description" data-i18n-attr="[content]services.meta.description">
+    <meta name="twitter:image" content="<%= websiteUrl %>assets/img/preview-img/WeldTechServices.jpg">
     
     <%- include('templates/meta.ejs') %>
     

@@ -1,3 +1,5 @@
+
+
 // Список поддерживаемых языков
 const supportedLanguages = ['pl', 'en', 'lt', 'de', 'uk', 'ru', 'cs', 'es'];
 

@@ -110,12 +110,11 @@
             color: abs.$base-color;
             font-size: abs.$h3-size-mobile;
             font-family: abs.$AlumniSans-Medium;
-            outline: 5px solid;
             border-radius: 50%;
             left: -20px;
             top: 25px;
             margin-top: -10px;
-            box-sizing: content-box;
+            box-sizing: border-box;
             @include abs.tablet {
                 left: auto;
                 right: -20px;
@@ -126,7 +125,6 @@
                 top: 20px;
                 width: 60px;
                 height: 60px;
-                outline: 10px solid;
                 
             }
             @include abs.desktop-xxl {
@@ -141,7 +139,10 @@
             }
             .stage-circle {
                 background-color: abs.$accent-color;
-                outline-color: rgba(213, 171, 2, 0.5);
+                box-shadow: 0 0 0 5px rgba(213, 171, 2, 0.5);
+                @include abs.desktop {
+                    box-shadow: 0 0 0 10px rgba(213, 171, 2, 0.5);
+                }
             }
         }
         &.item-2 {
@@ -151,7 +152,10 @@
             }
             .stage-circle {
                 background-color: #c86a16;
-                outline-color: rgba(200, 106, 22, 0.5);
+                box-shadow: 0 0 0 5px rgba(200, 106, 22, 0.5);
+                @include abs.desktop {
+                    box-shadow: 0 0 0 10px rgba(200, 106, 22, 0.5);
+                }
             }
         }
         &.item-3 {
@@ -161,7 +165,10 @@
             }
             .stage-circle {
                 background-color: #c24a21;
-                outline-color: rgba(194, 74, 33, 0.5);
+                box-shadow: 0 0 0 5px rgba(194, 74, 33, 0.5);
+                @include abs.desktop {
+                    box-shadow: 0 0 0 10px rgba(194, 74, 33, 0.5);
+                }
             }
         }
         &.item-4 {
@@ -171,7 +178,10 @@
             }
             .stage-circle {
                 background-color: abs.$second-accent-color;
-                outline-color: rgba(187, 42, 43, 0.5);
+                box-shadow: 0 0 0 5px rgba(187, 42, 43, 0.5);
+                @include abs.desktop {
+                    box-shadow: 0 0 0 10px rgba(187, 42, 43, 0.5);
+                }
             }
         }
         &.item-5 {
@@ -181,7 +191,10 @@
             }
             .stage-circle {
                 background-color: #9a2526;
-                outline-color: rgba(154, 37, 38, 0.5);
+                box-shadow: 0 0 0 5px rgba(154, 37, 38, 0.5);
+                @include abs.desktop {
+                    box-shadow: 0 0 0 10px rgba(154, 37, 38, 0.5);
+                }
             }
         }
         &.item-6 {
@@ -191,7 +204,10 @@
             }
             .stage-circle {
                 background-color: abs.$second-dark-color;
-                outline-color: rgba(122, 31, 33, 0.5);
+                box-shadow: 0 0 0 5px rgba(122, 31, 33, 0.5);
+                @include abs.desktop {
+                    box-shadow: 0 0 0 10px rgba(122, 31, 33, 0.5);
+                }
             }
         }
         

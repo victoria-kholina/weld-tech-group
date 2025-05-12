@@ -1,0 +1,55 @@
+{
+    "vacancies": {
+        "title": "Vacancies - Weld Tech Group",
+        "meta": {
+            "description": "Join our team! We are looking for experienced welders and engineers. Competitive salary, professional growth, and modern equipment."
+        },
+        "pageTitle": "Vacancies",
+        "mainDescription": "We are constantly growing and looking for professionals to join our team. We offer competitive salaries, professional development opportunities, and a modern work environment.",
+        "card-1": {
+            "alt": "Welder at work",
+            "title": "Welder",
+            "responsibilities": "Responsibilities",
+            "responsibilities": {
+                "item1": "Welding of various metal structures",
+                "item2": "Reading and interpreting technical drawings",
+                "item3": "Quality control of welded joints",
+                "item4": "Maintenance of welding equipment"
+            },
+            "requirements": "Requirements",
+            "requirements": {
+                "item1": "Experience in welding from 3 years",
+                "item2": "Knowledge of various welding methods",
+                "item3": "Understanding of technical documentation",
+                "item4": "Responsibility and attention to detail"
+            },
+            "conditions": "Working Conditions",
+            "conditions": {
+                "item1": "Competitive salary",
+                "item2": "Official employment",
+                "item3": "Professional development opportunities"
+            }
+        },
+        "card-2": {
+            "title": "Engineer",
+            "responsibilities": "Responsibilities",
+            "responsibilities": {
+                "item1": "Development of technical documentation",
+                "item2": "Supervision of production processes",
+                "item3": "Quality control of products"
+            },
+            "requirements": "Requirements",
+            "requirements": {
+                "item1": "Higher technical education",
+                "item2": "Experience in engineering from 2 years",
+                "item3": "Knowledge of CAD systems"
+            },
+            "conditions": "Working Conditions",
+            "conditions": {
+                "item1": "Competitive salary",
+                "item2": "Official employment",
+                "item3": "Professional development opportunities"
+            }
+        }
+    }
+} 

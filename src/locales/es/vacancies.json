@@ -1,0 +1,61 @@
+{
+    "title": "Nuestras vacantes | Únete a nuestro equipo industrial",
+    "meta": {
+        "description": "Siempre estamos buscando nuevos talentos para nuestro equipo. ¡Consulta nuestras posiciones abiertas y postúlate hoy!"
+    },
+    "pageTitle": "Nuestras vacantes",
+    "mainDescription": "Siempre estamos buscando nuevos talentos para nuestro equipo. <br> ¡Consulta nuestras posiciones abiertas y postúlate hoy!",
+    "knowMoreTitle": "¡Únete a nuestro equipo profesional!",
+    "knowMore": "Sé parte de proyectos industriales de alta calidad, desarrolla tu carrera y disfruta de excelentes condiciones laborales. <br><br> Envía tu CV a nuestro correo electrónico — ¡nos pondremos en contacto contigo pronto!",
+    "card-1": {
+        "alt": "Soldador en el trabajo",
+        "title": "Soldador 141 (Tuberías de proceso)",
+        "description": "Nuestra empresa busca un soldador 141 experimentado para realizar tareas de soldadura en sistemas de tuberías de proceso de varios diámetros. Invitamos a candidatos que estén dispuestos a trabajar tanto con aceros de baja aleación como de alta aleación y asegurar una calidad de soldadura de primer nivel.",
+        "responsibilities": {
+            "title": "Responsabilidades",
+            "item1": "Soldadura de tuberías de proceso de varios diámetros fabricadas con aceros de baja y alta aleación.",
+            "item2": "Realización de trabajos de soldadura cumpliendo con todos los estándares de calidad y requisitos.",
+            "item3": "Soldadura de tuberías sujetas a inspección por rayos X.",
+            "item4": "Mantenimiento de un entorno de trabajo limpio y cumplimiento de las regulaciones de seguridad laboral."
+        },
+        "requirements": {
+            "title": "Requisitos del candidato",
+            "item1": "Al menos 3 años de experiencia como soldador 141.",
+            "item2": "Conocimiento de técnicas de soldadura para tuberías de varios diámetros.",
+            "item3": "Capacidad para trabajar con aceros de baja y alta aleación.",
+            "item4": "Responsabilidad y disciplina."
+        },
+        "conditions": {
+            "title": "¿Qué ofrecemos?!",
+            "item1": "Empleo en una empresa estable con oportunidades de crecimiento profesional.",
+            "item2": "Excelentes condiciones de trabajo y cumplimiento total de los estándares de seguridad.",
+            "item3": "Programas de capacitación y mejora de calificaciones."
+        }
+    },
+    "card-2": {
+        "alt": "Instalador de tuberías de proceso en el trabajo",
+        "title": "Instalador de tuberías de proceso",
+        "description": "Nuestra empresa está contratando instaladores de tuberías de proceso. Trabajarás con planos y serás responsable del montaje de sistemas de tuberías. Buscamos un especialista confiable capaz de asegurar precisión y una instalación de alta calidad.",
+        "responsibilities": {
+            "title": "Responsabilidades",
+            "item1": "Instalación de sistemas de tuberías de proceso según la documentación del proyecto.",
+            "item2": "Lectura de planos isométricos.",
+            "item3": "Instalación y conexión de tuberías, accesorios y válvulas de cierre.",
+            "item4": "Participación en actividades de puesta en marcha."
+        },
+        "requirements": {
+            "title": "Requisitos del candidato",
+            "item1": "Al menos 3 años de experiencia como instalador de tuberías de proceso.",
+            "item2": "Capacidad para trabajar con planos isométricos y diagramas.",
+            "item3": "Conocimiento de estándares de seguridad y regulaciones para la instalación de tuberías.",
+            "item4": "Atención al detalle y sentido de responsabilidad.",
+            "item5": "Disposición para viajar en viajes de negocios."
+        },
+        "conditions": {
+            "title": "¿Qué ofrecemos?!",
+            "item1": "Crecimiento y desarrollo profesional en una empresa grande y estable.",
+            "item2": "Excelentes condiciones de trabajo.",
+            "item3": "Oportunidades para participar en proyectos de alto nivel e interesantes."
+        }
+    }
+} 
