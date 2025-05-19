@@ -21,6 +21,7 @@
     "pipelines": "Montaje de tuberías de proceso",
     "capacitive": "Fabricación de equipos capacitivos",
     "food": "Industria alimentaria",
-    "chemical": "Industria química, energética"
+    "chemical": "Industria química",
+    "energy": "Industria energética"
   }
 } 

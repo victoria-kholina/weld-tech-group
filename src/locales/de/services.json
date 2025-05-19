@@ -1,7 +1,7 @@
 {
   "title": "Weld Tech Group - Unsere Dienstleistungen",
   "meta": {
-    "description": "Weld Tech Group bietet Dienstleistungen im Bereich der Installation technologischer Rohrleitungen, Herstellung und Installation von Ausrüstungen, Produktion von Behältern, Metallkonstruktionen und Serviceplattformen."
+    "description": "Weld Tech Group installiert Rohrleitungen, fertigt und installiert Ausrüstungen, Behälter, Metallkonstruktionen und Serviceplattformen."
   },
   "experience": {
     "title": "Jahrelange Erfahrung im Schweißen komplexer Materialien",
@@ -33,7 +33,7 @@
   },
   "items": {
     "pipelines": {
-      "title": "Installation technologischer <br> Rohrleitungen",
+      "title": "Installation technologischer Rohrleitungen",
       "description": "Wir beschäftigen uns professionell mit der Installation und dem Schweißen technologischer Rohrleitungen aus Edelstahl (AISI-304L, AISI-308L, AISI-316L, AISI-321), Kohlenstoffstählen (St.20, 30) sowie aus Titan und Aluminium."
     },
     "equipment": {
@@ -41,11 +41,11 @@
       "description": "Wir stellen zusätzliche Ausrüstungen für verschiedene Produktionslinien und Systeme her, die in der chemischen, Lebensmittel-, pharmazeutischen und verwandten Industrie eingesetzt werden."
     },
     "capacitive": {
-      "title": "Herstellung von <br> Behälterausrüstungen",
+      "title": "Herstellung von Behälterausrüstungen",
       "description": "Wir beschäftigen uns professionell mit der Installation und dem Schweißen technologischer Rohrleitungen aus Edelstahl (AISI-304L, AISI-308L, AISI-316L, AISI-321), Kohlenstoffstählen (St.20, 30) sowie aus Titan und Aluminium."
     },
     "structures": {
-      "title": "Metallkonstruktionen und <br> Serviceplattformen",
+      "title": "Metallkonstruktionen und Serviceplattformen",
       "description": "Wir stellen Metallkonstruktionen verschiedener Komplexität her und installieren sie, einschließlich Fachwerke, Treppen, Geländer, Rahmen für die Montage von Schaltschränken und vieles mehr. Alle Produkte entsprechen den Normen für Festigkeit und Sicherheit."
     }
   },

@@ -86,6 +86,7 @@ class I18nHtmlPlugin {
                 return ejs.render(content, { 
                     lang: lang,
                     websiteUrl: this.options.data?.websiteUrl || '',
+                    translations: this.translations[lang],
                     // Добавляем хелпер для формирования путей
                     path: (file) => {
                         // Для польского языка путь без префикса
@@ -103,6 +104,7 @@ class I18nHtmlPlugin {
             },
             lang: lang,
             websiteUrl: this.options.data?.websiteUrl || '',
+            translations: this.translations[lang],
             // Добавляем хелпер для формирования путей
             path: (file) => {
                 // Для польского языка путь без префикса

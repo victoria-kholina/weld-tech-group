@@ -1,7 +1,7 @@
 {
   "title": "Weld Tech Group - Mūsų paslaugos",
   "meta": {
-    "description": "Weld Tech Group teikia paslaugas technologinių vamzdynų montavimo, įrangos gamybos ir montavimo, talpyklų gamybos, metalinių konstrukcijų ir aptarnavimo platformų srityje."
+    "description": "Weld Tech Group montuoja vamzdynus, gamina ir įrengia įrangą, konteinerius, metalines konstrukcijas ir aptarnavimo platformas."
   },
   "experience": {
     "title": "Daugiametė patirtis suvirinant sudėtingas medžiagas",
@@ -33,7 +33,7 @@
   },
   "items": {
     "pipelines": {
-      "title": "Technologinių vamzdynų <br> montavimas",
+      "title": "Technologinių vamzdynų  montavimas",
       "description": "Profesionaliai užsiimame technologinių vamzdynų montavimu ir suvirinimu iš nerūdijančio plieno (AISI-304L, AISI-308L, AISI-316L, AISI-321), anglies plienų (St.20, 30), taip pat iš titano ir aliuminio."
     },
     "equipment": {
@@ -41,11 +41,11 @@
       "description": "Gaminame papildomą įrangą įvairioms gamybos linijoms ir sistemoms, naudojamoms chemijos, maisto, farmacijos ir susijusiose pramonės šakose."
     },
     "capacitive": {
-      "title": "Talpinės įrangos <br> gamyba",
+      "title": "Talpinės įrangos gamyba",
       "description": "Profesionaliai užsiimame technologinių vamzdynų montavimu ir suvirinimu iš nerūdijančio plieno (AISI-304L, AISI-308L, AISI-316L, AISI-321), anglies plienų (St.20, 30), taip pat iš titano ir aliuminio."
     },
     "structures": {
-      "title": "Metalinės konstrukcijos <br> ir aptarnavimo platformos",
+      "title": "Metalinės konstrukcijos ir aptarnavimo platformos",
       "description": "Gaminame ir montuojame įvairaus sudėtingumo metalines konstrukcijas, įskaitant santvaras, laiptus, turėklus, rėmus valdymo spintelių montavimui ir dar daugiau. Visi gaminiai atitinka stiprumo ir saugos standartus."
     }
   },

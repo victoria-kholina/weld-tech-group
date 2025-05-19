@@ -21,6 +21,7 @@
     "pipelines": "Process Pipeline Installation",
     "capacitive": "Capacitive Equipment Manufacturing",
     "food": "Food Industry",
-    "chemical": "Chemical, Energy Industry"
+    "chemical": "Chemical Industry",
+    "energy": "Energy Industry"
   }
 } 

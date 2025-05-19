@@ -68,5 +68,110 @@
 <%- include('templates/features.ejs') %>
 <%- include('templates/footer.ejs') %>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "<%= translations.services.title %>",
+  "description": "<%= translations.services.meta.description %>",
+  "url": "<%= websiteUrl %>our-services.html",
+  "provider": {
+    "@type": "Organization",
+    "name": "Weld Tech Group",
+    "url": "<%= websiteUrl %>"
+  },
+  "serviceType": [
+    "<%= translations.services.items.pipelines.title %>",
+    "<%= translations.services.items.equipment.title %>",
+    "<%= translations.services.items.capacitive.title %>",
+    "<%= translations.services.items.structures.title %>"
+  ],
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "51.2088482",
+      "longitude": "17.4086954"
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Welding Methods",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "<%= translations.services.methods.list1.tig %>"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "<%= translations.services.methods.list1.mig %>"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "<%= translations.services.methods.list1.tigElectrode %>"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "<%= translations.services.methods.list1.electrode %>"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "<%= translations.services.methods.list1.oxyacetylene %>"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "<%= translations.services.methods.list2.softSoldering %>"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "<%= translations.services.methods.list2.hardSoldering %>"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "<%= translations.services.methods.list2.planing %>"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "<%= translations.services.methods.list2.plasmaCutting %>"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "<%= translations.services.methods.list2.arcPlasmaCutting %>"
+        }
+      }
+    ]
+  },
+  "image": "<%= websiteUrl %>assets/img/IMG_1129.webp"
+}
+</script>
 </body>
 </html>

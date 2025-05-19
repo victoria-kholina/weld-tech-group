@@ -1,0 +1,43 @@
+@use '../abstracts/abstracts' as abs;
+
+.video {
+    background-color: abs.$light-color;
+    &-description {
+      max-width: abs.$max-width;
+      margin: 0 auto;
+      text-align: center;
+      @include abs.tablet {
+        margin-bottom: 30px;
+      }
+      @include abs.desktop {
+        margin-bottom: 50px;
+      }
+    }
+    &-container {
+      height: auto;
+      max-height: 100vh;
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 60px;
+      @include abs.desktop {
+        margin-top: 80px;
+      }
+      video {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        &.horizontal-video {
+            @include abs.only-mobile {
+            max-width: 300px;
+            }
+        }
+        
+        @include abs.tablet {
+          width: auto;
+          max-height: 90vh;
+        }
+      }
+    }
+  }

@@ -1,7 +1,7 @@
 {
   "title": "Weld Tech Group - Our Services",
   "meta": {
-    "description": "Weld Tech Group provides services in the field of technological pipeline installation, equipment manufacturing and installation, container production, metal structures and service platforms."
+    "description": "Weld Tech Group installs pipelines, manufactures and installs equipment, containers, metal structures, and service platforms."
   },
   "experience": {
     "title": "Years of experience in welding complex materials",
@@ -33,7 +33,7 @@
   },
   "items": {
     "pipelines": {
-      "title": "Installation of technological <br> pipelines",
+      "title": "Installation of technological pipelines",
       "description": "We professionally deal with the installation and welding of technological pipelines made of stainless steel (AISI-304L, AISI-308L, AISI-316L, AISI-321), carbon steels (St.20, 30), as well as titanium and aluminum."
     },
     "equipment": {
@@ -41,11 +41,11 @@
       "description": "We manufacture additional equipment for various production lines and systems used in chemical, food, pharmaceutical and related industries."
     },
     "capacitive": {
-      "title": "Production of <br> capacitive equipment",
+      "title": "Production of capacitive equipment",
       "description": "We professionally deal with the installation and welding of technological pipelines made of stainless steel (AISI-304L, AISI-308L, AISI-316L, AISI-321), carbon steels (St.20, 30), as well as titanium and aluminum."
     },
     "structures": {
-      "title": "Metal structures and <br> service platforms",
+      "title": "Metal structures and service platforms",
       "description": "We manufacture and install metal structures of various complexity, including trusses, stairs, railings, frames for mounting control cabinets and much more. All products meet strength and safety standards."
     }
   },

@@ -127,5 +127,36 @@
 
 <%- include('templates/footer.ejs') %>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Weld Tech Group",
+    "description": "<%= translations.about.meta.description %>",
+    "url": "<%= websiteUrl %>about-us.html",
+    "video": {
+      "@type": "VideoObject",
+      "name": "<%= translations.video.title %>",
+      "description": "<%= translations.video.meta.description %>",
+      "thumbnailUrl": "<%= websiteUrl %>assets/img/preview-img/WeldTechMain.jpg",
+      "contentUrl": "<%= websiteUrl %>assets/img/IMFZ6564.MP4"
+    },
+    "hasCredential": [
+      {
+        "@type": "EducationalCredential",
+        "credentialCategory": "license",
+        "name": "ISO 3834-2"
+      },
+      {
+        "@type": "EducationalCredential",
+        "credentialCategory": "license",
+        "name": "EN 1090-1034"
+      }
+    ]
+  }
+}
+</script>
 </body>
 </html>

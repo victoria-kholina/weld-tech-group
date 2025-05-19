@@ -1,7 +1,7 @@
 {
   "title": "Weld Tech Group - Nasze usługi",
   "meta": {
-    "description": "Firma Weld Tech Group świadczy usługi w zakresie montażu rurociągów technologicznych, produkcji i instalacji urządzeń, wytwarzania pojemników, konstrukcji metalowych i platform serwisowych."
+    "description": "Weld Tech Group instaluje rurociągi, produkuje i montuje urządzenia, kontenery, konstrukcje metalowe i platformy serwisowe."
   },
   "experience": {
     "title": "Wieloletnie doświadczenie w spawaniu złożonych materiałów",
@@ -33,7 +33,7 @@
   },
   "items": {
     "pipelines": {
-      "title": "Montaż technologicznych <br> rurociągów",
+      "title": "Montaż technologicznych rurociągów",
       "description": "Profesjonalnie zajmujemy się montażem i spawaniem rurociągów technologicznych ze stali nierdzewnej (AISI-304L, AISI-308L, AISI-316L, AISI-321), stali węglowych (St.20, 30), a także z tytanu i aluminium."
     },
     "equipment": {
@@ -41,11 +41,11 @@
       "description": "Produkujemy dodatkowe urządzenia dla różnych linii produkcyjnych i systemów stosowanych w przemyśle chemicznym, spożywczym, farmaceutycznym i pokrewnych."
     },
     "capacitive": {
-      "title": "Produkcja <br> urządzeń pojemnościowych",
+      "title": "Produkcja urządzeń pojemnościowych",
       "description": "Profesjonalnie zajmujemy się montażem i spawaniem rurociągów technologicznych ze stali nierdzewnej (AISI-304L, AISI-308L, AISI-316L, AISI-321), stali węglowych (St.20, 30), a także z tytanu i aluminium."
     },
     "structures": {
-      "title": "Konstrukcje metalowe <br> i platformy serwisowe",
+      "title": "Konstrukcje metalowe i platformy serwisowe",
       "description": "Produkujemy i montujemy konstrukcje metalowe o różnej złożoności, w tym kratownice, schody, poręcze, ramy do montażu szaf sterowniczych i wiele innych. Wszystkie wyroby spełniają normy wytrzymałości i bezpieczeństwa."
     }
   },

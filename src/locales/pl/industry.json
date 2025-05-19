@@ -1,0 +1,95 @@
+{
+  "title": "Weld Tech Group - Rozwiązania Przemysłowe",
+  "meta_description": "Rozwiązania Weld Tech Group dla przemysłu spożywczego, chemicznego, farmaceutycznego i innych — dostosowane do wymagań sanitarnych, technicznych i produkcyjnych.",
+  "main_title": "Rozwiązania Przemysłowe",
+  "main_description": "Firma <b> Weld Tech Group </b> realizuje projekty dla różnych branż przemysłowych, uwzględniając specyficzne wymagania dotyczące instalacji, higieny, bezpieczeństwa i efektywności.",
+  "tabs": {
+    "food": "Przemysł Spożywczy",
+    "chemical": "Przemysł Chemiczny",
+    "pharmaceutical": "Przemysł Farmaceutyczny",
+    "energy": "Przemysł Energetyczny"
+  },
+  "alt": {
+    "food_industry": "wyposażenie dla przemysłu spożywczego",
+    "chemical_industry": "wyposażenie dla przemysłu chemicznego",
+    "pharmaceutical_industry": "przemysłowe rurociągi",
+    "energy_industry": "wyposażenie dla przemysłu energetycznego"
+  },
+  "sections": {
+    "food": {
+      "specificity": {
+        "title": "Specyfika i zadania:",
+        "item1": "Ścisłe wymagania sanitarne i higieniczne (np. HACCP).",
+        "item2": "Konieczność doskonałej jakości spawów i łatwości czyszczenia urządzeń.",
+        "item3": "Stosowanie stali nierdzewnych i materiałów zgodnych z bezpieczeństwem żywności."
+      },
+      "offer": {
+        "title": "Co oferujemy:",
+        "item1": "Projektowanie i montaż systemów rurociągowych dla produktów płynnych i sypkich.",
+        "item2": "Produkcja specjalistycznych zbiorników (dla mleka, piwa, soków itp.) z uwzględnieniem obróbki cieplnej lub chłodzenia.",
+        "item3": "Wytwarzanie dodatkowych konstrukcji (przenośniki, rolki, wanny myjące) dostosowanych do wysokiej wilgotności i agresywnych środków czyszczących."
+      }
+    },
+    "chemical": {
+      "specificity": {
+        "title": "Specyfika i zadania:",
+        "item1": "Agresywne środowiska (kwasy, zasady, rozpuszczalniki organiczne itp.).",
+        "item2": "Szczegółowe wymagania dotyczące szczelności, odporności na korozję i bezpieczeństwa personelu.",
+        "item3": "Konieczność specjalistycznego wyposażenia do przechowywania i przetwarzania substancji chemicznych."
+      },
+      "offer": {
+        "title": "Co oferujemy:",
+        "item1": "Produkcja zbiorników i rurociągów do pracy z agresywnymi środowiskami chemicznymi.",
+        "item2": "Trwałe konstrukcje metalowe, odporne na korozję i wahania temperatury.",
+        "item3": "Możliwość wytwarzania niestandardowych systemów dla specjalistycznych procesów technologicznych."
+      }
+    },
+    "pharmaceutical": {
+      "specificity": {
+        "title": "Specyfika i zadania:",
+        "item1": "Ścisłe wymagania czystości (GMP, FDA i inne).",
+        "item2": "Pełne przestrzeganie wysokich standardów sterylności i zapobieganie zanieczyszczeniom krzyżowym.",
+        "item3": "Stosowanie stopów wysokiej czystości z minimalną zawartością zanieczyszczeń."
+      },
+      "offer": {
+        "title": "Co oferujemy:",
+        "item1": "Montaż rurociągów i systemów magazynowania dla mediów wysokiej czystości (woda do iniekcji, para farmaceutyczna).",
+        "item2": "Produkcja zbiorników ze specjalną obróbką powierzchni wewnętrznej (polerowanie, pasywacja).",
+        "item3": "Spawanie wysokiej precyzji (np. orbitalne), minimalizujące chropowatość i spoiny zatrzymujące mikroorganizmy."
+      }
+    },
+    "energy": {
+      "specificity": {
+        "title": "Specyfika i zadania:",
+        "item1": "Wysokie wymagania dotyczące niezawodności urządzeń i połączeń spawanych w warunkach wysokiej temperatury i ciśnienia.",
+        "item2": "Praca z systemami parowymi, gazowymi i hydraulicznymi.",
+        "item3": "Ścisłe przestrzeganie norm bezpieczeństwa oraz standardów efektywności energetycznej i bezpieczeństwa środowiskowego."
+      },
+      "offer": {
+        "title": "Co oferujemy:",
+        "item1": "Montaż rurociągów i konstrukcji metalowych dla kotłowni, zespołów turbin i stacji sprężarek.",
+        "item2": "Produkcja zbiorników, wymienników ciepła, kominów i innych komponentów infrastruktury energetycznej.",
+        "item3": "Spawanie konstrukcji ze stali stopowych, żaroodpornych i kwasoodpornych, w tym technologia spawania wielowarstwowego i przygotowanie krawędzi."
+      }
+    }
+  },
+  "realisations": {
+    "title": "Nasze realizacje"
+  },
+  "other_industries": {
+    "title": "Inne branże i kierunki",
+    "description": "Oprócz głównych kierunków (spożywczy, chemiczny, farmaceutyczny, energetyczny) współpracujemy również z przedsiębiorstwami z:",
+    "energy": {
+      "title": "Energetyki",
+      "description": "Rurociągi dla pary, gazu, sprężonego powietrza, montaż konstrukcji metalowych dla kotłowni i hal turbinowych."
+    },
+    "construction": {
+      "title": "Maszyn budowlanych",
+      "description": "Produkcja i montaż komponentów linii produkcyjnych, w tym spawanie złożonych konstrukcji metalowych."
+    },
+    "oil_gas": {
+      "title": "Sektora naftowego i gazowego",
+      "description": "Zbiorniki na produkty naftowe, gazociągi, powiązana armatura."
+    }
+  }
+} 

@@ -145,8 +145,8 @@ module.exports = {
                     }
                 },
                 {
-                    from: path.join(PATHS.src, 'favicon.ico'),
-                    to: path.join(PATHS.dist, 'favicon.ico')
+                    from: path.join(PATHS.src, 'favicon'),
+                    to: path.join(PATHS.dist, 'favicon')
                 },
                 {
                     from: path.join(PATHS.src, 'assets/js/browser-detector.js'),

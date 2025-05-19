@@ -106,5 +106,21 @@
 
 <%- include('../templates/footer.ejs') %>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "<%= translations.pipelines.title %>",
+  "description": "<%= translations.pipelines.main_description %>",
+  "url": "<%= websiteUrl %>services/installation-of-process-pipelines.html",
+  "provider": {
+    "@type": "Organization",
+    "name": "Weld Tech Group",
+    "url": "<%= websiteUrl %>"
+  },
+  "serviceType": "Process Pipeline Installation"
+}
+</script>
+
 </body>
 </html>

@@ -74,7 +74,8 @@
                     background-color: rgba(200, 106, 22, 0.8);
                 }
             }
-            &:nth-child(3) {
+            &:nth-child(3),
+            &:nth-child(6) {
                 color: abs.$second-accent-color;
                 border-bottom: 2px solid abs.$second-accent-color;
                 @include abs.desktop {
@@ -87,7 +88,8 @@
             }
             &:nth-child(2),
             &:nth-child(4),
-            &:nth-child(3) {
+            &:nth-child(3),
+            &:nth-child(6) {
                 &:hover,
                 &.active {
                     color: abs.$base-color;

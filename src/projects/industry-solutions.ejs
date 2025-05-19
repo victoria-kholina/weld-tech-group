@@ -17,21 +17,23 @@
     <%- include('../templates/meta.ejs') %>
     
 </head>
+
 <body>
 <%- include('../templates/header.ejs', { isInnerPage: true }) %>
 
 <section class="simple-section">
     <div class="container-md container-xxl h-100">
         <div class="simple-section__title dark">
-            <h2 data-i18n="industry-solutions.main_title"></h2>
-            <p class="accent-text-block all" data-i18n="[html]industry-solutions.main_description"></p>
+            <h2 data-i18n="industry.main_title"></h2>
+            <p class="accent-text-block all" data-i18n="[html]industry.main_description"></p>
         </div>
 
         <div class="tabs tabs-solutions">
             <div class="tabs-btn-wrap">
-                <button class="tabs-btn tabs-solutions-btn active" data-tab="tab1"><h4 data-i18n="industry-solutions.tabs.food"></h4></button>
-                <button class="tabs-btn tabs-solutions-btn" data-tab="tab2"><h4 data-i18n="industry-solutions.tabs.chemical"></h4></button>
-                <button class="tabs-btn tabs-solutions-btn" data-tab="tab3"><h4 data-i18n="industry-solutions.tabs.pharmaceutical"></h4></button>
+                <button class="tabs-btn tabs-solutions-btn active" data-tab="tab1"><h4 data-i18n="industry.tabs.food"></h4></button>
+                <button class="tabs-btn tabs-solutions-btn" data-tab="tab2"><h4 data-i18n="industry.tabs.chemical"></h4></button>
+                <button class="tabs-btn tabs-solutions-btn" data-tab="tab3"><h4 data-i18n="industry.tabs.pharmaceutical"></h4></button>
+                <button class="tabs-btn tabs-solutions-btn" data-tab="tab4"><h4 data-i18n="industry.tabs.energy"></h4></button>
             </div>
 
             <div class="tabs-content tabs-solutions-content active" id="tab1">
@@ -39,27 +41,27 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="shadow-image left animate-on-scroll">
                             <div class="shadow-image-wrap">
-                                <img src="/assets/img/gallery/food-industry/20210209_161352364_iOS.webp" data-i18n-attr="[alt]industry-solutions.alt.food_industry">
+                                <img src="/assets/img/gallery/food-industry/20210209_161352364_iOS.webp" data-i18n-attr="[alt]industry.alt.food_industry">
                             </div>
                           </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-8">
-                        <h4 data-i18n="industry-solutions.sections.food.specificity.title"></h4>
+                        <h4 data-i18n="industry.sections.food.specificity.title"></h4>
                         <ul class="simple-list">
-                            <li><p data-i18n="industry-solutions.sections.food.specificity.item1"></p></li>
-                            <li><p data-i18n="industry-solutions.sections.food.specificity.item2"></p></li>
-                            <li><p data-i18n="industry-solutions.sections.food.specificity.item3"></p></li>
+                            <li><p data-i18n="industry.sections.food.specificity.item1"></p></li>
+                            <li><p data-i18n="industry.sections.food.specificity.item2"></p></li>
+                            <li><p data-i18n="industry.sections.food.specificity.item3"></p></li>
                         </ul>
-                        <h4 data-i18n="industry-solutions.sections.food.offer.title"></h4>
+                        <h4 data-i18n="industry.sections.food.offer.title"></h4>
                         <ul class="simple-list">
-                            <li><p data-i18n="industry-solutions.sections.food.offer.item1"></p></li>
-                            <li><p data-i18n="industry-solutions.sections.food.offer.item2"></p></li>
-                            <li><p data-i18n="industry-solutions.sections.food.offer.item3"></p></li>
+                            <li><p data-i18n="industry.sections.food.offer.item1"></p></li>
+                            <li><p data-i18n="industry.sections.food.offer.item2"></p></li>
+                            <li><p data-i18n="industry.sections.food.offer.item3"></p></li>
                         </ul>
                     </div>
                 </div>
                 <div class="simple-section__title dark border-bottom">
-                    <h2 data-i18n="industry-solutions.realisations.title"></h2>
+                    <h2 data-i18n="industry.realisations.title"></h2>
                 </div>
                 <%- include('../templates/gallery-food-industry.ejs') %>
             </div>
@@ -69,60 +71,89 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="shadow-image left animate-on-scroll">
                             <div class="shadow-image-wrap">
-                                <img src="/assets/img/gallery/chemical-energy-industry/photo_7_2024-05-10_18-51-58.webp" data-i18n-attr="[alt]industry-solutions.alt.chemical_industry">
+                                <img src="/assets/img/gallery/chemical-industry/photo_7_2024-05-10_18-51-58.webp" data-i18n-attr="[alt]industry.alt.chemical_industry">
                             </div>
                           </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-8">
-                        <h4 data-i18n="industry-solutions.sections.chemical.specificity.title"></h4>
+                        <h4 data-i18n="industry.sections.chemical.specificity.title"></h4>
                         <ul class="simple-list">
-                            <li><p data-i18n="industry-solutions.sections.chemical.specificity.item1"></p></li>
-                            <li><p data-i18n="industry-solutions.sections.chemical.specificity.item2"></p></li>
-                            <li><p data-i18n="industry-solutions.sections.chemical.specificity.item3"></p></li>
+                            <li><p data-i18n="industry.sections.chemical.specificity.item1"></p></li>
+                            <li><p data-i18n="industry.sections.chemical.specificity.item2"></p></li>
+                            <li><p data-i18n="industry.sections.chemical.specificity.item3"></p></li>
                         </ul>
-                        <h4 data-i18n="industry-solutions.sections.chemical.offer.title"></h4>
+                        <h4 data-i18n="industry.sections.chemical.offer.title"></h4>
                         <ul class="simple-list">
-                            <li><p data-i18n="industry-solutions.sections.chemical.offer.item1"></p></li>
-                            <li><p data-i18n="industry-solutions.sections.chemical.offer.item2"></p></li>
-                            <li><p data-i18n="industry-solutions.sections.chemical.offer.item3"></p></li>
+                            <li><p data-i18n="industry.sections.chemical.offer.item1"></p></li>
+                            <li><p data-i18n="industry.sections.chemical.offer.item2"></p></li>
+                            <li><p data-i18n="industry.sections.chemical.offer.item3"></p></li>
                         </ul>
                     </div>
                 </div>
                 <div class="simple-section__title dark border-bottom">
-                    <h2 data-i18n="industry-solutions.realisations.title"></h2>
+                    <h2 data-i18n="industry.realisations.title"></h2>
                 </div>
-                <%- include('../templates/gallery-chemical-energy-industry.ejs') %>
+                <%- include('../templates/gallery-chemical-industry.ejs') %>
             </div>
             <div class="tabs-content tabs-solutions-content" id="tab3">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="shadow-image left animate-on-scroll">
                             <div class="shadow-image-wrap">
-                                <img src="/assets/img/gallery/chemical-energy-industry/IMG_2201.webp" data-i18n-attr="[alt]industry-solutions.alt.pharmaceutical_industry">
+                                <img src="/assets/img/gallery/chemical-industry/IMG_2201.webp" data-i18n-attr="[alt]industry.alt.pharmaceutical_industry">
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-8">
-                        <h4 data-i18n="industry-solutions.sections.pharmaceutical.specificity.title"></h4>
+                        <h4 data-i18n="industry.sections.pharmaceutical.specificity.title"></h4>
                         <ul class="simple-list">
-                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.specificity.item1"></p></li>
-                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.specificity.item2"></p></li>
-                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.specificity.item3"></p></li>
+                            <li><p data-i18n="industry.sections.pharmaceutical.specificity.item1"></p></li>
+                            <li><p data-i18n="industry.sections.pharmaceutical.specificity.item2"></p></li>
+                            <li><p data-i18n="industry.sections.pharmaceutical.specificity.item3"></p></li>
                         </ul>
-                        <h4 data-i18n="industry-solutions.sections.pharmaceutical.offer.title"></h4>
+                        <h4 data-i18n="industry.sections.pharmaceutical.offer.title"></h4>
                         <ul class="simple-list">
-                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.offer.item1"></p></li>
-                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.offer.item2"></p></li>
-                            <li><p data-i18n="industry-solutions.sections.pharmaceutical.offer.item3"></p></li>
+                            <li><p data-i18n="industry.sections.pharmaceutical.offer.item1"></p></li>
+                            <li><p data-i18n="industry.sections.pharmaceutical.offer.item2"></p></li>
+                            <li><p data-i18n="industry.sections.pharmaceutical.offer.item3"></p></li>
                         </ul>
                     </div>
                 </div>
                 <div class="simple-section__title dark border-bottom">
-                    <h2 data-i18n="industry-solutions.realisations.title"></h2>
+                    <h2 data-i18n="industry.realisations.title"></h2>
                 </div>
-                <%- include('../templates/gallery-chemical-energy-industry.ejs') %>
+                <%- include('../templates/gallery-all.ejs') %>
             </div>
 
+            <div class="tabs-content tabs-solutions-content" id="tab4">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="shadow-image left animate-on-scroll">
+                            <div class="shadow-image-wrap">
+                                <img src="/assets/img/gallery/energy-industry/IMG-20250331-WA0017.webp" data-i18n-attr="[alt]industry.alt.energy_industry">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-8">
+                        <h4 data-i18n="industry.sections.energy.specificity.title"></h4>
+                        <ul class="simple-list">
+                            <li><p data-i18n="industry.sections.energy.specificity.item1"></p></li>
+                            <li><p data-i18n="industry.sections.energy.specificity.item2"></p></li>
+                            <li><p data-i18n="industry.sections.energy.specificity.item3"></p></li>
+                        </ul>
+                        <h4 data-i18n="industry.sections.energy.offer.title"></h4>
+                        <ul class="simple-list">
+                            <li><p data-i18n="industry.sections.energy.offer.item1"></p></li>
+                            <li><p data-i18n="industry.sections.energy.offer.item2"></p></li>
+                            <li><p data-i18n="industry.sections.energy.offer.item3"></p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="simple-section__title dark border-bottom">
+                    <h2 data-i18n="industry.realisations.title"></h2>
+                </div>
+                <%- include('../templates/gallery-energy-industry.ejs') %>
+            </div>
         </div>
     </div>
 </section>
@@ -130,35 +161,26 @@
 <section class="simple-section know-more dark-image-bg accent-section-borders">
     <div class="container-md container-xxl h-100">
         <div class="simple-section__title light">
-            <h2 data-i18n="industry-solutions.other_industries.title"></h2>
-            <p class="accent-text-block all" data-i18n="industry-solutions.other_industries.description"></p>
+            <h2 data-i18n="industry.other_industries.title"></h2>
+            <p class="accent-text-block all" data-i18n="industry.other_industries.description"></p>
         </div>
         <div class="row">
-            <div class="col-12 col-md-4">
-                <div class="know-more-item">
-                    <svg class="icon">
-                        <use xlink:href="#electricity"></use>
-                      </svg>
-                    <h4 data-i18n="industry-solutions.other_industries.energy.title"></h4>
-                    <p data-i18n="industry-solutions.other_industries.energy.description"></p>
-                </div>
-            </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6">
                 <div class="know-more-item">
                     <svg class="icon">
                         <use xlink:href="#mechanic"></use>
                       </svg>
-                    <h4 data-i18n="industry-solutions.other_industries.construction.title"></h4>
-                    <p data-i18n="industry-solutions.other_industries.construction.description"></p> 
+                    <h4 data-i18n="industry.other_industries.construction.title"></h4>
+                    <p data-i18n="industry.other_industries.construction.description"></p> 
                 </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6">
                 <div class="know-more-item">
                     <svg class="icon">
                         <use xlink:href="#oil-barrel"></use>
                       </svg>
-                    <h4 data-i18n="industry-solutions.other_industries.oil_gas.title"></h4>
-                    <p data-i18n="industry-solutions.other_industries.oil_gas.description"></p>
+                    <h4 data-i18n="industry.other_industries.oil_gas.title"></h4>
+                    <p data-i18n="industry.other_industries.oil_gas.description"></p>
                 </div>
             </div>
         </div>
@@ -166,6 +188,54 @@
 </section>
 
 <%- include('../templates/footer.ejs') %>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "<%= translations['industry'].title %>",
+  "description": "<%= translations['industry'].main_description %>",
+  "url": "<%= websiteUrl %>projects/industry.html",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "<%= translations['industry'].tabs.food %>",
+      "description": "<%= translations['industry'].sections.food.specificity.item1 %>"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "<%= translations['industry'].tabs.chemical %>",
+      "description": "<%= translations['industry'].sections.chemical.specificity.item1 %>"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "<%= translations['industry'].tabs.pharmaceutical %>",
+      "description": "<%= translations['industry'].sections.pharmaceutical.specificity.item1 %>"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "<%= translations['industry'].tabs.energy %>",
+      "description": "<%= translations['industry'].sections.energy.specificity.item1 %>"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "<%= translations['industry'].other_industries.construction.title %>",
+      "description": "<%= translations['industry'].other_industries.construction.description %>"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "<%= translations['industry'].other_industries.oil_gas.title %>",
+      "description": "<%= translations['industry'].other_industries.oil_gas.description %>"
+    }
+  ]
+}
+</script>
 
 </body>
 </html>

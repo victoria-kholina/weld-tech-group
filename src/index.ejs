@@ -31,7 +31,6 @@
           <h4 data-i18n="home.hero.description"></h4>
             <div class="welcome-heading__buttons">
               <a href="<%= path('about-us.html') %>" class="simple-button" data-i18n="common.buttons.more"></a>
-              <a href="<%= path('video.html') %>" class="simple-button">Смотреть видео</a>
               <a href="#contacts" class="simple-button" data-i18n="common.buttons.contact"></a>
             </div>
         </div>
@@ -158,5 +157,108 @@
 
 <%- include('templates/footer.ejs') %>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Weld Tech Group",
+  "url": "<%= websiteUrl %>",
+  "description": "<%= translations.home.meta.description %>",
+  "logo": "<%= websiteUrl %>assets/img/logo-WTG.svg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Wileńska 31",
+    "addressLocality": "Oleśnica",
+    "postalCode": "56-400",
+    "addressCountry": "PL"
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+48510552446",
+      "contactType": "customer service",
+      "availableLanguage": ["Polish", "English", "Lithuanian", "German", "Ukrainian", "Russian", "Czech", "Spanish"]
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+48510552446",
+      "contactType": "WhatsApp"
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+48510552446",
+      "contactType": "Viber"
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "@weld_tech_group",
+      "contactType": "Telegram"
+    }
+  ],
+  "email": "info@weld-tech.group",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "51.2088482",
+    "longitude": "17.4086954"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "<%= websiteUrl %>",
+    "name": "<%= translations.home.title %>",
+    "description": "<%= translations.home.meta.description %>",
+    "inLanguage": ["pl", "en", "lt", "de", "uk", "ru", "cs", "es"],
+    "video": {
+      "@type": "VideoObject",
+      "name": "Weld Tech Group Video",
+      "description": "<%= translations.home.hero.description %>",
+      "thumbnailUrl": "<%= websiteUrl %>assets/img/preview-img/WeldTechMain.jpg",
+      "contentUrl": "<%= websiteUrl %>assets/img/Weld-tech-video.mp4"
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Industrial Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "<%= translations.services.items.pipelines.title %>",
+          "url": "<%= websiteUrl %>services/installation-of-process-pipelines.html"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "<%= translations.services.items.equipment.title %>",
+          "url": "<%= websiteUrl %>services/equipment-for-industry.html"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "<%= translations.services.items.capacitive.title %>",
+          "url": "<%= websiteUrl %>services/production-of-capacitive-equipment.html"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "<%= translations.services.items.structures.title %>",
+          "url": "<%= websiteUrl %>services/metal-structures-and-service-platforms.html"
+        }
+      }
+    ]
+  },
+  "image": [
+    "<%= websiteUrl %>assets/img/preview-img/WeldTechMain.jpg",
+    "<%= websiteUrl %>assets/img/work-weld-tech.webp"
+  ]
+}
+
+</script>
 </body>
 </html>

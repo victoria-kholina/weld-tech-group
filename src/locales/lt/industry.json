@@ -1,0 +1,95 @@
+{
+  "title": "Weld Tech Group - Pramonės sprendimai",
+  "meta_description": "Weld Tech Group sprendimai maisto, chemijos, farmacijos ir kitoms pramonės šakoms — atsižvelgiant į sanitarinius, techninius ir gamybos reikalavimus.",
+  "main_title": "Pramonės sprendimai",
+  "main_description": "Įmonė <b> Weld Tech Group </b> įgyvendina projektus įvairioms pramonės šakoms, atsižvelgdama į specifinius montavimo, higienos, saugumo ir efektyvumo reikalavimus.",
+  "tabs": {
+    "food": "Maisto pramonė",
+    "chemical": "Chemijos pramonė",
+    "pharmaceutical": "Farmacijos pramonė",
+    "energy": "Energetikos pramonė"
+  },
+  "alt": {
+    "food_industry": "maisto pramonės įranga",
+    "chemical_industry": "chemijos pramonės įranga",
+    "pharmaceutical_industry": "pramoniniai vamzdynai",
+    "energy_industry": "energetikos pramonės įranga"
+  },
+  "sections": {
+    "food": {
+      "specificity": {
+        "title": "Specifika ir užduotys:",
+        "item1": "Griežti sanitariniai ir higienos reikalavimai (pvz., HACCP).",
+        "item2": "Būtinybė nepriekaištingos suvirinimo kokybės ir patogaus įrangos sanitarinio apdorojimo.",
+        "item3": "Nerūdijančio plieno ir maisto saugumo atitinkančių medžiagų naudojimas."
+      },
+      "offer": {
+        "title": "Ką siūlome:",
+        "item1": "Skystų ir birių produktų vamzdynų sistemų projektavimas ir montavimas.",
+        "item2": "Specializuotų talpyklų (pienui, alui, sulčiams ir kt.) gamyba, atsižvelgiant į terminį apdorojimą ar aušinimą.",
+        "item3": "Papildomų konstrukcijų (konvejerių, ritinių, plovimo vonių) gamyba, pritaikyta dideliam drėgniui ir agresyviems plovikliams."
+      }
+    },
+    "chemical": {
+      "specificity": {
+        "title": "Specifika ir užduotys:",
+        "item1": "Agresyvios aplinkos (rūgštys, šarmai, organiniai tirpikliai ir kt.).",
+        "item2": "Detalus sandarumo, korozijos atsparumo ir personalo saugumo reikalavimai.",
+        "item3": "Specializuotos įrangos, skirtos cheminių medžiagų saugojimui ir perdirbimui, būtinybė."
+      },
+      "offer": {
+        "title": "Ką siūlome:",
+        "item1": "Talpyklų ir vamzdynų gamyba, skirtų darbui su agresyviomis cheminėmis aplinkomis.",
+        "item2": "Ilgaamžės metalinės konstrukcijos, atsparios korozijai ir temperatūros svyravimams.",
+        "item3": "Galimybė gaminti nestandartines sistemas specializuotiems technologiniams procesams."
+      }
+    },
+    "pharmaceutical": {
+      "specificity": {
+        "title": "Specifika ir užduotys:",
+        "item1": "Griežti grynumo reikalavimai (GMP, FDA ir kt.).",
+        "item2": "Visiškas aukštų sterilumo standartų laikymasis ir kryžminės užteršimo prevencija.",
+        "item3": "Didelio grynumo lydinių su minimaliu priemaišų kiekiu naudojimas."
+      },
+      "offer": {
+        "title": "Ką siūlome:",
+        "item1": "Didelio grynumo terpių (injekcijų vanduo, farmacinis garas) vamzdynų ir saugojimo sistemų montavimas.",
+        "item2": "Talpyklų su specialiu vidinio paviršiaus apdorojimu (šlifavimas, pasyvavimas) gamyba.",
+        "item3": "Didelio tikslumo suvirinimas (pvz., orbitalinis), minimizuojantis šiurkštumą ir siūles, kurios gali sulaikyti mikroorganizmus."
+      }
+    },
+    "energy": {
+      "specificity": {
+        "title": "Specifika ir užduotys:",
+        "item1": "Aukšti įrangos ir suvirinimo jungčių patikimumo reikalavimai esant aukštai temperatūrai ir slėgiui.",
+        "item2": "Darbas su garo, dujų ir hidraulikos sistemomis.",
+        "item3": "Griežtas saugumo normų, taip pat energijos efektyvumo ir aplinkosaugos standartų laikymasis."
+      },
+      "offer": {
+        "title": "Ką siūlome:",
+        "item1": "Katilinių, turbinų įrenginių ir kompresorių stočių vamzdynų ir metalinių konstrukcijų montavimas.",
+        "item2": "Talpyklų, šilumokaičių, kaminų ir kitų energetikos infrastruktūros komponentų gamyba.",
+        "item3": "Leguotų, atsparių karščiui ir korozijai plienų konstrukcijų suvirinimas, įskaitant daugiasluoksnio suvirinimo technologiją ir briaunų paruošimą."
+      }
+    }
+  },
+  "realisations": {
+    "title": "Mūsų realizacijos"
+  },
+  "other_industries": {
+    "title": "Kitos pramonės šakos ir kryptys",
+    "description": "Be pagrindinių krypčių (maisto, chemijos, farmacijos, energetikos), taip pat bendradarbiaujame su įmonėmis iš:",
+    "energy": {
+      "title": "Energetikos",
+      "description": "Garo, dujų, suslėgto oro vamzdynai, katilinių ir turbinų salių metalinių konstrukcijų montavimas."
+    },
+    "construction": {
+      "title": "Statybinės technikos",
+      "description": "Gamybos linijų komponentų gamyba ir montavimas, įskaitant sudėtingų metalinių konstrukcijų suvirinimą."
+    },
+    "oil_gas": {
+      "title": "Naftos ir dujų sektoriaus",
+      "description": "Naftos produktų talpyklos, dujotiekiai, susijusi armatūra."
+    }
+  }
+} 

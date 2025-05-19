@@ -1,0 +1,95 @@
+{
+  "title": "Weld Tech Group - Soluciones Industriales",
+  "meta_description": "Soluciones Weld Tech Group para las industrias alimentaria, química, farmacéutica y otras — adaptadas a requisitos sanitarios, técnicos y de producción.",
+  "main_title": "Soluciones Industriales",
+  "main_description": "La empresa <b> Weld Tech Group </b> realiza proyectos para diversas industrias, teniendo en cuenta los requisitos específicos de instalación, higiene, seguridad y eficiencia.",
+  "tabs": {
+    "food": "Industria Alimentaria",
+    "chemical": "Industria Química",
+    "pharmaceutical": "Industria Farmacéutica",
+    "energy": "Industria Energética"
+  },
+  "alt": {
+    "food_industry": "equipamiento para la industria alimentaria",
+    "chemical_industry": "equipamiento para la industria química",
+    "pharmaceutical_industry": "tuberías industriales",
+    "energy_industry": "equipamiento para la industria energética"
+  },
+  "sections": {
+    "food": {
+      "specificity": {
+        "title": "Especificidades y tareas:",
+        "item1": "Estrictos requisitos sanitarios e higiénicos (por ejemplo, HACCP).",
+        "item2": "Necesidad de soldaduras perfectas y facilidad de limpieza del equipo.",
+        "item3": "Uso de aceros inoxidables y materiales que cumplen con la seguridad alimentaria."
+      },
+      "offer": {
+        "title": "Lo que ofrecemos:",
+        "item1": "Diseño e instalación de sistemas de tuberías para productos líquidos y a granel.",
+        "item2": "Fabricación de contenedores especializados (para leche, cerveza, zumos, etc.) considerando el tratamiento térmico o refrigeración.",
+        "item3": "Fabricación de estructuras adicionales (transportadores, rodillos, tanques de lavado) adaptadas a alta humedad y agentes de limpieza agresivos."
+      }
+    },
+    "chemical": {
+      "specificity": {
+        "title": "Especificidades y tareas:",
+        "item1": "Medios agresivos (ácidos, álcalis, disolventes orgánicos, etc.).",
+        "item2": "Requisitos detallados de estanqueidad, resistencia a la corrosión y seguridad del personal.",
+        "item3": "Necesidad de equipamiento especializado para el almacenamiento y procesamiento de sustancias químicas."
+      },
+      "offer": {
+        "title": "Lo que ofrecemos:",
+        "item1": "Fabricación de contenedores y tuberías para trabajar con medios químicos agresivos.",
+        "item2": "Estructuras metálicas duraderas, resistentes a la corrosión y fluctuaciones de temperatura.",
+        "item3": "Posibilidad de fabricar sistemas no estándar para procesos tecnológicos especializados."
+      }
+    },
+    "pharmaceutical": {
+      "specificity": {
+        "title": "Especificidades y tareas:",
+        "item1": "Estrictos requisitos de pureza (GMP, FDA y otros).",
+        "item2": "Cumplimiento total de altos estándares de esterilidad y prevención de contaminación cruzada.",
+        "item3": "Uso de aleaciones de alta pureza con contenido mínimo de impurezas."
+      },
+      "offer": {
+        "title": "Lo que ofrecemos:",
+        "item1": "Instalación de tuberías y sistemas de almacenamiento para medios de alta pureza (agua para inyección, vapor farmacéutico).",
+        "item2": "Fabricación de contenedores con tratamiento especial de superficie interior (pulido, pasivación).",
+        "item3": "Soldadura de alta precisión (por ejemplo, orbital), minimizando la rugosidad y las soldaduras que retienen microorganismos."
+      }
+    },
+    "energy": {
+      "specificity": {
+        "title": "Especificidades y tareas:",
+        "item1": "Altos requisitos de fiabilidad del equipo y conexiones soldadas en condiciones de alta temperatura y presión.",
+        "item2": "Trabajo con sistemas de vapor, gas e hidráulicos.",
+        "item3": "Estricto cumplimiento de normas de seguridad, así como estándares de eficiencia energética y seguridad ambiental."
+      },
+      "offer": {
+        "title": "Lo que ofrecemos:",
+        "item1": "Instalación de tuberías y estructuras metálicas para salas de calderas, unidades de turbinas y estaciones de compresores.",
+        "item2": "Fabricación de contenedores, intercambiadores de calor, chimeneas y otros componentes de infraestructura energética.",
+        "item3": "Soldadura de estructuras de aceros aleados, resistentes al calor y a la corrosión, incluyendo tecnología de soldadura multicapa y preparación de bordes."
+      }
+    }
+  },
+  "realisations": {
+    "title": "Nuestras realizaciones"
+  },
+  "other_industries": {
+    "title": "Otras industrias y direcciones",
+    "description": "Además de las principales direcciones (alimentaria, química, farmacéutica, energética), también colaboramos con empresas de:",
+    "energy": {
+      "title": "Energía",
+      "description": "Tuberías para vapor, gas, aire comprimido, instalación de estructuras metálicas para salas de calderas y turbinas."
+    },
+    "construction": {
+      "title": "Maquinaria de construcción",
+      "description": "Fabricación e instalación de componentes para líneas de producción, incluyendo soldadura de estructuras metálicas complejas."
+    },
+    "oil_gas": {
+      "title": "Sector del petróleo y gas",
+      "description": "Contenedores para productos petrolíferos, gasoductos, armadura asociada."
+    }
+  }
+} 

@@ -28,11 +28,11 @@
         </div>
         <div class="tabs tabs-gallery our-equipment-tabs">
             <div class="tabs-btn-wrap">
-                <button class="tabs-btn tabs-accent-btn active" data-tab="tab1"><h4 data-i18n="our-equipment.tabs.welding"></h4></button>
-                <button class="tabs-btn tabs-accent-btn" data-tab="tab2"><h4 data-i18n="our-equipment.tabs.machining"></h4></button>
-                <button class="tabs-btn tabs-accent-btn" data-tab="tab3"><h4 data-i18n="our-equipment.tabs.weld_preparation"></h4></button>
-                <button class="tabs-btn tabs-accent-btn" data-tab="tab4"><h4 data-i18n="our-equipment.tabs.quality_control"></h4></button>
-                <button class="tabs-btn tabs-accent-btn" data-tab="tab5"><h4 data-i18n="our-equipment.tabs.lifting"></h4></button>
+                <button class="tabs-btn tabs-accent-btn active" data-tab="tab1" data-i18n="our-equipment.tabs.welding"></button>
+                <button class="tabs-btn tabs-accent-btn" data-tab="tab2" data-i18n="our-equipment.tabs.machining"></button>
+                <button class="tabs-btn tabs-accent-btn" data-tab="tab3" data-i18n="our-equipment.tabs.weld_preparation"></button>
+                <button class="tabs-btn tabs-accent-btn" data-tab="tab4" data-i18n="our-equipment.tabs.quality_control"></button>
+                <button class="tabs-btn tabs-accent-btn" data-tab="tab5" data-i18n="our-equipment.tabs.lifting"></button>
             </div>
             <div class="tabs-content tabs-accent-content active" id="tab1">
                 <h3 data-i18n="our-equipment.sections.welding.title"></h3>
@@ -218,6 +218,48 @@
 </section>
 
 <%- include('../templates/footer.ejs') %>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "<%= translations['our-equipment'].title %>",
+  "description": "<%= translations['our-equipment'].main_description %>",
+  "url": "<%= websiteUrl %>projects/our-equipment.html",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "<%= translations['our-equipment'].sections.welding.title %>",
+      "description": "<%= translations['our-equipment'].sections.welding.tig.description %>"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "<%= translations['our-equipment'].sections.machining.title %>",
+      "description": "<%= translations['our-equipment'].sections.machining.cnc.description %>"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "<%= translations['our-equipment'].sections.weld_preparation.title %>",
+      "description": "<%= translations['our-equipment'].sections.weld_preparation.grinding.description %>"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "<%= translations['our-equipment'].sections.quality_control.title %>",
+      "description": "<%= translations['our-equipment'].sections.quality_control.ndt.description %>"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "<%= translations['our-equipment'].sections.lifting.title %>",
+      "description": "<%= translations['our-equipment'].sections.lifting.cranes.description %>"
+    }
+  ]
+}
+</script>
 
 </body>
 </html>

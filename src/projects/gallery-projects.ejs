@@ -33,6 +33,7 @@
                 <button class="tabs-btn tabs-accent-btn" data-tab="tab3" data-i18n="gallery.tabs.capacitive"></button>
                 <button class="tabs-btn tabs-accent-btn" data-tab="tab4" data-i18n="gallery.tabs.food"></button>
                 <button class="tabs-btn tabs-accent-btn" data-tab="tab5" data-i18n="gallery.tabs.chemical"></button>
+                <button class="tabs-btn tabs-accent-btn" data-tab="tab6" data-i18n="gallery.tabs.energy"></button>
             </div>
             
             <div class="tabs-content tabs-accent-content active" id="tab1">
@@ -48,7 +49,10 @@
                 <%- include('../templates/gallery-food-industry.ejs') %>
             </div>
             <div class="tabs-content tabs-accent-content" id="tab5">
-                <%- include('../templates/gallery-chemical-energy-industry.ejs') %>
+                <%- include('../templates/gallery-chemical-industry.ejs') %>
+            </div>
+            <div class="tabs-content tabs-accent-content" id="tab6">
+                <%- include('../templates/gallery-energy-industry.ejs') %>
             </div>
         </div>
      </div>
@@ -57,6 +61,25 @@
 <%- include('../templates/features.ejs') %>
 
 <%- include('../templates/footer.ejs') %>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": "<%= translations.gallery.title %>",
+  "description": "<%= translations.gallery.main_description %>",
+  "url": "<%= websiteUrl %>projects/gallery-projects.html",
+  "about": {
+    "@type": "Thing",
+    "name": "Industrial Projects Gallery",
+    "description": "Collection of industrial projects including pipelines, capacitive equipment, and various industry solutions"
+  },
+  "contentLocation": {
+    "@type": "Place",
+    "name": "Weld Tech Group Projects"
+  }
+}
+</script>
 
 </body>
 </html>

@@ -140,6 +140,10 @@ a {
   .no-wrap {
     white-space: nowrap;
   }
+  .z-index-1 {
+    z-index: 1;
+    position: relative;
+  }
 
   .main-container {
     position: relative;
@@ -351,37 +355,4 @@ a {
   @include abs.only-mobile {
     display: block;
     }
-}
-.video {
-  background-color: abs.$light-color;
-  &-description {
-    max-width: abs.$max-width;
-    margin: 0 auto;
-    text-align: center;
-    @include abs.tablet {
-      margin-bottom: 30px;
-    }
-    @include abs.desktop {
-      margin-bottom: 50px;
-    }
-  }
-  &-container {
-    height: 100vh;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    video {
-      width: 100%;
-      height: auto;
-      margin: 0 auto;
-      @include abs.only-mobile {
-        max-width: 300px;
-      }
-      @include abs.tablet {
-        width: auto;
-        height: 90vh;
-      }
-    }
-  }
 }

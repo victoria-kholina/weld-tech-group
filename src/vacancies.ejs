@@ -110,5 +110,35 @@
       </div>
 </div>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "<%= translations.vacancies.title %>",
+  "description": "<%= translations.vacancies.meta.description %>",
+  "url": "<%= websiteUrl %>vacancies.html",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Weld Tech Group",
+    "url": "<%= websiteUrl %>"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Wileńska 31",
+      "addressLocality": "Oleśnica",
+      "postalCode": "56-400",
+      "addressCountry": "PL"
+    }
+  },
+  "employmentType": "FULL_TIME",
+  "applicationContact": {
+    "@type": "ContactPoint",
+    "contactType": "recruiter",
+    "email": "info@weld-tech.group"
+  }
+}
+</script>
 </body>
 </html>

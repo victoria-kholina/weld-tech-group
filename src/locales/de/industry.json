@@ -1,0 +1,95 @@
+{
+  "title": "Weld Tech Group - Industrielle Lösungen",
+  "meta_description": "Weld Tech Group Lösungen für Lebensmittel-, Chemie-, Pharmaindustrie und andere — angepasst an hygienische, technische und Produktionsanforderungen.",
+  "main_title": "Branchenlösungen",
+  "main_description": "Das Unternehmen <b> Weld Tech Group </b> realisiert Projekte für verschiedene Industriezweige unter Berücksichtigung der spezifischen Anforderungen an Installation, Hygiene, Sicherheit und Effizienz.",
+  "tabs": {
+    "food": "Lebensmittelindustrie",
+    "chemical": "Chemische Industrie",
+    "pharmaceutical": "Pharmaindustrie",
+    "energy": "Energiebranche"
+  },
+  "alt": {
+    "food_industry": "Ausrüstung für die Lebensmittelindustrie",
+    "chemical_industry": "Ausrüstung für die chemische Industrie",
+    "pharmaceutical_industry": "Industrielle Rohrleitungen",
+    "energy_industry": "Ausrüstung für die Energiebranche"
+  },
+  "sections": {
+    "food": {
+      "specificity": {
+        "title": "Spezifika und Aufgaben:",
+        "item1": "Strenge Hygiene- und Sauberkeitsanforderungen (z.B. HACCP).",
+        "item2": "Notwendigkeit perfekter Schweißnähte und einfacher Reinigung der Ausrüstung.",
+        "item3": "Verwendung von Edelstählen und Materialien, die den Lebensmittelsicherheitsstandards entsprechen."
+      },
+      "offer": {
+        "title": "Was wir anbieten:",
+        "item1": "Planung und Installation von Rohrleitungssystemen für flüssige und pulverförmige Produkte.",
+        "item2": "Herstellung spezialisierter Behälter (für Milch, Bier, Säfte usw.) unter Berücksichtigung von Wärmebehandlung oder Kühlung.",
+        "item3": "Fertigung zusätzlicher Konstruktionen (Förderbänder, Rollen, Waschbecken), angepasst an hohe Feuchtigkeit und aggressive Reinigungsmittel."
+      }
+    },
+    "chemical": {
+      "specificity": {
+        "title": "Spezifika und Aufgaben:",
+        "item1": "Aggressive Medien (Säuren, Laugen, organische Lösungsmittel usw.).",
+        "item2": "Detaillierte Anforderungen an Dichtheit, Korrosionsbeständigkeit und Personalsicherheit.",
+        "item3": "Notwendigkeit spezialisierter Ausrüstung für die Lagerung und Verarbeitung chemischer Substanzen."
+      },
+      "offer": {
+        "title": "Was wir anbieten:",
+        "item1": "Herstellung von Behältern und Rohrleitungen für den Umgang mit aggressiven chemischen Medien.",
+        "item2": "Langlebige Metallkonstruktionen, beständig gegen Korrosion und Temperaturschwankungen.",
+        "item3": "Möglichkeit zur Herstellung nicht standardisierter Systeme für spezialisierte technologische Prozesse."
+      }
+    },
+    "pharmaceutical": {
+      "specificity": {
+        "title": "Spezifika und Aufgaben:",
+        "item1": "Strenge Reinheitsanforderungen (GMP, FDA und andere).",
+        "item2": "Vollständige Einhaltung hoher Sterilitätsstandards und Vermeidung von Kreuzkontaminationen.",
+        "item3": "Verwendung von hochreinen Legierungen mit minimalem Verunreinigungsgehalt."
+      },
+      "offer": {
+        "title": "Was wir anbieten:",
+        "item1": "Installation von Rohrleitungen und Speichersystemen für hochreine Medien (Wasser für Injektionen, pharmazeutischer Dampf).",
+        "item2": "Herstellung von Behältern mit spezieller Innenoberflächenbehandlung (Polieren, Passivieren).",
+        "item3": "Hochpräzises Schweißen (z.B. Orbital), das Rauheiten und Nähte minimiert, die Mikroorganismen zurückhalten könnten."
+      }
+    },
+    "energy": {
+      "specificity": {
+        "title": "Spezifika und Aufgaben:",
+        "item1": "Hohe Anforderungen an die Zuverlässigkeit der Ausrüstung und Schweißverbindungen unter Bedingungen hoher Temperaturen und Drücke.",
+        "item2": "Arbeit mit Dampf-, Gas- und Hydrauliksystemen.",
+        "item3": "Strikte Einhaltung von Sicherheitsnormen sowie Standards für Energieeffizienz und Umweltsicherheit."
+      },
+      "offer": {
+        "title": "Was wir anbieten:",
+        "item1": "Installation von Rohrleitungen und Metallkonstruktionen für Kesselhäuser, Turbinenanlagen und Kompressorstationen.",
+        "item2": "Herstellung von Behältern, Wärmetauschern, Schornsteinen und anderen Komponenten der Energieinfrastruktur.",
+        "item3": "Schweißen von Konstruktionen aus legierten, hitzebeständigen und korrosionsbeständigen Stählen, einschließlich Mehrlagenschweißtechnik und Kantenvorbereitung."
+      }
+    }
+  },
+  "realisations": {
+    "title": "Unsere Realisierungen"
+  },
+  "other_industries": {
+    "title": "Andere Branchen und Richtungen",
+    "description": "Neben den Hauptrichtungen (Lebensmittel, Chemie, Pharma, Energie) arbeiten wir auch mit Unternehmen aus folgenden Bereichen zusammen:",
+    "energy": {
+      "title": "Energie",
+      "description": "Rohrleitungen für Dampf, Gas, Druckluft, Installation von Metallkonstruktionen für Kesselhäuser und Turbinenhallen."
+    },
+    "construction": {
+      "title": "Baumaschinen",
+      "description": "Herstellung und Installation von Komponenten für Produktionslinien, einschließlich Schweißen komplexer Metallkonstruktionen."
+    },
+    "oil_gas": {
+      "title": "Öl- und Gassektor",
+      "description": "Behälter für Erdölprodukte, Gasleitungen, zugehörige Armaturen."
+    }
+  }
+} 

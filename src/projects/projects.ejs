@@ -224,5 +224,44 @@
 
 <%- include('../templates/footer.ejs') %>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "<%= translations.projects.title %>",
+  "description": "<%= translations.projects.main_description.part_1 %> <%= translations.projects.main_description.part_2 %>",
+  "url": "<%= websiteUrl %>projects/projects.html",
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "<%= translations.projects.sections.pipelines.title %>",
+        "description": "<%= translations.projects.sections.pipelines.items[0] %>"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "<%= translations.projects.sections.conveyors.title %>",
+        "description": "<%= translations.projects.sections.conveyors.items[0] %>"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "<%= translations.projects.sections.tanks.title %>",
+        "description": "<%= translations.projects.sections.tanks.items[0] %>"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "<%= translations.projects.sections.platforms.title %>",
+        "description": "<%= translations.projects.sections.platforms.items[0] %>"
+      }
+    ]
+  }
+}
+</script>
+
 </body>
 </html>

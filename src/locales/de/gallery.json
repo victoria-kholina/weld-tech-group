@@ -21,6 +21,7 @@
     "pipelines": "Montage von Prozessleitungen",
     "capacitive": "Herstellung von Kapazitätsanlagen",
     "food": "Lebensmittelindustrie",
-    "chemical": "Chemische, energetische Industrie"
+    "chemical": "Chemische Industrie",
+    "energy": "Energetische Industrie"
   }
 } 

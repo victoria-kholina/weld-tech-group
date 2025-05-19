@@ -75,5 +75,21 @@
 
 <%- include('../templates/footer.ejs') %>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "<%= translations['metal-structures'].title %>",
+  "description": "<%= translations['metal-structures'].main_description %>",
+  "url": "<%= websiteUrl %>services/metal-structures-and-service-platforms.html",
+  "provider": {
+    "@type": "Organization",
+    "name": "Weld Tech Group",
+    "url": "<%= websiteUrl %>"
+  },
+  "serviceType": "Metal Structures Manufacturing"
+}
+</script>
+
 </body>
 </html>
