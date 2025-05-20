@@ -31,6 +31,7 @@
             }
             @include abs.desktop {
                 width: 3px;
+                margin-top: -15px;
             }
         }
     }
@@ -71,6 +72,10 @@
         @include abs.tablet {
             justify-content: flex-end;
             text-align: right;
+            &.col-md-6 {
+                padding-right: 0;
+                padding-left: 0;
+            }
             &:nth-child(2n) {
                 text-align: left;
                 justify-content: flex-start;

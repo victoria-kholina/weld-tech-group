@@ -1,8 +1,6 @@
 const path = require('path');
 const fs = require('fs');
 const { promisify } = require('util');
-const readFile = promisify(fs.readFile);
-const writeFile = promisify(fs.writeFile);
 const mkdir = promisify(fs.mkdir);
 const ejs = require('ejs');
 const minify = require('html-minifier').minify;
@@ -14,7 +12,7 @@ class I18nHtmlPlugin {
         this.root = options.root || path.resolve(__dirname, '../../src');
     }
 
-    loadTranslations(lang) {
+    async loadTranslations(lang) {
         const translationsPath = path.resolve(__dirname, '../../src/locales', lang);
         
         if (!fs.existsSync(translationsPath)) {
@@ -22,136 +20,80 @@ class I18nHtmlPlugin {
             return;
         }
 
-        const files = fs.readdirSync(translationsPath);
+        const files = fs.readdirSync(translationsPath).filter(file => file.endsWith('.json'));
         this.translations[lang] = {};
         
-        files.forEach(file => {
-            if (file.endsWith('.json')) {
-                try {
-                    const content = fs.readFileSync(path.join(translationsPath, file), 'utf8');
-                    const key = file.replace('.json', '');
-                    this.translations[lang][key] = JSON.parse(content);
-                    console.log(`Loaded translation: ${key} for language: ${lang}`);
-                } catch (error) {
-                    console.error(`Error loading translation file ${file} for language ${lang}:`, error);
-                }
+        await Promise.all(files.map(async file => {
+            try {
+                const content = await fs.promises.readFile(path.join(translationsPath, file), 'utf8');
+                const key = file.replace('.json', '');
+                this.translations[lang][key] = JSON.parse(content);
+            } catch (error) {
+                console.error(`Error loading translation file ${file} for language ${lang}:`, error);
             }
-        });
-
-        // Проверяем, что переводы загружены корректно
-        console.log(`Translations for ${lang}:`, JSON.stringify(this.translations[lang], null, 2));
+        }));
     }
 
     getTranslationValue(path, translations) {
-        try {
-            const cleanPath = path.replace(/^\[[^\]]+\]/, '');
-            const keys = cleanPath.split('.');
-            let value = translations;
-            
-            for (const key of keys) {
-                if (value && typeof value === 'object') {
-                    value = value[key];
-                } else {
-                    console.warn(`Translation not found for path: ${cleanPath}`);
-                    return null;
-                }
-            }
-            
-            if (typeof value === 'string') {
-                return value;
-            }
-            
-            console.warn(`Translation value is not a string for path: ${cleanPath}`);
-            return null;
-        } catch (error) {
-            console.error(`Error getting translation for path ${path}:`, error);
-            return null;
-        }
+        return path.split('.').reduce((obj, key) => obj?.[key], translations) || '';
     }
 
     async processTemplate(templatePath, lang) {
         let content = fs.readFileSync(templatePath, 'utf8');
         
-        // Сначала обрабатываем EJS шаблоны
+        // First process EJS templates
         content = await ejs.render(content, {
             include: (file) => {
-                // Получаем директорию текущего файла
                 const currentDir = path.dirname(templatePath);
-                // Строим абсолютный путь к включаемому файлу
                 const includePath = path.resolve(currentDir, file);
-                console.log(`Including file: ${includePath}`);
-                // Читаем содержимое файла
                 const content = fs.readFileSync(includePath, 'utf8');
-                // Обрабатываем включаемый файл с тем же контекстом
                 return ejs.render(content, { 
-                    lang: lang,
+                    lang,
                     websiteUrl: this.options.data?.websiteUrl || '',
                     translations: this.translations[lang],
-                    // Добавляем хелпер для формирования путей
-                    path: (file) => {
-                        // Для польского языка путь без префикса
-                        if (lang === 'en') {
-                            return `/${file}`;
-                        }
-                        // Для других языков добавляем префикс языка
-                        return `/${lang}/${file}`;
-                    }
+                    path: (file) => lang === 'en' ? `/${file}` : `/${lang}/${file}`
                 }, {
                     async: false,
                     root: this.root,
                     filename: includePath
                 });
             },
-            lang: lang,
+            lang,
             websiteUrl: this.options.data?.websiteUrl || '',
             translations: this.translations[lang],
-            // Добавляем хелпер для формирования путей
-            path: (file) => {
-                // Для польского языка путь без префикса
-                if (lang === 'en') {
-                    return `/${file}`;
-                }
-                // Для других языков добавляем префикс языка
-                return `/${lang}/${file}`;
-            }
+            path: (file) => lang === 'en' ? `/${file}` : `/${lang}/${file}`
         }, {
             async: true,
             root: this.root,
             filename: templatePath
         });
 
-        // Затем обрабатываем атрибуты i18n
-        content = content.replace(/(<[^>]+?)\s+data-i18n="([^"]+?)"\s*([^>]*>)/g, (match, startTag, path, endTag) => {
-            const value = this.getTranslationValue(path, this.translations[lang]);
-            if (value) {
-                return `${startTag}${endTag}${value}`;
-            }
-            console.warn(`Translation not found for path: ${path} in language: ${lang}`);
-            return match;
-        });
+        // Process i18n attributes
+        const processI18nAttributes = (content) => {
+            return content
+                .replace(/(<[^>]+?)\s+data-i18n="([^"]+?)"\s*([^>]*>)/g, (match, startTag, path, endTag) => {
+                    const value = this.getTranslationValue(path, this.translations[lang]);
+                    return value ? `${startTag}${endTag}${value}` : match;
+                })
+                .replace(/(<[^>]+?)\s+data-i18n-attr="\[([^\]]+?)\]([^"]+?)"\s*([^>]*>)/g, (match, startTag, attrName, key, endTag) => {
+                    const translation = this.getTranslationValue(key.trim(), this.translations[lang]);
+                    return translation ? `${startTag}${attrName}="${translation}"${endTag}` : match;
+                });
+        };
 
-        content = content.replace(/(<[^>]+?)\s+data-i18n-attr="\[([^\]]+?)\]([^"]+?)"\s*([^>]*>)/g, (match, startTag, attrName, key, endTag) => {
-            const translationKey = key.trim();
-            const translation = this.getTranslationValue(translationKey, this.translations[lang]);
-            if (translation) {
-                return `${startTag}${attrName}="${translation}"${endTag}`;
-            }
-            console.warn(`Missing translation for attribute ${translationKey} in language: ${lang}`);
-            return match;
-        });
+        content = processI18nAttributes(content);
 
-        // Добавляем скрипты и стили
+        // Add scripts and styles
         const scripts = `<script src="/assets/js/main.js"></script>`;
         const styles = `<link rel="stylesheet" href="/assets/css/main.css">`;
 
-        // Вставляем скрипты перед закрывающим тегом body
-        content = content.replace(/<\/body>/, `${scripts}\n</body>`);
+        // Insert scripts and styles
+        content = content
+            .replace(/<\/body>/, `${scripts}\n</body>`)
+            .replace(/<\/head>/, `${styles}\n</head>`);
 
-        // Вставляем стили перед закрывающим тегом head
-        content = content.replace(/<\/head>/, `${styles}\n</head>`);
-
-        // Минифицируем HTML
-        content = minify(content, {
+        // Minify HTML
+        return minify(content, {
             collapseWhitespace: true,
             removeComments: true,
             removeRedundantAttributes: true,
@@ -162,12 +104,10 @@ class I18nHtmlPlugin {
             minifyCSS: true,
             minifyURLs: true
         });
-
-        return content;
     }
 
     apply(compiler) {
-        // Добавляем EJS файлы в зависимости
+        // Add EJS files to dependencies
         compiler.hooks.compilation.tap('I18nHtmlPlugin', (compilation) => {
             const { pages } = this.options;
             
@@ -188,18 +128,18 @@ class I18nHtmlPlugin {
                 async () => {
                     const { languages, pages } = this.options;
                     
-                    // Загрузка переводов для всех языков
+                    // Load translations for all languages
                     for (const lang of languages) {
-                        this.loadTranslations(lang);
+                        await this.loadTranslations(lang);
                     }
 
-                    // Создание директории dist, если она не существует
+                    // Create dist directory if it doesn't exist
                     const distPath = path.resolve(__dirname, '../../dist');
                     if (!fs.existsSync(distPath)) {
                         await mkdir(distPath, { recursive: true });
                     }
 
-                    // Обработка каждой страницы для каждого языка
+                    // Process each page for each language
                     for (const page of pages) {
                         const templatePath = path.resolve(__dirname, `../../src/${page}`);
                         
@@ -209,16 +149,16 @@ class I18nHtmlPlugin {
                         }
 
                         for (const lang of languages) {
-                            // Сохраняем структуру директорий из src
+                            // Save directory structure from src
                             const relativePath = path.dirname(page);
                             const outputFilename = path.basename(page, '.ejs') + '.html';
                             
-                            // Для польской версии сохраняем в корень dist
+                            // For English version save to root dist
                             const outputPath = lang === 'en' 
                                 ? path.join(distPath, relativePath, outputFilename)
                                 : path.join(distPath, lang, relativePath, outputFilename);
                             
-                            // Создаем все необходимые поддиректории
+                            // Create all necessary subdirectories
                             const outputDir = path.dirname(outputPath);
                             if (!fs.existsSync(outputDir)) {
                                 await mkdir(outputDir, { recursive: true });
@@ -227,7 +167,7 @@ class I18nHtmlPlugin {
 
                             const processedContent = await this.processTemplate(templatePath, lang);
                             
-                            // Добавляем файл в компиляцию Webpack
+                            // Add file to Webpack compilation
                             const assetPath = lang === 'en'
                                 ? path.join(relativePath, outputFilename).replace(/\\/g, '/')
                                 : path.join(lang, relativePath, outputFilename).replace(/\\/g, '/');

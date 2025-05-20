@@ -1,302 +1,276 @@
-
-import $ from 'jquery';
 import Splide from '@splidejs/splide';
 
-$(function() {
+// Throttle function for performance optimization
+function throttle(func, limit) {
+  let lastCall = 0;
+  return function(...args) {
+    const now = Date.now();
+    if (now - lastCall >= limit) {
+      lastCall = now;
+      func.apply(this, args);
+    }
+  };
+}
 
+document.addEventListener('DOMContentLoaded', function() {
   
-   // Modal windows
+  // Modal windows
+  const modalWindow = document.getElementById('modal-window');
+  const modalIframe = document.getElementById('modal-iframe');
+  const modalBody = document.getElementById('modal-body');
   
-   $(".open-modal").click(function(){
-    let contentType = $(this).data("type"); 
-    let htmlContent = $(this).next("modal-content");
-  
-    $("#modal-iframe").hide().attr("src", "");
-    $("#modal-body").hide().html("");
-  
-    if (contentType === "pdf") {
-      let linkSrc = $(this).data("src");  
-      $("#modal-iframe").attr("src", linkSrc).css("display", "flex");
-    } else if (contentType === "img") {
-      let imageModal = $('<img>', {
-        src:  $(this).attr("src"),
-        alt: 'Modal Image'
-      })
-      $("#modal-body").html(imageModal).css("display", "flex");
-    } else {
-      $("#modal-body").html(htmlContent).css("display", "flex");
-    }
-  
-    $("#modal-window").fadeIn();
-  });
-  
-  $(".close, #modal-window").click(function(event){
-    if (event.target === this) {
-      $("#modal-window").fadeOut();
-      setTimeout(() => { 
-        $("#modal-iframe").attr("src", ""); 
-        $("#modal-body").html(""); 
-      }, 300);
-    }
-  });
-  
-  
-    if (document.querySelector('.splide')) {
-      var homeSlider = new Splide('.home-slider .splide', {
-        type: 'loop',
-        speed: 1000,
-        cover: true,
-        autoplay: true,
-        interval: 2000,
-        pagination: false,
-        perPage: 5,
-        perMove: 1,
-        pauseOnFocus: true,
-        gap: '20px',
-        rewind : true,
-        breakpoints: {
-          600: {
-            perPage: 2,
-            gap: '15px',
-          },
-          767: {
-            perPage: 3,
-            gap: '15px',
-          },
-          1023: {
-            perPage: 4,
-            gap: '15px',
-          },
-          1199: {
-            perPage: 5,
-          },
-        },
-      });
-  
-      homeSlider.mount();
-    }
-  
-    // Set SVG sprites code from the file to the html of every page. Needed for crossbrawser support
-    const basePath = '/assets/img/sprite.svg'; // абсолютный путь от корня
-  
-    $.ajax({
-      url: basePath,
-      method: 'GET',
-      dataType: 'text',
-      success: function (data) {
-        const parser = new DOMParser();
-        const svgDoc = parser.parseFromString(data, 'image/svg+xml');
-        const svgElem = svgDoc.documentElement;
-        document.body.prepend(svgElem); // лучше prepend — для доступа в <use>
-      },
-      error: function () {
-        console.error('Ошибка при загрузке SVG спрайта:', basePath);
-      },
-    });
-  
-    function setStickyMenuHeight() {
-      let stickyMenu = $(".sticky-menu-wrap");
-      let banner = $(".welcome-banner");
-  
-      if(banner) { stickyMenu.css("height", banner.outerHeight()) };     
-    }
-  
-    if($(window).width() > 767) {
-      setStickyMenuHeight();
-    }
-    $(window).resize(function(){
-      if($(window).width() > 767) {
-        setStickyMenuHeight();
+  document.querySelectorAll('.open-modal').forEach(button => {
+    button.addEventListener('click', function() {
+      const contentType = this.dataset.type;
+      const htmlContent = this.nextElementSibling;
+      
+      modalIframe.style.display = 'none';
+      modalIframe.src = '';
+      modalBody.style.display = 'none';
+      modalBody.innerHTML = '';
+      
+      if (contentType === 'pdf') {
+        const linkSrc = this.dataset.src;
+        modalIframe.src = linkSrc;
+        modalIframe.style.display = 'flex';
+      } else if (contentType === 'img') {
+        const imageModal = document.createElement('img');
+        imageModal.src = this.src;
+        imageModal.alt = 'Modal Image';
+        modalBody.appendChild(imageModal);
+        modalBody.style.display = 'flex';
       } else {
-        $(".sticky-menu-wrap").css("height", "50px");
+        modalBody.innerHTML = htmlContent.innerHTML;
+        modalBody.style.display = 'flex';
+      }
+      
+      modalWindow.style.display = 'block';
+      modalWindow.style.opacity = '1';
+    });
+  });
+  
+  [modalWindow, document.querySelector('.close')].forEach(element => {
+    element.addEventListener('click', function(event) {
+      if (event.target === this) {
+        modalWindow.style.opacity = '0';
+        setTimeout(() => {
+          modalWindow.style.display = 'none';
+          modalIframe.src = '';
+          modalBody.innerHTML = '';
+        }, 300);
       }
     });
+  });
   
-    // run animation on scroll
-    function checkVisibility() {
-      $('.animate-on-scroll').each(function () {
-        let elem = $(this);
-        let elemTop = elem.offset().top;
-        let windowBottom = $(window).scrollTop() + $(window).height();
+  // Splide slider
+  if (document.querySelector('.splide')) {
+    const homeSlider = new Splide('.home-slider .splide', {
+      type: 'loop',
+      speed: 1000,
+      cover: true,
+      autoplay: true,
+      interval: 2000,
+      pagination: false,
+      perPage: 5,
+      perMove: 1,
+      pauseOnFocus: true,
+      gap: '20px',
+      rewind: true,
+      breakpoints: {
+        600: {
+          perPage: 2,
+          gap: '15px',
+        },
+        767: {
+          perPage: 3,
+          gap: '15px',
+        },
+        1023: {
+          perPage: 4,
+          gap: '15px',
+        },
+        1199: {
+          perPage: 5,
+        },
+      },
+    });
+
+    homeSlider.mount();
+  }
   
-        if (windowBottom > elemTop && !elem.hasClass('animated')) {
-          elem.addClass('animated');
-        }
-      });
-    }
+  // SVG sprites
+  const basePath = '/assets/img/sprite.svg';
   
-    $(window).on('scroll', checkVisibility);
-    checkVisibility();
+  fetch(basePath)
+    .then(response => response.text())
+    .then(data => {
+      const parser = new DOMParser();
+      const svgDoc = parser.parseFromString(data, 'image/svg+xml');
+      const svgElem = svgDoc.documentElement;
+      document.body.appendChild(svgElem);
+    })
+    .catch(error => {
+      console.error('Ошибка при загрузке SVG спрайта:', basePath, error);
+    });
   
-    // Equal height function. 
-  
-    function setEqualHeight(elements) {
-      let maxHeight = 0;
-  
-      $(elements).css('height', 'auto');
-  
-      $(elements).each(function () {
-        let elementHeight = $(this).outerHeight();
-        if (elementHeight > maxHeight) {
-          maxHeight = elementHeight;
-        }
-      });
-  
-      $(elements).css('height', maxHeight + 'px');
-    }
+  // Sticky menu height
+  function setStickyMenuHeight() {
+    const stickyMenu = document.querySelector('.sticky-menu-wrap');
+    const banner = document.querySelector('.welcome-banner');
     
-    if($(window).width() > 767) {
-      setEqualHeight('.work-stages-item'); 
+    if (banner && stickyMenu) {
+      stickyMenu.style.height = `${banner.offsetHeight}px`;
+    }
+  }
+  
+  if (window.innerWidth > 767) {
+    setStickyMenuHeight();
+  }
+  
+  window.addEventListener('resize', function() {
+    const stickyMenu = document.querySelector('.sticky-menu-wrap');
+    if (window.innerWidth > 767) {
+      setStickyMenuHeight();
+    } else {
+      stickyMenu.style.height = '50px';
+    }
+  });
+  
+  function checkVisibility() {
+    document.querySelectorAll('.animate-on-scroll').forEach(elem => {
+      const rect = elem.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+  
+      if (isVisible) {
+        elem.classList.add('animated');
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', throttle(checkVisibility, 50));
+  checkVisibility();
+  
+  // Equal height function
+  function setEqualHeight(elements) {
+    const elementsList = document.querySelectorAll(elements);
+    let maxHeight = 0;
+    
+    elementsList.forEach(element => {
+      element.style.height = 'auto';
+    });
+    
+    elementsList.forEach(element => {
+      const elementHeight = element.offsetHeight;
+      if (elementHeight > maxHeight) {
+        maxHeight = elementHeight;
+      }
+    });
+    
+    elementsList.forEach(element => {
+      element.style.height = `${maxHeight}px`;
+    });
+  }
+  
+  if (window.innerWidth > 767) {
+    setEqualHeight('.work-stages-item');
+    setEqualHeight('.certificate-text');
+    setEqualHeight('.services-item');
+    setEqualHeight('.values-item');
+  }
+  
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 767) {
+      setEqualHeight('.work-stages-item');
       setEqualHeight('.certificate-text');
       setEqualHeight('.services-item');
       setEqualHeight('.values-item');
     }
-  
-      $(window).on('resize', function () {
-        if($(window).width() > 767) {
-          setEqualHeight('.work-stages-item');
-          setEqualHeight('.certificate-text'); 
-          setEqualHeight('.services-item');
-          setEqualHeight('.values-item');
-        }
-      });
-  
-      // Adapt vertical line height
-  
-      function updateLineHeight() {
-        let row = $('.work-stages-row');
-        let firstCircle = $('.work-stages-item.item-1 .stage-circle');
-        let lastCircle = $('.work-stages-item.item-6 .stage-circle');
-        let line = $('.stage-line');
-  
-        if (firstCircle.length && lastCircle.length) {
-            let firstOffset = firstCircle.offset().top + firstCircle.outerHeight() / 2;
-            let lastOffset = lastCircle.offset().top + lastCircle.outerHeight() / 2;
-            let rowOffset = row.offset().top;
-  
-            let lineHeight = lastOffset - firstOffset;
-  
-            line.css({
-                'top': firstOffset - rowOffset + 'px',
-                'height': lineHeight + 'px'
-            });
-        }
-    }
-  
-      updateLineHeight();
-    $(window).on('resize', function () {
-        updateLineHeight();
-    })
-  
-   
-  
-    // Contact forms
-  
-    $('#contact-form').on('submit', function (e) {
-      e.preventDefault(); 
-      
-      if (!this.checkValidity()) {
-          this.reportValidity();
-          return;
-      }
-  
-      let formData = $(this).serialize();
-  
-      $.ajax({
-          type: 'POST',
-          url: './php/send_email.php', 
-          data: formData,
-          success: function (response) {
-              $('#form-status')
-                  .removeClass('error')
-                  .addClass('success')
-                  .text('Сообщение успешно отправлено!')
-                  .css("display", "inline-block");
-              $('#contact-form')[0].reset(); 
-          },
-          error: function () {
-              $('#form-status')
-                  .removeClass('success')
-                  .addClass('error')
-                  .text('Произошла ошибка при отправке сообщения.')
-                  .css("display", "inline-block");
-          }
-      });
-    });
-  
-      // Cookies
-  
-      const notification = $('#cookie-notification');
-      const cookiesAccepted = localStorage.getItem('cookiesAccepted');
-  
-      if (!cookiesAccepted) {
-        notification.css("display","flex");
-      }
-  
-      $('#accept-cookies').on('click', function () {
-        localStorage.setItem('cookiesAccepted', 'true'); 
-        notification.css("display","none"); 
-      });
-  
-      // Mobile menu
-  
-      let menuToggle = $(".mobile-menu-toggle");
-      let mobileMenu = $(".mobile-menu");
-  
-      menuToggle.on("click", function () {
-          $(this).toggleClass("open"); 
-          mobileMenu.toggleClass("open"); 
-      });
-  
-      $(".menu-item a").on("click", function () {
-          menuToggle.removeClass("open");
-          mobileMenu.removeClass("open");
-      });
-  
-      function loadImage(img) {
-        const $img = $(img);
-        const src = $img.attr('data-src');
-        if (src) {
-          $img.attr('src', src)
-            .on('load', function () {
-              $img.addClass('loaded');
-            })
-            .removeAttr('data-src');
-        }
-      }
-    
-      function lazyLoadVisibleImages() {
-        $('.lazy-image[data-src]').each(function () {
-          const rect = this.getBoundingClientRect();
-          const inViewport = rect.top < window.innerHeight && rect.bottom > 0;
-          if (inViewport) {
-            loadImage(this);
-          }
-        });
-      }
-    
-      // При загрузке страницы
-      lazyLoadVisibleImages();
-    
-      // При скролле
-      $(window).on('scroll', lazyLoadVisibleImages);
-    
-      // Если изображения находятся в табах — загружаем при активации
-      $('.tabs-btn').on('click', function () {
-        const tabId = $(this).data('tab');
-    
-        $('.tabs-btn').removeClass('active');
-        $(this).addClass('active');
-    
-        $('.tabs-content').removeClass('active');
-        $('#' + tabId).addClass('active');
-    
-        // Загружаем изображения внутри активного таба
-        $('#' + tabId).find('.lazy-image[data-src]').each(function () {
-          loadImage(this);
-        });
-      });
-  
   });
   
+  // Vertical line height
+  function updateLineHeight() {
+    const row = document.querySelector('.work-stages-row');
+    const firstCircle = document.querySelector('.work-stages-item.item-1 .stage-circle');
+    const lastCircle = document.querySelector('.work-stages-item.item-6 .stage-circle');
+    const line = document.querySelector('.stage-line');
+    
+    if (firstCircle && lastCircle && row && line) {
+      const firstOffset = firstCircle.getBoundingClientRect().top + firstCircle.offsetHeight / 2;
+      const lastOffset = lastCircle.getBoundingClientRect().top + lastCircle.offsetHeight / 2;
+      const rowOffset = row.getBoundingClientRect().top;
+      
+      const lineHeight = lastOffset - firstOffset;
+      
+      line.style.top = `${firstOffset - rowOffset}px`;
+      line.style.height = `${lineHeight}px`;
+    }
+  }
   
+  updateLineHeight();
+  window.addEventListener('resize', updateLineHeight);
+  
+  // Mobile menu
+  const menuToggle = document.querySelector('.mobile-menu-toggle');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener('click', function() {
+      this.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+    
+    document.querySelectorAll('.menu-item a').forEach(link => {
+      link.addEventListener('click', function() {
+        menuToggle.classList.remove('open');
+        mobileMenu.classList.remove('open');
+      });
+    });
+  }
+});
+  
+// Lazy loading images
+function loadImage(img) {
+  const src = img.dataset.src;
+  if (src) {
+    img.src = src;
+    img.addEventListener('load', function() {
+      img.classList.add('loaded');
+    });
+    img.removeAttribute('data-src');
+  }
+}
+
+function lazyLoadVisibleImages() {
+  document.querySelectorAll('.lazy-image[data-src]').forEach(img => {
+    const rect = img.getBoundingClientRect();
+    const inViewport = rect.top < window.innerHeight && rect.bottom > 0;
+    if (inViewport) {
+      loadImage(img);
+    }
+  });
+}
+
+// При загрузке страницы
+lazyLoadVisibleImages();
+
+// При скролле с throttle для оптимизации
+window.addEventListener('scroll', throttle(lazyLoadVisibleImages, 50));
+
+// Если изображения находятся в табах — загружаем при активации
+document.querySelectorAll('.tabs-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const tabId = this.dataset.tab;
+    
+    // Обновляем активные классы
+    document.querySelectorAll('.tabs-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    
+    document.querySelectorAll('.tabs-content').forEach(content => content.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+    
+    // Загружаем изображения внутри активного таба
+    document.querySelectorAll(`#${tabId} .lazy-image[data-src]`).forEach(img => {
+      loadImage(img);
+    });
+  });
+});  
