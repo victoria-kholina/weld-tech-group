@@ -3,10 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var closeBtn = document.getElementById('browser-warning-close');
     var userDismissedWarning = localStorage.getItem('browserWarningDismissed') === 'true';
     
-    // Проверяем, является ли браузер IE
     var isIE = /MSIE|Trident/.test(navigator.userAgent);
     
-    // Если это IE и пользователь еще не закрывал предупреждение
     if (isIE && !userDismissedWarning) {
         modal.style.display = 'block';
     }

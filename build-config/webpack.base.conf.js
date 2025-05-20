@@ -1,11 +1,11 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const I18nHtmlPlugin = require('./plugins/i18n-html-plugin');
 const fs = require('fs');
 const isProduction = process.env.NODE_ENV === 'production';
 
+// Base paths configuration
 const PATHS = {
     src: path.resolve(__dirname, '../src'),
     dist: path.resolve(__dirname, '../dist'),
@@ -15,7 +15,7 @@ const PATHS = {
     projects: 'projects'
 };
 
-// Функция для поиска всех EJS файлов
+// Find all EJS template files
 function findEjsFiles(dir) {
     const files = fs.readdirSync(dir);
     let ejsFiles = [];
@@ -55,6 +55,7 @@ module.exports = {
     devtool: 'source-map',
     module: {
         rules: [
+            // JSON files loader
             {
                 test: /\.json$/,
                 type: 'asset/source',
@@ -62,6 +63,7 @@ module.exports = {
                     filename: '[path][name][ext]'
                 }
             },
+            // EJS templates loader
             { 
                 test: /\.ejs$/i, 
                 use: [
@@ -79,6 +81,7 @@ module.exports = {
                     }
                 ]
             },
+            // CSS and SCSS loader
             {
                 test: /\.s?css$/,
                 use: [
@@ -88,16 +91,19 @@ module.exports = {
                     'sass-loader'
                 ]
             },
+            // Images loader
             {
                 test: /\.(png|jpe?g|gif|webp|svg)$/i,
                 type: 'asset/resource',
                 generator: { filename: `${PATHS.assets}img/[name][ext]` }
             },
+            // Fonts loader
             {
                 test: /\.(woff(2)?|ttf|eot)$/i,
                 type: 'asset/resource',
                 generator: { filename: `${PATHS.assets}fonts/[name][ext]` }
             },
+            // Video files loader
             {
                 test: /\.(mp4|webm|ogg)$/, 
                 type: 'asset/resource',
@@ -105,25 +111,8 @@ module.exports = {
             }
         ]
     },
-    optimization: {
-        minimize: true,
-        minimizer: [
-            new ImageMinimizerPlugin({
-                minimizer: {
-                    implementation: ImageMinimizerPlugin.imageminMinify,
-                    options: {
-                        plugins: [
-                            ['imagemin-gifsicle', { interlaced: true }],
-                            ['imagemin-mozjpeg', { quality: 60 }],
-                            ['imagemin-optipng', { optimizationLevel: 5 }],
-                            ['imagemin-webp', { quality: 80 }]
-                        ]
-                    }
-                }
-            })
-        ]
-    },
     plugins: [
+        // HTML generation with i18n support
         new I18nHtmlPlugin({
             root: PATHS.src,
             pages: pages,
@@ -132,16 +121,22 @@ module.exports = {
                 websiteUrl: 'https://weld-techgroup.com/'
             }
         }),
+        // CSS extraction
         new MiniCssExtractPlugin({ 
             filename: 'assets/css/main.css'
         }),
+        // Static files copying
         new CopyWebpackPlugin({
             patterns: [
                 {
                     from: path.join(PATHS.src, 'assets'),
                     to: path.join(PATHS.dist, 'assets'),
                     globOptions: {
-                        ignore: ['**/js/**', '**/css/**', '**/scss/**']
+                        ignore: [
+                            '**/js/**',
+                            '**/css/**',
+                            '**/scss/**'
+                        ]
                     }
                 },
                 {
@@ -163,13 +158,8 @@ module.exports = {
                 {
                     from: path.join(PATHS.src, 'robots.txt'),
                     to: path.join(PATHS.dist, 'robots.txt')
-                },
-                {
-                    from: path.join(PATHS.src, 'assets/js/browser-detector.js'),
-                    to: path.join(PATHS.dist, 'assets/js/browser-detector.js')
                 }
             ]
         })
     ]
-    
 };

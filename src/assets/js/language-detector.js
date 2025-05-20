@@ -1,16 +1,16 @@
+// Language detector
 
-
-// Список поддерживаемых языков
+// List of supported languages
 const supportedLanguages = ['pl', 'en', 'lt', 'de', 'uk', 'ru', 'cs', 'es'];
 
-// Функция для получения текущего языка из URL
+// Function to get the current language from the URL
 function getCurrentLanguage() {
     const currentPath = window.location.pathname;
     const pathLang = currentPath.split('/')[1];
     return supportedLanguages.includes(pathLang) ? pathLang : 'en';
 }
 
-// Функция для получения текущего пути без языкового префикса
+// Function to get the current path without the language prefix
 function getPathWithoutLang() {
     const currentPath = window.location.pathname;
     const pathParts = currentPath.split('/');
@@ -22,19 +22,15 @@ function getPathWithoutLang() {
     return currentPath;
 }
 
-// Функция для обновления активного языка в переключателе
+// Function to update the active language in the switcher
 function updateLanguageSwitcher() {
     const currentLang = getCurrentLanguage();
 
-    // Обновляем все переключатели языка
     document.querySelectorAll('.language-switcher').forEach(switcher => {
-        // Обновляем активный язык в основном переключателе
         let mainSwitcher = switcher.querySelector('.active-switcher');
         let activeLang = mainSwitcher.querySelector('.active-switcher-lang');
-        // Обновляем текст
         activeLang.textContent = currentLang.toUpperCase();
         
-        // Обновляем иконку
         const countryMap = {
             'pl': 'Poland',
             'en': 'United-Kingdom',
@@ -46,26 +42,21 @@ function updateLanguageSwitcher() {
             'es': 'Spain'
         };
 
-        // Находим существующий SVG элемент
         const svg = mainSwitcher.querySelector('.active-switcher-icon');
         const use = svg.querySelector('use');
         use.setAttribute('xlink:href', `#${countryMap[currentLang]}`);
     
-
-        // Обновляем ссылки в подменю
         const submenuLinks = switcher.querySelectorAll('.submenu .language-switcher__link');
         submenuLinks.forEach(link => {
             const lang = link.textContent.trim().toLowerCase();
             const pathWithoutLang = getPathWithoutLang();
             
-            // Обновляем href для каждой ссылки
             if (lang === 'en') {
                 link.href = pathWithoutLang;
             } else {
                 link.href = `/${lang}${pathWithoutLang}`;
             }
             
-            // Скрываем текущий язык в подменю
             if (lang === currentLang) {
                 link.parentElement.style.display = 'none';
             } else {
@@ -76,18 +67,15 @@ function updateLanguageSwitcher() {
 }
 
 
-// Обработчик клика по языковому переключателю
+// Click handler for the language switcher
 function handleLanguageSwitch(event) {
     const link = event.target.closest('.language-switcher__link');
     if (!link) return;
     
-    // Получаем выбранный язык из текста ссылки
     const selectedLang = link.textContent.trim().toLowerCase();
     
-    // Сохраняем выбранный язык в localStorage
     localStorage.setItem('preferredLanguage', selectedLang);
     
-    // Определяем путь для перехода
     const pathWithoutLang = getPathWithoutLang();
     let newPath;
     
@@ -104,13 +92,12 @@ function handleLanguageSwitch(event) {
     window.location.href = newPath;
 }
 
-// Экспортируем функции
+// Export functions
 export { getCurrentLanguage, updateLanguageSwitcher };
 
-// Вызываем функцию при загрузке страницы и при изменении URL
+// Call the function when the page loads and when the URL changes
 document.addEventListener('DOMContentLoaded', () => {
     updateLanguageSwitcher()
-    // Добавляем обработчик клика по языковому переключателю
     document.querySelectorAll('.language-switcher').forEach(switcher => {
         switcher.addEventListener('click', handleLanguageSwitch);
     });

@@ -250,25 +250,21 @@ function lazyLoadVisibleImages() {
   });
 }
 
-// При загрузке страницы
-lazyLoadVisibleImages();
 
-// При скролле с throttle для оптимизации
+lazyLoadVisibleImages();
 window.addEventListener('scroll', throttle(lazyLoadVisibleImages, 50));
 
-// Если изображения находятся в табах — загружаем при активации
+// Tabs
 document.querySelectorAll('.tabs-btn').forEach(btn => {
   btn.addEventListener('click', function() {
     const tabId = this.dataset.tab;
     
-    // Обновляем активные классы
     document.querySelectorAll('.tabs-btn').forEach(b => b.classList.remove('active'));
     this.classList.add('active');
     
     document.querySelectorAll('.tabs-content').forEach(content => content.classList.remove('active'));
     document.getElementById(tabId).classList.add('active');
     
-    // Загружаем изображения внутри активного таба
     document.querySelectorAll(`#${tabId} .lazy-image[data-src]`).forEach(img => {
       loadImage(img);
     });
