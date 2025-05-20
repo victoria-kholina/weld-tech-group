@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://weld-techgroup.com/video/video-weld-tech.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://weld-techgroup.com/assets/img/weld-tech-preview-9x16.webp</video:thumbnail_loc>
+      <video:title>Weld Tech Group - Professional Welding Services</video:title>
+      <video:description>
+        Weld Tech Group - Your reliable partner in the installation of technological pipelines and production of industrial metal structures.
+      </video:description>
+      <video:content_loc>
+        https://weld-techgroup.com/assets/img/Weld-tech-video.webm
+      </video:content_loc>
+      <video:publication_date>2025-05-10T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://weld-techgroup.com/video/welding-pipelines-video.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://weld-techgroup.com/assets/img/weld-tech-group-1.webp</video:thumbnail_loc>
+      <video:title>Weld Tech Group - Professional Welding Services</video:title>
+      <video:description>
+        Weld Tech Group - Your reliable partner in the installation of technological pipelines and production of industrial metal structures.
+      </video:description>
+      <video:content_loc>
+        https://weld-techgroup.com/assets/img/IMFZ6564.webm
+      </video:content_loc>
+      <video:publication_date>2025-05-10T00:00:00+00:00</video:publication_date>
+    </video:video>
+  </url>
+</urlset>

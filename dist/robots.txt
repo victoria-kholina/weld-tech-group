@@ -1,0 +1,6 @@
+﻿User-agent: *
+Disallow:
+
+Sitemap: https://weld-techgroup.com/sitemap.xml
+Sitemap: https://weld-techgroup.com/sitemap-images.xml
+Sitemap: https://weld-techgroup.com/video-sitemap.xml

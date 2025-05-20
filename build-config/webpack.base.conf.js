@@ -149,6 +149,22 @@ module.exports = {
                     to: path.join(PATHS.dist, 'favicon')
                 },
                 {
+                    from: path.join(PATHS.src, 'sitemap-images.xml'),
+                    to: path.join(PATHS.dist, 'sitemap-images.xml')
+                },
+                {
+                    from: path.join(PATHS.src, 'video-sitemap.xml'),
+                    to: path.join(PATHS.dist, 'video-sitemap.xml')
+                },
+                {
+                    from: path.join(PATHS.src, 'sitemap.xml'),
+                    to: path.join(PATHS.dist, 'sitemap.xml')
+                },
+                {
+                    from: path.join(PATHS.src, 'robots.txt'),
+                    to: path.join(PATHS.dist, 'robots.txt')
+                },
+                {
                     from: path.join(PATHS.src, 'assets/js/browser-detector.js'),
                     to: path.join(PATHS.dist, 'assets/js/browser-detector.js')
                 }
