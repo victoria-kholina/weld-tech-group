@@ -8,22 +8,23 @@
     <meta property="og:title" data-i18n-attr="[content]video.title">
     <meta property="og:description" data-i18n-attr="[content]video.meta.description">
     <meta property="og:type" content="video.other">
-    <meta property="og:video" content="<%= websiteUrl %>assets/img/Weld-tech-video.mp4">
+    <meta property="og:video" content="<%= websiteUrl %>assets/video/110.mp4">
     <meta property="og:video:type" content="video/mp4">
     <meta property="og:video:width" content="1280">
     <meta property="og:video:height" content="720">
-    <meta property="og:image" content="<%= websiteUrl %>assets/img/weld-tech-preview-9x16.webp">
+    <meta property="og:image" content="<%= websiteUrl %>assets/video/preview/weld-tech-group-1.webp">
+
 
     <!-- Schema.org VideoObject -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "VideoObject",
-      "name": "Weld Tech Group - Professional Welding Services",
-      "description": "Weld Tech Group - Your reliable partner in the installation of technological pipelines and production of industrial metal structures.",
-      "thumbnailUrl": "<%= websiteUrl %>assets/img/weld-tech-group-1.webp",
+      "name": "<%= translations.video.title %>",
+      "description": "<%= (translations.video.description || '').replace(/<[^>]*>/g, '') %>",
+      "thumbnailUrl": "<%= websiteUrl %>assets/video/preview/weld-tech-group-1.webp",
       "uploadDate": "2025-05-10T00:00:00+00:00",
-      "contentUrl": "<%= websiteUrl %>assets/img/IMFZ6564.webm",
+      "contentUrl": "<%= websiteUrl %>assets/video/110.mp4",
       "embedUrl": "<%= websiteUrl %>video/welding-pipelines-video.html"
     }
     </script>
@@ -40,10 +41,10 @@
                 <div class="col-12">
                     <p class="video-description accent-text-block all" data-i18n="video.description"></p>
                     <div class="video-container">
-                        <video width="100%" height="auto" controls poster="/assets/img/weld-tech-group-1.webp">
-                            <source src="/assets/img/IMFZ6564.webm" type="video/webm">
-                            <source src="/assets/img/IMFZ6564.MP4" type="video/mp4">
-                            <span data-i18n="video.notSupported"></span>
+                        <video width="100%" height="100%" loading="lazy" controls controlsList="nodownload">
+                            <source src="/assets/video/110.webm" type="video/webm">
+                            <source src="/assets/video/110.mp4" type="video/mp4">
+                            <span data-i18n="about.video.notSupported"></span>
                         </video>
                     </div>
                 </div>

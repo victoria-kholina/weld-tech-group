@@ -53,5 +53,8 @@
   "cookie": {
     "text": "Mes naudojame slapukus, kad užtikrintume svetainės patogumą, turinio personalizavimą ir pateiktume svarbiausią informaciją. Slapukai padeda mums analizuoti vartotojų sąveiką su svetaine, pagerinti jos funkcionalumą ir pritaikyti mūsų paslaugas jūsų poreikiams. Tęsdami naudotis šia svetaine, jūs patvirtinate savo sutikimą naudoti slapukus",
     "accept": "Priimti"
+  },
+  "followUs": {
+    "title": "Sekite mus"
   }
 } 

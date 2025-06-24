@@ -42,5 +42,8 @@
   "cookie": {
     "text": "Używamy plików cookie, aby zapewnić wygodę korzystania z witryny, personalizację treści i dostarczanie najbardziej istotnych informacji. Pliki cookie pomagają nam analizować interakcję użytkowników z witryną, poprawiać jej funkcjonalność i dostosowywać nasze usługi do Twoich potrzeb. Kontynuując korzystanie z tej witryny, potwierdzasz zgodę na używanie plików cookie",
     "accept": "Akceptuj"
+  },
+  "followUs": {
+    "title": "Śledź nas"
   }
 } 

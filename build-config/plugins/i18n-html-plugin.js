@@ -41,6 +41,20 @@ class I18nHtmlPlugin {
     async processTemplate(templatePath, lang) {
         let content = fs.readFileSync(templatePath, 'utf8');
         
+        // Получаем относительный путь к файлу шаблона
+        const relativePath = path.relative(this.root, templatePath).replace(/\\/g, '/');
+
+        // Формируем URL страницы
+        let pageUrl;
+        if (lang === 'en') {
+            pageUrl = `${this.options.data?.websiteUrl || ''}${relativePath.replace(/index\.ejs$/, '').replace(/\.ejs$/, '.html')}`;
+        } else {
+            pageUrl = `${this.options.data?.websiteUrl || ''}${lang}/${relativePath.replace(/index\.ejs$/, '').replace(/\.ejs$/, '.html')}`;
+        }
+
+        // Добавляем массив поддерживаемых языков
+        const supportedLangs = this.options.languages;
+
         // First process EJS templates
         content = await ejs.render(content, {
             include: (file) => {
@@ -51,7 +65,10 @@ class I18nHtmlPlugin {
                     lang,
                     websiteUrl: this.options.data?.websiteUrl || '',
                     translations: this.translations[lang],
-                    path: (file) => lang === 'en' ? `/${file}` : `/${lang}/${file}`
+                    path: (file) => lang === 'en' ? `/${file}` : `/${lang}/${file}`,
+                    pageUrl,
+                    relativePath,
+                    supportedLangs
                 }, {
                     async: false,
                     root: this.root,
@@ -61,7 +78,10 @@ class I18nHtmlPlugin {
             lang,
             websiteUrl: this.options.data?.websiteUrl || '',
             translations: this.translations[lang],
-            path: (file) => lang === 'en' ? `/${file}` : `/${lang}/${file}`
+            path: (file) => lang === 'en' ? `/${file}` : `/${lang}/${file}`,
+            pageUrl,
+            relativePath,
+            supportedLangs
         }, {
             async: true,
             root: this.root,

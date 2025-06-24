@@ -43,6 +43,7 @@
     &__text {
         display: flex;
         align-items: center;
+        
         @include abs.desktop {
             .accent-list {
                 padding-left: 20px;
@@ -55,9 +56,9 @@
         }
     }
     &-bottom-text {
-        margin-top: 30px;
-        @include abs.tablet {
-            margin-top: 50px;
+        margin: 40px 0;
+        @include abs.desktop-sm {
+            margin-bottom: 0;
         }
         h4>b{
             font-family: abs.$AlumniSans-Medium;

@@ -3,9 +3,9 @@
 <meta name="robots" content="index, follow">
 <meta name="google" content="notranslate" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- for flex IE Edge-->
-<meta property="og:url" content="<%= websiteUrl %>">
+<meta property="og:url" content="<%= pageUrl %>">
 <meta property="og:type" content="website">
-<meta name="twitter:url" content="<%= websiteUrl %>">
+<meta name="twitter:url" content="<%= pageUrl %>">
 <meta name="twitter:card" content="summary_large_image">
 
 
@@ -16,4 +16,11 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
 <link rel="manifest" href="/favicon/site.webmanifest">
+
+<% supportedLangs.forEach(function(lang) { %>
+  <link rel="alternate" hreflang="<%= lang %>" href="<%= websiteUrl %><%= lang === 'en' ? '' : lang + '/' %><%= relativePath %>" />
+<% }); %>
+<link rel="alternate" hreflang="x-default" href="<%= websiteUrl %><%= relativePath %>" />
+
+<link rel="canonical" href="<%= pageUrl %>" />
 

@@ -1,7 +1,6 @@
 @use '../abstracts/abstracts' as abs;
 
-.shadow-image,
-.shadow-video {
+.shadow-image{
     position: relative;
     z-index: 1;
     &:before,
@@ -92,9 +91,17 @@
   .shadow-video {
     width: 100%;
     height: auto;
-    &:before{
-        height: 98%;
-    }
+    position: relative;
+    z-index: 1;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: linear-gradient(rgba(213, 171, 2, 0.5), rgba(187, 42, 43, 0.5));
+        bottom: 0;
+    } 
     &.right {
         &:after {
             right: 0;
@@ -113,5 +120,26 @@
             transform: scale(1) translate(-25px, 25px);
             }
         }
+    }
+  }
+
+  .video-bg {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+
+    @include abs.desktop {
+        height: 500px;
     }
   }

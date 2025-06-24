@@ -42,5 +42,8 @@
   "cookie": {
     "text": "We use cookies to ensure website convenience, content personalization, and delivery of the most relevant information. Cookies help us analyze user interaction with the website, improve its functionality, and adapt our services to your needs. By continuing to use this website, you confirm your consent to the use of cookies",
     "accept": "Accept"
+  },
+  "followUs": {
+      "title": "Follow us"
   }
 } 

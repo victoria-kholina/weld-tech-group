@@ -118,12 +118,27 @@
                     </ul>
                 </div>
             </div> 
-            <div class="row projects-bottom-text">
-                <h4><b data-i18n="projects.bottom_text.part_1"></b> — <span data-i18n="projects.bottom_text.part_2"></span> <br>
-                    <span data-i18n="projects.bottom_text.part_3"></span></h4>
-                    <div class="btn-group">
-                      <a href="<%= path('projects/gallery-projects.html') %>" class="simple-button" data-i18n="projects.gallery_button"></a>
-                      <span class="arrow arrow-left arrow-dark animate-on-scroll"></span>
+            <div class="row">
+                <div class="col-12 col-lg-6 projects-bottom-text">
+                    <div class="row align-items-center h-100">
+                        <div class="col-12">
+                            <h4><b data-i18n="projects.bottom_text.part_1"></b> — <span data-i18n="projects.bottom_text.part_2"></span> <br>
+                                <span data-i18n="projects.bottom_text.part_3"></span></h4>
+                                <div class="btn-group">
+                                <a href="<%= path('projects/gallery-projects.html') %>" class="simple-button" data-i18n="projects.gallery_button"></a>
+                                <span class="arrow arrow-left arrow-dark animate-on-scroll"></span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="shadow-video right">
+                        <video width="100%" height="100%" loading="lazy" autoplay muted controls controlsList="nodownload">
+                            <source src="/assets/video/100.webm" type="video/webm">
+                            <source src="/assets/video/100.mp4" type="video/mp4">
+                            <span data-i18n="about.video.notSupported"></span>
+                        </video>
+                    </div>
                 </div>
             </div>
         </div>

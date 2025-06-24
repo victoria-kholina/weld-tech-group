@@ -28,6 +28,9 @@
     &-text {
         padding-left: 100px;
         text-align: center; 
+        @include abs.only-mobile {
+            padding: 20px 0;
+        }
         @include abs.up-desktop-sm {
             max-width: 400px;
             margin: 0 auto;
@@ -64,7 +67,7 @@
         }
         iframe {
             height: 350px;
-            @include abs.desktop {
+            @include abs.desktop-sm {
                 height: 550px;
             }
         }
@@ -175,5 +178,60 @@
         @include abs.only-mobile {
             margin-top: 15px;
         }
+    }
+  }
+
+  .follow-us {
+    &-title {
+        margin-top: 40px;
+    }
+    &-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include abs.tablet {
+            margin-bottom: 40px;
+        }
+        @include abs.desktop-sm {
+            flex-direction: column;
+            align-items: flex-end;
+            margin-bottom: 0;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-family: abs.$AlumniSans-Medium;
+            font-size: abs.$h5-size-mobile;
+            @include abs.desktop {
+                font-size: abs.$h5-size-desktop;
+            }
+            @include abs.desktop-xxl {
+                font-size: abs.$h5-size-xxl-desktop;
+            }
+            .icon {
+                height:30px;
+                width: 30px;
+                margin-left: 5px;
+            } 
+        }
+        &__facebook {
+            color: #246182;
+            margin-right: 20px;
+            @include abs.desktop-sm {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            .icon {
+                fill: #246182;
+            }
+        }
+        &__youtube {
+            color: abs.$second-accent-color;
+            .icon {
+                fill: abs.$second-accent-color;
+            }
+        }
+        
     }
   }

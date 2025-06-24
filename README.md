@@ -14,8 +14,6 @@ This is the official website project for Weld Tech Group, built using Node.js wi
 
 - **Bootstrap 5 Grid System.** Provides a modern, responsive grid system for faster development.
 
-- **jQuery Integration:** Simplifies DOM manipulation and event handling.
-
 - **Splide.js Slider:** Responsive and customizable sliders for showcasing content.
 
 - **SVG sprites.** Used to efficiently manage and optimize SVG icons.
@@ -29,6 +27,8 @@ This is the official website project for Weld Tech Group, built using Node.js wi
 - **Code Minification:** Optimized output files with Webpack to reduce load times.
 
 - **Browser Compatibility:** Configured with browserslist for compatibility with modern browsers.
+
+- **Multilingual Support:** Uses the i18n npm module to enable multilingual support.
 
 ---
 
